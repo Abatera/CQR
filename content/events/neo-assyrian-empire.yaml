@@ -1,0 +1,26 @@
+id: neo-assyrian-empire
+kind: period
+lane: mesopotamia
+review: draft
+title:
+  en: The Neo-Assyrian Empire
+  ar: الإمبراطورية الآشورية الحديثة
+summary:
+  en: Assyria's rise to empire, conventionally dated from about 911 BCE.
+when:
+  from: -911
+  to: -609
+  certainty: estimated
+  basis:
+    en: The start, about 911 BCE, is from the planning notes. The end is a placeholder.
+place:
+  status: known
+  names:
+    - { name: Assur, type: ancient }
+  description:
+    en: Shown at Assur, the old capital. Later capitals were Kalhu (Nimrud) and Nineveh.
+  geometry:
+    type: Point
+    coordinates: [ 43.26, 35.46 ]
+tags: [ assyria, mesopotamia ]
+notes: "TODO: verify both dates and cite them. Verify the coordinates."

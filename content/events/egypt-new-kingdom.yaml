@@ -1,0 +1,30 @@
+id: egypt-new-kingdom
+kind: period
+lane: egypt
+review: draft
+title:
+  en: Egypt's New Kingdom
+  ar: الدولة الحديثة في مصر
+summary:
+  en: The New Kingdom, Egypt's imperial age in the Late Bronze Age. It survived the collapse but ended about 1070 BCE.
+when:
+  from: -1550
+  to: -1070
+  certainty: estimated
+  basis:
+    en: Conventional Egyptian chronology. The end, about 1070 BCE, is from the planning notes; the start is a placeholder.
+place:
+  status: known
+  names:
+    - { name: Waset, type: ancient, language: Egyptian }
+    - { name: Thebes, type: ancient, language: Greek }
+    - { name: Luxor, type: modern }
+  description:
+    en: Shown at Thebes, a main royal and religious center of the period.
+  geometry:
+    type: Point
+    coordinates: [ 32.64, 25.7 ]
+related:
+  - { id: ramesses-iii-sea-peoples, type: context }
+tags: [ egypt ]
+notes: "TODO: verify both dates against a standard Egyptian chronology and cite it. Decide how a polity's place should be shown: a capital, or an area."

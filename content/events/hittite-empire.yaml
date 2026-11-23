@@ -1,0 +1,34 @@
+id: hittite-empire
+kind: period
+lane: anatolia
+review: draft
+title:
+  en: Hittite Empire
+  ar: الإمبراطورية الحيثية
+summary:
+  en: The Hittite state in central Anatolia, one of the great powers of the Late Bronze Age. It fell during the collapse.
+when:
+  from: -1650
+  to: -1180
+  certainty: estimated
+  basis:
+    en: The end, about 1180 BCE, follows the literature on the Late Bronze Age collapse. The start is a placeholder.
+place:
+  status: known
+  names:
+    - { name: Hattusa, type: ancient, language: Hittite }
+    - { name: Boğazkale, type: modern, language: Turkish }
+  description:
+    en: The capital, Hattusa, in central Anatolia.
+  geometry:
+    type: Point
+    coordinates: [ 34.615, 40.02 ]
+history:
+  - claim:
+      en: The Hittite Empire fell around 1180 BCE, during the Late Bronze Age collapse.
+    status: established
+    sources: [ cline-1177 ]
+related:
+  - { id: ramesses-iii-sea-peoples, type: parallel }
+tags: [ collapse, hittites ]
+notes: "TODO: verify the start date (the Old Kingdom is conventionally put around 1650 BCE) and the coordinates of Hattusa. Add page locators for Cline."

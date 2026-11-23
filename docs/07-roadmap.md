@@ -1,6 +1,14 @@
 # Roadmap
 
-This roadmap is **proposed**. Confirm the order and the first milestone with the owner.
+The order and the first milestone were confirmed on 2026-11-23 (D14 in [08-decisions.md](08-decisions.md)).
+
+## Progress (2026-11-23)
+
+- **Phase 0: done.** Scaffold, licenses, `THIRD_PARTY.md`, the content schema, the validator and the build. The decisions are D14 and D15.
+- **Phase 1: done**, except spot-checking verses against a printed mushaf and checking the font in Firefox and Safari. The Tanzil dataset is stored unmodified and verified. The reader and search are built, with Amiri Quran.
+- **Phase 2: done.** The three panels, URL routing, lane toggles, arrow keys and links between lanes. Added at the owner's request: a local **editor** with forms for events, lanes, eras and sources (D15). There is no small-screen layout yet (open question 13).
+- **Phase 3: drafted, not researched.** The pilot events below exist as drafts, written only from the leads in these docs, with their open items in `notes` and in the validator's warnings. The verse references were checked against the dataset. **None of the historical content has been checked against a source yet**; that is the next step. The Late Bronze Age collapse is an era band, not an event, and the end of the New Kingdom is the end of its period bar.
+- **Phase 4: not started.**
 
 ## Phase 0: Confirm and scaffold
 

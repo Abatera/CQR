@@ -1,0 +1,24 @@
+id: solomon-queen-of-sheba
+kind: event
+lane: quran
+review: draft
+title:
+  en: Solomon and the Queen of Saba'
+  ar: سليمان وملكة سبأ
+summary:
+  en: The hoopoe brings Solomon news of Saba' and of a woman who rules it. The queen comes to Solomon and submits with him to God.
+when:
+  from: -970
+  to: -931
+  certainty: traditional
+  basis:
+    en: Within Solomon's traditional dates. The Quran gives no date.
+place:
+  status: unknown
+  description:
+    en: The Quran names Saba' as the queen's land but names no place for Solomon's court.
+quran: [ "27:20-44" ]
+related:
+  - { id: saba-beginnings, type: context }
+tags: [ solomon, saba ]
+notes: Sabaean chronology is debated, which makes this a test case for showing a debate.

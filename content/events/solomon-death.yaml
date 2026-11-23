@@ -1,0 +1,21 @@
+id: solomon-death
+kind: event
+lane: quran
+review: draft
+title:
+  en: The death of Solomon
+  ar: موت سليمان
+summary:
+  en: Solomon dies, and only a creature of the earth eating his staff reveals his death to the jinn.
+when:
+  from: -931
+  to: -931
+  certainty: traditional
+  basis:
+    en: The end of Solomon's reign in traditional biblical chronology. The Quran gives no date.
+place:
+  status: unknown
+  description:
+    en: The Quran names no place.
+quran: [ "34:14" ]
+tags: [ solomon ]

@@ -1,0 +1,48 @@
+# Background era bands for the timeline. Every date range needs a source. See docs/04-data-model.md.
+# The values below are the illustrative ones from the planning docs. Verify them before review.
+- id: late-bronze-age
+  name:
+    en: Late Bronze Age
+    ar: العصر البرونزي المتأخر
+  from: -1550
+  to: -1200
+  region:
+    en: Eastern Mediterranean and Near East
+  review: draft
+  sources: [ cline-1177 ]
+  notes: "TODO: verify the boundaries and add a page locator."
+
+- id: bronze-age-collapse
+  name:
+    en: Late Bronze Age collapse
+    ar: انهيار العصر البرونزي
+  from: -1200
+  to: -1150
+  region:
+    en: Eastern Mediterranean and Near East
+  color: "#9b5d5d"
+  review: draft
+  sources: [ cline-1177 ]
+  notes: "TODO: verify the range and add a page locator."
+
+- id: iron-age-i
+  name:
+    en: Iron Age I
+    ar: العصر الحديدي الأول
+  from: -1150
+  to: -1000
+  region:
+    en: Southern Levant
+  review: draft
+  notes: "TODO: find a source. The boundaries differ between the conventional and the low chronology."
+
+- id: iron-age-ii
+  name:
+    en: Iron Age II
+    ar: العصر الحديدي الثاني
+  from: -1000
+  to: -586
+  region:
+    en: Southern Levant
+  review: draft
+  notes: "TODO: find a source. The end date (586 BCE) is a placeholder from memory, not from the planning docs."

@@ -1,0 +1,23 @@
+id: solomon-inherits-david
+kind: event
+lane: quran
+review: draft
+title:
+  en: Solomon inherits from David
+  ar: وورث سليمان داوود
+summary:
+  en: Solomon succeeds David and says that they have been taught the speech of birds and given of all things.
+when:
+  from: -970
+  to: -970
+  certainty: traditional
+  basis:
+    en: The start of Solomon's reign in traditional biblical chronology. The Quran gives no date.
+place:
+  status: unknown
+  description:
+    en: The Quran names no place.
+quran: [ "27:16" ]
+related:
+  - { id: david-armor, type: context }
+tags: [ solomon, david, kingship ]

@@ -1,0 +1,38 @@
+id: ramesses-iii-sea-peoples
+kind: event
+lane: egypt
+review: draft
+title:
+  en: Ramesses III and the Sea Peoples
+  ar: رمسيس الثالث وشعوب البحر
+summary:
+  en: Egypt under Ramesses III fights off the Sea Peoples, as recorded in the reliefs of his temple at Medinet Habu.
+when:
+  from: -1177
+  to: -1177
+  certainty: estimated
+  basis:
+    en: Year 8 of Ramesses III, dated about 1177 BCE in the chronology that Cline uses.
+place:
+  status: known
+  names:
+    - { name: Medinet Habu, type: modern }
+  description:
+    en: The mortuary temple of Ramesses III at Medinet Habu, on the west bank at Thebes, where the reliefs are. The battles themselves were fought elsewhere.
+  geometry:
+    type: Point
+    coordinates: [ 32.6, 25.72 ]
+history:
+  - claim:
+      en: Reliefs and inscriptions at Medinet Habu record Ramesses III's battles against the Sea Peoples.
+    status: established
+    sources: [ cline-1177 ]
+  - claim:
+      en: Where the battles took place, and who the Sea Peoples were, are debated.
+    status: debated
+    sources: [ cline-1177 ]
+related:
+  - { id: hittite-empire, type: parallel }
+  - { id: egypt-new-kingdom, type: context }
+tags: [ collapse, egypt, sea-peoples ]
+notes: "TODO: add page locators for Cline. Verify the coordinates."

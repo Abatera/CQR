@@ -1,0 +1,32 @@
+id: tel-dan-stele
+kind: event
+lane: levant
+review: draft
+title:
+  en: The Tel Dan stele
+  ar: نقش تل دان
+summary:
+  en: An Aramaic inscription from the 9th century BCE that mentions the "House of David".
+when:
+  from: -900
+  to: -801
+  certainty: estimated
+  basis:
+    en: The 9th century BCE, from the inscription's content and context. To be sourced.
+place:
+  status: known
+  names:
+    - { name: Tel Dan, type: modern }
+  description:
+    en: Tel Dan, in the north of the Jordan valley, where the fragments were found.
+  geometry:
+    type: Point
+    coordinates: [ 35.652, 33.249 ]
+history:
+  - claim:
+      en: The stele mentions the "House of David". It is the earliest known reference to David outside the Bible.
+    status: established
+related:
+  - { id: david-kills-jalut, type: context }
+tags: [ inscription, david, evidence ]
+notes: "TODO: cite the publication of the inscription and a discussion of the reading. Verify the coordinates."

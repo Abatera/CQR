@@ -1,0 +1,42 @@
+id: timna-faynan-copper
+kind: period
+lane: levant
+review: draft
+title:
+  en: Copper production at Timna and Faynan
+  ar: إنتاج النحاس في تمنع وفينان
+summary:
+  en: Large-scale copper smelting in the Arabah valley, at Timna and at Faynan (Khirbat en-Nahas), dated to the 10th century BCE.
+when:
+  from: -1000
+  to: -901
+  certainty: estimated
+  basis:
+    en: Radiocarbon dating of slag layers (Levy; Ben-Yosef). To be sourced.
+place:
+  status: known
+  names:
+    - { name: Timna, type: modern }
+    - { name: Faynan, type: modern }
+    - { name: Khirbat en-Nahas, type: modern }
+  description:
+    en: Copper-smelting sites in the Arabah valley, between the Dead Sea and the Gulf of Aqaba. The outline is a rough sketch.
+  geometry:
+    type: Polygon
+    coordinates:
+      - - [ 34.9, 29.7 ]
+        - [ 35.1, 29.7 ]
+        - [ 35.55, 30.7 ]
+        - [ 35.35, 30.75 ]
+        - [ 34.9, 29.7 ]
+history:
+  - claim:
+      en: Copper production at Timna and Faynan has been radiocarbon-dated to the 10th century BCE, in work by Thomas Levy and Erez Ben-Yosef.
+    status: established
+  - claim:
+      en: Who controlled the mines is debated.
+    status: debated
+related:
+  - { id: solomon-molten-copper, type: context }
+tags: [ metallurgy, copper ]
+notes: "TODO: cite the specific publications by Levy and Ben-Yosef. Verify the outline of the sites."

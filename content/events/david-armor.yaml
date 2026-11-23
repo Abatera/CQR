@@ -1,0 +1,41 @@
+id: david-armor
+kind: event
+lane: quran
+review: draft
+title:
+  en: David and the making of armor
+  ar: داوود وصناعة الدروع
+summary:
+  en: The Quran says God made iron soft for David and taught him to make coats of armor.
+when:
+  from: -1010
+  to: -970
+  certainty: traditional
+  basis:
+    en: Traditional dates of David's reign (biblical chronology). The Quran gives no date.
+place:
+  status: proposed
+  description:
+    en: David's kingdom in the southern Levant, with Jerusalem as its capital according to tradition. The Quran names no place for this event.
+  geometry:
+    type: Point
+    coordinates: [ 35.23, 31.78 ]
+quran: [ "34:10-11", "21:80" ]
+history:
+  - claim:
+      en: Smelted iron was known in Anatolia and the Near East before 1200 BCE, but it was rare and costly. The older idea of a Hittite iron monopoly is largely abandoned.
+    status: established
+  - claim:
+      en: Iron became common for tools and weapons in the Levant during the 11th–10th centuries BCE.
+    status: established
+  - claim:
+      en: The traditional dates are about 1010–970 BCE for David and about 970–931 BCE for Solomon. These dates, and the size of the united monarchy, are debated.
+    status: debated
+connection:
+  text:
+    en: The Quran ties David to iron worked into armor, at the time archaeology shows iron becoming common in the region. This does not claim that no one else could work iron.
+related:
+  - { id: iron-spread-levant, type: context }
+  - { id: solomon-molten-copper, type: parallel }
+tags: [ metallurgy, david, iron ]
+notes: "TODO tafsir: how classical commentators explain sābighāt (full coats of mail) and sard (the links); some are said to write that David was the first to make mail armor. Verify in the actual works. The owner sets the connection's confidence. Add the chronology debate (Finkelstein's low chronology against views such as Mazar's; Khirbet Qeiyafa) once sourced."

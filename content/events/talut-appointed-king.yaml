@@ -1,0 +1,24 @@
+id: talut-appointed-king
+kind: event
+lane: quran
+review: draft
+title:
+  en: Talut is appointed king
+  ar: بعث طالوت ملكا
+summary:
+  en: The Children of Israel ask a prophet of theirs for a king to fight under. Talut (Saul) is appointed, and his troops are tested at a river.
+when:
+  from: -1050
+  to: -1010
+  certainty: traditional
+  basis:
+    en: Placed just before David's traditional dates. The Quran gives no date.
+place:
+  status: unknown
+  description:
+    en: The Quran names no place. It says that Talut set out with his troops and that they were tested with a river.
+quran: [ "2:246-249" ]
+related:
+  - { id: david-kills-jalut, type: consequence }
+tags: [ talut, kingship ]
+notes: "TODO: verify the traditional dates for Saul's reign and cite them. Decide whether the river should get a proposed location."

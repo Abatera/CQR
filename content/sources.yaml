@@ -1,0 +1,9 @@
+# Bibliography. Every citation in the content refers to an ID in this file. See docs/03-content-principles.md.
+- id: cline-1177
+  type: book
+  authors: [ Eric H. Cline ]
+  title: "1177 B.C.: The Year Civilization Collapsed"
+  edition: Revised and updated
+  year: 2021
+  publisher: Princeton University Press
+  place: Princeton

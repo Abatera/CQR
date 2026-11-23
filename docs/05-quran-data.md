@@ -1,5 +1,18 @@
 # Quran data (Hafs)
 
+## As implemented (2026-11-23)
+
+- **Source:** Tanzil, downloaded on 2026-11-23 into [data/third-party/quran/](../data/third-party/quran/): the Uthmani text for display, the Simple-clean text for search, and the metadata. The files are unmodified. Their URLs, dates and SHA-256 checksums are in `SOURCE.json`.
+- **Format:** XML, not plain text. In the plain-text format the basmala is part of verse 1 of each surah (for example, 41:1 reads as the basmala followed by حمٓ). The XML keeps it in a separate `bismillah` attribute: 112 surahs have one. Al-Fatiha's basmala is its verse 1, and At-Tawbah has none.
+- **License, checked on 2026-11-23** on Tanzil's download page and in the files' own notice: Creative Commons Attribution 3.0; verbatim copies only, changing the text is not allowed; credit Tanzil with a link to tanzil.net; keep the copyright notice. The app credits Tanzil under every verse block and in the reader, and shows the full notice on the About page.
+- **Derived search index:** none is stored. Normalization runs in memory in the browser when the text loads, so the question of whether the terms allow a derived index does not arise.
+- **Integrity:** `npm run quran:verify` passes: checksums match, both texts have 114 surahs and 6,236 verses, and the texts and metadata agree on every surah's verse count. Spot-checking against a printed mushaf is still to be done.
+- **Font:** Amiri Quran 1.003 (SIL OFL 1.1), self-hosted. The ۝ ornament with Arabic-Indic digits renders as an enclosed verse number. Rendering has been checked in Chrome only; Firefox and Safari are still to be checked.
+- **Search:** in the browser, on the normalized Simple-clean text, by part of a word or whole word. A reference such as `34:10` jumps to the verse. Matches are highlighted in the Uthmani text by word position. In 363 verses (about 6%) the two texts split words differently (for example يَـٰٓأَيُّهَا is one word in Uthmani but two in Simple), and there the highlight compares words directly and may be approximate. Results link to the timeline events that cite each verse.
+- **Checks on content:** every reference in `content/` is checked against the dataset's verse counts by the validator, and the editor shows the verse text beside each reference as it is typed.
+
+The sections below are the original planning notes.
+
 ## The owner's requirement
 
 The project needs "a database of Quran Hafs verses with good quality, and readable and searchable".

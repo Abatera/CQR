@@ -1,0 +1,29 @@
+id: saba-beginnings
+kind: period
+lane: arabia
+review: draft
+title:
+  en: The beginnings of the kingdom of Saba'
+  ar: نشأة مملكة سبأ
+summary:
+  en: The kingdom of Saba' in south Arabia, centered on Ma'rib. When it began is debated.
+when:
+  from: -1200
+  to: -800
+  certainty: debated
+  basis:
+    en: A placeholder range. Scholars disagree on when the kingdom began; the main views still need to be researched and added as alternatives.
+place:
+  status: known
+  names:
+    - { name: Maryab, type: ancient, language: Sabaic }
+    - { name: Ma'rib, type: modern }
+  description:
+    en: Ma'rib, in present-day Yemen.
+  geometry:
+    type: Point
+    coordinates: [ 45.33, 15.43 ]
+related:
+  - { id: solomon-queen-of-sheba, type: context }
+tags: [ saba, arabia ]
+notes: "TODO: research the competing chronologies and add each as an alternative date with its source. Verify the coordinates and the ancient name."

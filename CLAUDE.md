@@ -4,9 +4,19 @@ A public, educational, interactive web app. It places events narrated in the Qur
 
 ## Status
 
-**Planning only.** No code, no git repository, no GitHub repo yet.
+**Phases 0–2 are built (2026-11-23); Phase 3 content is in draft.** The app runs: timeline, map, facts panel, Quran reader and search, and a local editor with forms for all content. The 15 pilot events are drafts written from unverified research leads. See [docs/07-roadmap.md](docs/07-roadmap.md) for what is done and what is next.
 
-These docs were written on 2026-11-23 on a different PC, at the end of a planning conversation between the project owner and Claude. Development happens on this machine. Everything decided or proposed in that conversation is recorded in `docs/`. Nothing else from that conversation carried over, so treat these files as the full context.
+The planning docs were written on 2026-11-23 on a different PC, at the end of a planning conversation between the project owner and Claude. Development happens on this machine. Decisions made since then are logged in [docs/08-decisions.md](docs/08-decisions.md) (D14 onward).
+
+A git repository exists, with `origin` at `github.com/Abatera/CQR`, and the first commit ("Let's start") was already on the remote when development began. The code built since then is not committed. Whether the GitHub repository is public was not checked.
+
+## Commands
+
+- `npm run dev`: the app, with the editor at `#/edit` (local only)
+- `npm run validate`: content checks. `npm run build` runs it first, and errors fail the build.
+- `npm test` (Vitest, through `scripts/test.mjs`, which works around a Windows drive-letter issue) and `npm run check` (svelte-check)
+- `npm run quran:verify`: dataset checksums and verse counts
+- `npm run format:content`: rewrite the content YAML in the editor's style
 
 ## Read these first, in order
 
@@ -21,7 +31,7 @@ These docs were written on 2026-11-23 on a different PC, at the end of a plannin
 
 ## First thing to do in a new session
 
-Go through the open questions at the end of [docs/08-decisions.md](docs/08-decisions.md) with the owner before writing code. Several of them affect the scaffold, such as the UI framework, the content format and the UI language.
+Check the open questions at the end of [docs/08-decisions.md](docs/08-decisions.md) and the choices listed there as "Choices Claude made while implementing", which the owner has not yet confirmed.
 
 ## Working agreements
 
@@ -30,5 +40,7 @@ Go through the open questions at the end of [docs/08-decisions.md](docs/08-decis
 - **Never type Quran text from memory or generate it.** All Arabic Quran text shown in the app must come from the verified dataset (see docs/05). Content files store verse references only, and every reference must be checked against the dataset. The few Arabic phrases quoted in these planning docs are for discussion only.
 - **Every historical claim needs a source and a status** (established or debated). Never present the project's own connections between the Quran and history as established fact. See docs/03.
 - **The research leads in these docs are unverified.** They were recalled during the planning conversation, not checked against sources. Verify each against a real source before it goes into content.
-- **Local-first.** Do not create the GitHub repository, push, or enable GitHub Pages without asking the owner. The repository will be public.
+- **Local-first.** Do not commit, push, or enable GitHub Pages without asking the owner. The repository will be public.
+- **Draft until reviewed.** New content is `review: draft`. Only the owner marks an entry `reviewed`, and only after its sources are verified.
+- **Never edit `data/third-party/quran/`.** Tanzil's terms forbid changes. `npm run quran:verify` detects them.
 - **Licensing.** Code is MIT and written content is CC BY-SA 4.0. Third-party material (the Quran text, fonts, map tiles, libraries) keeps its own license and must not be relabeled.

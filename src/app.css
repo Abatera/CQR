@@ -1,0 +1,254 @@
+@font-face {
+  font-family: 'Amiri Quran';
+  src: url('/fonts/amiri/AmiriQuran.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amiri';
+  src: url('/fonts/amiri/Amiri-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+:root {
+  --font-ui: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-quran: 'Amiri Quran', serif;
+  --font-ar: 'Amiri', 'Segoe UI', 'Geeza Pro', serif;
+  --bg: #fbfbf9;
+  --panel: #fff;
+  --line: #e3e3de;
+  --muted: #6b6b66;
+  --accent: #1f6f5c;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: #1d1d1b;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+a {
+  color: #1a5c8a;
+}
+
+button,
+.button {
+  font: inherit;
+  font-size: 13px;
+  padding: 4px 10px;
+  border: 1px solid #c9c9c2;
+  border-radius: 6px;
+  background: #fff;
+  color: #222;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover:not(:disabled),
+.button:hover {
+  background: #f2f2ee;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+button.primary,
+.button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+button.primary:hover:not(:disabled),
+.button.primary:hover {
+  background: #185a4b;
+}
+
+button.danger {
+  color: #9b1c1c;
+  border-color: #e4b4b4;
+}
+
+button.small {
+  font-size: 12px;
+  padding: 2px 8px;
+}
+
+button.icon {
+  padding: 0 6px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+  font-size: 14px;
+  padding: 4px 6px;
+  border: 1px solid #c9c9c2;
+  border-radius: 5px;
+  background: #fff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus-visible {
+  outline: 2px solid #7fb5a6;
+  outline-offset: 1px;
+}
+
+code {
+  font-size: 12px;
+  background: #f0f0ec;
+  border-radius: 3px;
+  padding: 0 4px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.error {
+  color: #b3261e;
+}
+
+/* Quran text: always from the Tanzil dataset, in the Uthmani script. */
+.quran-text {
+  font-family: var(--font-quran);
+  font-size: 26px;
+  line-height: 2.1;
+  direction: rtl;
+  text-align: right;
+  margin: 4px 0;
+}
+
+.quran-text .end {
+  font-family: var(--font-quran);
+  color: #1f6f5c;
+}
+
+/* Editor forms */
+.form {
+  max-width: 980px;
+  padding-bottom: 10px;
+}
+
+.form h2 {
+  margin: 14px 0 6px;
+}
+
+fieldset {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 14px 12px;
+  margin: 14px 0 0;
+  background: #fff;
+}
+
+legend {
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #445;
+  padding: 0 6px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 8px 0;
+}
+
+.field > button {
+  align-self: flex-start;
+}
+
+.field .label,
+.preview .label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #444;
+}
+
+.field.check,
+label.check {
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.hint {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 14px;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0 14px;
+  align-items: start;
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.card {
+  border: 1px solid #ecece6;
+  border-radius: 6px;
+  padding: 4px 10px 6px;
+  margin: 8px 0;
+  background: #fcfcfa;
+}
+
+.card-head {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #556;
+  padding-top: 4px;
+}
+
+.subhead {
+  font-size: 12px;
+  font-weight: 700;
+  color: #556;
+  margin: 12px 0 4px;
+}
+
+.preview {
+  background: #f5f5f2;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 13px;
+}

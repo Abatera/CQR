@@ -1,0 +1,54 @@
+# Timeline lanes. Edit here or in the app editor (npm run dev, then Editor). See docs/04-data-model.md.
+- id: quran
+  name:
+    en: Quran
+    ar: القرآن
+  order: 0
+  pinned: true
+  color: "#1f6f5c"
+  description:
+    en: Events narrated in the Quran.
+
+- id: levant
+  name:
+    en: Levant
+    ar: بلاد الشام
+  order: 1
+  color: "#b5651d"
+
+- id: egypt
+  name:
+    en: Egypt
+    ar: مصر
+  order: 2
+  color: "#b08d1a"
+
+- id: anatolia
+  name:
+    en: Anatolia
+    ar: الأناضول
+  order: 3
+  color: "#8e5572"
+
+- id: mesopotamia
+  name:
+    en: Mesopotamia
+    ar: بلاد الرافدين
+  order: 4
+  color: "#3a6ea5"
+
+- id: arabia
+  name:
+    en: Arabia
+    ar: جزيرة العرب
+  order: 5
+  color: "#a0522d"
+
+- id: technology
+  name:
+    en: Technology and climate
+    ar: التقنية والمناخ
+  order: 6
+  color: "#5b7553"
+  description:
+    en: Cross-regional developments, such as the spread of iron.

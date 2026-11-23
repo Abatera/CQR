@@ -1,0 +1,23 @@
+{
+  "quran-uthmani.xml": {
+    "description": "Tanzil Uthmani text (Hafs), for display",
+    "url": "https://tanzil.net/pub/download/index.php?marks=true&sajdah=true&alef=true&tatweel=true&quranType=uthmani&outType=xml&agree=true",
+    "downloaded": "2026-11-23T18:53:34.413Z",
+    "bytes": 1541387,
+    "sha256": "8c5aeae20363a98f6963720d29fce040ca8b56a8e75f8b564c257fce7f6d0417"
+  },
+  "quran-simple-clean.xml": {
+    "description": "Tanzil Simple-clean text (no diacritics), for search",
+    "url": "https://tanzil.net/pub/download/index.php?quranType=simple-clean&outType=xml&agree=true",
+    "downloaded": "2026-11-23T18:53:42.291Z",
+    "bytes": 926476,
+    "sha256": "140787b7c399b11d54bfa72c237075916084232efa8a4cddf704cc8a2a74b1fe"
+  },
+  "quran-data.xml": {
+    "description": "Tanzil Quran metadata (surah names, verse counts, revelation type)",
+    "url": "https://tanzil.net/res/text/metadata/quran-data.xml",
+    "downloaded": "2026-11-23T18:53:45.551Z",
+    "bytes": 77234,
+    "sha256": "8867c1d88191472adec9db694b3cd9f135b1a2ef580574d32cf888dcb22c5c7a"
+  }
+}

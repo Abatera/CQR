@@ -1,0 +1,40 @@
+id: iron-spread-levant
+kind: period
+lane: technology
+review: draft
+title:
+  en: Iron becomes common in the Levant
+  ar: انتشار الحديد في بلاد الشام
+summary:
+  en: Iron tools and weapons become common in the Levant during the 11th and 10th centuries BCE.
+when:
+  from: -1100
+  to: -901
+  certainty: estimated
+  basis:
+    en: The 11th–10th centuries BCE, from archaeological finds. To be sourced.
+place:
+  status: known
+  description:
+    en: The southern Levant. The outline is a rough sketch of the region.
+  geometry:
+    type: Polygon
+    coordinates:
+      - - [ 34.25, 31.2 ]
+        - [ 34.9, 33 ]
+        - [ 35.9, 33.4 ]
+        - [ 36.5, 32.3 ]
+        - [ 35.5, 29.5 ]
+        - [ 34.9, 29.5 ]
+        - [ 34.25, 31.2 ]
+history:
+  - claim:
+      en: Iron became common for tools and weapons in the Levant during the 11th–10th centuries BCE.
+    status: established
+  - claim:
+      en: Smelted iron was known before 1200 BCE, in Anatolia and elsewhere, but it was rare and valuable.
+    status: established
+related:
+  - { id: david-armor, type: context }
+tags: [ metallurgy, iron ]
+notes: "TODO: find sources for both claims. Refine the outline."

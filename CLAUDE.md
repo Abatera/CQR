@@ -4,7 +4,7 @@ A public, educational, interactive web app. It places events narrated in the Qur
 
 ## Status
 
-**Phases 0–2 are built (2026-11-23); Phase 3 content is in draft.** The app runs: timeline, map, facts panel, Quran reader and search, and a local editor with forms for all content. The 15 pilot events are drafts written from unverified research leads. See [docs/07-roadmap.md](docs/07-roadmap.md) for what is done and what is next.
+**Phases 0–2 are built (2026-11-23); Phase 3 content is in draft.** The app runs: timeline, map, facts panel, Quran reader and search, and a local editor with forms for all content. The 15 pilot events are drafts written from unverified research leads. A Prophets lane with 25 researched draft entries and a Tradition layer (hadith and historians, with gradings) were added the same day; the research is in [docs/research/prophets-chronology.md](docs/research/prophets-chronology.md). See [docs/07-roadmap.md](docs/07-roadmap.md) for what is done and what is next.
 
 The planning docs were written on 2026-11-23 on a different PC, at the end of a planning conversation between the project owner and Claude. Development happens on this machine. Decisions made since then are logged in [docs/08-decisions.md](docs/08-decisions.md) (D14 onward).
 
@@ -39,6 +39,8 @@ Check the open questions at the end of [docs/08-decisions.md](docs/08-decisions.
 - **"Proposed" is not "decided."** Items marked *proposed* in docs/08 came from Claude, and the owner did not explicitly confirm them. Confirm them before relying on them.
 - **Never type Quran text from memory or generate it.** All Arabic Quran text shown in the app must come from the verified dataset (see docs/05). Content files store verse references only, and every reference must be checked against the dataset. The few Arabic phrases quoted in these planning docs are for discussion only.
 - **Every historical claim needs a source and a status** (established or debated). Never present the project's own connections between the Quran and history as established fact. See docs/03.
+- **Hadith and historians go in the Tradition layer**, each with its source and, for hadith, gradings by named scholars. Never write hadith text or gradings from memory: quote only what was read in a cited work, and say so in the source's notes when a work was read through another that quotes it.
+- **Honorifics:** ﷺ after the Prophet Muhammad's name; "peace be upon him" after other prophets at their first mention in each entry (D19).
 - **The research leads in these docs are unverified.** They were recalled during the planning conversation, not checked against sources. Verify each against a real source before it goes into content.
 - **Local-first.** Do not commit, push, or enable GitHub Pages without asking the owner. The repository will be public.
 - **Draft until reviewed.** New content is `review: draft`. Only the owner marks an entry `reviewed`, and only after its sources are verified.

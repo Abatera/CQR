@@ -27,6 +27,7 @@ history:
       en: The stele mentions the "House of David". It is the earliest known reference to David outside the Bible.
     status: established
 related:
+  - { id: david, type: context }
   - { id: david-kills-jalut, type: context }
 tags: [ inscription, david, evidence ]
 notes: "TODO: cite the publication of the inscription and a discussion of the reading. Verify the coordinates."

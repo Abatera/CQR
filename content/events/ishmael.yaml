@@ -1,0 +1,46 @@
+id: ishmael
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Isma'il (Ishmael)
+  ar: إسماعيل
+summary:
+  en: Isma'il (Ishmael), peace be upon him, Abraham's son, whom the Quran calls true to his promise, a messenger and a prophet (19:54). With his father he raised the House in Mecca.
+when:
+  from: -1914
+  to: -1777
+  certainty: traditional
+  basis:
+    en: Born when Abraham was 86, as the People of the Book say, and died aged 137 (both reported by Ibn Kathir; Genesis 25:17), counted from Abraham at about 2000 BCE.
+place:
+  status: known
+  description:
+    en: The Quran has Abraham settle some of his offspring in a valley without crops, by the Sacred House (14:37). Ibn Kathir says Ishmael was buried in the Hijr of the Ka'ba with his mother Hagar.
+  geometry:
+    type: Point
+    coordinates: [ 39.8262, 21.4225 ]
+quran: [ "2:125-129", "19:54-55", "38:48" ]
+tradition:
+  - kind: ahl-al-kitab
+    attribution:
+      en: The People of the Book, as reported by Ibn Kathir
+    text:
+      en: Ishmael was born when Abraham was 86 years old.
+      ar: ولد لإبراهيم من العمر ست وثمانون سنة
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «إسماعيل عليه السلام»
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+    text:
+      en: Ishmael was a messenger to the people of that region. He died aged 137 and was buried in the Hijr with his mother Hagar.
+      ar: ودفن إسماعيل نبي الله بالحجر مع أمه هاجر
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «إسماعيل عليه السلام»
+related:
+  - { id: abraham, type: context }
+  - { id: abraham-house, type: context }
+tags: [ prophets, ishmael, mecca ]

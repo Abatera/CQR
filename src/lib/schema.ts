@@ -38,7 +38,21 @@ export const QuranRefString = z.string().refine((s) => {
   return r !== null && formatRef(r) === s;
 }, 'Use "surah:ayah" or "surah:ayah-ayah", e.g. "34:10-11".');
 
-export const CERTAINTIES = ['established', 'estimated', 'traditional', 'debated', 'unknown'] as const;
+/**
+ * How a date is known. "reckoned" is for times before history can date anything
+ * (the prophets before Abraham): years computed from intervals reported in tradition.
+ */
+export const CERTAINTIES = ['established', 'estimated', 'traditional', 'reckoned', 'debated', 'unknown'] as const;
+/**
+ * Kinds of report in the Tradition layer:
+ * - hadith: attributed to the Prophet ﷺ;
+ * - athar: a report from a Companion or a Successor;
+ * - historian: an account or reckoning by a Muslim historian or commentator;
+ * - ahl-al-kitab: a report from the People of the Book, as transmitted by Muslim scholars.
+ */
+export const TRADITION_KINDS = ['hadith', 'athar', 'historian', 'ahl-al-kitab'] as const;
+/** Hadith gradings, as given by a named scholar. */
+export const GRADES = ['sahih', 'hasan', 'daif', 'very-weak', 'fabricated', 'other'] as const;
 export const CLAIM_STATUSES = ['established', 'debated'] as const;
 export const CONFIDENCES = ['low', 'medium', 'high'] as const;
 export const LOCATION_STATUSES = ['known', 'proposed', 'unknown'] as const;
@@ -145,6 +159,26 @@ export const TafsirItem = z.strictObject({
   source: SourceRef.optional(),
 });
 
+export const Grading = z.strictObject({
+  grade: z.enum(GRADES),
+  /** The scholar who gave the grading, e.g. "al-Hakim", "al-Dhahabi", "al-Albani", "Ibn Kathir". */
+  by: z.string().trim().min(1, 'Name the scholar who gave the grading.'),
+  source: SourceRef.optional(),
+  /** The grading in the scholar's words, or a short explanation, e.g. "on the condition of Muslim". */
+  note: LangText.optional(),
+});
+
+/** A report from hadith, the Companions and Successors, or the classical historians. */
+export const TraditionItem = z.strictObject({
+  kind: z.enum(TRADITION_KINDS),
+  /** Who it is attributed to, e.g. "The Prophet ﷺ, narrated by Abu Umama al-Bahili". */
+  attribution: LangText,
+  /** What the report says. Arabic, if given, is quoted from the cited source. */
+  text: LangText,
+  source: SourceRef.optional(),
+  gradings: z.array(Grading).optional(),
+});
+
 export const HistoryClaim = z.strictObject({
   claim: LangText,
   status: z.enum(CLAIM_STATUSES),
@@ -174,6 +208,7 @@ export const EventSchema = z.strictObject({
   place: Place,
   quran: z.array(QuranRefString).optional(),
   tafsir: z.array(TafsirItem).optional(),
+  tradition: z.array(TraditionItem).optional(),
   history: z.array(HistoryClaim).optional(),
   connection: Connection.optional(),
   related: z.array(Relation).optional(),
@@ -240,6 +275,8 @@ export type LocationOpinion = z.infer<typeof LocationOpinion>;
 export type Place = z.infer<typeof Place>;
 export type HistoryClaim = z.infer<typeof HistoryClaim>;
 export type TafsirItem = z.infer<typeof TafsirItem>;
+export type TraditionItem = z.infer<typeof TraditionItem>;
+export type Grading = z.infer<typeof Grading>;
 export type Relation = z.infer<typeof Relation>;
 export type CqrEvent = z.infer<typeof EventSchema>;
 export type Lane = z.infer<typeof LaneSchema>;

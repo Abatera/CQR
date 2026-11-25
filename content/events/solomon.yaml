@@ -1,0 +1,55 @@
+id: solomon
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Sulayman (Solomon)
+  ar: سليمان
+summary:
+  en: Sulayman (Solomon), peace be upon him, David's heir, given a kingdom with the wind and the jinn under his command, who built in Bayt al-Maqdis.
+when:
+  from: -983
+  to: -931
+  certainty: traditional
+  basis:
+    en: A reign of forty years ending about 931 BCE in the traditional biblical chronology, and a life of 52 years, as Ishaq ibn Bishr reports from Ibn Ishaq and al-Zuhri (cited by Ibn Kathir). Ikrima, from Ibn Abbas, gives a reign of twenty years.
+place:
+  status: proposed
+  description:
+    en: Ibn Kathir reports that Solomon began building Bayt al-Maqdis in the fourth year of his reign, and, in al-Suddi's account, that he died there, leaning on his staff in the sanctuary. The point marks Jerusalem.
+  opinions:
+    - name:
+        en: Bayt al-Maqdis (Jerusalem) (Ibn Kathir)
+      geometry:
+        type: Point
+        coordinates: [ 35.235, 31.778 ]
+      sources:
+        - id: ibn-kathir-bidaya
+          locator: vol. 2, «ذكر وفاته وكم كانت مدة ملكه وحياته»
+quran: [ "21:81-82", "27:15-44", "34:12-14", "38:30-40" ]
+tradition:
+  - kind: historian
+    attribution:
+      en: Ishaq ibn Bishr, from Ibn Ishaq and al-Zuhri, cited by Ibn Kathir
+    text:
+      en: Solomon lived 52 years, and his reign lasted 40. Ikrima reports from Ibn Abbas that his reign was 20 years; Ibn Jarir puts his whole life at some fifty years.
+      ar: أن سليمان عليه السلام عاش ثنتين وخمسين سنة، وكان ملكه أربعين سنة
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 2, «ذكر وفاته وكم كانت مدة ملكه وحياته»
+  - kind: historian
+    attribution:
+      en: Ibn Kathir, citing Ibn Jarir
+    text:
+      en: In the fourth year of his reign Solomon began building Bayt al-Maqdis, as it is reported. After him his son Rehoboam reigned 17 years.
+      ar: وفي سنة أربع من ملكه ابتدأ ببناء بيت المقدس فيما ذكر
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 2, «ذكر وفاته وكم كانت مدة ملكه وحياته»
+related:
+  - { id: david, type: context }
+  - { id: solomon-inherits-david, type: context }
+  - { id: solomon-molten-copper, type: context }
+  - { id: solomon-queen-of-sheba, type: context }
+  - { id: solomon-death, type: context }
+tags: [ prophets, solomon ]

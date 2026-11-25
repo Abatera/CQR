@@ -2,23 +2,25 @@
 
 The app links scripture to history, so its credibility depends on one thing: readers must always be able to tell what comes from where. This matters more than any feature.
 
-## The four layers
+## The five layers
 
-Claude **proposed** these layers in planning. The owner did not object, but has **not explicitly confirmed** them. Confirm them before building the facts panel around them.
+Claude **proposed** the first four layers in planning, and they are implemented; the owner has not yet explicitly confirmed them. The owner added the **Tradition** layer on 2026-11-23 (D16 in [08-decisions.md](08-decisions.md)).
 
-Every event keeps these four layers apart:
+Every event keeps these layers apart:
 
 | Layer | What it holds | Rule |
 |---|---|---|
 | **Quran** | Verse references. The text is loaded from the dataset. | Each reference is checked against the dataset. A paraphrase is never presented as the text. |
 | **Tafsir** | What classical commentators said. | Name the commentator, the work, and where in it the passage is (volume and page, or the verse it comments on). |
+| **Tradition** | Hadith, reports from the Companions and Successors, the classical historians, and reports from the People of the Book as transmitted by Muslim scholars. | Name who the report is attributed to and the work it is found in. Give every hadith or Companion's report a grading, with the scholar who gave it and where. Present reports as reports, never as fact, and show weak ones as weak. Arabic, if quoted, comes from the cited work, never from memory. |
 | **History and archaeology** | What is known from outside the Quran. | Each claim has at least one source and a status: `established` or `debated`. |
 | **Connection** | The project's own reflection that links the layers above. | Labeled as interpretation, with a confidence of `low`, `medium` or `high`. Never stated as fact. |
 
 ## Dating
 
 - The owner wants **periods, researched as precisely as possible**, not just an order of events.
-- Store a range (`from` to `to`) and a certainty: `established`, `estimated`, `traditional` (from a religious or traditional chronology), `debated` or `unknown`.
+- Store a range (`from` to `to`) and a certainty: `established`, `estimated`, `traditional` (from a religious or traditional chronology), `reckoned`, `debated` or `unknown`.
+- `reckoned` is for periods that history cannot date at all, such as the prophets before Abraham. The years are computed from intervals reported in tradition, drawn in a distinct hatched style, and the facts panel says that they are a reckoning, not a date (D17). The range drawn is a window around the reckoning, not a lifespan; the basis must say how it was computed.
 - Always state what the date is based on, such as "traditional biblical chronology" or "radiocarbon dating of slag layers".
 - When scholars disagree, show the main alternatives.
 - The Quran rarely gives dates. When a date comes from the Bible or from later tradition, say so.
@@ -40,7 +42,7 @@ Every event keeps these four layers apart:
 - Respectful of the Quran, and of readers of every background.
 - Present debates fairly, including where the historical evidence is thin or conflicts with tradition.
 - Avoid "proof" language.
-- **Open:** the convention for honorifics, such as "peace be upon him" or ﷺ. Ask the owner. In conversation, the owner wrote "peace be upon him" after David's name.
+- **Honorifics (decided, D19):** ﷺ after the name of the Prophet Muhammad, and "peace be upon him" after other prophets at their first mention in each entry. Titles and labels do not carry "peace be upon him"; "Muhammad ﷺ" keeps ﷺ everywhere. The validator warns when the Prophet's name appears without ﷺ.
 
 ## Worked example: David, iron and armor
 

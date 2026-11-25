@@ -96,4 +96,46 @@ describe('content validation', () => {
   it('cleans blank form values', () => {
     expect(clean({ a: '', b: [], c: { en: '', ar: '' }, d: ' x ', e: false, f: 0, g: [1, ''] })).toEqual({ d: 'x', f: 0, g: [1] });
   });
+
+  it('requires a source for reports and a grading for hadith', () => {
+    const tradition = [
+      { kind: 'hadith', attribution: { en: 'The Prophet ﷺ' }, text: { en: 'A report.' } },
+      { kind: 'historian', attribution: { en: 'Ibn Kathir' }, text: { en: 'An account.' }, source: 'src-a' },
+    ];
+    const draft = validateContent(raw([baseEvent({ tradition })]), counts);
+    expect(errors(draft)).toEqual([]);
+    expect(warnings(draft).map((w) => w.path)).toEqual(expect.arrayContaining(['tradition[0].source', 'tradition[0].gradings']));
+    expect(warnings(draft).map((w) => w.path)).not.toContain('tradition[1].gradings');
+    const reviewed = validateContent(raw([baseEvent({ tradition, review: 'reviewed' })]), counts);
+    expect(errors(reviewed).map((e) => e.path)).toEqual(expect.arrayContaining(['tradition[0].source', 'tradition[0].gradings']));
+  });
+
+  it('checks the sources cited by gradings', () => {
+    const tradition = [
+      {
+        kind: 'hadith',
+        attribution: { en: 'The Prophet ﷺ' },
+        text: { en: 'A report.' },
+        source: 'src-a',
+        gradings: [{ grade: 'sahih', by: 'al-Albani', source: 'missing' }],
+      },
+    ];
+    const r = validateContent(raw([baseEvent({ tradition })]), counts);
+    expect(errors(r).map((e) => e.path)).toContain('tradition[0].gradings[0].source');
+  });
+
+  it('accepts the reckoned certainty', () => {
+    const r = validateContent(raw([baseEvent({ when: { from: -4250, to: -3751, certainty: 'reckoned', basis: { en: 'Reckoned.' } } })]), counts);
+    expect(errors(r)).toEqual([]);
+  });
+
+  it('asks for ﷺ after the name of the Prophet, but not after other people named Muhammad', () => {
+    const bare = validateContent(raw([baseEvent({ summary: { en: 'Muhammad was born in Mecca.' } })]), counts);
+    expect(warnings(bare).map((w) => w.path)).toContain('summary.en');
+    const ok = validateContent(
+      raw([baseEvent({ summary: { en: 'Muhammad ﷺ was born in Mecca, as Muhammad ibn Ishaq reports.' } })]),
+      counts,
+    );
+    expect(warnings(ok).map((w) => w.path)).not.toContain('summary.en');
+  });
 });

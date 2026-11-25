@@ -1,0 +1,43 @@
+id: jacob
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Ya'qub (Jacob)
+  ar: يعقوب
+summary:
+  en: Ya'qub (Jacob), also called Isra'il, peace be upon him, Isaac's son and the father of Joseph and his brothers, from whom the Children of Israel descend.
+when:
+  from: -1840
+  to: -1693
+  certainty: traditional
+  basis:
+    en: Placed a generation after Isaac. The Torah gives him 147 years (Genesis 47:28); Ibn Kathir reports the People of the Book's figures of 130 years on entering Egypt and 17 years there.
+place:
+  status: proposed
+  description:
+    en: He lived in Canaan and in his last years in Egypt. He was buried at Hebron, in the cave Abraham had bought, according to the People of the Book; al-Suddi says beside Isaac and Abraham.
+  opinions:
+    - name:
+        en: Hebron, his burial place (the People of the Book and al-Suddi, reported by Ibn Kathir)
+      geometry:
+        type: Point
+        coordinates: [ 35.11, 31.525 ]
+      sources:
+        - id: ibn-kathir-bidaya
+          locator: vol. 1, «ما وقع من الأمور العجيبة في حياة إسرائيل»
+quran: [ "2:132-133", "19:49", "21:72" ]
+tradition:
+  - kind: ahl-al-kitab
+    attribution:
+      en: The People of the Book, as reported by Ibn Kathir (partly through Ibn Ishaq)
+    text:
+      en: Jacob was 130 years old when he entered Egypt and stayed there with Joseph 17 years. Their text gives his whole life as 140 years, which Ibn Kathir calls an error, either in the copy or by them.
+      ar: هذا نص كتابهم وهو غلط
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «ما وقع من الأمور العجيبة في حياة إسرائيل»
+related:
+  - { id: isaac, type: context }
+  - { id: joseph, type: context }
+tags: [ prophets, jacob ]

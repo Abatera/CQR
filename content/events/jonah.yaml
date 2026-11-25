@@ -1,0 +1,40 @@
+id: jonah
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Yunus (Jonah)
+  ar: يونس
+summary:
+  en: Yunus (Jonah), Dhu al-Nun, peace be upon him, who left his people in anger, was swallowed by the fish and repented; his people believed and were spared (10:98).
+when:
+  from: -790
+  to: -750
+  certainty: traditional
+  basis:
+    en: Biblical tradition places Jonah son of Amittai in the reign of Jeroboam son of Joash, who reigned 41 years (2 Kings 14:23-25), usually dated to the first half of the 8th century BCE; a source for that date is still to be added.
+place:
+  status: proposed
+  description:
+    en: The people of tafsir say he was sent to the people of Nineveh, in the land of Mosul (cited by Ibn Kathir). The point marks Nineveh.
+  opinions:
+    - name:
+        en: Nineveh, in the land of Mosul (the people of tafsir, cited by Ibn Kathir)
+      geometry:
+        type: Point
+        coordinates: [ 43.153, 36.359 ]
+      sources:
+        - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة يونس»" }
+quran: [ "10:98", "21:87-88", "37:139-148", "68:48-50" ]
+tradition:
+  - kind: historian
+    attribution:
+      en: Ibn Kathir, citing the people of tafsir
+    text:
+      en: God sent Jonah to the people of Nineveh, in the land of Mosul. How long he stayed in the fish is reported as three days (Qatada), seven (Ja'far al-Sadiq) or forty (others); Ibn Kathir says God knows best.
+      ar: بعث الله يونس عليه السلام إلى أهل نينوى من أرض الموصل
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «قصة يونس»
+tags: [ prophets, jonah, mesopotamia ]
+notes: "TODO: a source for the dates of Jeroboam II, and for the fall of Nineveh (612 BCE) as context. Verify the coordinates."

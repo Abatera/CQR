@@ -1,12 +1,14 @@
 <script lang="ts">
   import { onDestroy } from 'svelte';
-  import { slugify } from '../lib/format';
+  import { GRADE_LABEL, slugify, TRADITION_KIND_LABEL } from '../lib/format';
   import {
     CERTAINTIES,
     CLAIM_STATUSES,
     CONFIDENCES,
     EVENT_KINDS,
+    GRADES,
     LOCATION_STATUSES,
+    TRADITION_KINDS,
     NAME_TYPES,
     RELATION_TYPES,
     REVIEW_STATES,
@@ -54,6 +56,7 @@
     established: 'firmly dated by evidence',
     estimated: 'approximate, from evidence',
     traditional: 'from a religious or traditional chronology',
+    reckoned: 'years computed from intervals reported in tradition (before history can date anything)',
     debated: 'scholars disagree',
     unknown: 'no defensible date',
   };
@@ -215,6 +218,49 @@
   </fieldset>
 
   <fieldset>
+    <legend>Tradition</legend>
+    <p class="hint">
+      Hadith, reports from the Companions and Successors, and the classical historians. Give who it is attributed to, the work it is
+      found in, and for a hadith or report its grading with the scholar who gave it. Arabic, if given, must be quoted from the cited work.
+    </p>
+    {#each m.tradition as t, i (i)}
+      <div class="card">
+        <div class="card-head">
+          Report {i + 1}
+          <select bind:value={t.kind} aria-label="Kind of report">
+            {#each TRADITION_KINDS as k (k)}<option value={k}>{TRADITION_KIND_LABEL[k]}</option>{/each}
+          </select>
+          <RowTools bind:list={m.tradition} index={i} label="report" />
+        </div>
+        <LangField label="Attributed to" bind:value={t.attribution} path="tradition[{i}].attribution" required hint="e.g. The Prophet ﷺ, narrated by Abu Umama al-Bahili; or Ibn Kathir" />
+        <LangField label="What it says" bind:value={t.text} path="tradition[{i}].text" multiline required />
+        <SourceRefs bind:value={t.source} path="tradition[{i}].source" label="Found in (work and place in it)" max={1} />
+        <div class="subhead">Gradings</div>
+        {#each t.gradings as g, j (j)}
+          <div class="grading">
+            <select bind:value={g.grade} aria-label="Grade">
+              {#each GRADES as gr (gr)}<option value={gr}>{GRADE_LABEL[gr]}</option>{/each}
+            </select>
+            <input type="text" bind:value={g.by} placeholder="Graded by, e.g. al-Albani" aria-label="Graded by" />
+            <RowTools bind:list={t.gradings} index={j} label="grading" />
+          </div>
+          <LangField label="The grading in the scholar's words, or a note" bind:value={g.note} path="tradition[{i}].gradings[{j}].note" />
+          <SourceRefs bind:value={g.source} path="tradition[{i}].gradings[{j}].source" label="Where the grading is given" max={1} />
+          <FieldError path="tradition[{i}].gradings[{j}]" />
+        {/each}
+        <FieldError path="tradition[{i}].gradings" exact />
+        <button type="button" class="small" onclick={() => t.gradings.push({ grade: 'sahih', by: '', source: [], note: { en: '', ar: '' } })}>+ Add a grading</button>
+      </div>
+    {/each}
+    <button
+      type="button"
+      class="small"
+      onclick={() => m.tradition.push({ kind: 'hadith', attribution: { en: '', ar: '' }, text: { en: '', ar: '' }, source: [], gradings: [] })}
+      >+ Add a report</button
+    >
+  </fieldset>
+
+  <fieldset>
     <legend>History and archaeology</legend>
     <p class="hint">What is known from outside the Quran. Each claim needs at least one source and a status.</p>
     {#each m.history as h, i (i)}
@@ -328,5 +374,14 @@
   }
   .connection {
     background: #fbf7fa;
+  }
+  .grading {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    margin-top: 6px;
+  }
+  .grading input {
+    flex: 1;
   }
 </style>

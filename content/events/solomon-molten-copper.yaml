@@ -6,7 +6,7 @@ title:
   en: Solomon and the spring of molten copper
   ar: سليمان وعين القطر
 summary:
-  en: The Quran says God made a spring of molten copper flow for Solomon.
+  en: The Quran says God made a spring of molten copper flow for Solomon, peace be upon him.
 when:
   from: -970
   to: -931
@@ -22,6 +22,7 @@ connection:
   text:
     en: The Quran associates Solomon with molten copper. Copper production in the Arabah, at Timna and Faynan, has been dated to the 10th century BCE, within Solomon's traditional dates. This is a match in time and region, not evidence of who ran the mines.
 related:
+  - { id: solomon, type: context }
   - { id: timna-faynan-copper, type: context }
   - { id: david-armor, type: parallel }
 tags: [ metallurgy, solomon, copper ]

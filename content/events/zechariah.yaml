@@ -1,0 +1,34 @@
+id: zechariah
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Zakariyya (Zechariah)
+  ar: زكريا
+summary:
+  en: Zakariyya (Zechariah), peace be upon him, the guardian of Mary, who prayed in old age for an heir and was given John (3:37-41; 19:2-11).
+when:
+  from: -83
+  to: -1
+  certainty: traditional
+  basis:
+    en: The prophet of Mary's time and the husband of her sister, in the majority view (Ibn Kathir). He is said to have been 77 or older when John was promised; the span is counted from John's birth, a few years before the Common Era. His death is not dated.
+place:
+  status: unknown
+  description:
+    en: The Quran mentions the sanctuary (mihrab) where he found Mary provided for, but no city. Ibn 'Asakir reports that he went to al-Bathaniyya, near Damascus, seeking his son, or that he was in Damascus when John was killed (cited by Ibn Kathir).
+quran: [ "3:37-41", "19:2-11", "21:89-90" ]
+tradition:
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+    text:
+      en: Zakariyya was the prophet of that time and the husband of Mary's sister, in the view of the majority. It is said he was 77 when John was promised, and more likely older. Wahb ibn Munabbih said he died a natural death; another report says he was killed.
+      ar: وكان زكريا نبي ذلك الزمان زوج أخت مريم
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 2, «قصة عيسى بن مريم عبد الله ورسوله وابن أمته عليه من الله أفضل الصلاة والسلام»; «قصة زكريا ويحيى عليهما السلام»
+related:
+  - { id: john, type: context }
+  - { id: jesus, type: context }
+tags: [ prophets, zechariah ]

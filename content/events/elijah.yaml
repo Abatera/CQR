@@ -1,0 +1,49 @@
+id: elijah
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Ilyas (Elijah)
+  ar: إلياس
+summary:
+  en: Ilyas (Elijah), peace be upon him, who called his people away from the worship of Ba'l (37:123-132).
+when:
+  from: -875
+  to: -850
+  certainty: traditional
+  basis:
+    en: Biblical tradition places Elijah in the reign of Ahab, king of Israel (1 Kings 17:1), who reigned 22 years (1 Kings 16:29). Ahab is usually dated to the mid-9th century BCE; a source for that date is still to be added.
+place:
+  status: proposed
+  description:
+    en: The genealogists say he was sent to the people of Baalbek (cited by Ibn Kathir). The Bible calls him one of the settlers of Gilead (1 Kings 17:1). The points are approximate.
+  opinions:
+    - name:
+        en: Baalbek (the genealogists, cited by Ibn Kathir)
+      geometry:
+        type: Point
+        coordinates: [ 36.204, 34.006 ]
+      sources:
+        - { id: ibn-kathir-bidaya, locator: "vol. 1, «وأما إلياس عليه السلام»" }
+    - name:
+        en: Gilead, east of the Jordan (1 Kings 17:1)
+      geometry:
+        type: Point
+        coordinates: [ 35.75, 32.3 ]
+      sources:
+        - { id: bible-web, locator: 1 Kings 17:1 }
+quran: [ "6:85", "37:123-132" ]
+tradition:
+  - kind: historian
+    attribution:
+      en: Ibn Kathir, citing the genealogists
+    text:
+      en: He was sent to the people of Baalbek, west of Damascus. Ba'l was their idol; that it was a woman named Ba'l is a weaker view. Ibn Kathir also holds that Ilyas is not the same as Idris.
+      ar: وكان إرساله إلى أهل بعلبك غربي دمشق
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «وأما إلياس عليه السلام»
+related:
+  - { id: elisha, type: context }
+tags: [ prophets, elijah ]
+notes: "TODO: a source for Ahab's dates (the British Museum page on the Kurkh Monolith refused automated access). Verify the coordinates."

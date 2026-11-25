@@ -18,6 +18,10 @@
   <ul>
     <li><strong>Quran:</strong> verse references; the text is shown from a verified dataset and is never paraphrased as the text.</li>
     <li><strong>Tafsir:</strong> what classical commentators said, with the work and the place in it.</li>
+    <li>
+      <strong>Tradition:</strong> hadith, reports from the Companions and Successors, and the classical historians, with the work each
+      is found in. Hadith carry their gradings (sound, good, weak…) and the scholar who gave each. These are reports, not facts.
+    </li>
     <li><strong>History and archaeology:</strong> claims from outside the Quran, each marked <em>established</em> or <em>debated</em>, with sources.</li>
     <li>
       <strong>Connection:</strong> the project's own reflection linking the layers, always labeled as interpretation, with a confidence
@@ -25,8 +29,14 @@
     </li>
   </ul>
   <p>
-    Dates are ranges with a stated certainty and basis. A location is shown on the map only when it is known; disputed locations are
-    shaded, and unknown ones are described, not pinned. Entries marked <em>draft</em> have not been reviewed.
+    Dates are ranges with a stated certainty and basis. For the prophets before Abraham, history cannot give a date at all: their
+    years are a <em>reckoning</em> from intervals reported in hadith, drawn with hatching on the timeline. A location is shown on the
+    map only when it is known; disputed locations are shaded, and unknown ones are described, not pinned. Entries marked
+    <em>draft</em> have not been reviewed.
+  </p>
+  <p>
+    Honorifics: ﷺ (peace and blessings be upon him) follows the name of the Prophet Muhammad, and "peace be upon him" follows the
+    other prophets at their first mention in each entry.
   </p>
 
   <h3>Licenses and credits</h3>

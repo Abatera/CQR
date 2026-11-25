@@ -1,0 +1,43 @@
+id: isaac
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Ishaq (Isaac)
+  ar: إسحاق
+summary:
+  en: Ishaq (Isaac), peace be upon him, Abraham's son, announced to Abraham and Sarah as glad tidings (11:71), and the father of Jacob.
+when:
+  from: -1900
+  to: -1720
+  certainty: traditional
+  basis:
+    en: Born fourteen years after Ishmael, and died aged 180, as Ibn Kathir reports following the People of the Book (Genesis 35:28).
+place:
+  status: proposed
+  description:
+    en: Ibn Kathir says he lived at the village of Hebron in the land of Canaan.
+  opinions:
+    - name:
+        en: Hebron, in the land of Canaan (Ibn Kathir)
+      geometry:
+        type: Point
+        coordinates: [ 35.11, 31.525 ]
+      sources:
+        - id: ibn-kathir-bidaya
+          locator: vol. 1, «إسحاق بن إبراهيم عليهما الصلاة والتسليم»
+quran: [ "11:71", "19:49", "37:112-113" ]
+tradition:
+  - kind: historian
+    attribution:
+      en: Ibn Kathir, following the People of the Book
+    text:
+      en: Isaac was born fourteen years after his brother Ishmael and died aged 180. He lived at Hebron in Canaan, and his sons Esau and Jacob buried him with Abraham in the cave.
+      ar: بعد أخيه إسماعيل بأربع عشر سنة
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «إسحاق بن إبراهيم عليهما الصلاة والتسليم»
+related:
+  - { id: abraham, type: context }
+  - { id: jacob, type: context }
+tags: [ prophets, isaac ]

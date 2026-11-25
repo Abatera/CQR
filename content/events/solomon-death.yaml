@@ -6,7 +6,7 @@ title:
   en: The death of Solomon
   ar: موت سليمان
 summary:
-  en: Solomon dies, and only a creature of the earth eating his staff reveals his death to the jinn.
+  en: Solomon, peace be upon him, dies, and only a creature of the earth eating his staff reveals his death to the jinn.
 when:
   from: -931
   to: -931
@@ -18,4 +18,6 @@ place:
   description:
     en: The Quran names no place.
 quran: [ "34:14" ]
+related:
+  - { id: solomon, type: context }
 tags: [ solomon ]

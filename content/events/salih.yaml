@@ -1,0 +1,60 @@
+id: salih
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Salih
+  ar: صالح
+summary:
+  en: Salih, peace be upon him, sent to Thamud, the people of al-Hijr (15:80), who hamstrung the she-camel given to them as a sign and were destroyed.
+when:
+  from: -2400
+  to: -2101
+  certainty: reckoned
+  basis:
+    en: After 'Ad (Quran 7:74), and before Abraham in Ibn Kathir's order. No report gives the years; Salih is placed in the reckoned interval between Noah and Abraham.
+place:
+  status: proposed
+  description:
+    en: The Quran names al-Hijr (15:80). Ibn Kathir says Thamud lived at al-Hijr, between the Hijaz and Tabuk. The point marks the site known by that name today (Hegra, near al-'Ula); its coordinates are approximate.
+  opinions:
+    - name:
+        en: al-Hijr, between the Hijaz and Tabuk (Ibn Kathir)
+      geometry:
+        type: Point
+        coordinates: [ 37.95, 26.79 ]
+      sources:
+        - id: ibn-kathir-bidaya
+          locator: vol. 1, «قصة صالح نبي ثمود عليه السلام»
+quran: [ "7:73-79", "11:61-68", "15:80-84", "26:141-159" ]
+tradition:
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+    text:
+      en: Thamud came after 'Ad and lived at al-Hijr, between the Hijaz and Tabuk. It is also said that Salih later moved to the Sacred Precinct in Mecca and stayed there until he died.
+      ar: يسكنون الحجر الذي بين الحجاز وتبوك
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «قصة صالح نبي ثمود عليه السلام»
+  - kind: hadith
+    attribution:
+      en: The Prophet ﷺ, narrated by Ibn Abbas, in the Musnad of Ahmad
+    text:
+      en: Hud and Salih passed through the valley of 'Usfan on their way to the pilgrimage.
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «قصة صالح نبي ثمود عليه السلام»
+    gradings:
+      - grade: hasan
+        by: Ibn Kathir
+        source:
+          id: ibn-kathir-bidaya
+          locator: vol. 1, «قصة صالح نبي ثمود عليه السلام»
+        note:
+          en: Its chain is good (hasan).
+related:
+  - { id: hud, type: context }
+  - { id: abraham, type: context }
+tags: [ prophets, salih, arabia, thamud ]
+notes: "TODO history layer: the monumental tombs at Hegra are Nabataean (about the 1st century BCE to the 1st century CE), and a people called Thamud appear in Assyrian inscriptions of the 8th century BCE. Both need sources: the UNESCO and Britannica pages refused automated access. This is a good test case for showing a debate, because the historical Thamud are attested much later than the tradition places Salih. Verify the coordinates."

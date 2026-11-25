@@ -1,0 +1,72 @@
+id: muhammad
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Muhammad ﷺ
+  ar: محمد ﷺ
+summary:
+  en: Muhammad ﷺ, the Messenger of God and the Seal of the Prophets (33:40), born in Mecca, who received the Quran and died in Medina.
+when:
+  from: 570
+  to: 632
+  certainty: established
+  basis:
+    en: Born in the Year of the Elephant, according to Ibn Ishaq and the majority (Ibn Kathir), usually put at about 570 CE. He died in Rabi' al-Awwal 11 AH (632 CE), aged 63 in the best-known report.
+place:
+  status: known
+  names:
+    - { name: Mecca, type: modern }
+  description:
+    en: Born in Mecca. He emigrated to Medina in 622 CE (the Hijra), and died and is buried there.
+  geometry:
+    type: Point
+    coordinates: [ 39.8262, 21.4225 ]
+quran: [ "3:144", "33:40", "47:2", "48:29", "61:6" ]
+tradition:
+  - kind: historian
+    attribution:
+      en: Ibn Kathir, citing Ibn Ishaq and Khalifa ibn Khayyat
+    text:
+      en: He was born in the Year of the Elephant, which Ibn Ishaq calls the view of the majority and Khalifa ibn Khayyat the agreed view. A report through al-Kalbi that he was born fifteen years before the Elephant Ibn Kathir calls strange, objectionable and weak.
+      ar: والمقصود أن رسول الله ﷺ ولد عام الفيل على قول الجمهور
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 2, «باب مولد رسول الله صلى الله عليه وسلم»
+  - kind: hadith
+    attribution:
+      en: Aisha, and Ibn Abbas (Companions), on the Prophet's age ﷺ
+    text:
+      en: The Messenger of God ﷺ died aged 63. A report from Anas gives sixty; Ibn Kathir says 63 is the best-known view and that of most scholars.
+      ar: توفي رسول الله وهو ابن ثلاث وستين سنة
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 5, «فصل في ذكر الوقت الذي توفي فيه رسول الله صلى الله عليه وسلم»
+    gradings:
+      - grade: sahih
+        by: al-Bukhari and Muslim
+        source:
+          id: ibn-kathir-bidaya
+          locator: vol. 5, «فصل في ذكر الوقت الذي توفي فيه رسول الله صلى الله عليه وسلم»
+        note:
+          en: Aisha's report is in both Sahihs, and Ibn Abbas's in Muslim, as cited by Ibn Kathir.
+  - kind: athar
+    attribution:
+      en: Salman al-Farisi (Companion)
+    text:
+      en: The interval (fatra) between Jesus and Muhammad ﷺ was six hundred years.
+    source:
+      id: bukhari-sahih
+      locator: no. 3948
+    gradings:
+      - grade: sahih
+        by: al-Bukhari
+        source:
+          id: bukhari-sahih
+          locator: no. 3948
+        note:
+          en: Included in his Sahih.
+related:
+  - { id: jesus, type: context }
+  - { id: ishmael, type: context }
+tags: [ prophets, muhammad ]

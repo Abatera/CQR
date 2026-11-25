@@ -1,0 +1,42 @@
+id: job
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Ayyub (Job)
+  ar: أيوب
+summary:
+  en: Ayyub (Job), peace be upon him, praised in the Quran for his patience through long affliction, which God then removed (21:83-84; 38:41-44).
+when:
+  from: -1650
+  to: -1558
+  certainty: unknown
+  basis:
+    en: No report dates Job. Ibn Kathir places him in Abraham's line, and in his book after Joseph and before Shu'ayb and Moses; he notes that a list from al-Kalbi puts Job after Jonah, but doubts that order. He died aged 93, according to Ibn Jarir and the historians. The span only marks his place in the order.
+place:
+  status: proposed
+  description:
+    en: Ibn Kathir says his wide lands were in al-Bathaniyya, in the Hawran south of Damascus. The point is approximate.
+  opinions:
+    - name:
+        en: al-Bathaniyya in the Hawran (Ibn Kathir)
+      geometry:
+        type: Point
+        coordinates: [ 36.05, 32.75 ]
+      sources:
+        - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة نبي الله أيوب»" }
+quran: [ "21:83-84", "38:41-44" ]
+tradition:
+  - kind: historian
+    attribution:
+      en: Ibn Kathir, citing Ibn Ishaq and Ibn Jarir
+    text:
+      en: Ibn Ishaq said Job was a man of the Rum; Ibn Kathir holds the well-known view that he was of Abraham's line. His lands were in al-Bathaniyya in the Hawran. He died aged 93, according to Ibn Jarir and the historians, and it is said he lived longer.
+      ar: الأراضي المتسعة بأرض البثينة من أرض حوران
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «قصة نبي الله أيوب»
+related:
+  - { id: dhul-kifl, type: context }
+tags: [ prophets, job ]
+notes: Verify the coordinates of al-Bathaniyya.

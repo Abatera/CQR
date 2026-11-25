@@ -26,6 +26,10 @@ All entries are from the planning conversation on 2026-11-23.
 |---|---|
 | D14 | Claude recommended four answers to the questions that blocked the scaffold, and the owner replied "Implement it": **Svelte** as the UI framework, **YAML** content compiled to JSON, an **English UI with optional Arabic text** in every reader-facing field (`{ en, ar }`), and the **1200–900 BCE pilot** as the first milestone. These close former open questions 2, 5, 7 and 8. A full Arabic, right-to-left UI remains a later feature. |
 | D15 | The owner asked for "all the needed forms to add whatever information or data". They are implemented as a **local editor**: forms for events, lanes, eras and sources that run on the dev server (`npm run dev`) and write the YAML files in `content/`. The published site stays static and read-only. |
+| D16 | The owner asked for research "in Tafsirs and Hadiths and greatest muslim historians" to fill the chronology, focusing on the 25 prophets named in the Quran, without being exhaustive. Hadith and the historians go in a **new fifth layer, Tradition**, between Tafsir and History: each report has its kind (hadith, Companion or Successor, historian, People of the Book), its attribution, the work it is found in, and for hadith its gradings with the scholar who gave each. |
+| D17 | The prophets before Abraham get **traditional years, clearly marked**: years computed from intervals reported in tradition, drawn in a distinct "reckoned" style, with the other reckonings listed as alternatives and a note that history cannot date them. This closes former open question 1. |
+| D18 | The owner's "tree" means the **chronological order of the prophets**, not a genealogy. No family-tree view; the relationships between prophets do not matter for now. |
+| D19 | **Honorifics:** ﷺ after the name of the Prophet Muhammad, and "peace be upon him" after other prophets at their first mention in each entry. This closes former open question 11. The validator warns when "Muhammad" (the Prophet) is written without ﷺ. |
 
 ## Implemented as proposed, not yet confirmed by the owner
 
@@ -55,18 +59,30 @@ These were built as proposed, because the app needed them, but the owner has not
 - **Draft pilot content:** 15 events, 4 eras and 1 source, written only from the leads in these docs. Every one is a draft, with what still needs checking in its `notes`. The verse references were checked against the dataset text; the historical leads were not checked against sources.
 - **Vitest** for unit tests, with an end-to-end check of the editor forms run by hand during development.
 
+### For the Prophets lane (D16–D19)
+
+The research behind these is in [research/prophets-chronology.md](research/prophets-chronology.md).
+
+- **A pinned Prophets lane** above the Quran lane, with one period entry per prophet (25), plus one Quran-lane event, "Abraham and Ishmael raise the foundations of the House". The Quran-lane events on David and Solomon link to the new entries.
+- **The reckoning before Abraham** uses the one sound report from the Prophet ﷺ, the hadith of Abu Umama: ten *qurun* between Adam and Noah, and ten between Noah and Abraham. Each *qarn* is read as a hundred years, as Ibn Sa'd's report does. The count starts from Abraham at about 2000 BCE, following Ibn Kathir's remark that more than a thousand years separate Abraham from Solomon. Each prophet before Abraham is drawn as a **500-year window**, not a lifespan. The weak year-by-year chains of Ibn Sa'd (through al-Waqidi and al-Kalbi) appear only as alternatives and as graded reports.
+- **From Abraham onward,** the ages of the patriarchs are the People of the Book's figures as Ibn Kathir reports them. Moses uses 1 Kings 6:1. The prophets from the 9th century BCE are tied to the biblical kings; Josephus is cited for John and Tacitus for Jesus.
+- **Job, Shu'ayb and Dhu al-Kifl** use the "unknown" certainty: they are placed only by Ibn Kathir's order of the prophets.
+- **Hadith gradings are attributed to named scholars**, and a narrator's grading (for example Ibn Hajar on al-Kalbi) is shown as such. Hadith that could not be read on sunnah.com or Dorar, which refuse automated access, are cited through the works that quote them, and the source's notes say so.
+- **The default timeline window** now shows the whole sequence of prophets (4400 BCE – 800 CE), instead of 1350–850 BCE.
+- **The history layer of the prophet entries** has only claims whose sources were read: Josephus on John and Tacitus on Jesus. Claims about Thamud and Hegra, Ahab, Jeroboam II and the Exodus are left as TODOs in the entries' notes until sources are found.
+
 ## Open questions (ask the owner)
 
-1. **The undated prophets.** Adam, Noah, Hud, Salih and others have no dates that history can anchor. Should they go in an "undated" section at the start of the timeline, or should the timeline begin only where history can anchor it?
-3. **The four layers.** Confirm the model (now implemented), and decide who assigns the confidence level for connections. The editor currently says "set by the owner".
+3. **The layers.** Confirm the model (now five layers, with Tradition), and decide who assigns the confidence level for connections. The editor currently says "set by the owner".
 4. **The lanes.** Confirm the seeded lanes and the technology and climate lane.
 6. **Translations.** Which English translation, if any, can be used given copyright? Or should verses link out to another site? None is included yet; search works on the Arabic text only.
 9. **Basemap.** A terrain map without modern borders? Which provider? See the note on OpenTopoMap above.
 10. **The Quran reader.** Confirm the separate view (see above), or choose an overlay.
-11. **Honorifics.** Which convention should content use, for example "peace be upon him" or ﷺ? The draft content uses none for now.
 12. **Contributors and review.** Who writes the content, and who reviews it? Is scholarly review wanted?
 13. **Mobile.** Is a small-screen layout needed for the first version? The current layout is for desktop screens.
 14. **Hijri dates.** For Islamic-era events in later phases, should dates also be shown in the Hijri calendar?
 15. **Audience.** Who is the main audience? This affects tone and depth.
 
-Questions 2, 5, 7 and 8 were answered by D14.
+16. **The hadith on the periods between the prophets.** Is the weak report in al-Hakim's *al-Mustadrak* (Ibn Abbas, through Ali ibn Zayd ibn Jud'an and Yusuf ibn Mihran) the one the owner had in mind? See [research/prophets-chronology.md](research/prophets-chronology.md).
+
+Questions 2, 5, 7 and 8 were answered by D14, question 1 by D17, and question 11 by D19.

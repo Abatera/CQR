@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { certaintyLabel, fullCite, locationLabel } from '../lib/format';
+  import { certaintyLabel, fullCite, GRADE_LABEL, locationLabel, TRADITION_KIND_LABEL } from '../lib/format';
   import { parseRef } from '../lib/quran-ref';
   import { refId, type CqrEvent, type SourceRef } from '../lib/schema';
   import { formatRange } from '../lib/years';
@@ -15,6 +15,7 @@
       ...(e.when.alternatives ?? []).flatMap((a) => a.sources ?? []),
       ...(e.place.opinions ?? []).flatMap((o) => o.sources ?? []),
       ...(e.tafsir ?? []).flatMap((t) => (t.source ? [t.source] : [])),
+      ...(e.tradition ?? []).flatMap((t) => [...(t.source ? [t.source] : []), ...(t.gradings ?? []).flatMap((g) => (g.source ? [g.source] : []))]),
       ...(e.history ?? []).flatMap((h) => h.sources ?? []),
     ];
     return [...new Set(refs.map(refId))];
@@ -55,8 +56,9 @@
       </p>
       <p>Select an event on the timeline or the map to see its facts here. Use the arrow keys to step through events.</p>
       <p class="muted">
-        Each entry keeps four layers apart: the Quran text, what classical commentators said, what history and archaeology
-        know, and the project's own connection between them, which is always labeled as interpretation.
+        Each entry keeps five layers apart: the Quran text, what classical commentators said, what hadith and the classical
+        historians report (with their gradings), what history and archaeology know, and the project's own connection between
+        them, which is always labeled as interpretation.
       </p>
       {#if app.content?.events.some((e) => e.review === 'draft')}
         <p class="draft-note">
@@ -94,6 +96,12 @@
           {ev.when.from === ev.when.to ? '' : 'From '}{formatRange(ev.when.from, ev.when.to)}, {certaintyLabel(ev.when.certainty)}.
           <span class="muted">Basis: {ev.when.basis.en}</span>
         </p>
+        {#if ev.when.certainty === 'reckoned'}
+          <p class="reckoned-note">
+            These years are a reckoning from intervals reported in tradition, not a historical date. History and archaeology
+            cannot date this period.
+          </p>
+        {/if}
         {#if ev.when.alternatives?.length}
           <p class="sub">Other datings:</p>
           <ul>
@@ -151,6 +159,36 @@
               <footer><Cite refs={t.source ? [t.source] : undefined} /></footer>
             </blockquote>
           {/each}
+        </section>
+      {/if}
+
+      {#if ev.tradition?.length}
+        <section class="layer tradition">
+          <h3>Tradition <span class="interp">hadith and historians: reports, with their gradings</span></h3>
+          <ul class="reports">
+            {#each ev.tradition as t, i (i)}
+              <li>
+                <span class="badge kind-{t.kind}">{TRADITION_KIND_LABEL[t.kind]}</span>
+                <span class="attribution">{t.attribution.en}</span>
+                <p class="report-text">{t.text.en}</p>
+                {#if t.text.ar}<p class="ar report-ar" dir="rtl" lang="ar">{t.text.ar}</p>{/if}
+                <p class="report-meta">
+                  <Cite refs={t.source ? [t.source] : undefined} />
+                </p>
+                {#if t.gradings?.length}
+                  <ul class="gradings">
+                    {#each t.gradings as g, j (j)}
+                      <li>
+                        <span class="badge grade-{g.grade}">{GRADE_LABEL[g.grade]}</span>
+                        <strong>{g.by}</strong>{#if g.note}: {g.note.en}{/if}
+                        {#if g.source}<Cite refs={[g.source]} />{/if}
+                      </li>
+                    {/each}
+                  </ul>
+                {/if}
+              </li>
+            {/each}
+          </ul>
         </section>
       {/if}
 
@@ -343,6 +381,81 @@
   }
   .layer.quran {
     border-color: #1f6f5c;
+  }
+  .layer.tradition {
+    border-color: #a07a2c;
+  }
+  .reports {
+    list-style: none;
+    padding: 0;
+  }
+  .reports > li {
+    margin-bottom: 10px;
+  }
+  .attribution {
+    font-size: 13px;
+    font-weight: 600;
+    margin-inline-start: 4px;
+  }
+  .report-text {
+    margin: 2px 0;
+  }
+  .report-ar {
+    margin: 2px 0;
+    color: #333;
+  }
+  .report-meta {
+    margin: 0;
+  }
+  .gradings {
+    list-style: none;
+    padding: 0;
+    margin: 2px 0 0;
+    font-size: 13px;
+  }
+  .gradings li {
+    margin: 2px 0;
+  }
+  .kind-hadith {
+    background: #e7f0ec;
+    color: #1f5c4c;
+  }
+  .kind-athar {
+    background: #eef0e2;
+    color: #4e5a1f;
+  }
+  .kind-historian {
+    background: #f4ece0;
+    color: #6b4a14;
+  }
+  .kind-ahl-al-kitab {
+    background: #eceaf3;
+    color: #4b3a80;
+  }
+  .grade-sahih,
+  .grade-hasan {
+    background: #e3f1e6;
+    color: #1d5b2c;
+  }
+  .grade-daif {
+    background: #fdf0e0;
+    color: #8a4b00;
+  }
+  .grade-very-weak,
+  .grade-fabricated {
+    background: #fbe7e7;
+    color: #8a1f1f;
+  }
+  .certainty-reckoned {
+    background: #f1ece2;
+    color: #6b5530;
+  }
+  .reckoned-note {
+    font-size: 12px;
+    color: #6b5530;
+    background: #f8f4ec;
+    border-radius: 4px;
+    padding: 4px 8px;
   }
   .layer.connection {
     border-color: #8e5572;

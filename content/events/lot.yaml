@@ -1,0 +1,42 @@
+id: lot
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Lut (Lot)
+  ar: لوط
+summary:
+  en: Lut (Lot), peace be upon him, Abraham's nephew, who believed in him (29:26) and was sent to the people of the cities that were overturned.
+when:
+  from: -1980
+  to: -1860
+  certainty: traditional
+  basis:
+    en: Abraham's nephew and contemporary (Ibn Kathir), placed within Abraham's traditional lifetime.
+place:
+  status: proposed
+  description:
+    en: Ibn Kathir says Lut settled in the city of Sodom and went to the Ghawr known as Ghawr Zughar, the low land at the southern end of the Dead Sea. The point is approximate.
+  opinions:
+    - name:
+        en: Sodom, in the Ghawr of Zughar (Ibn Kathir)
+      geometry:
+        type: Point
+        coordinates: [ 35.47, 31.03 ]
+      sources:
+        - { id: ibn-kathir-bidaya, locator: "vol. 1, «هجرة الخليل إلى بلاد الشام»" }
+quran: [ "11:77-83", "15:57-77", "26:160-175", "29:26" ]
+tradition:
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+    text:
+      en: Abraham took with him his nephew, Lut son of Haran son of Azar. Lut settled in the city of Sodom.
+      ar: ابن أخيه لوط بن هاران بن آزر
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «هجرة الخليل إلى بلاد الشام»
+related:
+  - { id: abraham, type: parallel }
+tags: [ prophets, lot ]
+notes: Ibn Kathir's account of the destruction of the cities was not found in the Wikisource chapters checked. Verify the coordinates of Zughar (Zoar).

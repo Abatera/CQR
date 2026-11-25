@@ -1,0 +1,95 @@
+id: moses
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Musa (Moses)
+  ar: موسى
+summary:
+  en: Musa (Moses), peace be upon him, the prophet most often named in the Quran, sent with Aaron to Pharaoh, who led the Children of Israel out of Egypt and received the Torah.
+when:
+  from: -1526
+  to: -1406
+  certainty: traditional
+  basis:
+    en: The span takes the 120-year life reported by Ibn Kathir and sets the Exodus at about 1446 BCE, 480 years before the fourth year of Solomon (1 Kings 6:1). It is a traditional reckoning; history has no independent date for Moses.
+  alternatives:
+    - from: -1960
+      to: -1841
+      basis:
+        en: 1,900 years before Jesus, in the report of Ibn Sa'd through al-Kalbi. The chain is very weak (see Tradition).
+      sources:
+        - { id: ibn-asakir-dimashq, locator: 1/32 }
+    - from: -1760
+      to: -1641
+      basis:
+        en: 1,700 years before Jesus, as al-Qurtubi quotes the same report from Ibn Sa'd.
+      sources:
+        - { id: qurtubi-jami, locator: 6/121 }
+place:
+  status: unknown
+  description:
+    en: The Quran names Egypt, Madyan and the Mount (al-Tur), but no site that can be identified with certainty.
+quran: [ "20:9-36", "26:10-68", "28:7-29" ]
+tradition:
+  - kind: ahl-al-kitab
+    attribution:
+      en: The People of the Book and others, as reported by Ibn Kathir
+    text:
+      en: Moses died aged 120.
+      ar: وذكر أهل الكتاب وغيرهم أنه مات وعمره مائة وعشرون سنة
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «ذكر وفاته عليه السلام»
+  - kind: hadith
+    attribution:
+      en: The Prophet ﷺ, narrated by Abu Hurayra
+    text:
+      en: If I were there, I would show you his grave, by the red sandhill.
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «ذكر وفاته عليه السلام»
+    gradings:
+      - grade: sahih
+        by: al-Bukhari and Muslim
+        source:
+          id: ibn-kathir-bidaya
+          locator: vol. 1, «ذكر وفاته عليه السلام»
+        note:
+          en: In both Sahihs, as cited by Ibn Kathir.
+  - kind: historian
+    attribution:
+      en: Ibn Sa'd, from al-Waqidi, from "more than one scholar"
+    text:
+      en: Between Abraham and Moses were ten qurun, a qarn being a hundred years. The same report gives ten qurun between Adam and Noah and between Noah and Abraham.
+      ar: وبين إبراهيم وموسى بن عمران عشرة قرون القرن مائة سنة
+    source:
+      id: ibn-asakir-dimashq
+      locator: 1/32, quoting Ibn Sa'd, al-Tabaqat 1/53
+    gradings:
+      - grade: very-weak
+        by: Ibn Hajar, on the narrator al-Waqidi
+        source: ibn-hajar-taqrib
+        note:
+          en: Al-Waqidi is 'abandoned, despite his breadth of knowledge' (matruk ma'a si'at 'ilmih), and the report names no chain to a Companion.
+  - kind: athar
+    attribution:
+      en: Ibn Abbas, through Hisham ibn Muhammad al-Kalbi, his father, and Abu Salih (in Ibn Sa'd)
+    text:
+      en: Between Moses son of 'Imran and Jesus son of Mary were 1,900 years, with no interval without prophets between them. Al-Qurtubi quotes the same report from Ibn Sa'd as 1,700 years.
+      ar: كان بين موسى بن عمران وعيسى بن مريم ألف سنة وتسعمائة سنة ولم يكن بينهما فترة
+    source:
+      id: ibn-asakir-dimashq
+      locator: 1/32, quoting Ibn Sa'd, al-Tabaqat 1/53
+    gradings:
+      - grade: very-weak
+        by: Ibn Hajar, on the narrator Muhammad ibn al-Sa'ib al-Kalbi
+        source: ibn-hajar-taqrib
+        note:
+          en: Al-Kalbi is 'accused of lying' (muttaham bi-l-kadhib). A chain through him is not relied on.
+related:
+  - { id: aaron, type: parallel }
+  - { id: shuayb, type: context }
+  - { id: joseph, type: context }
+tags: [ prophets, moses, egypt, chronology ]
+notes: "The span assumes Moses was 80 at the Exodus (Exodus 7:7): verify that verse. TODO: the scholarly debate on whether and when an Exodus can be dated, with sources."

@@ -1,0 +1,91 @@
+id: noah
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Nuh (Noah)
+  ar: نوح
+summary:
+  en: Nuh (Noah), peace be upon him, sent to his people, who rejected him for a thousand years less fifty until the Flood (29:14). The hadith of intercession calls him the first of the messengers to the people of the earth.
+when:
+  from: -3250
+  to: -2751
+  certainty: reckoned
+  basis:
+    en: "Ten qurun before Abraham (about 2000 BCE) in the hadith of Abu Umama, reading a qarn as a hundred years, as Ibn Sa'd's report does. The bar is a window around that reckoning, not Noah's life: the Quran says he stayed among his people a thousand years less fifty."
+  alternatives:
+    - from: -4150
+      to: -3651
+      basis:
+        en: Ibn Sa'd's full chain of intervals, counted back from the Prophet's birth (about 570 CE). These intervals rest on weak chains (see Moses and Jesus).
+      sources:
+        - { id: ibn-asakir-dimashq, locator: 1/32 }
+place:
+  status: proposed
+  description:
+    en: The Quran says the Ark came to rest on al-Judi (11:44). Ibn Kathir calls al-Judi a well-known mountain in the land of al-Jazira (Upper Mesopotamia). The area drawn is a rough outline of that region, not an identified peak.
+  opinions:
+    - name:
+        en: al-Judi, a mountain in al-Jazira (Ibn Kathir)
+      geometry:
+        type: Polygon
+        coordinates:
+          - - [ 38.8, 36 ]
+            - [ 39.8, 37.3 ]
+            - [ 42, 37.5 ]
+            - [ 43.4, 36.6 ]
+            - [ 42.6, 35.4 ]
+            - [ 40, 35.2 ]
+            - [ 38.8, 36 ]
+      sources:
+        - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة نوح عليه السلام»" }
+quran: [ "11:25-48", "29:14", "71:1-28" ]
+tradition:
+  - kind: hadith
+    attribution:
+      en: The Prophet ﷺ, narrated by Abu Umama al-Bahili
+    text:
+      en: Between Adam and Noah were ten qurun, and between Noah and Abraham ten qurun. The full report and its gradings are under Adam.
+    source:
+      id: hakim-mustadrak
+      locator: 2/262 and 2/288
+    gradings:
+      - grade: sahih
+        by: al-Hakim
+        source:
+          id: hakim-mustadrak
+          locator: 2/262
+        note:
+          en: Sound on the condition of Muslim; al-Dhahabi agreed.
+      - { grade: sahih, by: al-Albani, source: albani-sahiha }
+  - kind: hadith
+    attribution:
+      en: The Prophet ﷺ, in the hadith of intercession
+    text:
+      en: On the Day of Resurrection people will come to Noah and say that he was the first of the messengers to the people of the earth.
+      ar: أنت أول الرسل إلى أهل الأرض
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «قصة نوح عليه السلام»
+    gradings:
+      - grade: sahih
+        by: al-Bukhari and Muslim
+        source:
+          id: ibn-kathir-bidaya
+          locator: vol. 1, «قصة نوح عليه السلام»
+        note:
+          en: In both Sahihs, as cited by Ibn Kathir.
+  - kind: historian
+    attribution:
+      en: Ibn Kathir, citing Ibn Jarir al-Tabari and others
+    text:
+      en: Noah was born 126 years after Adam's death. Reports differ on his age when he was sent, 50, 350 or 480 years, the last from Ibn Abbas through Ibn Jarir.
+      ar: بعد وفاة آدم، بمائة سنة وست وعشرين سنة
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «قصة نوح عليه السلام»
+related:
+  - { id: idris, type: context }
+  - { id: hud, type: context }
+tags: [ prophets, noah, chronology ]
+notes: The outline of al-Jazira is a rough sketch. Other identifications of al-Judi (for example the mountains of Ararat in the Bible) can be added as opinions with sources.

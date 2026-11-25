@@ -168,6 +168,7 @@
     established: undefined,
     estimated: undefined,
     traditional: '5 3',
+    reckoned: '1 2',
     debated: '2 2',
     unknown: '1 3',
   };
@@ -208,6 +209,16 @@
       <svg width="26" height="10"><rect x="1" y="1" width="24" height="8" rx="2" class="lg solid" /></svg> established / estimated
       <svg width="26" height="10"><rect x="1" y="1" width="24" height="8" rx="2" class="lg" stroke-dasharray="5 3" /></svg> traditional
       <svg width="26" height="10"><rect x="1" y="1" width="24" height="8" rx="2" class="lg" stroke-dasharray="2 2" /></svg> debated
+      <svg width="26" height="10">
+        <defs>
+          <pattern id="lg-hatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <line x1="0" y1="0" x2="0" y2="5" stroke="#fff" stroke-width="2" />
+          </pattern>
+        </defs>
+        <rect x="1" y="1" width="24" height="8" rx="2" class="lg" stroke-dasharray="1 2" />
+        <rect x="1" y="1" width="24" height="8" rx="2" fill="url(#lg-hatch)" />
+      </svg>
+      <span title="Years computed from intervals reported in tradition; history cannot date these">reckoned</span>
     </span>
     <span class="hint">Scroll to zoom · drag to pan · ← → to step</span>
   </div>
@@ -248,6 +259,9 @@
       >
         <defs>
           <clipPath id="tl-plot"><rect x={GUTTER} y="0" width={plotW + 6} height={layout.height} /></clipPath>
+          <pattern id="tl-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <line x1="0" y1="0" x2="0" y2="6" stroke="#fff" stroke-width="2.5" stroke-opacity="0.85" />
+          </pattern>
         </defs>
 
         <g clip-path="url(#tl-plot)">
@@ -310,6 +324,17 @@
                     stroke-width={sel ? 2 : 1.2}
                     stroke-dasharray={DASH[ev.when.certainty]}
                   />
+                  {#if ev.when.certainty === 'reckoned'}
+                    <rect
+                      x={it.x0}
+                      y={cy - h / 2}
+                      width={Math.max(it.x1 - it.x0, DOT_MIN_PX)}
+                      height={h}
+                      rx="3"
+                      fill="url(#tl-hatch)"
+                      pointer-events="none"
+                    />
+                  {/if}
                   {#if it.labelInside}
                     <text x={vis0 + 5} y={cy + 4} class="label inside">{ev.title.en}</text>
                   {:else}

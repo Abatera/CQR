@@ -1,0 +1,130 @@
+id: adam
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Adam
+  ar: آدم
+summary:
+  en: Adam, peace be upon him, the first human and, according to hadith, a prophet to whom God spoke. The Quran tells of his creation, the angels' prostration, the slip in the Garden and his descent to earth.
+when:
+  from: -4250
+  to: -3751
+  certainty: reckoned
+  basis:
+    en: Counted back from Abraham (about 2000 BCE) with the hadith of Abu Umama, which gives ten qurun between Abraham and Noah and ten between Noah and Adam, each qarn read as a hundred years, as in Ibn Sa'd's report. The bar is a window around that reckoning, not Adam's life, which hadith gives as a thousand years. If a qarn means a generation, the intervals were longer.
+  alternatives:
+    - from: -5150
+      to: -4651
+      basis:
+        en: "Ibn Sa'd's full chain of intervals, counted back from the Prophet's birth (about 570 CE): 569 years to Jesus' birth, 1,900 to Moses, then ten centuries each to Abraham, Noah and Adam. These intervals rest on weak chains (see Tradition)."
+      sources:
+        - { id: ibn-asakir-dimashq, locator: 1/32 }
+place:
+  status: unknown
+  description:
+    en: The Quran says Adam was sent down to earth but names no earthly place. Later reports differ on where he lived and was buried (see Tradition).
+quran: [ "2:30-37", "7:19-25", "20:115-122" ]
+tradition:
+  - kind: hadith
+    attribution:
+      en: The Prophet ﷺ, narrated by Abu Umama al-Bahili
+    text:
+      en: A man asked whether Adam was a prophet. He answered yes, one to whom God spoke. Asked how long was between Adam and Noah, he said ten qurun; asked about Noah and Abraham, he said ten qurun; asked how many the messengers were, he said 315. Also narrated by Ibn Hibban (al-Sahih 14/69) and al-Tabarani (al-Mu'jam al-Kabir 8/118). Scholars differ on whether a qarn is a hundred years or a generation.
+    source:
+      id: hakim-mustadrak
+      locator: 2/262 and 2/288
+    gradings:
+      - grade: sahih
+        by: al-Hakim
+        source:
+          id: hakim-mustadrak
+          locator: 2/262
+        note:
+          en: Sound on the condition of Muslim, though Muslim did not include it; al-Dhahabi agreed.
+      - grade: sahih
+        by: Ibn Kathir
+        source:
+          id: ibn-kathir-bidaya
+          locator: vol. 1, «قصة نوح عليه السلام»
+        note:
+          en: On the condition of Muslim.
+      - grade: sahih
+        by: al-Albani
+        source: albani-sahiha
+        note:
+          en: Authenticated with its supporting narrations; some of its narrators were criticized.
+  - kind: athar
+    attribution:
+      en: Ibn Abbas (Companion), narrated by Ikrima
+    text:
+      en: Between Adam and Noah were ten qurun, all of them following a law of truth.
+      ar: كان بين آدم ونوح عشرة قرون كلهم على شريعة من الحق
+    source:
+      id: hakim-mustadrak
+      locator: vol. 2, as quoted by al-Albani in al-Radd al-Amin, p. 45
+    gradings:
+      - grade: sahih
+        by: al-Hakim
+        source:
+          id: murad-radd-amin
+          locator: p. 45
+        note:
+          en: Authenticated by al-Hakim, and al-Dhahabi agreed, as quoted by al-Albani.
+  - kind: hadith
+    attribution:
+      en: The Prophet ﷺ, narrated by Ibn Abbas and by Abu Hurayra
+    text:
+      en: Adam's lifespan was written as a thousand years, and David's, with years added from Adam's, as a hundred. Ibn Kathir rejects the Torah's 930 years for Adam where it contradicts this.
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «وفاة آدم ووصيته إلى ابنه شيث»
+    gradings:
+      - grade: sahih
+        by: al-Tirmidhi
+        source:
+          id: ibn-kathir-bidaya
+          locator: vol. 2, «ذكر كمية حياته وكيفية وفاته عليه السلام»
+        note:
+          en: Authenticated by al-Tirmidhi in Abu Hurayra's version; also narrated by Ahmad, Ibn Khuzayma and Ibn Hibban, and al-Hakim called it on the condition of Muslim, as Ibn Kathir reports.
+  - kind: hadith
+    attribution:
+      en: "Ibn Abbas, raised to the Prophet ﷺ in one chain: Hammad ibn Salama, from Ali ibn Zayd ibn Jud'an, from Yusuf ibn Mihran, from Ibn Abbas"
+    text:
+      en: Gives Adam's age as a thousand years and then the years between the prophets after him, ending with six hundred years between Jesus and Muhammad ﷺ. Its full wording has not yet been checked in an edition of al-Mustadrak.
+    source:
+      id: hakim-mustadrak
+      locator: «كتاب تواريخ المتقدمين من الأنبياء والمرسلين»
+    gradings:
+      - grade: daif
+        by: Sharif Murad
+        source:
+          id: murad-radd-amin
+          locator: p. 45
+        note:
+          en: "Weak in this chain: Ali ibn Zayd ibn Jud'an is weak, and of Yusuf ibn Mihran, Ahmad said 'not known' and Ibn Hajar 'soft in hadith' (layyin)."
+      - grade: daif
+        by: Ibn Hajar, on the narrator Ali ibn Zayd ibn Jud'an
+        source:
+          id: ibn-hajar-taqrib
+          locator: no. 4734
+      - grade: other
+        by: al-Albani
+        source:
+          id: murad-radd-amin
+          locator: p. 45
+        note:
+          en: Accepts only its first part, which al-Hakim also narrates by a sound chain, as quoted in al-Radd al-Amin.
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+    text:
+      en: The well-known view is that Adam was buried by the mountain in India onto which he was sent down; it is also said at Mount Abu Qubays in Mecca, and Ibn Jarir reports that Noah carried his body to Bayt al-Maqdis.
+      ar: المشهور أنه دفن عند الجبل، الذي أهبط منه في الهند
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «وفاة آدم ووصيته إلى ابنه شيث»
+related:
+  - { id: idris, type: context }
+tags: [ prophets, adam, chronology ]
+notes: "The chain hadith in al-Mustadrak (Ibn Abbas via Yusuf ibn Mihran and Ali ibn Zayd) is probably the report of the intervals between the prophets that the owner asked about: confirm with the owner and check its full text in an edition. The gradings of the Abu Umama hadith by al-Hakim and al-Albani were read in secondary sources (islamqa.info 20907, islamweb.net 203734); check them in the books."

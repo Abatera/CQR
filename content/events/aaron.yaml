@@ -1,0 +1,33 @@
+id: aaron
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Harun (Aaron)
+  ar: هارون
+summary:
+  en: Harun (Aaron), peace be upon him, Moses' brother, given to him as a helper (20:29-36) and himself a prophet.
+when:
+  from: -1529
+  to: -1407
+  certainty: traditional
+  basis:
+    en: Older than Moses, by the report that he was born in the year the killing of the boys was suspended and Moses in the year it was carried out (Ibn Kathir). He died before Moses, in al-Suddi's account, which Ibn Kathir reports with reservations. Set beside Moses' traditional dates.
+place:
+  status: unknown
+  description:
+    en: The Quran names Egypt and the Mount (al-Tur), but no site that can be identified with certainty.
+quran: [ "7:142", "20:29-36", "20:90-94" ]
+tradition:
+  - kind: historian
+    attribution:
+      en: Ibn Kathir ("they mention")
+    text:
+      en: Aaron was born in the year the killing of the boys was suspended, and Moses in the year they were killed, so Aaron was the elder.
+      ar: ذكروا أن هارون عليه السلام ولد في عام المسامحة عن قتل الأبناء، وأن موسى ولد في عام قتلهم
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «قصة موسى الكليم»
+related:
+  - { id: moses, type: parallel }
+tags: [ prophets, aaron ]

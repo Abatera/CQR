@@ -6,7 +6,7 @@ title:
   en: David and the making of armor
   ar: داوود وصناعة الدروع
 summary:
-  en: The Quran says God made iron soft for David and taught him to make coats of armor.
+  en: The Quran says God made iron soft for David, peace be upon him, and taught him to make coats of armor.
 when:
   from: -1010
   to: -970
@@ -35,6 +35,7 @@ connection:
   text:
     en: The Quran ties David to iron worked into armor, at the time archaeology shows iron becoming common in the region. This does not claim that no one else could work iron.
 related:
+  - { id: david, type: context }
   - { id: iron-spread-levant, type: context }
   - { id: solomon-molten-copper, type: parallel }
 tags: [ metallurgy, david, iron ]

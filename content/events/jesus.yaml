@@ -1,0 +1,99 @@
+id: jesus
+kind: period
+lane: prophets
+review: draft
+title:
+  en: "'Isa (Jesus)"
+  ar: عيسى
+summary:
+  en: "'Isa (Jesus), son of Mary, peace be upon him, born of a virgin, a messenger to the Children of Israel who foretold a messenger after him (61:6). The Quran says he was neither killed nor crucified, but raised by God to Himself (4:157-158)."
+when:
+  from: -5
+  to: 29
+  certainty: estimated
+  basis:
+    en: Historians place his birth a few years before the Common Era (a source is still to be added), and the Roman historian Tacitus places the end of his public life in the reign of Tiberius, under Pontius Pilatus. Tradition gives his age when he was raised as 33 (Sa'id ibn al-Musayyib) or 34 (al-Hasan al-Basri), both reported by Ibn Kathir, or 32 and a half (Ibn Sa'd).
+place:
+  status: proposed
+  description:
+    en: The Quran says Mary withdrew with him to a far place (19:22) and names no town. Ibn Kathir says he was born at Bethlehem, near Bayt al-Maqdis, and reports that he was besieged in a house in Bayt al-Maqdis before he was raised. The points are approximate.
+  opinions:
+    - name:
+        en: Bethlehem, his birthplace (Ibn Kathir)
+      geometry:
+        type: Point
+        coordinates: [ 35.2025, 31.7054 ]
+      sources:
+        - id: ibn-kathir-bidaya
+          locator: vol. 2, «ذكر منشأ عيسى بن مريم عليهما السلام»
+    - name:
+        en: Bayt al-Maqdis, where he was raised (al-Hasan and Ibn Ishaq, cited by Ibn Kathir)
+      geometry:
+        type: Point
+        coordinates: [ 35.2296, 31.7767 ]
+      sources:
+        - id: ibn-kathir-bidaya
+          locator: vol. 2, «ذكر رفع عيسى عليه السلام إلى السماء»
+quran: [ "3:45-59", "4:157-158", "5:110-118", "19:16-36", "61:6" ]
+tradition:
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+    text:
+      en: He was born at Bethlehem, near Bayt al-Maqdis. Wahb ibn Munabbih's report that he was born in Egypt is not sound.
+      ar: قد تقدم أنه ولد ببيت لحم، قريبا من بيت المقدس
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 2, «ذكر منشأ عيسى بن مريم عليهما السلام»
+  - kind: historian
+    attribution:
+      en: Ibn Kathir, citing Sa'id ibn al-Musayyib and al-Hasan al-Basri
+    text:
+      en: He was raised at the age of 33 (Sa'id ibn al-Musayyib) or 34 (al-Hasan). A hadith from Aisha that he lived 120 years Ibn Kathir calls strange (gharib).
+      ar: رفع عيسى وهو ابن ثلاث وثلاثين سنة
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 2, «ذكر رفع عيسى عليه السلام إلى السماء»
+  - kind: athar
+    attribution:
+      en: Ibn Abbas, through Hisham ibn Muhammad al-Kalbi, his father, and Abu Salih (in Ibn Sa'd)
+    text:
+      en: 569 years passed from the birth of Jesus to the Prophet ﷺ, 434 of them without a messenger. Jesus was raised at 32 and a half, after a prophethood of thirty months.
+      ar: وكان بين ميلاد عيسى والنبي (صلى الله عليه وسلم) خمسمائة سنة وتسع وستون سنة
+    source:
+      id: ibn-asakir-dimashq
+      locator: 1/32, quoting Ibn Sa'd, al-Tabaqat 1/53
+    gradings:
+      - grade: very-weak
+        by: Ibn Hajar, on the narrator Muhammad ibn al-Sa'ib al-Kalbi
+        source: ibn-hajar-taqrib
+        note:
+          en: Al-Kalbi is 'accused of lying' (muttaham bi-l-kadhib). A chain through him is not relied on.
+  - kind: athar
+    attribution:
+      en: Salman al-Farisi (Companion)
+    text:
+      en: The interval (fatra) between Jesus and Muhammad ﷺ was six hundred years.
+    source:
+      id: bukhari-sahih
+      locator: no. 3948
+    gradings:
+      - grade: sahih
+        by: al-Bukhari
+        source:
+          id: bukhari-sahih
+          locator: no. 3948
+        note:
+          en: Included in his Sahih.
+history:
+  - claim:
+      en: The Roman historian Tacitus (early 2nd century CE) writes that Christus "had undergone the death penalty in the reign of Tiberius, by sentence of the procurator Pontius Pilatus". This is the Roman account; the Quran states that he was neither killed nor crucified (4:157-158).
+    status: established
+    sources:
+      - { id: tacitus-annals, locator: "15.44" }
+related:
+  - { id: john, type: parallel }
+  - { id: zechariah, type: context }
+  - { id: muhammad, type: context }
+tags: [ prophets, jesus ]
+notes: "TODO: a source for the usual estimate of his birth (before the death of Herod the Great). The history claim reports what Tacitus wrote; the owner should review its wording."

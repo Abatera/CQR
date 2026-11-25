@@ -166,6 +166,17 @@ export function validateContent(raw: RawContent, ayahCounts: readonly number[]):
       else push(sourcing, `tafsir[${i}].source`, 'Tafsir must name the commentator and the work.');
     });
 
+    ev.tradition?.forEach((t, i) => {
+      if (t.source) checkSources([t.source], `tradition[${i}].source`, (_p, m) => refErr(`tradition[${i}].source`, m));
+      else push(sourcing, `tradition[${i}].source`, 'A report needs the work it is found in.');
+      t.gradings?.forEach((g, j) => {
+        if (g.source) checkSources([g.source], `tradition[${i}].gradings[${j}].source`, (_p, m) => refErr(`tradition[${i}].gradings[${j}].source`, m));
+      });
+      if ((t.kind === 'hadith' || t.kind === 'athar') && !t.gradings?.length) {
+        push(sourcing, `tradition[${i}].gradings`, 'A hadith or a report from a Companion needs at least one grading, with the scholar who gave it.');
+      }
+    });
+
     ev.history?.forEach((h, i) => {
       checkSources(h.sources, `history[${i}].sources`, refErr);
       if (!h.sources?.length) push(sourcing, `history[${i}].sources`, 'Every historical claim needs at least one source.');
@@ -173,6 +184,11 @@ export function validateContent(raw: RawContent, ayahCounts: readonly number[]):
 
     if (ev.connection && !ev.connection.confidence) {
       push(sourcing, 'connection.confidence', 'The connection needs a confidence level (set by the owner).');
+    }
+
+    // Honorific convention (docs/03-content-principles.md): ﷺ after the Prophet's name.
+    for (const [path, text] of englishTexts(ev)) {
+      if (PROPHET_NAME_RE.test(text)) push('warning', path, 'Write ﷺ after the name of the Prophet Muhammad.');
     }
 
     const relSeen = new Set<string>();
@@ -191,6 +207,30 @@ export function validateContent(raw: RawContent, ayahCounts: readonly number[]):
     events: events.map((e) => e.value).sort((a, b) => a.when.from - b.when.from || a.when.to - b.when.to),
   };
   return { bundle, issues };
+}
+
+/**
+ * "Muhammad" not followed by ﷺ. Other people named Muhammad (narrators and scholars,
+ * e.g. "Muhammad ibn Ishaq") are excluded by what follows the name.
+ */
+const PROPHET_NAME_RE = /\bMuhammad\b(?!\s*(?:ﷺ|ibn\b|b\.|al-|bin\b))/;
+
+/** Every English text of an event that readers see, with its path. Titles are labels and are included too. */
+function englishTexts(ev: CqrEvent): [string, string][] {
+  const out: [string, string][] = [
+    ['title.en', ev.title.en],
+    ['summary.en', ev.summary.en],
+    ['when.basis.en', ev.when.basis.en],
+  ];
+  if (ev.place.description) out.push(['place.description.en', ev.place.description.en]);
+  ev.tafsir?.forEach((t, i) => out.push([`tafsir[${i}].text.en`, t.text.en]));
+  ev.tradition?.forEach((t, i) => {
+    out.push([`tradition[${i}].attribution.en`, t.attribution.en]);
+    out.push([`tradition[${i}].text.en`, t.text.en]);
+  });
+  ev.history?.forEach((h, i) => out.push([`history[${i}].claim.en`, h.claim.en]));
+  if (ev.connection) out.push(['connection.text.en', ev.connection.text.en]);
+  return out;
 }
 
 /** Errors present in `after` that were not in `before`. */

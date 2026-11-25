@@ -12,7 +12,9 @@ import {
   type CqrEvent,
   type Era,
   type Geometry,
+  type Grading,
   type LangText,
+  type TraditionItem,
   type Lane,
   type Source,
   type SourceRef,
@@ -55,6 +57,13 @@ export interface EventForm {
   };
   quran: string[];
   tafsir: { text: LangForm; source: RefForm[] }[];
+  tradition: {
+    kind: TraditionItem['kind'];
+    attribution: LangForm;
+    text: LangForm;
+    source: RefForm[];
+    gradings: { grade: Grading['grade']; by: string; source: RefForm[]; note: LangForm }[];
+  }[];
   history: { claim: LangForm; status: 'established' | 'debated'; sources: RefForm[] }[];
   connection: { text: LangForm; confidence: '' | 'low' | 'medium' | 'high' };
   related: { id: string; type: 'context' | 'consequence' | 'parallel' }[];
@@ -90,6 +99,13 @@ export function eventToForm(e?: CqrEvent): EventForm {
     },
     quran: [...(e?.quran ?? [])],
     tafsir: (e?.tafsir ?? []).map((t) => ({ text: lang(t.text), source: t.source ? refs([t.source]) : [] })),
+    tradition: (e?.tradition ?? []).map((t) => ({
+      kind: t.kind,
+      attribution: lang(t.attribution),
+      text: lang(t.text),
+      source: t.source ? refs([t.source]) : [],
+      gradings: (t.gradings ?? []).map((g) => ({ grade: g.grade, by: g.by, source: g.source ? refs([g.source]) : [], note: lang(g.note) })),
+    })),
     history: (e?.history ?? []).map((h) => ({ claim: lang(h.claim), status: h.status, sources: refs(h.sources) })),
     connection: { text: lang(e?.connection?.text), confidence: e?.connection?.confidence ?? '' },
     related: (e?.related ?? []).map((r) => ({ ...r })),
@@ -127,6 +143,13 @@ export function eventFromForm(f: EventForm): unknown {
     },
     quran: f.quran.map((q) => q.trim()),
     tafsir: f.tafsir.map((t) => ({ text: t.text, source: outRefs(t.source)[0] })),
+    tradition: f.tradition.map((t) => ({
+      kind: t.kind,
+      attribution: t.attribution,
+      text: t.text,
+      source: outRefs(t.source)[0],
+      gradings: t.gradings.map((g) => ({ grade: g.grade, by: g.by, source: outRefs(g.source)[0], note: g.note })),
+    })),
     history: f.history.map((h) => ({ claim: h.claim, status: h.status, sources: outRefs(h.sources) })),
     connection: f.connection.text.en || f.connection.text.ar ? { text: f.connection.text, confidence: f.connection.confidence || undefined } : undefined,
     related: f.related.filter((r) => r.id),

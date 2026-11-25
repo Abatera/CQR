@@ -9,6 +9,7 @@ The order and the first milestone were confirmed on 2026-11-23 (D14 in [08-decis
 - **Phase 2: done.** The three panels, URL routing, lane toggles, arrow keys and links between lanes. Added at the owner's request: a local **editor** with forms for events, lanes, eras and sources (D15). There is no small-screen layout yet (open question 13).
 - **Phase 3: drafted, not researched.** The pilot events below exist as drafts, written only from the leads in these docs, with their open items in `notes` and in the validator's warnings. The verse references were checked against the dataset. **None of the historical content has been checked against a source yet**; that is the next step. The Late Bronze Age collapse is an era band, not an event, and the end of the New Kingdom is the end of its period bar.
 - **Phase 4: not started.**
+- **Added on 2026-11-23: the chronology of the prophets** (D16–D19). There is a new Tradition layer, a pinned Prophets lane, and 25 draft entries, one per prophet named in the Quran. The entries are researched in hadith, Ibn Kathir's *al-Bidaya wa-l-Nihaya*, Ibn Sa'd and Ibn 'Asakir, with gradings, and the years before Abraham are marked as a reckoning. The research and what is still to check are in [research/prophets-chronology.md](research/prophets-chronology.md).
 
 ## Phase 0: Confirm and scaffold
 

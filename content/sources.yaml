@@ -7,3 +7,107 @@
   year: 2021
   publisher: Princeton University Press
   place: Princeton
+
+- id: ibn-kathir-bidaya
+  type: book
+  authors: [ Ibn Kathir ]
+  title: al-Bidaya wa-l-Nihaya
+  title_original: البداية والنهاية
+  url: https://ar.wikisource.org/wiki/البداية_والنهاية
+  notes: Read in the Arabic Wikisource transcription, chapter by chapter; locators give the volume and the chapter title. Ibn Kathir died in 774 AH / 1373 CE. Page numbers of a printed edition are still to be added.
+
+- id: ibn-asakir-dimashq
+  type: book
+  authors: [ Ibn 'Asakir ]
+  title: Tarikh Madinat Dimashq
+  title_original: تاريخ مدينة دمشق
+  url: https://shamela.ws/book/71
+  notes: Read on al-Maktaba al-Shamila. Vol. 1, p. 32 quotes Ibn Sa'd's al-Tabaqat al-Kubra (1/53, according to the editor's note).
+
+- id: ibn-sad-tabaqat
+  type: book
+  authors: [ Ibn Sa'd ]
+  title: al-Tabaqat al-Kubra
+  title_original: الطبقات الكبرى
+  publisher: Dar al-Kutub al-'Ilmiyya
+  url: https://shamela.ws/book/1686
+  notes: The intervals at 1/53 were read as quoted by Ibn 'Asakir (Tarikh Dimashq 1/32), not in the Tabaqat itself; check them there.
+
+- id: hakim-mustadrak
+  type: book
+  authors: [ al-Hakim al-Naysaburi ]
+  title: al-Mustadrak 'ala al-Sahihayn
+  title_original: المستدرك على الصحيحين
+  notes: Not read directly. The volume and page references are those given by islamqa.info (answer 20907) and by al-Albani as quoted in al-Radd al-Amin; check them in an edition.
+
+- id: ibn-hibban-sahih
+  type: book
+  authors: [ Ibn Hibban ]
+  title: al-Sahih
+  title_original: صحيح ابن حبان
+  notes: Not read directly. The reference 14/69 is the one given by islamqa.info (answer 20907).
+
+- id: tabarani-kabir
+  type: book
+  authors: [ al-Tabarani ]
+  title: al-Mu'jam al-Kabir
+  title_original: المعجم الكبير
+  notes: Not read directly. The reference 8/118 is the one given by islamqa.info (answer 20907).
+
+- id: albani-sahiha
+  type: book
+  authors: [ Muhammad Nasir al-Din al-Albani ]
+  title: Silsilat al-Ahadith al-Sahiha
+  title_original: سلسلة الأحاديث الصحيحة
+  notes: Not read directly. Al-Albani's grading of the Abu Umama hadith is reported by islamweb.net (fatwa 203734); the number 2668 is the one given by the Dorar hadith encyclopedia, which could not be opened. Check both.
+
+- id: bukhari-sahih
+  type: book
+  authors: [ al-Bukhari ]
+  title: al-Jami' al-Sahih
+  title_original: صحيح البخاري
+  notes: "Hadith numbers follow the sunnah.com numbering. Not read directly (sunnah.com refuses automated access): the Salman report is cited by islamqa.info (answer 20907, as no. 3732 in another numbering) and by islamweb.net (fatwa 203734)."
+
+- id: qurtubi-jami
+  type: book
+  authors: [ al-Qurtubi ]
+  title: al-Jami' li-Ahkam al-Qur'an
+  title_original: الجامع لأحكام القرآن
+  notes: Not read directly. The reference 6/121 is the one given by islamqa.info (answer 20907).
+
+- id: murad-radd-amin
+  type: book
+  authors: [ Sharif Murad ]
+  title: al-Radd al-Amin
+  title_original: الرد الأمين
+  url: https://shamela.ws/book/1247/44
+  notes: A modern work, read on al-Maktaba al-Shamila (p. 45). It quotes al-Albani and al-Hakim and assesses the chains of the reports on the intervals between the prophets.
+
+- id: ibn-hajar-taqrib
+  type: book
+  authors: [ Ibn Hajar al-'Asqalani ]
+  title: Taqrib al-Tahdhib
+  title_original: تقريب التهذيب
+  url: https://ar.wikisource.org/wiki/تقريب_التهذيب
+  notes: The gradings of narrators were read in the Wikisource transcription and the Shamela narrator index; check the entry numbers in a printed edition.
+
+- id: bible-web
+  type: other
+  title: The Holy Bible, World English Bible
+  url: https://www.biblegateway.com/versions/World-English-Bible-WEB/
+  notes: A public-domain translation, cited for the chronology of the Hebrew Bible. Locators are book, chapter and verse.
+
+- id: tacitus-annals
+  type: book
+  authors: [ Tacitus ]
+  title: Annals
+  edition: Translated by John Jackson, Loeb Classical Library
+  year: 1937
+  url: https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/15B*.html
+
+- id: josephus-antiquities
+  type: book
+  authors: [ Flavius Josephus ]
+  title: Antiquities of the Jews
+  edition: Translated by William Whiston
+  url: https://penelope.uchicago.edu/josephus/ant-18.html

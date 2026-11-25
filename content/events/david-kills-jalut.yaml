@@ -6,7 +6,7 @@ title:
   en: David kills Jalut and receives kingship
   ar: داوود يقتل جالوت ويؤتى الملك
 summary:
-  en: Talut's army defeats the forces of Jalut (Goliath). David kills Jalut, and God gives David kingship and wisdom.
+  en: Talut's army defeats the forces of Jalut (Goliath). David, peace be upon him, kills Jalut, and God gives David kingship and wisdom.
 when:
   from: -1010
   to: -1010
@@ -19,6 +19,7 @@ place:
     en: The Quran names no battlefield.
 quran: [ "2:250-251" ]
 related:
+  - { id: david, type: context }
   - { id: talut-appointed-king, type: context }
   - { id: david-armor, type: consequence }
 tags: [ david, jalut, kingship ]

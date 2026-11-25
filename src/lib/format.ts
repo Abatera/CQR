@@ -4,8 +4,25 @@ const CERTAINTY_LABEL: Record<string, string> = {
   established: 'established',
   estimated: 'estimated',
   traditional: 'traditional dating',
+  reckoned: 'traditional reckoning',
   debated: 'debated',
   unknown: 'unknown',
+};
+
+export const TRADITION_KIND_LABEL: Record<string, string> = {
+  hadith: 'Hadith',
+  athar: 'Report (Companion or Successor)',
+  historian: 'Historian',
+  'ahl-al-kitab': 'From the People of the Book',
+};
+
+export const GRADE_LABEL: Record<string, string> = {
+  sahih: 'sahih (sound)',
+  hasan: 'hasan (good)',
+  daif: "da'if (weak)",
+  'very-weak': 'very weak',
+  fabricated: 'fabricated',
+  other: 'see note',
 };
 
 export function certaintyLabel(c: string): string {
@@ -22,8 +39,15 @@ export function locationLabel(s: string): string {
   return LOCATION_LABEL[s] ?? s;
 }
 
-function surname(name: string): string {
+/**
+ * The name used in a short citation. Western names use the surname ("Eric H. Cline" → "Cline").
+ * Classical Arabic names keep the part they are known by: "Ibn Kathir", "Ibn Hajar al-'Asqalani"
+ * → "Ibn Hajar", "al-Hakim al-Naysaburi" → "al-Hakim", "Muhammad Nasir al-Din al-Albani" → "al-Albani".
+ */
+export function surname(name: string): string {
   const parts = name.trim().split(/\s+/);
+  if (parts[0] === 'Ibn' && parts.length > 1) return `${parts[0]} ${parts[1]}`;
+  if (parts[0].startsWith('al-')) return parts[0];
   return parts[parts.length - 1] ?? name;
 }
 

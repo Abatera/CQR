@@ -1,0 +1,49 @@
+id: joseph
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Yusuf (Joseph)
+  ar: يوسف
+summary:
+  en: Yusuf (Joseph), peace be upon him, sold into Egypt by his brothers, who rose to govern its stores and brought his family there. His story fills a whole surah (12).
+when:
+  from: -1750
+  to: -1641
+  certainty: traditional
+  basis:
+    en: Placed a generation after Jacob, with the 110-year life given by the People of the Book and Ibn Jarir (Genesis 50:26). Al-Hasan al-Basri gives 120 years. Both are reported by Ibn Kathir.
+place:
+  status: known
+  names:
+    - { name: Misr, type: ancient, language: Arabic }
+  description:
+    en: The Quran names Egypt (Misr) as the setting of Joseph's later life (12:21, 12:99). The outline is a rough sketch of the Nile valley and delta.
+  geometry:
+    type: Polygon
+    coordinates:
+      - - [ 29.6, 31.25 ]
+        - [ 32.3, 31.3 ]
+        - [ 31.5, 29.9 ]
+        - [ 31.3, 27.6 ]
+        - [ 32.95, 25.4 ]
+        - [ 32.95, 24 ]
+        - [ 32.6, 24 ]
+        - [ 30.8, 27.4 ]
+        - [ 30.85, 29.9 ]
+        - [ 29.6, 31.25 ]
+quran: [ "12:4-21", "12:99-101", "40:34" ]
+tradition:
+  - kind: ahl-al-kitab
+    attribution:
+      en: The People of the Book and Ibn Jarir; al-Hasan al-Basri. Reported by Ibn Kathir
+    text:
+      en: Joseph died aged 110, according to the People of the Book and Ibn Jarir; al-Hasan al-Basri said 120. He was embalmed and kept in Egypt until Moses took him out to be buried with his forefathers.
+      ar: فمات وهو ابن مائة سنة وعشر سنين
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «ما وقع من الأمور العجيبة في حياة إسرائيل»
+related:
+  - { id: jacob, type: context }
+  - { id: moses, type: context }
+tags: [ prophets, joseph, egypt ]

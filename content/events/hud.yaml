@@ -1,0 +1,58 @@
+id: hud
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Hud
+  ar: هود
+summary:
+  en: Hud, peace be upon him, sent to the people of 'Ad, who lived at al-Ahqaf (46:21) and were destroyed by a wind.
+when:
+  from: -2700
+  to: -2401
+  certainty: reckoned
+  basis:
+    en: The Quran makes 'Ad successors after the people of Noah (7:69), and Thamud successors after 'Ad (7:74). No report gives their years. They are placed in the reckoned interval between Noah and Abraham, in the order of Ibn Kathir's al-Bidaya.
+place:
+  status: proposed
+  description:
+    en: The Quran says Hud warned his people at al-Ahqaf (46:21). Ibn Kathir describes al-Ahqaf as mountains of sand in Yemen, between Oman and Hadramawt. The outline drawn is a rough sketch of that region.
+  opinions:
+    - name:
+        en: al-Ahqaf, between Oman and Hadramawt (Ibn Kathir)
+      geometry:
+        type: Polygon
+        coordinates:
+          - - [ 47.8, 15.3 ]
+            - [ 48.6, 17.6 ]
+            - [ 51.8, 18.6 ]
+            - [ 53.2, 17.6 ]
+            - [ 52.2, 16 ]
+            - [ 49.6, 14.9 ]
+            - [ 47.8, 15.3 ]
+      sources:
+        - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة هود عليه السلام»" }
+quran: [ "7:65-72", "11:50-60", "46:21-26" ]
+tradition:
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+    text:
+      en: "'Ad were Arabs who lived at al-Ahqaf, mountains of sand in Yemen between Oman and Hadramawt. They were the first nation to worship idols after the Flood, and the generation after Noah in the Quran (23:31) is Hud's people, on the correct view."
+      ar: وكانوا عربًا يسكنون الأحقاف، وهي جبال الرمل، وكانت باليمن من عمان وحضرموت
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «قصة هود عليه السلام»
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+    text:
+      en: A description of Hud's grave in Yemen is reported from Ali ibn Abi Talib. Others say a place in the southern wall of the mosque of Damascus, which some people claim is Hud's grave; Ibn Kathir adds "God knows best".
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «قصة هود عليه السلام»
+related:
+  - { id: noah, type: context }
+  - { id: salih, type: context }
+tags: [ prophets, hud, arabia ]
+notes: The outline of al-Ahqaf is a rough sketch. Ibn Kathir also rejects the idea that Iram was a city that moves from place to place; this could be added.

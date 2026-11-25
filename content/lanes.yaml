@@ -1,4 +1,14 @@
 # Timeline lanes. Edit here or in the app editor (npm run dev, then Editor). See docs/04-data-model.md.
+- id: prophets
+  name:
+    en: Prophets
+    ar: الأنبياء
+  order: -1
+  pinned: true
+  color: "#7a5c2e"
+  description:
+    en: The prophets named in the Quran, in their traditional order. Before Abraham the years are a reckoning from intervals reported in tradition.
+
 - id: quran
   name:
     en: Quran

@@ -10,11 +10,13 @@ An educational, interactive web app that places events narrated in the Quran on 
 
 - **Timeline** (top): parallel lanes on one time axis, one per region or civilization, with the Quran lane pinned at the top. Archaeological periods are shaded in the background. Scroll to zoom, drag to pan, and use the arrow keys to step through events.
 - **Map** (lower left): the selected event's place. A known place gets a marker or an outline. A disputed place is drawn as shaded areas. A place that is not known is described in the facts panel, not pinned. Faint markers show other events from the same period.
-- **Facts** (lower right): each entry keeps four layers apart:
+- **Facts** (lower right): each entry keeps five layers apart:
   1. **Quran:** verse references, shown in the Uthmani script from the verified Tanzil dataset;
   2. **Tafsir:** what classical commentators said, with the work cited;
-  3. **History and archaeology:** claims from outside the Quran, each marked *established* or *debated*, with sources;
-  4. **Connection:** the project's own reflection linking the layers, always labeled as interpretation, with a confidence level.
+  3. **Tradition:** hadith, reports from the Companions and Successors, and the classical historians, each with its source and, for hadith, its grading by named scholars;
+  4. **History and archaeology:** claims from outside the Quran, each marked *established* or *debated*, with sources;
+  5. **Connection:** the project's own reflection linking the layers, always labeled as interpretation, with a confidence level.
+- **Prophets lane:** the 25 prophets named in the Quran, in their traditional order. Before Abraham, history cannot date them; their years are a *reckoning* from intervals reported in hadith, drawn in a hatched style and explained in each entry.
 - **Quran reader:** all 114 surahs, with search on the Arabic text (diacritics and hamza forms are ignored) and links from verses to the events that cite them.
 
 ## Running it locally

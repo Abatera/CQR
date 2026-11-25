@@ -1,0 +1,62 @@
+id: david
+kind: period
+lane: prophets
+review: draft
+title:
+  en: Dawud (David)
+  ar: داود
+summary:
+  en: Dawud (David), peace be upon him, who killed Jalut and was given kingship and wisdom (2:251), and the Psalms (Zabur); iron was made soft for him (34:10).
+when:
+  from: -1070
+  to: -970
+  certainty: traditional
+  basis:
+    en: The traditional biblical dates of his reign are about 1010-970 BCE. A forty-year reign is reported from the People of the Book, which Ibn Kathir accepts as possible, and the hadith gives him a hundred years of life, so the span starts about 1070 BCE. History has no independent date for David's life.
+place:
+  status: proposed
+  description:
+    en: His kingdom in the land of Bayt al-Maqdis (Ibn Kathir), with Jerusalem as its capital according to tradition. The point marks Jerusalem.
+  opinions:
+    - name:
+        en: Bayt al-Maqdis (Jerusalem) (Ibn Kathir)
+      geometry:
+        type: Point
+        coordinates: [ 35.235, 31.778 ]
+      sources:
+        - id: ibn-kathir-bidaya
+          locator: vol. 2, «قصة داود وما كان في أيامه وذكر فضائله وشمائله ودلائل نبوته وإعلامه»
+quran: [ "2:251", "4:163", "21:78-80", "34:10-11", "38:17-26" ]
+tradition:
+  - kind: hadith
+    attribution:
+      en: The Prophet ﷺ, narrated by Abu Hurayra and by Ibn Abbas
+    text:
+      en: Adam's life was written as a thousand years, and David's, with years added from Adam's, as a hundred.
+      ar: ولداود مائة سنة
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 2, «ذكر كمية حياته وكيفية وفاته عليه السلام»
+    gradings:
+      - grade: sahih
+        by: al-Tirmidhi
+        source:
+          id: ibn-kathir-bidaya
+          locator: vol. 2, «ذكر كمية حياته وكيفية وفاته عليه السلام»
+        note:
+          en: Authenticated by al-Tirmidhi; also narrated by Ahmad, Ibn Khuzayma and Ibn Hibban, and al-Hakim called it on the condition of Muslim, as Ibn Kathir reports.
+  - kind: ahl-al-kitab
+    attribution:
+      en: The People of the Book, with Ibn Kathir's judgement
+    text:
+      en: David reigned forty years, which Ibn Kathir says may be accepted, since nothing contradicts it. Their claim that he lived 77 years he calls a mistake to be rejected. Al-Hasan al-Basri said he died aged a hundred.
+      ar: هذا غلط مردود عليهم
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 2, «ذكر كمية حياته وكيفية وفاته عليه السلام»
+related:
+  - { id: david-kills-jalut, type: context }
+  - { id: david-armor, type: context }
+  - { id: solomon, type: context }
+  - { id: tel-dan-stele, type: context }
+tags: [ prophets, david ]

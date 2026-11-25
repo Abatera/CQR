@@ -13,6 +13,20 @@ when:
   certainty: reckoned
   basis:
     en: The Quran makes 'Ad successors after the people of Noah (7:69), and Thamud successors after 'Ad (7:74). No report gives their years. They are placed in the reckoned interval between Noah and Abraham, in the order of Ibn Kathir's al-Bidaya.
+  alternatives:
+    - from: -2650
+      to: -2551
+      basis:
+        en: "By generation, the project's own reckoning: Hud is the fourth generation after Noah in the lineage Ibn Kathir gives first (son of Shalikh son of Arfakhshad son of Sam), and Abraham is the tenth in Genesis 11. If the ten generations fill the ten qurun between Noah's death (about 3000 BCE) and Abraham's birth (about 2000 BCE), one each, the fourth falls about 2650-2551 BCE."
+      sources:
+        - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة هود عليه السلام»" }
+        - { id: bible-web, locator: Genesis 11:10-26 }
+    - from: -2250
+      to: -2151
+      basis:
+        en: By the same reckoning with the lineage Ibn Kathir quotes from Ibn Jarir (Hud son of 'Abd Allah son of Rabah son of al-Jarud son of 'Ad son of 'Aws son of Iram son of Sam), in which Hud is the eighth generation after Noah.
+      sources:
+        - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة هود عليه السلام»" }
 place:
   status: proposed
   description:
@@ -32,7 +46,26 @@ place:
             - [ 47.8, 15.3 ]
       sources:
         - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة هود عليه السلام»" }
-quran: [ "7:65-72", "11:50-60", "46:21-26" ]
+quran: [ "7:65-72", "11:50-60", "46:21-26", "53:50", "89:6-8" ]
+tafsir:
+  - text:
+      en: "Al-Tabari on 53:50 (He destroyed the first 'Ad): 'Ad descend from 'Ad son of Iram son of 'Aws son of Sam son of Noah. They are called the first 'Ad because they were destroyed before the later 'Ad, whom he identifies with Banu Luqaym. Ibn Zayd said they were called the first because they were the first of the nations to be destroyed."
+      ar: لأنها أُهلكت قبل عاد الآخرة
+    source:
+      id: tabari-tafsir
+      locator: "53:50"
+  - text:
+      en: "Ibn Kathir on 89:7 (Iram of the pillars): Mujahid and Qatada said Iram is an ancient nation. Al-Suddi and Qatada said Iram is the royal house of 'Ad, which Ibn Kathir calls a good, strong view."
+      ar: إن إرم بيت مملكة عاد . وهذا قول حسن جيد قوي
+    source:
+      id: ibn-kathir-tafsir
+      locator: "89:7"
+  - text:
+      en: "Al-Qurtubi on 89:7: the first 'Ad is Iram, and those after them are the last 'Ad. Iram has been said to be Sam son of Noah (Ibn Ishaq), or a city: Damascus (Khalid al-Rabi'i, through Ibn Wahb and Ashhab from Malik) or Alexandria (Muhammad ibn Ka'b al-Qurazi). He states no preference."
+      ar: فالأولى هي إرم
+    source:
+      id: qurtubi-jami
+      locator: "89:7"
 tradition:
   - kind: historian
     attribution:
@@ -45,14 +78,61 @@ tradition:
       locator: vol. 1, «قصة هود عليه السلام»
   - kind: historian
     attribution:
+      en: Ibn Kathir, citing Ibn Jarir for the third lineage
+    text:
+      en: "Hud was the son of Shalikh son of Arfakhshad son of Sam son of Noah. It is also said that Hud is 'Abir (Eber) son of Shalikh. Ibn Jarir gives a third lineage, through 'Ad himself: Hud son of 'Abd Allah son of Rabah son of al-Jarud son of 'Ad son of 'Aws son of Iram son of Sam son of Noah."
+      ar: وهو هود بن شالخ بن أرفحشذ بن سام بن نوح عليه السلام
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «قصة هود عليه السلام»
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+    text:
+      en: "'Ad of Iram are the first 'Ad (53:50), and the second 'Ad came later. The first 'Ad came before al-Khalil (Abraham), and there is no disagreement that 'Ad came before Thamud. The Arabs before Ishmael are called al-'Arab al-'Ariba, many tribes, among them 'Ad and Thamud."
+      ar: وعاد الأولى قبل الخليل
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «قصة هود عليه السلام»
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+    text:
+      en: '"Iram of the pillars, the like of which was never created in the lands" (89:7-8) means the like of the tribe, on the correct view; it has also been said, the like of the pillars. Whoever claims that Iram is a city that moves about the earth has gone far astray.'
+      ar: فعاد إرم، هم عاد الأولى
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «قصة هود عليه السلام»
+  - kind: historian
+    attribution:
       en: Ibn Kathir
     text:
       en: A description of Hud's grave in Yemen is reported from Ali ibn Abi Talib. Others say a place in the southern wall of the mosque of Damascus, which some people claim is Hud's grave; Ibn Kathir adds "God knows best".
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة هود عليه السلام»
+  - kind: ahl-al-kitab
+    attribution:
+      en: The Torah (Genesis 10)
+    text:
+      en: The sons of Shem were Elam, Asshur, Arpachshad, Lud and Aram; the sons of Aram were Uz, Hul, Gether and Mash. Arpachshad was the father of Shelah, and Shelah of Eber. Eber's sons were Peleg and Joktan, and the sons of Joktan included Hazarmaveth, Sheba, Ophir and Havilah. Their dwelling extended from Mesha toward Sephar, the mountain of the east.
+    source:
+      id: bible-web
+      locator: Genesis 10:22-30
+history:
+  - claim:
+      en: In 1992 a team including Nicholas Clapp, George Hedges, Juris Zarins, Ranulph Fiennes and Ronald Blom of NASA's Jet Propulsion Laboratory announced that they had found the lost city of Ubar at Shisr, a well on the edge of the Empty Quarter in Oman. Radar images taken from the space shuttle helped them find it, and the excavation uncovered an octagonal castle with high walls and towers.
+    status: established
+    sources: [ jpl-ubar-1992, time-ubar-1992 ]
+  - claim:
+      en: 'Whether the site is Ubar, and whether it has anything to do with Iram, is debated. Time reported that "unless inscriptions surface, it may be impossible to identify the site as Ubar with absolute certainty", and called the octagonal castle only "perhaps" the pillars of the Quran. The reports also disagree on its date: 3000 BCE and before 2000 BCE (JPL, 1992), pottery from at least 2000 BCE (Time, 1992), and a city that rose roughly 2,000 years ago and fell between 300 and 500 CE (NASA, 2017).'
+    status: debated
+    sources: [ time-ubar-1992, jpl-ubar-1992, nasa-ubar-2017 ]
+connection:
+  text:
+    en: "The genealogists' Iram son of Sam, with 'Aws in the line of 'Ad, matches Aram son of Shem and Uz son of Aram in Genesis 10:22-23. Hazarmaveth, a son of Joktan (Genesis 10:26), resembles Hadramawt, 'Ad's land in Ibn Kathir. And 'Abir son of Shalikh, whom some identify with Hud, is Eber son of Shelah. These are the project's own observations: none of the sources cited here draws them."
 related:
   - { id: noah, type: context }
   - { id: salih, type: context }
 tags: [ prophets, hud, arabia ]
-notes: The outline of al-Ahqaf is a rough sketch. Ibn Kathir also rejects the idea that Iram was a city that moves from place to place; this could be added.
+notes: "The outline of al-Ahqaf is a rough sketch. The generational alternatives are the project's own reckoning (one generation to one qarn), proposed and not yet confirmed by the owner. TODO: Donald Whitcomb's 1992 view that Iram may lie in north-west Arabia was seen only in a search summary, not read; the Christian Science Monitor article on Ubar refused access."

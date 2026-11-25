@@ -74,7 +74,7 @@
   title: al-Jami' li-Ahkam al-Qur'an
   title_original: الجامع لأحكام القرآن
   url: https://quran.ksu.edu.sa/tafseer/qortobi/sura11-aya44.html
-  notes: The commentary on 11:44 was read on the King Saud University tafsir site. The reference 6/121 was not read directly; it is the one given by islamqa.info (answer 20907).
+  notes: The commentary on 11:44, 19:56-57 and 89:7 was read on the King Saud University tafsir site (locators give the verse). The reference 6/121 was not read directly; it is the one given by islamqa.info (answer 20907).
 
 - id: murad-radd-amin
   type: book
@@ -232,3 +232,76 @@
   title_original: أعمار الأعيان
   url: https://shamela.ws/book/22/162
   notes: Read on al-Maktaba al-Shamila, p. 128. The editor's notes quote Ibn Kathir's Qisas al-Anbiya on the ages of Adam and Noah.
+
+- id: tabari-tarikh
+  type: book
+  authors: [ al-Tabari ]
+  title: Tarikh al-Rusul wa-l-Muluk
+  title_original: تاريخ الرسل والملوك
+  url: https://ar.wikisource.org/wiki/تاريخ_الطبري/الجزء_الأول
+  notes: Read in the Arabic Wikisource transcription; locators give the volume and the section title. Page numbers of a printed edition are still to be added.
+
+- id: ibn-athir-kamil
+  type: book
+  authors: [ Ibn al-Athir ]
+  title: al-Kamil fi al-Tarikh
+  title_original: الكامل في التاريخ
+  url: https://ar.wikisource.org/wiki/الكامل_في_التاريخ/المجلد_الأول
+  notes: Read in the Arabic Wikisource transcription; locators give the volume and the section title.
+
+- id: mawardi-alam
+  type: book
+  authors: [ al-Mawardi ]
+  title: A'lam al-Nubuwwa
+  title_original: أعلام النبوة
+  url: https://ar.wikisource.org/wiki/أعلام_النبوة_للماوردي
+  notes: Read in the Arabic Wikisource transcription. In the passage on Idris the page prints شيئا where the sense requires شيثا (Seth).
+
+- id: ibn-battuta-tuhfa
+  type: book
+  authors: [ Ibn Battuta ]
+  title: Tuhfat al-Nuzzar (the Rihla)
+  title_original: تحفة النظار
+  notes: "Not read in context. The passage on Hermes and Idris was read only as a snippet in Arabic Wikisource search results: https://ar.wikisource.org/w/index.php?search=إدريس+هرمس"
+
+- id: charles-enoch
+  type: book
+  authors: [ R. H. Charles ]
+  title: The Book of Enoch
+  year: 1917
+  url: https://en.wikisource.org/wiki/The_Book_of_Enoch_(Charles)
+  notes: Read on English Wikisource (the index page and chapters 1 and 12). Charles's introduction is not on Wikisource, so his dates for the parts of the book were not read. The index page also lists 2 Enoch and 3 Enoch.
+
+- id: diodorus-library
+  type: book
+  authors: [ Diodorus of Sicily ]
+  title: The Library of History
+  edition: Translated by C. H. Oldfather, Loeb Classical Library, vol. 2
+  year: 1935
+  url: https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/3C*.html
+  notes: "Read in the LacusCurtius transcription. Oldfather's introduction (https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/Introduction*.html) dates the work: Diodorus was at work on it at least as early as 56 BCE, and it was probably published as a whole between 36 and 30 BCE."
+
+- id: jpl-ubar-1992
+  type: website
+  title: JPL technology and expertise key role in lost city discovery
+  year: 1992
+  publisher: NASA Jet Propulsion Laboratory
+  url: https://www.jpl.nasa.gov/news/jpl-technology-and-expertise-key-role-in-lost-city-discovery/
+  notes: A news release dated 5 February 1992.
+
+- id: time-ubar-1992
+  type: article
+  authors: [ Richard N. Ostling ]
+  title: Arabia's Lost Sand Castle
+  container: Time
+  year: 1992
+  url: https://time.com/archive/6719598/archaeology-arabias-lost-sand-castle
+  notes: Dated 17 February 1992, in Time's online archive.
+
+- id: nasa-ubar-2017
+  type: website
+  title: "Peering through the Sands of Time: Searching for the Origins of Space Archaeology"
+  year: 2017
+  publisher: NASA Earth Observatory
+  url: https://science.nasa.gov/earth/earth-observatory/searching-for-the-origins-of-space-archaeology/
+  notes: Dated 7 August 2017. Only the first half of the article was read verbatim.

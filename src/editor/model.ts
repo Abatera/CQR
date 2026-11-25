@@ -46,6 +46,9 @@ export interface EventForm {
     to: number | undefined;
     certainty: CqrEvent['when']['certainty'];
     basis: LangForm;
+    /** The part a source fixes, drawn solid inside the bar. Off unless hasCore is set. */
+    hasCore: boolean;
+    core: { from: number | undefined; to: number | undefined; basis: LangForm };
     alternatives: { from: number | undefined; to: number | undefined; basis: LangForm; sources: RefForm[] }[];
   };
   place: {
@@ -84,6 +87,8 @@ export function eventToForm(e?: CqrEvent): EventForm {
       to: e?.when.to,
       certainty: e?.when.certainty ?? 'estimated',
       basis: lang(e?.when.basis),
+      hasCore: !!e?.when.core,
+      core: { from: e?.when.core?.from, to: e?.when.core?.to, basis: lang(e?.when.core?.basis) },
       alternatives: (e?.when.alternatives ?? []).map((a) => ({ from: a.from, to: a.to, basis: lang(a.basis), sources: refs(a.sources) })),
     },
     place: {
@@ -128,6 +133,7 @@ export function eventFromForm(f: EventForm): unknown {
       to: f.when.to,
       certainty: f.when.certainty,
       basis: f.when.basis,
+      core: f.when.hasCore ? { from: f.when.core.from, to: f.when.core.to, basis: f.when.core.basis } : undefined,
       alternatives: f.when.alternatives.map((a) => ({ from: a.from, to: a.to, basis: a.basis, sources: outRefs(a.sources) })),
     },
     place: {

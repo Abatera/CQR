@@ -8,12 +8,25 @@ title:
 summary:
   en: Adam, peace be upon him, the first human and, according to hadith, a prophet to whom God spoke. The Quran tells of his creation, the angels' prostration, the slip in the Garden and his descent to earth.
 when:
-  from: -4250
-  to: -3751
+  from: -5435
+  to: -4476
   certainty: reckoned
   basis:
-    en: Counted back from Abraham (about 2000 BCE) with the hadith of Abu Umama, which gives ten qurun between Abraham and Noah and ten between Noah and Adam, each qarn read as a hundred years, as in Ibn Sa'd's report. The bar is a window around that reckoning, not Adam's life, which hadith gives as a thousand years. If a qarn means a generation, the intervals were longer.
+    en: "Counted back from Noah's death, about 3000 BCE (see Noah): Noah was born about 4350 BCE, 126 years after Adam's death (Ibn Jarir), so Adam died about 4476 BCE. The span is Adam's life of 960 years: the thousand years written for him, less the forty he gave to David, in al-Tirmidhi's version of the hadith."
   alternatives:
+    - from: -5475
+      to: -4476
+      basis:
+        en: A full thousand years, as in Ahmad's version of the hadith, in which God completed Adam's thousand; this is Ibn Kathir's view.
+      sources:
+        - id: ibn-kathir-bidaya
+          locator: vol. 2, «ذكر كمية حياته وكيفية وفاته عليه السلام»
+    - from: -5405
+      to: -4476
+      basis:
+        en: 930 years, the Torah's figure (Genesis 5:5).
+      sources:
+        - { id: bible-web, locator: Genesis 5:5 }
     - from: -5150
       to: -4651
       basis:
@@ -73,20 +86,62 @@ tradition:
           en: Authenticated by al-Hakim, and al-Dhahabi agreed, as quoted by al-Albani.
   - kind: hadith
     attribution:
-      en: The Prophet ﷺ, narrated by Ibn Abbas and by Abu Hurayra
+      en: The Prophet ﷺ, narrated by Abu Hurayra (al-Tirmidhi's version)
     text:
-      en: Adam's lifespan was written as a thousand years, and David's, with years added from Adam's, as a hundred. Ibn Kathir rejects the Torah's 930 years for Adam where it contradicts this.
+      en: David's life was set at sixty years, and Adam asked God to add forty from his own. When Adam's life was over, the angel of death came; Adam said forty years were left, and was told he had given them to his son David. "Adam denied, so his offspring deny; Adam forgot, so his offspring forget." Nothing is said of the years being restored, so Adam died forty years short of his written life, which is 960 years if that life was a thousand.
+      ar: فجحد آدم فجحدت ذريته ، ونسي آدم فنسيت ذريته
     source:
-      id: ibn-kathir-bidaya
-      locator: vol. 1, «وفاة آدم ووصيته إلى ابنه شيث»
+      id: ibn-kathir-tafsir
+      locator: "7:172"
     gradings:
       - grade: sahih
         by: al-Tirmidhi
         source:
+          id: ibn-kathir-tafsir
+          locator: "7:172"
+        note:
+          en: Hasan sahih; it has also been narrated by other routes from Abu Hurayra.
+      - grade: sahih
+        by: al-Hakim
+        source:
+          id: ibn-kathir-tafsir
+          locator: "7:172"
+        note:
+          en: Sound on the condition of Muslim, though neither al-Bukhari nor Muslim included it.
+  - kind: hadith
+    attribution:
+      en: The Prophet ﷺ, narrated by Ibn Abbas (Ahmad's version)
+    text:
+      en: Adam's life was a thousand years, and he added forty of them to David, whose life had been set at sixty. Adam forgot what he had given his son, and God completed for Adam a thousand years, and for David a hundred.
+      ar: فأتمها الله لآدم ألف سنة، ولداود مائة سنة
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 2, «ذكر كمية حياته وكيفية وفاته عليه السلام»
+    gradings:
+      - grade: other
+        by: Ibn Kathir
+        source:
           id: ibn-kathir-bidaya
           locator: vol. 2, «ذكر كمية حياته وكيفية وفاته عليه السلام»
         note:
-          en: Authenticated by al-Tirmidhi in Abu Hurayra's version; also narrated by Ahmad, Ibn Khuzayma and Ibn Hibban, and al-Hakim called it on the condition of Muslim, as Ibn Kathir reports.
+          en: Cited together with al-Tirmidhi's authenticated version and those of Ibn Khuzayma and Ibn Hibban, with al-Hakim's "on the condition of Muslim"; no separate grading of this wording.
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+    text:
+      en: "Adam's life was written in the Preserved Tablet as a thousand years. The Torah's 930 years do not contradict this: if they are sound, they count his time on earth after the descent, which is 957 lunar years; add the 43 years he spent in the Garden before the descent, and the whole is a thousand."
+      ar: فيكون الجميع ألف سنة
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «وفاة آدم ووصيته إلى ابنه شيث»
+  - kind: ahl-al-kitab
+    attribution:
+      en: The Torah (Genesis 5)
+    text:
+      en: "Adam lived 930 years. Adding the fathers' ages at each son's birth in Genesis 5 puts the birth of Enoch (Idris) 308 years before Adam's death and the birth of Noah 126 years after it: these are the figures that Ibn Ishaq and Ibn Jarir report."
+    source:
+      id: bible-web
+      locator: Genesis 5:3-32
   - kind: hadith
     attribution:
       en: "Ibn Abbas, raised to the Prophet ﷺ in one chain: Hammad ibn Salama, from Ali ibn Zayd ibn Jud'an, from Yusuf ibn Mihran, from Ibn Abbas"
@@ -127,4 +182,4 @@ tradition:
 related:
   - { id: idris, type: context }
 tags: [ prophets, adam, chronology ]
-notes: "The chain hadith in al-Mustadrak (Ibn Abbas via Yusuf ibn Mihran and Ali ibn Zayd) is probably the report of the intervals between the prophets that the owner asked about: confirm with the owner and check its full text in an edition. The gradings of the Abu Umama hadith by al-Hakim and al-Albani were read in secondary sources (islamqa.info 20907, islamweb.net 203734); check them in the books."
+notes: "Ages decided with the owner on 2026-11-25: the chronology before Abraham is counted back from Noah's death through the reported ages; Adam's 960 years follow the owner's reading of al-Tirmidhi's version, with 1,000 and 930 as alternatives. The chain hadith in al-Mustadrak (Ibn Abbas via Yusuf ibn Mihran and Ali ibn Zayd) is probably the report of the intervals between the prophets that the owner asked about: confirm with the owner and check its full text in an edition. The gradings of the Abu Umama hadith by al-Hakim and al-Albani were read in secondary sources (islamqa.info 20907, islamweb.net 203734); check them in the books."

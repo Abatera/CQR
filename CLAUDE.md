@@ -4,7 +4,7 @@ A public, educational, interactive web app. It places events narrated in the Qur
 
 ## Status
 
-**Phases 0–2 are built (2026-11-23); Phase 3 content is in draft.** The app runs: timeline, map, facts panel, Quran reader and search, and a local editor with forms for all content. The 15 pilot events are drafts written from unverified research leads. A Prophets lane with 25 researched draft entries and a Tradition layer (hadith and historians, with gradings) were added the same day; the research is in [docs/research/prophets-chronology.md](docs/research/prophets-chronology.md). See [docs/07-roadmap.md](docs/07-roadmap.md) for what is done and what is next.
+**Phases 0–2 are built (2026-11-23); Phase 3 content is in draft.** The app runs: timeline, map, facts panel, Quran reader and search, and a local editor with forms for all content. The 15 pilot events are drafts written from unverified research leads. A Prophets lane with 25 researched draft entries and a Tradition layer (hadith and historians, with gradings) were added the same day; the research is in [docs/research/prophets-chronology.md](docs/research/prophets-chronology.md). On 2026-11-25 the Flood of Noah was researched and added in four draft entries ([docs/research/the-flood.md](docs/research/the-flood.md)). See [docs/07-roadmap.md](docs/07-roadmap.md) for what is done and what is next.
 
 The planning docs were written on 2026-11-23 on a different PC, at the end of a planning conversation between the project owner and Claude. Development happens on this machine. Decisions made since then are logged in [docs/08-decisions.md](docs/08-decisions.md) (D14 onward).
 

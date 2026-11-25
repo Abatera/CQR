@@ -8,11 +8,11 @@ title:
 summary:
   en: Idris, peace be upon him, whom the Quran calls truthful, a prophet raised to a high station (19:56-57). Muslim scholars commonly identify him with Enoch (Akhnukh) of the biblical genealogy.
 when:
-  from: -3700
-  to: -3301
+  from: -4783
+  to: -4419
   certainty: reckoned
   basis:
-    en: Between Adam and Noah. Ibn Kathir calls him the first of Adam's descendants to be given prophethood after Adam and Seth, and Ibn Ishaq says he lived through 308 years of Adam's life, so he is placed early in the reckoned interval between Adam and Noah. No report gives his years.
+    en: Ibn Ishaq says he lived through 308 years of Adam's life, so his span starts 308 years before Adam's death (about 4476 BCE, see Adam). No Islamic report gives his age; the span uses the 365 years the Torah gives Enoch, with whom Ibn Kathir identifies Idris. In that count he is taken 69 years before Noah's birth, so the three do not collide.
 place:
   status: unknown
   description:
@@ -28,6 +28,14 @@ tradition:
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «إدريس عليه السلام»
+  - kind: ahl-al-kitab
+    attribution:
+      en: The Torah (Genesis 5)
+    text:
+      en: All Enoch's days were 365 years. Enoch walked with God, and he was not found, for God took him.
+    source:
+      id: bible-web
+      locator: Genesis 5:23-24
 related:
   - { id: adam, type: context }
   - { id: noah, type: context }

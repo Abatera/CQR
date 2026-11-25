@@ -73,7 +73,8 @@
   authors: [ al-Qurtubi ]
   title: al-Jami' li-Ahkam al-Qur'an
   title_original: الجامع لأحكام القرآن
-  notes: Not read directly. The reference 6/121 is the one given by islamqa.info (answer 20907).
+  url: https://quran.ksu.edu.sa/tafseer/qortobi/sura11-aya44.html
+  notes: The commentary on 11:44 was read on the King Saud University tafsir site. The reference 6/121 was not read directly; it is the one given by islamqa.info (answer 20907).
 
 - id: murad-radd-amin
   type: book
@@ -110,4 +111,124 @@
   authors: [ Flavius Josephus ]
   title: Antiquities of the Jews
   edition: Translated by William Whiston
-  url: https://penelope.uchicago.edu/josephus/ant-18.html
+  url: https://penelope.uchicago.edu/josephus/
+  notes: "Read in the online Whiston text: book 1 at https://penelope.uchicago.edu/josephus/ant-1.html and book 18 at https://penelope.uchicago.edu/josephus/ant-18.html."
+
+- id: ibn-kathir-tafsir
+  type: tafsir
+  authors: [ Ibn Kathir ]
+  title: Tafsir al-Qur'an al-'Azim
+  title_original: تفسير القرآن العظيم
+  url: https://quran.ksu.edu.sa/tafseer/katheer/sura11-aya44.html
+  notes: Read verse by verse on the King Saud University tafsir site (locators give the verse). The passage at 7/22 was read as quoted by islamqa.info (answer 327751).
+
+- id: tabari-tafsir
+  type: tafsir
+  authors: [ al-Tabari ]
+  title: Jami' al-Bayan 'an Ta'wil Ay al-Qur'an
+  title_original: جامع البيان عن تأويل آي القرآن
+  url: https://quran.ksu.edu.sa/tafseer/tabary/sura11-aya44.html
+  notes: Read verse by verse on the King Saud University tafsir site; narration numbers are those shown there.
+
+- id: ibn-ashur-tahrir
+  type: tafsir
+  authors: [ Muhammad al-Tahir Ibn 'Ashur ]
+  title: al-Tahrir wa-l-Tanwir
+  title_original: التحرير والتنوير
+  notes: Not read directly. The passage at 23/47 was read as quoted by islamqa.info (answer 327751).
+
+- id: ibn-hajar-fath
+  type: book
+  authors: [ Ibn Hajar al-'Asqalani ]
+  title: Fath al-Bari bi-Sharh Sahih al-Bukhari
+  title_original: فتح الباري بشرح صحيح البخاري
+  notes: Not read directly. The passage at 1/437 was read as quoted by islamqa.info (answer 332311).
+
+- id: shinqiti-adwa
+  type: tafsir
+  authors: [ Muhammad al-Amin al-Shinqiti ]
+  title: Adwa' al-Bayan
+  title_original: أضواء البيان في إيضاح القرآن بالقرآن
+  notes: Not read directly. The passage at 3/482 was read as quoted by islamqa.info (answer 332311).
+
+- id: ibn-baz-flood
+  type: website
+  authors: [ "'Abd al-'Aziz Ibn Baz" ]
+  title: Did Noah's flood cover the whole earth? (fatwa 23538)
+  title_original: هل ثبت أن طوفان نوح عم الأرض كلها؟
+  url: https://binbaz.org.sa/fatwas/23538
+  accessed: 2026-11-25
+  notes: The official site of Ibn Baz's fatwas; the page gives no date.
+
+- id: abduh-flood-fatwa
+  type: website
+  authors: [ Muhammad 'Abduh ]
+  title: The flood of Noah (fatwa no. 4273, 25 February 1900)
+  title_original: طوفان سيدنا نوح عليه السلام
+  publisher: Dar al-Ifta al-Misriyya
+  url: https://www.dar-alifta.org/ar/fatwa/details/14256
+  accessed: 2026-11-25
+
+- id: etcsl-king-list
+  type: inscription
+  title: The Sumerian king list (ETCSL 2.1.1), translation
+  container: The Electronic Text Corpus of Sumerian Literature
+  place: Oxford
+  url: https://etcsl.orinst.ox.ac.uk/section2/tr211.htm
+  notes: Numerical data follow manuscript WB, as the page states. Manuscripts and bibliography are at https://etcsl.orinst.ox.ac.uk/section2/b211.htm
+
+- id: etcsl-flood-story
+  type: inscription
+  title: The flood story (ETCSL 1.7.4), translation
+  container: The Electronic Text Corpus of Sumerian Literature
+  place: Oxford
+  url: https://etcsl.orinst.ox.ac.uk/section1/tr174.htm
+  notes: A fragmentary text; the main manuscript is CBS 10673, from Nippur (https://etcsl.orinst.ox.ac.uk/section1/b174.htm).
+
+- id: kramer-1967
+  type: article
+  authors: [ Samuel Noah Kramer ]
+  title: Reflections on the Mesopotamian Flood
+  container: Expedition
+  volume: "9"
+  issue: "4"
+  year: 1967
+  publisher: University of Pennsylvania Museum
+  url: https://www.penn.museum/sites/expedition/reflections-on-the-mesopotamian-flood/
+  notes: A historical reprint; the museum notes that it may not reflect current views. Kramer follows M. E. L. Mallowan, 'Noah's Flood Reconsidered', Iraq 26 (1964), which has not been read.
+
+- id: lippsett-2009
+  type: article
+  authors: [ Lonny Lippsett ]
+  title: Noah's Not-so-big Flood
+  container: Oceanus
+  volume: "47"
+  issue: "2"
+  year: 2009
+  publisher: Woods Hole Oceanographic Institution
+  url: https://www.whoi.edu/oceanus/feature/noahs-not-so-big-flood
+  notes: Reports the work of Liviu Giosan and colleagues (Quaternary Science Reviews, 2009), which has not been read directly.
+
+- id: rpi-2002
+  type: website
+  title: Noah's Flood Hypothesis May Not Hold Water
+  year: 2002
+  publisher: Rensselaer Polytechnic Institute
+  url: https://news.rpi.edu/luwakkey/371
+  notes: A university news release on work by Jun Abrajano and colleagues (GSA Today, May 2002), which has not been read directly. It dates the proposed flood differently from Lippsett 2009.
+
+- id: suhari-ansab
+  type: book
+  authors: [ al-'Awtabi al-Suhari ]
+  title: al-Ansab
+  title_original: الأنساب
+  url: https://shamela.ws/book/491
+  notes: Read on al-Maktaba al-Shamila, pp. 17 and 21; it quotes Ibn Ishaq, Wahb ibn Munabbih, Ibn Qutayba and the Torah on Noah.
+
+- id: ibn-al-jawzi-amar
+  type: book
+  authors: [ Ibn al-Jawzi ]
+  title: A'mar al-A'yan
+  title_original: أعمار الأعيان
+  url: https://shamela.ws/book/22/162
+  notes: Read on al-Maktaba al-Shamila, p. 128. The editor's notes quote Ibn Kathir's Qisas al-Anbiya on the ages of Adam and Noah.

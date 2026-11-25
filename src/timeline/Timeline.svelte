@@ -335,6 +335,22 @@
                       pointer-events="none"
                     />
                   {/if}
+                  {#if ev.when.core}
+                    {@const k0 = x(yearStart(ev.when.core.from))}
+                    {@const k1 = x(yearEnd(ev.when.core.to))}
+                    <rect
+                      x={k0}
+                      y={cy - h / 2 + 2}
+                      width={Math.max(k1 - k0, 2)}
+                      height={h - 4}
+                      rx="2"
+                      fill={c}
+                      fill-opacity="0.75"
+                      pointer-events="none"
+                    >
+                      <title>{ev.when.core.basis.en}</title>
+                    </rect>
+                  {/if}
                   {#if it.labelInside}
                     <text x={vis0 + 5} y={cy + 4} class="label inside">{ev.title.en}</text>
                   {:else}

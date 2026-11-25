@@ -1,0 +1,161 @@
+id: the-flood
+kind: event
+lane: quran
+review: draft
+title:
+  en: The Flood of Noah
+  ar: طوفان نوح
+summary:
+  en: After Noah, peace be upon him, had called his people for a thousand years less fifty, the Flood took them (29:14). Water poured from the sky and burst from the earth (54:11-12); Noah, his family and the believers were carried in the Ark, which came to rest on al-Judi (11:44).
+when:
+  from: -3350
+  to: -3350
+  certainty: reckoned
+  basis:
+    en: 350 years before Noah's death (Ibn Sa'd), which is placed ten qurun, read as a thousand years, before Abraham, about 3000 BCE (see Noah). The year marks that reckoning only; history cannot date the Flood of the Quran.
+  alternatives:
+    - from: -3340
+      to: -3340
+      basis:
+        en: 340 years before Noah's death, by Ibn Ishaq's figure for his life after the Ark.
+      sources:
+        - { id: suhari-ansab, locator: p. 21 }
+place:
+  status: proposed
+  description:
+    en: The Quran names al-Judi as where the Ark came to rest (11:44) and does not say where Noah's people lived. The commentators place al-Judi in al-Jazira or near Mosul; the Torah names "Ararat's mountains". Both areas drawn are rough sketches.
+  opinions:
+    - name:
+        en: al-Judi, a mountain in al-Jazira (Mujahid) or near Mosul (al-Dahhak, al-Qurtubi)
+      geometry:
+        type: Polygon
+        coordinates:
+          - - [ 41.6, 37.6 ]
+            - [ 43.8, 37.6 ]
+            - [ 43.8, 36 ]
+            - [ 41.6, 36 ]
+            - [ 41.6, 37.6 ]
+      sources:
+        - { id: tabari-tafsir, locator: "11:44, narrations 18197, 18198, 18203" }
+        - { id: qurtubi-jami, locator: "11:44" }
+    - name:
+        en: Ararat's mountains (Genesis 8:4)
+      geometry:
+        type: Polygon
+        coordinates:
+          - - [ 42.8, 40.2 ]
+            - [ 44.9, 40.2 ]
+            - [ 44.9, 38.6 ]
+            - [ 42.8, 38.6 ]
+            - [ 42.8, 40.2 ]
+      sources:
+        - { id: bible-web, locator: Genesis 8:4 }
+    - name:
+        en: A mountain of the Cordyaeans, in Armenia (Berosus, quoted by Josephus)
+      sources:
+        - { id: josephus-antiquities, locator: 1.3.6 }
+quran: [ "11:36-48", "23:27-29", "29:14-15", "37:75-82", "54:9-15", "69:11-12", "71:25-26" ]
+tafsir:
+  - text:
+      en: "Ibn Kathir: when the people of the earth had drowned, except those in the Ark, God commanded the earth to swallow its water. Elsewhere he says the Flood covered the whole earth, its length and breadth, and that the drowned perished to the last."
+      ar: يخبر تعالى أنه لما غرق أهل الأرض إلا أصحاب السفينة
+    source:
+      id: ibn-kathir-tafsir
+      locator: 11:44; 7/22
+  - text:
+      en: "Al-Tabari on 37:77 (We made his offspring the survivors): all people since the destruction in Noah's time are his descendants. Ibn Abbas said that none remained but Noah's offspring, and Qatada said the same."
+      ar: لم يبق إلا ذرية نوح
+    source:
+      id: tabari-tafsir
+      locator: "37:77"
+  - text:
+      en: "Ibn 'Ashur: this rests on the view that the Flood covered the whole earth and uprooted all humankind, so that every nation descends from Noah's three sons."
+      ar: وهذا جار على أن الطوفان قد عم الأرض كلها، واستأصل جميع البشر
+    source:
+      id: ibn-ashur-tahrir
+      locator: 23/47
+  - text:
+      en: "Ibn Hajar raises a possibility that would reconcile the texts: when Noah was sent, there may have been no one on earth but Noah's people."
+      ar: ويحتمل أنه لم يكن في الأرض عند إرسال نوح إلا قوم نوح
+    source:
+      id: ibn-hajar-fath
+      locator: 1/437
+  - text:
+      en: "Al-Shinqiti: no sound text shows how far humankind had spread at that time."
+      ar: ولا يعلم نص صحيح يبين مدى انتشار البشر يومئذ
+    source:
+      id: shinqiti-adwa
+      locator: 3/482
+  - text:
+      en: "Ibn Baz: the water reached all the people, and the disbelievers were all destroyed except those in the Ark; but that it covered the whole earth is not necessary, and whether it reached every empty place, God knows best."
+      ar: لكن كونه عم الأرض، فما هو بلزوم
+    source: ibn-baz-flood
+  - text:
+      en: "Muhammad 'Abduh (fatwa of 1900): the People of the Book and the scholars of the community hold that the Flood was universal, but no decisive text states it, and most later researchers hold that it was not. He treats it as a disputed question, and says universality may not be denied on the strength of mere stories from the people of China."
+      ar: فلم يرد فيه نص قاطع على عموم الطوفان
+    source: abduh-flood-fatwa
+  - text:
+      en: "Al-Qurtubi: al-Judi is a mountain near Mosul; it has also been said that al-Judi is a name for any mountain."
+      ar: الجودي جبل بقرب الموصل
+    source:
+      id: qurtubi-jami
+      locator: "11:44"
+tradition:
+  - kind: historian
+    attribution:
+      en: Ibn Kathir, citing Ibn Abbas, Ka'b al-Ahbar and others
+    text:
+      en: Those on the Ark were eighty people, with their women (Ibn Abbas); seventy-two (Ka'b al-Ahbar); or ten. They were on the Ark 150 days (Ibn Abbas), and stayed on al-Judi a month before they came down (Qatada).
+      ar: كانوا ثمانين نفسا منهم نساؤهم
+    source:
+      id: ibn-kathir-tafsir
+      locator: 11:40; 11:44
+  - kind: hadith
+    attribution:
+      en: Ibn Kathir, with a hadith of Abu Hurayra in the Musnad of Ahmad
+    text:
+      en: They came out of the Ark on the day of 'Ashura, 10 Muharram; Qatada and Ibn Jurayj report the same (al-Tabari, narrations 18188-18189). On this Ibn Kathir cites a hadith of Abu Hurayra from the Musnad of Ahmad.
+      ar: وكان خروجهم من السفينة في يوم عاشوراء من المحرم
+    source:
+      id: ibn-kathir-tafsir
+      locator: "11:44"
+    gradings:
+      - grade: other
+        by: Ibn Kathir
+        source:
+          id: ibn-kathir-tafsir
+          locator: "11:44"
+        note:
+          en: Strange (gharib) by this route, though part of it has a supporting report in the Sahih.
+  - kind: ahl-al-kitab
+    attribution:
+      en: The Torah (Genesis)
+    text:
+      en: Noah was 600 years old when the Flood came; the waters prevailed 150 days; the Ark rested on Ararat's mountains; Noah lived 350 years after the Flood, 950 in all.
+    source:
+      id: bible-web
+      locator: Genesis 7:6, 7:24, 8:4, 9:28-29
+history:
+  - claim:
+      en: Sumerian texts tell of a flood that "swept over" the land before the kingship "descended from heaven" again at Kish (the Sumerian King List), and of Zi-ud-sura, who survived seven days and nights of flood in a huge boat and was settled in Dilmun (the Flood Story). Kramer dates their composition to about 2100-2000 BCE, with copies from the early 2nd millennium BCE.
+    status: established
+    sources: [ etcsl-king-list, etcsl-flood-story, kramer-1967 ]
+  - claim:
+      en: Excavators found flood deposits at Kish and Shuruppak directly above remains of the Jemdet Nasr period, about 3000 BCE; Woolley's flood layer at Ur is older. Following Mallowan, Kramer concluded that the flood behind the Mesopotamian tradition was a real catastrophe around 3000 BCE, "but by no means universal". Whether these deposits record the flood of the texts is debated.
+    status: debated
+    sources: [ kramer-1967 ]
+  - claim:
+      en: Josephus writes that the Ark rested on a mountain in Armenia, and quotes Berosus the Chaldean that part of the ship was still to be seen "at the mountain of the Cordyaeans".
+    status: established
+    sources:
+      - { id: josephus-antiquities, locator: 1.3.5-6 }
+connection:
+  text:
+    en: The reckoning puts the Flood around 3350 BCE, between Woolley's flood layer at Ur (at least 3500 BCE) and the layers at Kish and Shuruppak (about 3000 BCE), in the age before the first dynasties that Mesopotamian scribes placed after a great flood. This is a coincidence between a rough reckoning and rough dates, offered as a reflection, not a proof. The reckoning depends on reading a qarn as a century and on Ibn Sa'd's 350 years, and the Quran names neither a date nor the land of Noah's people.
+related:
+  - { id: noah, type: context }
+  - { id: sumerian-flood-texts, type: parallel }
+  - { id: mesopotamian-flood-layers, type: parallel }
+  - { id: black-sea-flood, type: parallel }
+tags: [ noah, flood, mesopotamia, chronology ]
+notes: "TODO: Yaqut's Mu'jam al-Buldan entry on al-Judi (not reached on Wikisource); the grading of the hadith of Samura on Noah's sons (Sam, Ham, Yafith), cited by Ibn Kathir on 37:77; Ibn Kathir's flood chapter in al-Bidaya, which came back only as a machine summary and was not used. The owner sets the connection's confidence."

@@ -14,6 +14,9 @@ describe('short citations', () => {
     expect(surname('al-Hakim al-Naysaburi')).toBe('al-Hakim');
     expect(surname('al-Bukhari')).toBe('al-Bukhari');
     expect(surname('Muhammad Nasir al-Din al-Albani')).toBe('al-Albani');
+    expect(surname("Muhammad al-Tahir Ibn 'Ashur")).toBe("Ibn 'Ashur");
+    expect(surname("'Abd al-'Aziz Ibn Baz")).toBe('Ibn Baz');
+    expect(surname('Muhammad al-Amin al-Shinqiti')).toBe('al-Shinqiti');
   });
 
   it('formats a citation with its locator', () => {

@@ -134,6 +134,21 @@
     {/if}
     <LangField label="Basis" bind:value={m.when.basis} path="when.basis" required hint='What the date rests on, e.g. "traditional biblical chronology" or "radiocarbon dating of slag layers".' />
 
+    <label class="check">
+      <input type="checkbox" bind:checked={m.when.hasCore} />
+      A source fixes part of this span (drawn solid inside the bar), e.g. Noah's 950 years among his people
+    </label>
+    {#if m.when.hasCore}
+      <div class="card">
+        <div class="grid4">
+          <YearField label="Certain part from *" bind:value={m.when.core.from} path="when.core.from" />
+          <YearField label="Certain part to *" bind:value={m.when.core.to} path="when.core.to" />
+        </div>
+        <LangField label="What fixes it" bind:value={m.when.core.basis} path="when.core.basis" required hint="e.g. The Quran gives 950 years among his people (29:14)." />
+        <FieldError path="when.core" exact />
+      </div>
+    {/if}
+
     <div class="subhead">Other datings (when scholars disagree)</div>
     {#each m.when.alternatives as alt, i (i)}
       <div class="card">

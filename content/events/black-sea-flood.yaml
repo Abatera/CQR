@@ -1,0 +1,46 @@
+id: black-sea-flood
+kind: period
+lane: technology
+review: draft
+title:
+  en: The Black Sea flood hypothesis
+  ar: فرضية فيضان البحر الأسود
+summary:
+  en: In 1997 the geologists Ryan and Pitman proposed that Mediterranean water surged over the Bosphorus sill into a much lower Black Sea lake, drowning its shores, an event since linked to the story of Noah's flood. Later studies found a smaller or more gradual rise.
+when:
+  from: -7500
+  to: -5500
+  certainty: debated
+  basis:
+    en: The proposed date varies between accounts, about 9,400 years ago in Oceanus (2009) and about 7,500 years ago in a 2002 Rensselaer release; the span covers both.
+place:
+  status: known
+  description:
+    en: The Black Sea and the Bosphorus strait. The outline is a rough sketch of the sea.
+  geometry:
+    type: Polygon
+    coordinates:
+      - - [ 27.5, 42 ]
+        - [ 28.5, 44.5 ]
+        - [ 30.5, 46.5 ]
+        - [ 33, 46 ]
+        - [ 35, 45.3 ]
+        - [ 37.5, 45.5 ]
+        - [ 41.5, 42 ]
+        - [ 38, 41 ]
+        - [ 33, 41.8 ]
+        - [ 29, 41.2 ]
+        - [ 27.5, 42 ]
+history:
+  - claim:
+      en: Ryan and Pitman proposed that Mediterranean water surged over the Bosphorus sill into a lake at least 80 m lower than today's Black Sea, raising it by 50-60 m and drowning about 70,000 square kilometres.
+    status: debated
+    sources: [ lippsett-2009 ]
+  - claim:
+      en: A 2009 study of a Danube delta core (Giosan and colleagues) found the lake only about 30 m lower and a rise of only 5-10 m; a 2002 study of Marmara Sea sediments (Abrajano and colleagues) described a gradual rise over about 2,000 years.
+    status: debated
+    sources: [ lippsett-2009, rpi-2002 ]
+related:
+  - { id: the-flood, type: parallel }
+tags: [ flood, geology, black-sea ]
+notes: "TODO: read the primary papers (Ryan et al., Marine Geology 138, 1997; Giosan et al., Quaternary Science Reviews, 2009) and settle the date. The two accounts read give different ages."

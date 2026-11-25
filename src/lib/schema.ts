@@ -48,7 +48,8 @@ export const CERTAINTIES = ['established', 'estimated', 'traditional', 'reckoned
  * - hadith: attributed to the Prophet ﷺ;
  * - athar: a report from a Companion or a Successor;
  * - historian: an account or reckoning by a Muslim historian or commentator;
- * - ahl-al-kitab: a report from the People of the Book, as transmitted by Muslim scholars.
+ * - ahl-al-kitab: a report from the People of the Book, as transmitted by Muslim scholars or
+ *   cited from their scriptures.
  */
 export const TRADITION_KINDS = ['hadith', 'athar', 'historian', 'ahl-al-kitab'] as const;
 /** Hadith gradings, as given by a named scholar. */
@@ -74,6 +75,19 @@ export const DateAlternative = z
   })
   .refine(fromBeforeTo, FROM_TO_MSG);
 
+/**
+ * The part of a span that a source fixes, inside a longer span that is less certain,
+ * e.g. the 950 years Noah spent among his people (Quran 29:14) within his whole life.
+ * It is drawn solid inside the bar.
+ */
+export const CoreSpan = z
+  .strictObject({
+    from: YearSchema,
+    to: YearSchema,
+    basis: LangText,
+  })
+  .refine(fromBeforeTo, FROM_TO_MSG);
+
 export const When = z
   .strictObject({
     from: YearSchema,
@@ -81,9 +95,14 @@ export const When = z
     certainty: z.enum(CERTAINTIES),
     /** What the date rests on, e.g. "traditional biblical chronology". */
     basis: LangText,
+    core: CoreSpan.optional(),
     alternatives: z.array(DateAlternative).optional(),
   })
-  .refine(fromBeforeTo, FROM_TO_MSG);
+  .refine(fromBeforeTo, FROM_TO_MSG)
+  .refine((w) => !w.core || (w.core.from >= w.from && w.core.to <= w.to), {
+    message: 'The certain part must lie inside the whole span.',
+    path: ['core'],
+  });
 
 /** [longitude, latitude], as in GeoJSON. */
 export const LonLat = z.tuple([

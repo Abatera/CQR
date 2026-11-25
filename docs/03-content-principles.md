@@ -12,7 +12,7 @@ Every event keeps these layers apart:
 |---|---|---|
 | **Quran** | Verse references. The text is loaded from the dataset. | Each reference is checked against the dataset. A paraphrase is never presented as the text. |
 | **Tafsir** | What classical commentators said. | Name the commentator, the work, and where in it the passage is (volume and page, or the verse it comments on). |
-| **Tradition** | Hadith, reports from the Companions and Successors, the classical historians, and reports from the People of the Book as transmitted by Muslim scholars. | Name who the report is attributed to and the work it is found in. Give every hadith or Companion's report a grading, with the scholar who gave it and where. Present reports as reports, never as fact, and show weak ones as weak. Arabic, if quoted, comes from the cited work, never from memory. |
+| **Tradition** | Hadith, reports from the Companions and Successors, the classical historians, and reports from the People of the Book, whether transmitted by Muslim scholars or cited from their scriptures. | Name who the report is attributed to and the work it is found in. Give every hadith or Companion's report a grading, with the scholar who gave it and where. Present reports as reports, never as fact, and show weak ones as weak. Arabic, if quoted, comes from the cited work, never from memory. |
 | **History and archaeology** | What is known from outside the Quran. | Each claim has at least one source and a status: `established` or `debated`. |
 | **Connection** | The project's own reflection that links the layers above. | Labeled as interpretation, with a confidence of `low`, `medium` or `high`. Never stated as fact. |
 

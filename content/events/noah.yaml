@@ -8,18 +8,29 @@ title:
 summary:
   en: Nuh (Noah), peace be upon him, sent to his people, who rejected him for a thousand years less fifty until the Flood (29:14). The hadith of intercession calls him the first of the messengers to the people of the earth.
 when:
-  from: -3250
-  to: -2751
+  from: -4350
+  to: -3000
   certainty: reckoned
   basis:
-    en: "Ten qurun before Abraham (about 2000 BCE) in the hadith of Abu Umama, reading a qarn as a hundred years, as Ibn Sa'd's report does. The bar is a window around that reckoning, not Noah's life: the Quran says he stayed among his people a thousand years less fifty."
+    en: "Noah's death is placed ten qurun, read as a thousand years, before Abraham (hadith of Abu Umama): about 3000 BCE. Counting back: 350 years after the Flood (Ibn Sa'd; also the Torah), the 950 years among his people that the Quran gives, and the age of fifty at which one report says he was sent. Only the 950 years are fixed; the years before his mission and after the Flood are reported variously."
+  core:
+    from: -4300
+    to: -3351
+    basis:
+      en: The Quran gives the 950 years he stayed among his people before the Flood took them (29:14).
   alternatives:
-    - from: -4150
-      to: -3651
+    - from: -4650
+      to: -3000
       basis:
-        en: Ibn Sa'd's full chain of intervals, counted back from the Prophet's birth (about 570 CE). These intervals rest on weak chains (see Moses and Jesus).
+        en: Sent at the age of 350, a second view reported by Ibn Kathir.
       sources:
-        - { id: ibn-asakir-dimashq, locator: 1/32 }
+        - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة نوح عليه السلام»" }
+    - from: -4780
+      to: -3000
+      basis:
+        en: Sent at the age of 480, from Ibn Abbas through Ibn Jarir, reported by Ibn Kathir.
+      sources:
+        - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة نوح عليه السلام»" }
 place:
   status: proposed
   description:
@@ -84,8 +95,44 @@ tradition:
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة نوح عليه السلام»
+  - kind: historian
+    attribution:
+      en: Ibn Sa'd
+    text:
+      en: After the Ark, Noah stayed 350 years.
+      ar: ثم مكث بعد السفينة ثلاثمائة وخمسين سنة
+    source:
+      id: ibn-sad-tabaqat
+      locator: 1/35
+  - kind: historian
+    attribution:
+      en: Ibn Ishaq and Wahb ibn Munabbih, as quoted by al-Suhari
+    text:
+      en: Ibn Ishaq said Noah lived 340 years after coming down from the Ark. Wahb said his whole life was a thousand years, because he was sent to his people at fifty.
+      ar: وكان عمره ألف سنة لأنه بعث إلى قومه وهو ابن خمسين سنة
+    source:
+      id: suhari-ansab
+      locator: pp. 17, 21
+  - kind: historian
+    attribution:
+      en: Ibn al-Jawzi; Ibn Kathir, quoted by his editor
+    text:
+      en: Ibn al-Jawzi gives Noah's whole life as 1,450 years. Ibn Kathir says that the Quran requires the thousand years less fifty to be his stay among his people after his mission and before the Flood, "then God knows how long he lived after that".
+      ar: ثم الله أعلم كم عاش بعد ذلك؟
+    source:
+      id: ibn-al-jawzi-amar
+      locator: p. 128, with the editor's note 4, which quotes Ibn Kathir
+  - kind: ahl-al-kitab
+    attribution:
+      en: The Torah (Genesis)
+    text:
+      en: Noah was 600 years old when the Flood came and lived 350 years after it, 950 years in all. The Torah's whole life of 950 years is the same number as the Quran's 950 years among his people.
+    source:
+      id: bible-web
+      locator: Genesis 7:6, 9:28-29
 related:
+  - { id: the-flood, type: consequence }
   - { id: idris, type: context }
   - { id: hud, type: context }
 tags: [ prophets, noah, chronology ]
-notes: The outline of al-Jazira is a rough sketch. Other identifications of al-Judi (for example the mountains of Ararat in the Bible) can be added as opinions with sources.
+notes: The span counts back from Noah's death at about 3000 BCE (decided with the owner on 2026-11-25 so that the prophets after Noah keep their dates). The age at his mission (50) is the first of the three views Ibn Kathir lists; the owner may choose another. The outline of al-Jazira is a rough sketch. Other identifications of al-Judi (for example the mountains of Ararat in the Bible) can be added as opinions with sources.

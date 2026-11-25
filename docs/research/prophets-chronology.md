@@ -54,7 +54,9 @@ Only two reports are sound. The Prophet ﷺ gave the *order* and the *proportion
 ## How the Prophets lane uses this
 
 1. **From Abraham onward, years are traditional.** Ibn Kathir reasons that "more than a thousand years" separate Abraham, builder of the Sacred House, from Solomon, builder of Bayt al-Maqdis. With Solomon in the 10th century BCE, that puts Abraham at or before about 2000 BCE, which also agrees with biblical tradition. The ages of Abraham, Ishmael, Isaac, Jacob, Joseph and Moses are the People of the Book's figures as Ibn Kathir reports them, with Genesis cited for comparison. Moses uses the biblical reckoning: the Exodus 480 years before Solomon's fourth year (1 Kings 6:1). David's hundred-year life comes from the hadith of Adam's lifespan, and Solomon's 52 years from Ibn Kathir's sources.
-2. **Before Abraham, years are "reckoned".** Adam, Idris, Noah, Hud and Salih are placed by the Abu Umama hadith, reading each *qarn* as a hundred years as Ibn Sa'd's report does. That puts Noah about 3000 BCE and Adam about 4000 BCE. Each is drawn as a 500-year **window** with a hatched style, not as a lifespan. The facts panel says that history cannot date this period and lists the alternative: Ibn Sa'd's full chain, counted back from the Prophet's birth, puts Adam about 4900 BCE.
+2. **Before Abraham, years are "reckoned" from the ages (revised 2026-11-25, D20).** The anchor is Noah's death, ten *qurun* (read as a thousand years) before Abraham: about 3000 BCE. From there the count goes back through the reported ages: Noah lived 350 years after the Flood (Ibn Sa'd), the 950 years among his people are the Quran's (29:14) and are drawn solid inside his bar, and he was sent at 50 (the first of three views; 350 and 480 are alternatives). He was born 126 years after Adam's death (Ibn Jarir), and Adam lived 960 years (al-Tirmidhi's version of the hadith, as the owner reads it; 1,000 in Ahmad's version and Ibn Kathir; 930 in the Torah). Idris lived through 308 years of Adam's life (Ibn Ishaq), and 365 years in all, the Torah's figure for Enoch. Hud and Salih, for whom no report gives years, keep their windows between Noah and Abraham.
+
+   **Where the 126 and 308 years come from.** Adding the fathers' ages at each son's birth in Genesis 5 puts Enoch's birth in year 622 after Adam's creation and Noah's in year 1056; Adam died in 930. So 930 − 622 = 308 and 1056 − 930 = 126: both figures, transmitted by Ibn Ishaq and Ibn Jarir, are the Torah's arithmetic. In the same count Enoch is taken in year 987, 69 years before Noah is born, so Adam, Idris and Noah do not collide: Adam and Idris overlap by 308 years, and Noah comes after both.
 3. **Prophets the reports do not date are drawn in the "unknown" style.** Job, Shu'ayb and Dhu al-Kifl are placed only where Ibn Kathir's order puts them, and the basis says so.
 4. **From the 9th century BCE, the Bible gives the frame.** For Elijah, Elisha and Jonah it ties them to kings of Israel (Ahab, Jeroboam II). For John and Jesus, Josephus and Tacitus are cited.
 5. **The Prophet Muhammad ﷺ** is dated from the Year of the Elephant (Ibn Ishaq and "the majority", per Ibn Kathir) to his death in 11 AH / 632 CE, aged 63 (al-Bukhari and Muslim, via Ibn Kathir).
@@ -63,9 +65,9 @@ Only two reports are sound. The Prophet ﷺ gave the *order* and the *proportion
 
 | Prophet | Drawn at | Certainty | Main basis | Place (status) |
 |---|---|---|---|---|
-| Adam | 4250–3751 BCE | reckoned | Abu Umama, *qarn* = 100 years | unknown |
-| Idris | 3700–3301 BCE | reckoned | Ibn Kathir: first after Adam and Seth | unknown |
-| Nuh | 3250–2751 BCE | reckoned | Abu Umama | al-Judi in al-Jazira (proposed) |
+| Adam | 5435–4476 BCE | reckoned | 960 years (al-Tirmidhi's version); died 126 years before Noah's birth | unknown |
+| Idris | 4783–4419 BCE | reckoned | lived through 308 years of Adam's life (Ibn Ishaq); 365 years (Torah) | unknown |
+| Nuh | 4350–3000 BCE, of which 4300–3351 certain in length | reckoned | died 1,000 years before Abraham; 950 years among his people (Quran) | al-Judi in al-Jazira (proposed) |
 | Hud | 2700–2401 BCE | reckoned | Quran 7:69 order; Ibn Kathir | al-Ahqaf (proposed) |
 | Salih | 2400–2101 BCE | reckoned | Quran 7:74 order; Ibn Kathir | al-Hijr (proposed) |
 | Ibrahim | 2000–1826 BCE | traditional | Ibn Kathir: over 1,000 years before Solomon; 175-year life | Babylon and Hebron (proposed) |

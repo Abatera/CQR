@@ -76,11 +76,11 @@ content/
 | `lane` | yes | A lane ID. |
 | `review` | yes | `draft` or `reviewed`. Drafts are labeled in the app. |
 | `title`, `summary` | yes | Language maps. |
-| `when` | yes | `from`, `to`, `certainty` (`established`, `estimated`, `traditional`, `reckoned`, `debated` or `unknown`; `reckoned` is for years computed from intervals reported in tradition, see [03](03-content-principles.md)), `basis` (a language map: what the date rests on), and an optional `alternatives` list of `{ from, to, basis, sources }`. |
+| `when` | yes | `from`, `to`, `certainty` (`established`, `estimated`, `traditional`, `reckoned`, `debated` or `unknown`; `reckoned` is for years computed from intervals reported in tradition, see [03](03-content-principles.md)), `basis` (a language map: what the date rests on), an optional `core` `{ from, to, basis }` for the part of the span that a source fixes (drawn solid inside the bar; it must lie inside the span), and an optional `alternatives` list of `{ from, to, basis, sources }`. |
 | `place` | yes | `status` (`known`, `proposed` or `unknown`), `names` (a list of `{ name, type: ancient or modern, language }`), `description`, `geometry`, and `opinions` (a list of `{ name, geometry, sources }`). |
 | `quran` | no | A list of references. Mostly used in the Quran lane, but any event may cite verses. |
 | `tafsir` | no | A list of `{ text, source }`. |
-| `tradition` | no | A list of reports: `{ kind, attribution, text, source, gradings }`. `kind` is `hadith`, `athar` (a Companion or Successor), `historian` or `ahl-al-kitab` (the People of the Book, as transmitted by Muslim scholars). `attribution` and `text` are language maps; Arabic, if given, is quoted from the cited work. `gradings` is a list of `{ grade, by, source, note }`, with grade `sahih`, `hasan`, `daif`, `very-weak`, `fabricated` or `other`, and `by` the scholar who gave it. |
+| `tradition` | no | A list of reports: `{ kind, attribution, text, source, gradings }`. `kind` is `hadith`, `athar` (a Companion or Successor), `historian` or `ahl-al-kitab` (the People of the Book, as transmitted by Muslim scholars or cited from their scriptures). `attribution` and `text` are language maps; Arabic, if given, is quoted from the cited work. `gradings` is a list of `{ grade, by, source, note }`, with grade `sahih`, `hasan`, `daif`, `very-weak`, `fabricated` or `other`, and `by` the scholar who gave it. |
 | `history` | no | A list of `{ claim, status, sources }`, with status `established` or `debated`. |
 | `connection` | no | `{ text, confidence }`, with confidence `low`, `medium` or `high`, set by the owner. |
 | `related` | no | A list of `{ id, type }`, with type `context`, `consequence` or `parallel`. |

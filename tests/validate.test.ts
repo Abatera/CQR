@@ -124,6 +124,20 @@ describe('content validation', () => {
     expect(errors(r).map((e) => e.path)).toContain('tradition[0].gradings[0].source');
   });
 
+  it('requires the certain part of a span to lie inside it', () => {
+    const when = (core: { from: number; to: number }) => ({
+      from: -4350,
+      to: -3000,
+      certainty: 'reckoned',
+      basis: { en: 'Reckoned.' },
+      core: { ...core, basis: { en: 'The Quran gives 950 years.' } },
+    });
+    const inside = validateContent(raw([baseEvent({ when: when({ from: -4300, to: -3351 }) })]), counts);
+    expect(errors(inside)).toEqual([]);
+    const outside = validateContent(raw([baseEvent({ when: when({ from: -4400, to: -3351 }) })]), counts);
+    expect(errors(outside).map((e) => e.path)).toContain('when.core');
+  });
+
   it('accepts the reckoned certainty', () => {
     const r = validateContent(raw([baseEvent({ when: { from: -4250, to: -3751, certainty: 'reckoned', basis: { en: 'Reckoned.' } } })]), counts);
     expect(errors(r)).toEqual([]);
@@ -133,9 +147,11 @@ describe('content validation', () => {
     const bare = validateContent(raw([baseEvent({ summary: { en: 'Muhammad was born in Mecca.' } })]), counts);
     expect(warnings(bare).map((w) => w.path)).toContain('summary.en');
     const ok = validateContent(
-      raw([baseEvent({ summary: { en: 'Muhammad ﷺ was born in Mecca, as Muhammad ibn Ishaq reports.' } })]),
+      raw([baseEvent({ summary: { en: "Muhammad ﷺ was born in Mecca, as Muhammad ibn Ishaq reports; Muhammad 'Abduh and Muhammad Nasir al-Din al-Albani wrote later." } })]),
       counts,
     );
     expect(warnings(ok).map((w) => w.path)).not.toContain('summary.en');
+    const end = validateContent(raw([baseEvent({ summary: { en: 'Between Jesus and Muhammad.' } })]), counts);
+    expect(warnings(end).map((w) => w.path)).toContain('summary.en');
   });
 });

@@ -1,7 +1,7 @@
 /** Settings that are likely to change. */
 
 /** The timeline's initial window, as historical years (negative = BCE): the whole sequence of prophets. */
-export const DEFAULT_VIEW = { from: -4400, to: 800 };
+export const DEFAULT_VIEW = { from: -5600, to: 800 };
 
 /** The narrowest and widest timeline windows, in years. */
 export const MIN_SPAN = 5;

@@ -2,7 +2,7 @@
   import { certaintyLabel, fullCite, GRADE_LABEL, locationLabel, TRADITION_KIND_LABEL } from '../lib/format';
   import { parseRef } from '../lib/quran-ref';
   import { refId, type CqrEvent, type SourceRef } from '../lib/schema';
-  import { formatRange } from '../lib/years';
+  import { formatRange, spanYears } from '../lib/years';
   import VerseText from '../quran/VerseText.svelte';
   import { app, CAN_EDIT } from '../state/app.svelte';
   import { href } from '../state/route';
@@ -96,6 +96,13 @@
           {ev.when.from === ev.when.to ? '' : 'From '}{formatRange(ev.when.from, ev.when.to)}, {certaintyLabel(ev.when.certainty)}.
           <span class="muted">Basis: {ev.when.basis.en}</span>
         </p>
+        {#if ev.when.core}
+          <p class="core-note">
+            <span class="core-swatch" style:background={lane?.color}></span>
+            Within this span, {formatRange(ev.when.core.from, ev.when.core.to)} ({spanYears(ev.when.core.from, ev.when.core.to)} years) is
+            fixed by the source: {ev.when.core.basis.en}
+          </p>
+        {/if}
         {#if ev.when.certainty === 'reckoned'}
           <p class="reckoned-note">
             These years are a reckoning from intervals reported in tradition, not a historical date. History and archaeology
@@ -449,6 +456,21 @@
   .certainty-reckoned {
     background: #f1ece2;
     color: #6b5530;
+  }
+  .core-note {
+    font-size: 12px;
+    color: #333;
+    display: flex;
+    gap: 6px;
+    align-items: baseline;
+  }
+  .core-swatch {
+    display: inline-block;
+    width: 18px;
+    height: 8px;
+    border-radius: 2px;
+    opacity: 0.75;
+    flex: none;
   }
   .reckoned-note {
     font-size: 12px;

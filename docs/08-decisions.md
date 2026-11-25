@@ -30,6 +30,7 @@ All entries are from the planning conversation on 2026-11-23.
 | D17 | The prophets before Abraham get **traditional years, clearly marked**: years computed from intervals reported in tradition, drawn in a distinct "reckoned" style, with the other reckonings listed as alternatives and a note that history cannot date them. This closes former open question 1. |
 | D18 | The owner's "tree" means the **chronological order of the prophets**, not a genealogy. No family-tree view; the relationships between prophets do not matter for now. |
 | D19 | **Honorifics:** ﷺ after the name of the Prophet Muhammad, and "peace be upon him" after other prophets at their first mention in each entry. This closes former open question 11. The validator warns when "Muhammad" (the Prophet) is written without ﷺ. |
+| D20 | (2026-11-25) The ages of the earliest prophets drive their dates. To keep the prophets after Noah where they are, the reckoning is **anchored on Noah's death** (about 3000 BCE, ten *qurun* read as a thousand years before Abraham) and **counted back to Adam** through the reported ages: Noah lived 350 years after the Flood (Ibn Sa'd), spent 950 years among his people (Quran 29:14) and was sent at 50 (one report); he was born 126 years after Adam's death (Ibn Jarir); Adam lived **960 years** (the owner's reading of al-Tirmidhi's version of the hadith, the thousand written for him less the forty he gave David), with 1,000 (Ahmad's version, Ibn Kathir) and 930 (the Torah) as alternatives; Idris lived through 308 years of Adam's life (Ibn Ishaq) and 365 years in all (the Torah's Enoch). Bars before Abraham are now lifespans, not 500-year windows. |
 
 ## Implemented as proposed, not yet confirmed by the owner
 
@@ -70,6 +71,17 @@ The research behind these is in [research/prophets-chronology.md](research/proph
 - **Hadith gradings are attributed to named scholars**, and a narrator's grading (for example Ibn Hajar on al-Kalbi) is shown as such. Hadith that could not be read on sunnah.com or Dorar, which refuse automated access, are cited through the works that quote them, and the source's notes say so.
 - **The default timeline window** now shows the whole sequence of prophets (4400 BCE – 800 CE), instead of 1350–850 BCE.
 - **The history layer of the prophet entries** has only claims whose sources were read: Josephus on John and Tacitus on Jesus. Claims about Thamud and Hegra, Ahab, Jeroboam II and the Exodus are left as TODOs in the entries' notes until sources are found.
+
+### For the Flood (2026-11-25)
+
+The owner asked for "a further search" on the great flood. The research is in [research/the-flood.md](research/the-flood.md).
+
+- **"The Flood of Noah"** is a Quran-lane event, reckoned at about 3000 BCE at the end of Noah's reckoned time. It uses all five layers. The question of the Flood's extent (the whole earth, or Noah's people) is set out in the **Tafsir** layer, each view in its author's words with its source, without the app taking a side.
+- **Three context entries:** "The Sumerian flood traditions" and "Flood layers at Kish and Shuruppak" in the Mesopotamia lane, and "The Black Sea flood hypothesis" (debated) in the Technology and climate lane.
+- **A draft connection** in the Flood entry notes that the reckoned date for Noah falls on the same horizon as the Kish and Shuruppak flood layers, about 3000 BCE, and calls this a coincidence, not a proof. The owner decides whether to keep it and sets its confidence.
+- **People of the Book in the Tradition layer** now also covers their scriptures cited directly (here Genesis), not only as transmitted by Muslim scholars.
+- **A certain part inside a span** (`when.core`): for Noah, the Quran's 950 years are drawn solid inside his reckoned life, whose years before his mission and after the Flood are only reported (D20). The Flood is now reckoned at about 3350 BCE, and its draft connection was reworded accordingly.
+- **The ﷺ check** now recognizes other people named Muhammad by the name that follows (for example "Muhammad 'Abduh").
 
 ## Open questions (ask the owner)
 

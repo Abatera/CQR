@@ -1,0 +1,42 @@
+id: sumerian-flood-texts
+kind: period
+lane: mesopotamia
+review: draft
+title:
+  en: The Sumerian flood traditions
+  ar: روايات الطوفان السومرية
+summary:
+  en: The Sumerian King List divides its kings into those before the flood and those after it, and the Sumerian Flood Story tells of Zi-ud-sura, who survived the flood in a boat.
+when:
+  from: -2100
+  to: -1700
+  certainty: estimated
+  basis:
+    en: Kramer dates the composition of the King List, in part, to about 2100 BCE and the Flood Story to about 2000 BCE or earlier; the surviving tablets date to the early 2nd millennium BCE.
+place:
+  status: known
+  names:
+    - { name: Nippur, type: ancient, language: Sumerian }
+  description:
+    en: The main tablet of the Flood Story comes from Nippur; manuscripts of the King List come from several cities, including Isin and Larsa. The point marks Nippur and is approximate.
+  geometry:
+    type: Point
+    coordinates: [ 45.23, 32.13 ]
+history:
+  - claim:
+      en: 'The King List counts eight kings in five cities before the flood ("Then the flood swept over"), then: "After the flood had swept over, and the kingship had descended from heaven, the kingship was in Kish."'
+    status: established
+    sources: [ etcsl-king-list ]
+  - claim:
+      en: In the Flood Story, "waves and windstorms had rocked the huge boat for seven days and seven nights"; afterwards the gods settled Zi-ud-sura the king in Dilmun, "where the sun rises".
+    status: established
+    sources: [ etcsl-flood-story ]
+  - claim:
+      en: The King List was probably composed in part about 2100 BCE and the Flood Story about 2000 BCE or earlier; the later Akkadian flood account of Utanapishtim survives in tablets from Ashurbanipal's library at Nineveh.
+    status: established
+    sources: [ kramer-1967 ]
+related:
+  - { id: the-flood, type: parallel }
+  - { id: mesopotamian-flood-layers, type: context }
+tags: [ flood, mesopotamia, sumer, texts ]
+notes: "TODO: the Old Babylonian Atrahasis epic and Tablet XI of the Epic of Gilgamesh, with sources and dates (Kramer's article mentions the Utanapishtim account but not these titles). Verify the coordinates of Nippur."

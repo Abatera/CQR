@@ -210,10 +210,11 @@ export function validateContent(raw: RawContent, ayahCounts: readonly number[]):
 }
 
 /**
- * "Muhammad" not followed by ﷺ. Other people named Muhammad (narrators and scholars,
- * e.g. "Muhammad ibn Ishaq") are excluded by what follows the name.
+ * "Muhammad" not followed by ﷺ. Other people named Muhammad (narrators and scholars) are
+ * recognized by the name that follows: "Muhammad ibn Ishaq", "Muhammad al-Tahir",
+ * "Muhammad 'Abduh", "Muhammad Nasir al-Din al-Albani".
  */
-const PROPHET_NAME_RE = /\bMuhammad\b(?!\s*(?:ﷺ|ibn\b|b\.|al-|bin\b))/;
+const PROPHET_NAME_RE = /\bMuhammad\b(?!\s*ﷺ)(?!\s+(?:ibn\b|bin\b|b\.|al-|[A-Z'’ʿ]))/;
 
 /** Every English text of an event that readers see, with its path. Titles are labels and are included too. */
 function englishTexts(ev: CqrEvent): [string, string][] {

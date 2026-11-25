@@ -46,7 +46,8 @@ export function locationLabel(s: string): string {
  */
 export function surname(name: string): string {
   const parts = name.trim().split(/\s+/);
-  if (parts[0] === 'Ibn' && parts.length > 1) return `${parts[0]} ${parts[1]}`;
+  const ibn = parts.indexOf('Ibn');
+  if (ibn >= 0 && ibn < parts.length - 1) return `Ibn ${parts[ibn + 1]}`;
   if (parts[0].startsWith('al-')) return parts[0];
   return parts[parts.length - 1] ?? name;
 }

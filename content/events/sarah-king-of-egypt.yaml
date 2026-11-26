@@ -1,0 +1,104 @@
+id: sarah-king-of-egypt
+kind: event
+lane: egypt
+review: draft
+title:
+  en: Sarah, Abraham and the king of Egypt
+  ar: سارة وإبراهيم وملك مصر
+summary:
+  en: In Egypt a tyrant king tries to take Sarah, is held back, and sends her away with Hagar to serve her. The story is not in the Quran; it is told in hadith and by the People of the Book.
+  ar: في مصر يحاول ملكٌ جبّار أن يأخذ سارة، فيُمنع، فيصرفها ومعها هاجر تخدمها. والقصة ليست في القرآن، وإنما يرويها الحديث وأهل الكتاب.
+when:
+  from: -2091
+  to: -2081
+  certainty: traditional
+  basis:
+    en: After Abraham reached Canaan at 75 (Genesis 12:4) and before Hagar bore Ishmael when he was 86 (Genesis 16:16), counted from his birth at about 2166 BCE.
+    ar: بعد وصول إبراهيم إلى كنعان ابنَ خمسٍ وسبعين (التكوين 12:4) وقبل أن تلد هاجرُ إسماعيلَ وهو ابن ستٍّ وثمانين (التكوين 16:16)، محسوبًا من مولده نحو 2166 ق.م.
+place:
+  status: unknown
+  description:
+    en: Egypt. None of the sources read names the city.
+    ar: مصر. ولا يسمّي أيٌّ من المصادر التي قُرئت المدينة.
+tradition:
+  - kind: hadith
+    attribution:
+      en: The Prophet ﷺ, in al-Bukhari and Muslim, as quoted by Ibn Kathir
+      ar: النبي ﷺ، في البخاري ومسلم، فيما نقله ابن كثير
+    text:
+      en: The hadith tells that a tyrant ruler tried to take Sarah, was prevented each time, and sent her back with Hagar to serve her.
+      ar: يذكر الحديث أن ملكًا جبّارًا حاول أن يأخذ سارة، فمُنع في كل مرة، فردّها ومعها هاجر تخدمها.
+    original: إنك لم تأتني بإنسان، وإنما أتيتني بشيطان، فأخدمها هاجر
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «هجرة الخليل إلى بلاد الشام»
+    gradings:
+      - grade: sahih
+        by:
+          en: al-Bukhari and Muslim
+          ar: البخاري ومسلم
+        source:
+          id: ibn-kathir-bidaya
+          locator: vol. 1, «هجرة الخليل إلى بلاد الشام»
+        note:
+          en: In both Sahihs, as cited by Ibn Kathir.
+          ar: في الصحيحين، كما نقله ابن كثير.
+  - kind: historian
+    attribution:
+      en: Ibn Kathir, citing some historians
+      ar: ابن كثير، نقلًا عن بعض أهل التواريخ
+    text:
+      en: This Pharaoh of Egypt was a brother of al-Dahhak, the king famous for his injustice, and governed Egypt for him.
+      ar: كان فرعون مصر هذا أخًا للضحاك الملك المشهور بالظلم، وعاملًا لأخيه على مصر.
+    original: وذكر بعض أهل التواريخ، أن فرعون مصر هذا كان أخًا للضحاك الملك المشهور بالظلم، وكان عاملًا لأخيه على مصر
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «هجرة الخليل إلى بلاد الشام»
+  - kind: historian
+    attribution:
+      en: Ibn Kathir ("it is said")
+      ar: ابن كثير («ويقال»)
+    text:
+      en: His name was Sinan son of 'Alwan son of 'Ubayd son of 'Uwayj son of 'Imlaq son of Lawud son of Sam son of Noah.
+      ar: كان اسمه سنان بن علوان بن عبيد بن عويج بن عملاق بن لاود بن سام بن نوح.
+    original: "ويقال: كان اسمه سنان بن علوان، بن عبيد، بن عويج، بن عملاق، بن لاود، بن سام، بن نوح"
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «هجرة الخليل إلى بلاد الشام»
+  - kind: historian
+    attribution:
+      en: Ibn Hisham, al-Tijan, through al-Suhayli, cited by Ibn Kathir
+      ar: ابن هشام في «التيجان»، من طريق السهيلي، فيما نقله ابن كثير
+    text:
+      en: The king who wanted Sarah was 'Amr son of Imri' al-Qays son of Mailun son of Saba', who ruled Egypt; Ibn Kathir leaves the matter to God.
+      ar: الملك الذي أرادها هو عمرو بن امرئ القيس بن مايلون بن سبأ، وكان على مصر؛ ويكِل ابن كثير العلم في ذلك إلى الله.
+    original: وذكر ابن هشام في (التيجان) أن الذي أرادها عمرو بن امرىء القيس، بن مايلون، بن سبأ، وكان على مصر
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «هجرة الخليل إلى بلاد الشام»
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+      ar: ابن كثير
+    text:
+      en: Hagar, the Egyptian Copt, went with them from then on.
+      ar: وكانت هاجر قبطيةً من مصر، وصحبتهم منذ ذلك الحين.
+    original: وصحبتهم هاجر القبطية المصرية
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «هجرة الخليل إلى بلاد الشام»
+  - kind: ahl-al-kitab
+    attribution:
+      en: Josephus (1st century CE)
+      ar: يوسيفوس (القرن الأول الميلادي)
+    text:
+      en: In a famine Abram went down to Egypt and had Sarai say she was his sister; the Pharaoh, who is not named, was kept from her by God's punishment. Abram taught the Egyptians arithmetic and astronomy.
+      ar: في مجاعةٍ نزل أبرام إلى مصر، وجعل ساراي تقول إنها أخته؛ فمُنع منها فرعون، الذي لا يُسمّى، بعقابٍ من الله. وعلّم أبرامُ المصريين الحساب وعلم الفلك.
+    source:
+      id: josephus-antiquities
+      locator: 1.8.1-2
+related:
+  - { id: abraham-emigration, type: context }
+  - { id: hagar-ishmael-mecca, type: consequence }
+tags: [ prophets, abraham, egypt ]
+notes: "The hadith's narrator and wording were read only as Ibn Kathir quotes them. Leads, not yet sourced: Egypt in this reckoning's years (the First Intermediate Period); the Beni Hasan painting of Asiatic visitors (about 1890 BCE)."

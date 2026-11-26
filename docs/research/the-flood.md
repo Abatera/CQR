@@ -66,7 +66,7 @@ The scholars hold two broad views, with some who leave the question open:
 
 ## Dating
 
-- **In the app (revised 2026-11-25, D20):** about 3350 BCE, as a *reckoning*: 350 years (Ibn Sa'd) before Noah's death, which is placed ten *qurun* (read as a thousand years) before Abraham, about 3000 BCE. Ibn Ishaq's 340 years give about 3340 BCE.
+- **In the app (revised 2026-11-26, D24):** about 3516 BCE (about 3350 BCE before Abraham's birth moved to about 2166 BCE), as a *reckoning*: 350 years (Ibn Sa'd) before Noah's death, which is placed ten *qurun* (read as a thousand years) before Abraham, now about 3166 BCE. Ibn Ishaq's 340 years give about 3506 BCE.
 - **Other figures, counted from Adam:**
   - Josephus: the Flood came "two thousand six hundred and fifty six" years after Adam; the Whiston text gives 1,556 in brackets.
   - Ibn Qutayba: 2,242 years from Adam to the Flood, as quoted by al-Suhari in *al-Ansab* (read on Shamela during the prophets research).
@@ -97,12 +97,12 @@ The scholars hold two broad views, with some who leave the question open:
 
 | Entry | Lane | Notes |
 |---|---|---|
-| The Flood of Noah | Quran | Reckoned about 3350 BCE. All five layers. Two mapped opinions for where the Ark rested (al-Judi; Ararat), one unmapped (the Cordyaeans). A draft connection, with confidence left to the owner. |
+| The Flood of Noah | Quran | Reckoned about 3516 BCE (D24). All five layers. Two mapped opinions for where the Ark rested (al-Judi; Ararat), one unmapped (the Cordyaeans). A draft connection, with confidence left to the owner. |
 | The Sumerian flood traditions | Mesopotamia | About 2100–1700 BCE, at Nippur |
 | Flood layers at Kish and Shuruppak | Mesopotamia | About 3100–2900 BCE |
 | The Black Sea flood hypothesis | Technology and climate | Debated, about 7500–5500 BCE |
 
-The **connection** in the Flood entry notes that the reckoned Flood (about 3350 BCE) falls between Woolley's flood layer at Ur (at least 3500 BCE) and the layers at Kish and Shuruppak (about 3000 BCE). It calls this a coincidence between a rough reckoning and rough dates, not a proof. The owner should decide whether to keep it and set its confidence.
+The **connection** in the Flood entry notes that the reckoned Flood (about 3516 BCE since D24; about 3350 BCE before) falls close to the date of Woolley's flood layer at Ur (at least 3500 BCE), some five centuries before the layers at Kish and Shuruppak (about 3000 BCE). It calls this a coincidence between a rough reckoning and rough dates, not a proof. The owner should decide whether to keep it and set its confidence.
 
 ## Still to do
 

@@ -177,6 +177,10 @@ const UI = {
   tafsir: { en: 'Tafsir', ar: 'التفسير' },
   tradition: { en: 'Tradition', ar: 'المرويّات' },
   traditionSub: { en: 'hadith and historians: reports, with their gradings', ar: 'الحديث والمؤرّخون: الروايات مع درجاتها' },
+  ahlKitabNote: {
+    en: 'A report of the People of the Book: neither affirmed nor denied.',
+    ar: 'روايةٌ من أهل الكتاب: لا تُصدَّق ولا تُكذَّب.',
+  },
   inSourceWords: { en: "In the source's words:", ar: 'بلفظ المصدر:' },
   inProjectWords: { en: "In the project's words:", ar: 'بصياغة المشروع:' },
   projectWordsNote: {

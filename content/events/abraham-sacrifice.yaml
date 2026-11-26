@@ -1,0 +1,28 @@
+id: abraham-sacrifice
+kind: event
+lane: quran
+review: draft
+title:
+  en: Abraham's dream of sacrificing his son
+  ar: رؤيا إبراهيم في ذبح ابنه
+summary:
+  en: Abraham, peace be upon him, sees in a dream that he is sacrificing his son; both submit to God's command, and the son is ransomed (37:100–111). The Quran does not name the son here.
+  ar: يرى إبراهيم عليه السلام في المنام أنه يذبح ابنه؛ فيستسلمان كلاهما لأمر الله، ويُفدى الابن (37:100-111). ولا يسمّي القرآن الابن هنا.
+when:
+  from: -2080
+  to: -2066
+  certainty: unknown
+  basis:
+    en: "The Quran gives no age: the son had grown old enough to work with his father (37:102). In its account the glad tidings of Isaac come after this (37:112), so the episode is placed between Ishmael's birth (Abraham 86) and Isaac's (Abraham 100), counted from about 2166 BCE."
+    ar: "لا يذكر القرآن سنًّا: كان الابن قد بلغ أن يعمل مع أبيه (37:102). وفي سياقه تأتي البشارة بإسحاق بعد ذلك (37:112)، فوُضعت الواقعة بين مولد إسماعيل (وإبراهيم ابن ستٍّ وثمانين) ومولد إسحاق (وهو ابن مئة)، محسوبًا من نحو 2166 ق.م."
+place:
+  status: unknown
+  description:
+    en: The Quran names no place.
+    ar: لا يسمّي القرآن مكانًا.
+quran: [ "37:100-113" ]
+related:
+  - { id: ishmael, type: context }
+  - { id: isaac, type: context }
+tags: [ prophets, abraham ]
+notes: "TODO: read Ibn Kathir's chapter «قصة الذبيح» and the tafsir of 37:101-112 on which son was meant, and add the views with their sources."

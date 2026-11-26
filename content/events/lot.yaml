@@ -9,8 +9,8 @@ summary:
   en: Lut (Lot), peace be upon him, Abraham's nephew, who believed in him (29:26) and was sent to the people of the cities that were overturned.
   ar: لوطٌ عليه السلام، ابن أخي إبراهيم، الذي آمن به (29:26)، وأُرسل إلى أهل المدن التي قُلبت.
 when:
-  from: -1980
-  to: -1860
+  from: -2146
+  to: -2026
   certainty: traditional
   basis:
     en: Abraham's nephew and contemporary (Ibn Kathir), placed within Abraham's traditional lifetime.
@@ -45,4 +45,4 @@ tradition:
 related:
   - { id: abraham, type: parallel }
 tags: [ prophets, lot ]
-notes: Ibn Kathir's account of the destruction of the cities was not found in the Wikisource chapters checked. Verify the coordinates of Zughar (Zoar).
+notes: Ibn Kathir's account of the destruction of the cities was not found in the Wikisource chapters checked. Verify the coordinates of Zughar (Zoar). Moved by -166 years on 2026-11-26 with Abraham's birth, now about 2166 BCE (D24).

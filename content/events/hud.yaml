@@ -9,23 +9,23 @@ summary:
   en: Hud, peace be upon him, sent to the people of 'Ad, who lived at al-Ahqaf (46:21) and were destroyed by a wind.
   ar: هود عليه السلام، أُرسل إلى قوم عاد، الذين سكنوا الأحقاف (46:21) وأُهلكوا بريح.
 when:
-  from: -2700
-  to: -2401
+  from: -2866
+  to: -2567
   certainty: reckoned
   basis:
     en: The Quran makes 'Ad successors after the people of Noah (7:69), and Thamud successors after 'Ad (7:74). No report gives their years. They are placed in the reckoned interval between Noah and Abraham, in the order of Ibn Kathir's al-Bidaya.
     ar: يجعل القرآن عادًا تخلف قومَ نوح (7:69)، وثمودَ تخلف عادًا (7:74). ولا تذكر أيُّ روايةٍ سنينهم. وقد وُضعوا في الفترة المحسوبة بين نوح وإبراهيم، على ترتيب «البداية والنهاية» لابن كثير.
   alternatives:
-    - from: -2650
-      to: -2551
+    - from: -2816
+      to: -2717
       basis:
-        en: "By generation, the project's own reckoning: Hud is the fourth generation after Noah in the lineage Ibn Kathir gives first (son of Shalikh son of Arfakhshad son of Sam), and Abraham is the tenth in Genesis 11. If the ten generations fill the ten qurun between Noah's death (about 3000 BCE) and Abraham's birth (about 2000 BCE), one each, the fourth falls about 2650-2551 BCE."
-        ar: "بالأجيال، وهو حساب المشروع نفسه: هودٌ هو الجيل الرابع بعد نوح في النسب الذي يقدّمه ابن كثير أولًا (ابن شالخ بن أرفخشذ بن سام)، وإبراهيم هو العاشر في التكوين 11. فإن ملأت الأجيالُ العشرة القرونَ العشرة بين موت نوح (نحو 3000 ق.م) ومولد إبراهيم (نحو 2000 ق.م)، جيلًا لكل قرن، وقع الرابع نحو 2650–2551 ق.م."
+        en: "By generation, the project's own reckoning: Hud is the fourth generation after Noah in the lineage Ibn Kathir gives first (son of Shalikh son of Arfakhshad son of Sam), and Abraham is the tenth in Genesis 11. If the ten generations fill the ten qurun between Noah's death (about 3166 BCE) and Abraham's birth (about 2166 BCE), one each, the fourth falls about 2816-2717 BCE."
+        ar: "بالأجيال، وهو حساب المشروع نفسه: هودٌ هو الجيل الرابع بعد نوح في النسب الذي يقدّمه ابن كثير أولًا (ابن شالخ بن أرفخشذ بن سام)، وإبراهيم هو العاشر في التكوين 11. فإن ملأت الأجيالُ العشرة القرونَ العشرة بين موت نوح (نحو 3166 ق.م) ومولد إبراهيم (نحو 2166 ق.م)، جيلًا لكل قرن، وقع الرابع نحو 2816–2717 ق.م."
       sources:
         - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة هود عليه السلام»" }
         - { id: bible-web, locator: Genesis 11:10-26 }
-    - from: -2250
-      to: -2151
+    - from: -2416
+      to: -2317
       basis:
         en: By the same reckoning with the lineage Ibn Kathir quotes from Ibn Jarir (Hud son of 'Abd Allah son of Rabah son of al-Jarud son of 'Ad son of 'Aws son of Iram son of Sam), in which Hud is the eighth generation after Noah.
         ar: بالحساب نفسه مع النسب الذي ينقله ابن كثير عن ابن جرير (هود بن عبد الله بن رباح بن الجارود بن عاد بن عوص بن إرم بن سام)، وفيه هودٌ هو الجيل الثامن بعد نوح.
@@ -159,4 +159,4 @@ related:
   - { id: noah, type: context }
   - { id: salih, type: context }
 tags: [ prophets, hud, arabia ]
-notes: "The outline of al-Ahqaf is a rough sketch. The generational alternatives are the project's own reckoning (one generation to one qarn), proposed and not yet confirmed by the owner. TODO: Donald Whitcomb's 1992 view that Iram may lie in north-west Arabia was seen only in a search summary, not read; the Christian Science Monitor article on Ubar refused access."
+notes: "The outline of al-Ahqaf is a rough sketch. The generational alternatives are the project's own reckoning (one generation to one qarn), proposed and not yet confirmed by the owner. TODO: Donald Whitcomb's 1992 view that Iram may lie in north-west Arabia was seen only in a search summary, not read; the Christian Science Monitor article on Ubar refused access. Moved by -166 years on 2026-11-26 with Abraham's birth, now about 2166 BCE (D24)."

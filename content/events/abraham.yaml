@@ -6,16 +6,40 @@ title:
   en: Ibrahim (Abraham)
   ar: إبراهيم
 summary:
-  en: Ibrahim (Abraham), peace be upon him, the Friend of God, who rejected his people's idols, was saved from the fire, and with Ishmael raised the foundations of the House in Mecca.
-  ar: إبراهيم عليه السلام، خليل الله، الذي أنكر أصنام قومه، ونُجّي من النار، ورفع مع إسماعيل أسس البيت في مكة.
+  en: Ibrahim (Abraham), peace be upon him, the Friend of God, who rejected his people's idols, was saved from the fire, emigrated to the blessed land, and with Ishmael raised the foundations of the House in Mecca. His life is told here in episodes, each placed by his age.
+  ar: إبراهيم عليه السلام، خليل الله، الذي أنكر أصنام قومه، ونُجّي من النار، وهاجر إلى الأرض المباركة، ورفع مع إسماعيل أسس البيت في مكة. وتُعرض حياته هنا في وقائع، كلٌّ منها موضوعٌ بحسب سنّه.
 when:
-  from: -2000
-  to: -1826
+  from: -2166
+  to: -1991
   certainty: traditional
   basis:
-    en: Ibn Kathir reasons that more than a thousand years separate Abraham, who built the Sacred House, from Solomon, who built Bayt al-Maqdis. With Solomon in the 10th century BCE, that puts Abraham at or before about 2000 BCE. The 175-year life is the People of the Book's figure, reported by Ibn Kathir (Genesis 25:7). History cannot date Abraham.
-    ar: يستدلّ ابن كثير بأن بين إبراهيم، باني البيت الحرام، وسليمان، باني بيت المقدس، أكثرَ من ألف سنة. ومع وضع سليمان في القرن العاشر قبل الميلاد، يقع إبراهيم نحو 2000 ق.م أو قبل ذلك. والعمر البالغ مئةً وخمسًا وسبعين سنة هو رقم أهل الكتاب، نقله ابن كثير (التكوين 25:7). ولا يستطيع التاريخ تأريخ إبراهيم.
+    en: "No Islamic source gives Abraham a year. The span follows the ages the People of the Book give the patriarchs, which Ibn Kathir reports and which are neither affirmed nor denied, counted back from the Exodus at about 1446 BCE (see Moses): 430 years in Egypt (Exodus 12:40), Jacob 130 on arrival (Genesis 47:9), Isaac 60 at Jacob's birth (25:26), Abraham 100 at Isaac's (21:5), and a life of 175 years (25:7). This agrees with Ibn Kathir's remark that more than a thousand years separate Abraham, who built the Sacred House, from Solomon, who built Bayt al-Maqdis. History cannot date Abraham."
+    ar: "لا يذكر أيُّ مصدرٍ إسلامي لإبراهيم سنة. والمدّة تتبع الأعمار التي يذكرها أهل الكتاب للآباء، وينقلها ابن كثير، وهي لا تُصدَّق ولا تُكذَّب، محسوبةً رجوعًا من الخروج نحو 1446 ق.م (انظر موسى): أربعمئةٍ وثلاثون سنة في مصر (الخروج 12:40)، ويعقوب ابن مئةٍ وثلاثين عند دخولها (التكوين 47:9)، وإسحاق ابن ستين عند مولد يعقوب (25:26)، وإبراهيم ابن مئة عند مولد إسحاق (21:5)، وعمرٌ قدره مئةٌ وخمسٌ وسبعون سنة (25:7). ويوافق هذا قولَ ابن كثير إن بين إبراهيم، باني البيت الحرام، وسليمان، باني بيت المقدس، أكثرَ من ألف سنة. ولا يستطيع التاريخ تأريخ إبراهيم."
   alternatives:
+    - from: -2000
+      to: -1826
+      basis:
+        en: Ibn Kathir's more than a thousand years before Solomon, taken at its lower bound, with the 175-year life. This was the app's dating until 26 November 2026.
+        ar: قول ابن كثير إن بين إبراهيم وسليمان أكثر من ألف سنة، مأخوذًا عند حدّه الأدنى، مع عمرٍ قدره مئةٌ وخمسٌ وسبعون سنة. وكان هذا تأريخ التطبيق حتى 26 نوفمبر 2026.
+      sources:
+        - id: ibn-kathir-bidaya
+          locator: vol. 2, «قصة سليمان بن داود عليهما السلام»
+    - from: -2166
+      to: -1966
+      basis:
+        en: A life of 200 years, as Ibn al-Kalbi gave (reported by Ibn Kathir), from the same birth year.
+        ar: عمرٌ قدره مئتا سنة، كما ذكر ابن الكلبي (فيما نقله ابن كثير)، من سنة المولد نفسها.
+      sources:
+        - id: ibn-kathir-bidaya
+          locator: vol. 1, «وفاة إبراهيم وما قيل في عمره»
+    - from: -1951
+      to: -1776
+      basis:
+        en: The Septuagint counts the 430 years of Exodus 12:40 in the land of Egypt and the land of Canaan together. Counted from Abraham's arrival in Canaan at 75 (Genesis 12:4), he is born about 1951 BCE.
+        ar: تجعل الترجمة السبعينية الأربعمئة والثلاثين سنة (الخروج 12:40) في أرض مصر وأرض كنعان معًا. فإذا حُسبت من وصول إبراهيم إلى كنعان ابنَ خمسٍ وسبعين (التكوين 12:4)، كان مولده نحو 1951 ق.م.
+      sources:
+        - { id: bible-lxx-brenton, locator: Exodus 12:40 }
+        - { id: bible-web, locator: Genesis 12:4 }
     - from: -2900
       to: -2726
       basis:
@@ -26,8 +50,8 @@ when:
 place:
   status: proposed
   description:
-    en: The Quran names no birthplace. Ibn Kathir reports Babylon as his birthplace, his later life in the land of Iliya (Jerusalem), and his burial at Hebron by continuous tradition, though no sound report fixes the exact spot.
-    ar: لا يسمّي القرآن مولده. ويذكر ابن كثير أنه وُلد ببابل، وأنه عاش بعدُ في أرض إيلياء (القدس)، ودُفن في حبرون، وهذا ثابتٌ بالتواتر، وإن لم تُعيِّن روايةٌ صحيحة الموضعَ بعينه.
+    en: The Quran names no birthplace. Ibn Kathir gives Babylon, the land of the Chaldeans, as the correct and best-known view; other reports name al-Sus, the Sawad near Kutha, and Barza near Damascus. Genesis names Ur of the Chaldees as his family's city. He lived in Harran and then in the land of Bayt al-Maqdis, and was buried at Hebron. The points are approximate.
+    ar: لا يسمّي القرآن مولده. ويجعل ابن كثير بابلَ، أرضَ الكلدانيين، القولَ الصحيح المشهور؛ وتذكر رواياتٌ أخرى السوس، والسوادَ من ناحية كوثى، وبرزةَ قرب دمشق. وتسمّي التوراة أورَ الكلدانيين مدينةً لأسرته. وسكن حرّان ثم أرض بيت المقدس، ودُفن في حبرون. والنقاط تقريبية.
   opinions:
     - name:
         en: Babylon, his birthplace, "the correct view" (Ibn 'Asakir, cited by Ibn Kathir)
@@ -38,6 +62,26 @@ place:
       sources:
         - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة إبراهيم خليل الرحمن»" }
     - name:
+        en: Kutha, in the Sawad (a report in Ibn Kathir; the Talmud also names Kutha, as the Jewish Encyclopedia reports)
+        ar: كوثى، في السواد (روايةٌ عند ابن كثير؛ ويسمّي التلمود كوثى أيضًا، كما تنقل الموسوعة اليهودية)
+      sources:
+        - id: ibn-kathir-bidaya
+          locator: vol. 1, «وفاة إبراهيم وما قيل في عمره»
+        - je-abraham
+    - name:
+        en: Barza, in the Ghouta of Damascus (Ibn 'Asakir, from Ibn Abbas, cited by Ibn Kathir; Ibn 'Asakir himself prefers Babylon)
+        ar: برزة، في غوطة دمشق (ابن عساكر، عن ابن عباس، فيما نقله ابن كثير؛ ويرجّح ابن عساكر نفسه بابل)
+      geometry:
+        type: Point
+        coordinates: [ 36.32, 33.55 ]
+      sources:
+        - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة إبراهيم خليل الرحمن»" }
+    - name:
+        en: Ur of the Chaldees, the family's city (Genesis 11:28, 31)
+        ar: أور الكلدانيين، مدينة أسرته (التكوين 11:28، 31)
+      sources:
+        - { id: bible-web, locator: Genesis 11:28-31 }
+    - name:
         en: Hebron, his burial place, by continuous tradition (Ibn Kathir)
         ar: حبرون (الخليل)، موضع دفنه، بالتواتر (ابن كثير)
       geometry:
@@ -46,7 +90,7 @@ place:
       sources:
         - id: ibn-kathir-bidaya
           locator: vol. 1, «وفاة إبراهيم وما قيل في عمره»
-quran: [ "2:124-131", "6:74-83", "14:35-41", "21:51-71" ]
+quran: [ "2:124-131", "4:125", "6:74-83", "14:35-41", "16:120-123", "19:41-50", "21:51-73", "37:83-113" ]
 tradition:
   - kind: hadith
     attribution:
@@ -87,14 +131,14 @@ tradition:
     source:
       id: ibn-kathir-bidaya
       locator: vol. 2, «قصة سليمان بن داود عليهما السلام»
-  - kind: ahl-al-kitab
+  - kind: historian
     attribution:
-      en: The People of the Book, as reported by Ibn Kathir
-      ar: أهل الكتاب، فيما نقله ابن كثير
+      en: Ibn Kathir, citing Ibn Jarir's history
+      ar: ابن كثير، نقلًا عن تاريخ ابن جرير
     text:
-      en: Abraham died aged 175, or it is said 195. Ibn al-Kalbi gave 200 years.
-      ar: "مات إبراهيم ابنَ مئةٍ وخمسٍ وسبعين سنة، وقيل: مئةٍ وخمسٍ وتسعين. وجعله ابن الكلبي مئتي سنة."
-    original: "مات عن مائة وخمس وسبعين، وقيل: وتسعين سنة"
+      en: Abraham was born in the time of Nimrod son of Kan'an, who, it is said, is al-Dahhak, the famous king said to have ruled a thousand years.
+      ar: وُلد إبراهيم في زمن النمرود بن كنعان، الذي قيل إنه الضحاك، الملك المشهور الذي يقال إنه ملك ألف سنة.
+    original: "ذكر ابن جرير في تاريخه، أن مولده كان في زمن النمرود بن كنعان … وهو فيما قيل الضحاك الملك المشهور، الذي يقال: إنه ملك ألف سنة"
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «وفاة إبراهيم وما قيل في عمره»
@@ -109,10 +153,99 @@ tradition:
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة إبراهيم خليل الرحمن»; «وفاة إبراهيم وما قيل في عمره»
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+      ar: ابن كثير
+    text:
+      en: It is said he was born at al-Sus; it is also said in Babylon, and in the Sawad near Kutha.
+      ar: "قيل: وُلد بالسوس، وقيل: ببابل، وقيل: بالسواد من ناحية كوثى."
+    original: "وكان مولده بالسوس، وقيل: ببابل. وقيل: بالسواد من ناحية كوثى"
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «وفاة إبراهيم وما قيل في عمره»
+  - kind: ahl-al-kitab
+    attribution:
+      en: The People of the Book, as reported by Ibn Kathir
+      ar: أهل الكتاب، فيما نقله ابن كثير
+    text:
+      en: Abraham died aged 175, or it is said 195. Ibn al-Kalbi gave 200 years.
+      ar: "مات إبراهيم ابنَ مئةٍ وخمسٍ وسبعين سنة، وقيل: مئةٍ وخمسٍ وتسعين. وجعله ابن الكلبي مئتي سنة."
+    original: "مات عن مائة وخمس وسبعين، وقيل: وتسعين سنة"
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «وفاة إبراهيم وما قيل في عمره»
+  - kind: ahl-al-kitab
+    attribution:
+      en: The Torah (Genesis 11–12)
+      ar: التوراة (التكوين 11–12)
+    text:
+      en: Terah was 70 when Abram was born. Abram's brother Haran died in Ur of the Chaldees; the family left Ur for Canaan but settled in Haran, where Terah died at 205. Abram left Haran at 75.
+      ar: كان تارح ابنَ سبعين سنة حين وُلد أبرام. ومات أخوه هاران في أور الكلدانيين؛ وخرجت الأسرة من أور قاصدةً كنعان، فأقامت في حاران، وفيها مات تارح ابنَ مئتين وخمس سنين. وخرج أبرام من حاران ابنَ خمسٍ وسبعين.
+    source:
+      id: bible-web
+      locator: Genesis 11:26-32; 12:4
+  - kind: ahl-al-kitab
+    attribution:
+      en: The rabbis (the Talmud, Bava Batra 91a), as the Jewish Encyclopedia reports
+      ar: الأحبار (التلمود، بابا بترا 91أ)، كما تنقل الموسوعة اليهودية
+    text:
+      en: Abraham was born in Kutha, which they take to be another name for Ur of the Chaldees.
+      ar: وُلد إبراهيم في كوثى، وهي عندهم اسمٌ آخر لأور الكلدانيين.
+    source: je-abraham
+history:
+  - claim:
+      en: Among the places in the Negev that Pharaoh Sheshonq I (the biblical Shishak) listed at Karnak in the later 10th century BCE, two signs have been read "Fort of Abram", with a question mark. If the reading is right, a place there bore the name of an Abram; it does not date the patriarch.
+      ar: من بين الأماكن في النقب التي سجّلها الفرعون شيشنق الأول (شيشق في الكتاب المقدس) في الكرنك في أواخر القرن العاشر قبل الميلاد، قُرئت علامتان «حصن أبرام»، مع علامة استفهام. فإن صحّت القراءة، فقد كان هناك موضعٌ يحمل اسم أبرام؛ ولا يؤرّخ ذلك إبراهيم نفسه.
+    status: debated
+    sources: [ kitchen-shishak ]
+  - claim:
+      en: Radiocarbon dating at copper-smelting sites in the Aravah valley places the arrival of domestic camels in the southern Levant in the last third of the 10th century BCE or later.
+      ar: يضع التأريخُ بالكربون المشع في مواقع صهر النحاس بوادي عربة وصولَ الجمال المستأنسة إلى جنوب بلاد الشام في الثلث الأخير من القرن العاشر قبل الميلاد أو بعده.
+    status: established
+    sources: [ aftau-camels-2014 ]
+  - claim:
+      en: The stories of Abraham in Genesis mention camels; the researchers take this as a sign that the Genesis text was written down long after the events it tells.
+      ar: تذكر قصصُ إبراهيم في سفر التكوين الجمال؛ ويرى الباحثون في ذلك علامةً على أن نصّ التكوين دُوِّن بعد الأحداث التي يرويها بزمنٍ طويل.
+    status: debated
+    sources: [ aftau-camels-2014 ]
+  - claim:
+      en: Nicolaus of Damascus (1st century BCE), as Josephus quotes him, writes that Abram reigned at Damascus, a foreigner who came with an army from the land of the Chaldeans above Babylon, and that a village there was still named after him, "the Habitation of Abram".
+      ar: يكتب نيقولاوس الدمشقي (القرن الأول قبل الميلاد)، فيما ينقله عنه يوسيفوس، أن أبرام ملك في دمشق، غريبًا جاء بجيشٍ من أرض الكلدانيين فوق بابل، وأن قريةً هناك كانت ما تزال تُسمّى باسمه، «مسكن أبرام» (العبارة مترجمةٌ عن الإنجليزية).
+    status: established
+    sources:
+      - { id: josephus-antiquities, locator: 1.7.2 }
+  - claim:
+      en: Pompeius Trogus (1st century BCE), in Justin's epitome, lists Abraham among the early kings of Damascus, after Damascus, Azel and Ador, and before Israhel.
+      ar: يعدّ بومبيوس تروغوس (القرن الأول قبل الميلاد)، في مختصر يوستينوس، إبراهيمَ بين ملوك دمشق الأوائل، بعد دمشق وأزيل وأدور، وقبل إسرائيل.
+    status: established
+    sources:
+      - { id: justin-epitome, locator: "36.2" }
+  - claim:
+      en: Josephus quotes the Babylonian priest Berosus (3rd century BCE) on "a man righteous and great, and skilful in the celestial science" among the Chaldeans in the tenth generation after the Flood, and takes him to be Abram; Berosus names no one. The Jewish Encyclopedia notes that Alexandrian Jews wrote under the names of Hecataeus and Berosus, so the quotation may not be genuine.
+      ar: ينقل يوسيفوس عن الكاهن البابلي بيروسوس (القرن الثالث قبل الميلاد) ذكرَ «رجلٍ صالحٍ عظيم، ماهرٍ في علم السماء» بين الكلدانيين في الجيل العاشر بعد الطوفان، ويرى أنه أبرام؛ ولا يسمّي بيروسوس أحدًا (العبارة مترجمةٌ عن الإنجليزية). وتلاحظ الموسوعة اليهودية أن يهود الإسكندرية كتبوا بأسماء هيكاتايوس وبيروسوس، فقد لا يكون النقل صحيح النسبة.
+    status: debated
+    sources:
+      - { id: josephus-antiquities, locator: 1.7.2 }
+      - je-abraham
+connection:
+  text:
+    en: "In this reckoning Abraham lived from about 2166 to 1991 BCE. His life spans the Third Dynasty of Ur (about 2100–2000 BCE) and its end, when its king was carried off to Elam; Genesis names Ur of the Chaldees as his family's city and an Elamite king among the eastern kings of his time (Genesis 14:1). This places the stories beside a real moment of Mesopotamian history. It does not show that they happened then: the date itself rests on the People of the Book's numbers."
+    ar: "في هذا الحساب عاش إبراهيم من نحو 2166 إلى 1991 ق.م. فتمتدّ حياته على عهد سلالة أور الثالثة (نحو 2100–2000 ق.م) ونهايتها، حين حُمل ملكها إلى عيلام؛ وتسمّي التوراة أورَ الكلدانيين مدينةً لأسرته، وتذكر ملكًا عيلاميًّا بين ملوك المشرق في زمنه (التكوين 14:1). وهذا يضع القصص إلى جانب لحظةٍ حقيقية من تاريخ بلاد الرافدين، لكنه لا يُثبت أنها وقعت حينها: فالتاريخ نفسه قائمٌ على أرقام أهل الكتاب."
 related:
+  - { id: abraham-idols-fire, type: context }
+  - { id: abraham-and-the-king, type: context }
+  - { id: abraham-stars-harran, type: context }
+  - { id: abraham-emigration, type: context }
+  - { id: sarah-king-of-egypt, type: context }
+  - { id: hagar-ishmael-mecca, type: context }
+  - { id: abraham-sacrifice, type: context }
+  - { id: abraham-guests, type: context }
   - { id: abraham-house, type: consequence }
   - { id: ishmael, type: context }
   - { id: isaac, type: context }
   - { id: lot, type: parallel }
+  - { id: ur-iii, type: parallel }
+  - { id: fall-of-ur, type: parallel }
 tags: [ prophets, abraham, chronology ]
-notes: Read Ibn Kathir's full discussion of the hadith of Abu Dharr (the forty years) in the chapter on Solomon, to see how he reconciles it with the thousand years; only the 'more than a thousand years' sentence was checked. Verify the coordinates.
+notes: "Read Ibn Kathir's full discussion of the hadith of Abu Dharr (the forty years) in the chapter on Solomon, to see how he reconciles it with the thousand years; only the 'more than a thousand years' sentence was checked. Verify the coordinates. Anchored at 2166 BCE on 2026-11-26 (D24), within the owner's estimate of 2500–2000 BCE; the episodes are placed by his age from this year. Ibn Kathir's text gives Terah's age at death as 250 (page A, read on Wikisource), Genesis 11:32 as 205: check a printed edition. Not mapped until sourced: Ur of the Chaldees (its identification with the ruins of Ur), and Kutha (Tell Ibrahim?). Barza and Babylon points are approximate. Leads in docs/research/abraham.md: the moon god at Ur and Harran; the Beni Hasan painting; Babylon's earliest mention."

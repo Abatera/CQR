@@ -1,0 +1,28 @@
+id: abraham-guests
+kind: event
+lane: quran
+review: draft
+title:
+  en: Abraham's guests and the glad tidings of Isaac
+  ar: ضيوف إبراهيم والبشارة بإسحاق
+summary:
+  en: Messengers come to Abraham, peace be upon him, as guests. He brings them a roasted calf; they give his wife the glad tidings of Isaac and, after him, Jacob, and tell Abraham they are sent to destroy the people of Lot (11:69–76; 51:24–37).
+  ar: يأتي رسلٌ إلى إبراهيم عليه السلام ضيوفًا، فيقدّم لهم عجلًا مشويًّا؛ فيبشّرون امرأته بإسحاق ومن بعده يعقوب، ويخبرون إبراهيم أنهم مرسلون لإهلاك قوم لوط (11:69-76؛ 51:24-37).
+when:
+  from: -2067
+  to: -2067
+  certainty: traditional
+  basis:
+    en: Shortly before Isaac's birth, when Abraham was 100 (Genesis 21:5), counted from about 2166 BCE; his wife calls him an old man (11:72).
+    ar: قُبيل مولد إسحاق، حين كان إبراهيم ابن مئة (التكوين 21:5)، محسوبًا من نحو 2166 ق.م؛ وتصفه امرأته بأنه شيخ (11:72).
+place:
+  status: unknown
+  description:
+    en: The Quran names no place. Abraham then lived in the land of Bayt al-Maqdis (Ibn Kathir).
+    ar: لا يسمّي القرآن مكانًا. وكان إبراهيم حينئذٍ يسكن أرض بيت المقدس (ابن كثير).
+quran: [ "11:69-76", "15:51-60", "29:31-32", "51:24-37" ]
+related:
+  - { id: isaac, type: consequence }
+  - { id: lot, type: consequence }
+tags: [ prophets, abraham, isaac ]
+notes: "TODO: read Ibn Kathir on the guests (the chapters on Isaac and on Lot) and the tafsir."

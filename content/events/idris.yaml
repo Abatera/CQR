@@ -9,12 +9,12 @@ summary:
   en: Idris, peace be upon him, whom the Quran calls truthful, a prophet raised to a high station (19:56-57). Muslim scholars commonly identify him with Enoch (Akhnukh) of the biblical genealogy.
   ar: إدريس عليه السلام، الذي وصفه القرآن بأنه كان صدّيقًا ونبيًّا، رفعه الله إلى منزلةٍ عالية (19:56-57). ويجعله علماء المسلمين في الغالب أخنوخَ الذي في نسب الكتاب المقدس.
 when:
-  from: -4783
-  to: -4419
+  from: -4949
+  to: -4585
   certainty: reckoned
   basis:
-    en: Ibn Ishaq says he lived through 308 years of Adam's life, so his span starts 308 years before Adam's death (about 4476 BCE, see Adam). No Islamic report gives his age; the span uses the 365 years the Torah gives Enoch, with whom Ibn Kathir identifies Idris. In that count he is taken 69 years before Noah's birth, so the three do not collide. Al-Qurtubi rejects the view that Idris was Noah's ancestor (see the Tradition layer), which would undo this placement.
-    ar: يقول ابن إسحاق إنه عاش ثلاثمئةٍ وثماني سنين من حياة آدم، فتبدأ مدّته قبل وفاة آدم (نحو 4476 ق.م، انظر آدم) بثلاثمئةٍ وثماني سنين. ولا تذكر روايةٌ إسلامية عمره؛ فالمدّة تأخذ بالثلاثمئة والخمس والستين سنة التي تجعلها التوراة لأخنوخ، الذي يجعله ابن كثير إدريسَ. وفي هذا الحساب يُرفع قبل مولد نوح بتسعٍ وستين سنة، فلا يتداخل الثلاثة. ويردّ القرطبي القولَ بأن إدريس جدُّ نوح (انظر طبقة المرويّات)، وهو قولٌ لو صحّ لنقض هذا الوضع.
+    en: Ibn Ishaq says he lived through 308 years of Adam's life, so his span starts 308 years before Adam's death (about 4642 BCE, see Adam). No Islamic report gives his age; the span uses the 365 years the Torah gives Enoch, with whom Ibn Kathir identifies Idris. In that count he is taken 69 years before Noah's birth, so the three do not collide. Al-Qurtubi rejects the view that Idris was Noah's ancestor (see the Tradition layer), which would undo this placement.
+    ar: يقول ابن إسحاق إنه عاش ثلاثمئةٍ وثماني سنين من حياة آدم، فتبدأ مدّته قبل وفاة آدم (نحو 4642 ق.م، انظر آدم) بثلاثمئةٍ وثماني سنين. ولا تذكر روايةٌ إسلامية عمره؛ فالمدّة تأخذ بالثلاثمئة والخمس والستين سنة التي تجعلها التوراة لأخنوخ، الذي يجعله ابن كثير إدريسَ. وفي هذا الحساب يُرفع قبل مولد نوح بتسعٍ وستين سنة، فلا يتداخل الثلاثة. ويردّ القرطبي القولَ بأن إدريس جدُّ نوح (انظر طبقة المرويّات)، وهو قولٌ لو صحّ لنقض هذا الوضع.
 place:
   status: unknown
   description:
@@ -262,4 +262,4 @@ related:
   - { id: noah, type: context }
   - { id: elijah, type: context }
 tags: [ prophets, idris, chronology ]
-notes: "TODO: the grading of the hadith of Abu Dharr (the wording in Ibn Hibban's Sahih was read only in a Wikisource search snippet); al-Qurtubi's reason, in his commentary on al-A'raf, for rejecting that Idris was Noah's ancestor; Ibn Kathir's remark after the Ilyas report (وهذا لا يدل), to be read in context; Ibn Battuta's passage, read only as a snippet; Charles's dates for the parts of 1 Enoch. Read only as search snippets and not added: Abu Ma'shar (the Hermes before the Flood, \"whom the Hebrews claim is Enoch\"), al-Ya'qubi and Ibn Khaldun (Hermes is Idris, \"it is said\"), Majmu' al-Fatawa (Hermes is a generic title), al-Fatawa al-Kubra on \"the craft of Idris\" (\"speech without knowledge\"), al-Maraghi (Idris revered by the ancient Egyptians), Ibn Abi Usaybi'a."
+notes: "TODO: the grading of the hadith of Abu Dharr (the wording in Ibn Hibban's Sahih was read only in a Wikisource search snippet); al-Qurtubi's reason, in his commentary on al-A'raf, for rejecting that Idris was Noah's ancestor; Ibn Kathir's remark after the Ilyas report (وهذا لا يدل), to be read in context; Ibn Battuta's passage, read only as a snippet; Charles's dates for the parts of 1 Enoch. Read only as search snippets and not added: Abu Ma'shar (the Hermes before the Flood, \"whom the Hebrews claim is Enoch\"), al-Ya'qubi and Ibn Khaldun (Hermes is Idris, \"it is said\"), Majmu' al-Fatawa (Hermes is a generic title), al-Fatawa al-Kubra on \"the craft of Idris\" (\"speech without knowledge\"), al-Maraghi (Idris revered by the ancient Egyptians), Ibn Abi Usaybi'a. Moved by -166 years on 2026-11-26 with Abraham's birth, now about 2166 BCE (D24)."

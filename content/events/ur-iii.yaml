@@ -1,0 +1,44 @@
+id: ur-iii
+kind: period
+lane: mesopotamia
+review: draft
+title:
+  en: The Third Dynasty of Ur
+  ar: سلالة أور الثالثة
+summary:
+  en: A kingdom ruled from Ur in southern Mesopotamia, about 2100–2000 BCE. A Sumerian lament tells how its king Ibbi-Suen was taken to Elam in fetters and Ur was left a ruin.
+  ar: مملكةٌ حُكمت من أور في جنوب بلاد الرافدين، نحو 2100–2000 ق.م. وتروي مرثيةٌ سومرية كيف حُمل ملكها إبّي-سين إلى عيلام مكبّلًا، وتُركت أور خرابًا.
+when:
+  from: -2100
+  to: -2000
+  certainty: estimated
+  basis:
+    en: The Cuneiform Digital Library Initiative dates the Ur III period to about 2100–2000 BCE.
+    ar: تؤرّخ مبادرة المكتبة المسمارية الرقمية حقبةَ أور الثالثة بنحو 2100–2000 ق.م.
+place:
+  status: known
+  names:
+    - { name: Urim, type: ancient, language: Sumerian }
+  description:
+    en: Ur, in southern Iraq.
+    ar: أور، في جنوب العراق.
+  geometry:
+    type: Point
+    coordinates: [ 46.103, 30.962 ]
+history:
+  - claim:
+      en: The Cuneiform Digital Library Initiative dates the Ur III period to about 2100–2000 BCE.
+      ar: تؤرّخ مبادرة المكتبة المسمارية الرقمية حقبةَ أور الثالثة بنحو 2100–2000 ق.م.
+    status: established
+    sources: [ cdli-periods ]
+  - claim:
+      en: The Sumerian "Lament for Sumer and Urim" says that Ibbi-Suen was to be "taken to the land Elam in fetters", and that Urim (Ur) was "to be counted as a ruin-mound".
+      ar: تقول «مرثية سومر وأوريم» السومرية إن إبّي-سين سيُحمل «إلى أرض عيلام مكبّلًا»، وإن أوريم (أور) ستُعدّ «تلًّا من الخرائب» (العبارات مترجمةٌ عن الإنجليزية).
+    status: established
+    sources:
+      - { id: etcsl-lament-sumer-urim, locator: "lines 27-37, 340-349" }
+related:
+  - { id: fall-of-ur, type: consequence }
+  - { id: abraham, type: parallel }
+tags: [ mesopotamia, ur ]
+notes: "Leads, not yet sourced: the conventional middle-chronology dates (about 2112–2004 BCE) and the kings Ur-Nammu and Shulgi. The point is approximate."

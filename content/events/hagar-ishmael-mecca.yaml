@@ -1,0 +1,55 @@
+id: hagar-ishmael-mecca
+kind: event
+lane: quran
+review: draft
+title:
+  en: Hagar and Ishmael in the valley of Mecca
+  ar: هاجر وإسماعيل في وادي مكة
+summary:
+  en: Abraham, peace be upon him, leaves Hagar and her son Ishmael in an empty valley by the Sacred House and prays for them (14:35–41). A household of Jurhum later settles with them, and Ishmael grows up among them.
+  ar: يترك إبراهيم عليه السلام هاجرَ وابنها إسماعيل في وادٍ خالٍ عند البيت الحرام، ويدعو لهما (14:35-41). ثم ينزل معهما أهلُ بيتٍ من جرهم، وينشأ إسماعيل بينهم.
+when:
+  from: -2080
+  to: -2076
+  certainty: traditional
+  basis:
+    en: Placed soon after Ishmael's birth, when Abraham was 86 (Genesis 16:16; Ibn Kathir), about 2080 BCE. The sources read give no exact age; the span is an estimate.
+    ar: وُضعت بُعيد مولد إسماعيل، حين كان إبراهيم ابن ستٍّ وثمانين (التكوين 16:16؛ ابن كثير)، نحو 2080 ق.م. ولا تذكر المصادر التي قُرئت سنًّا محدّدة؛ فالمدّة تقدير.
+place:
+  status: known
+  description:
+    en: The valley of Mecca, by the Sacred House.
+    ar: وادي مكة، عند البيت الحرام.
+  geometry:
+    type: Point
+    coordinates: [ 39.8262, 21.4225 ]
+quran: [ "14:35-41" ]
+tradition:
+  - kind: athar
+    attribution:
+      en: Ibn Abbas (Companion), in al-Bukhari, through Sa'id ibn Jubayr, as quoted by Ibn Kathir
+      ar: ابن عباس (صحابي)، في البخاري، من طريق سعيد بن جبير، فيما نقله ابن كثير
+    text:
+      en: The report says that Mecca then had no people and no water; Abraham left Hagar and Ishmael with dates and a skin of water. Later a company or household of Jurhum passed by and, with Hagar's leave, settled in the lower part of Mecca; Ishmael grew up among them, learned Arabic from them, and married among them.
+      ar: تذكر الرواية أن مكة لم يكن بها يومئذ أحد ولا ماء، وأن إبراهيم ترك هاجر وإسماعيل ومعهما تمرٌ وسقاءُ ماء. ثم مرّت رفقةٌ أو أهلُ بيتٍ من جرهم، فنزلوا أسفل مكة بإذن هاجر؛ ونشأ إسماعيل بينهم، وتعلّم العربية منهم، وتزوّج فيهم.
+    original: وليس بمكة يومئذ أحد، وليس بها ماء … مرت بهم رفقة من جرهم، أو أهل بيت من جرهم
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «ذكر مهاجرة إبراهيم بابنه إسماعيل وأمه هاجر»
+    gradings:
+      - grade: sahih
+        by:
+          en: al-Bukhari
+          ar: البخاري
+        source:
+          id: ibn-kathir-bidaya
+          locator: vol. 1, «ذكر مهاجرة إبراهيم بابنه إسماعيل وأمه هاجر»
+        note:
+          en: Included in his Sahih, as quoted by Ibn Kathir.
+          ar: أخرجه في صحيحه، كما نقله ابن كثير.
+related:
+  - { id: ishmael, type: context }
+  - { id: abraham-house, type: consequence }
+  - { id: sarah-king-of-egypt, type: context }
+tags: [ prophets, abraham, ishmael, mecca ]
+notes: Ibn Kathir comments that part of this account is Israelite material; which part was not checked. Zamzam and the sayings of the Prophet ﷺ within the report were not read; add them only from the text.

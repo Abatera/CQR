@@ -9,8 +9,8 @@ summary:
   en: Ya'qub (Jacob), also called Isra'il, peace be upon him, Isaac's son and the father of Joseph and his brothers, from whom the Children of Israel descend.
   ar: يعقوب عليه السلام، ويُسمّى إسرائيل، ابن إسحاق وأبو يوسف وإخوته، ومنه ينحدر بنو إسرائيل.
 when:
-  from: -1840
-  to: -1693
+  from: -2006
+  to: -1859
   certainty: traditional
   basis:
     en: Placed a generation after Isaac. The Torah gives him 147 years (Genesis 47:28); Ibn Kathir reports the People of the Book's figures of 130 years on entering Egypt and 17 years there.
@@ -47,3 +47,4 @@ related:
   - { id: isaac, type: context }
   - { id: joseph, type: context }
 tags: [ prophets, jacob ]
+notes: Moved by -166 years on 2026-11-26 with Abraham's birth, now about 2166 BCE (D24).

@@ -9,28 +9,28 @@ summary:
   en: Nuh (Noah), peace be upon him, sent to his people, who rejected him for a thousand years less fifty until the Flood (29:14). The hadith of intercession calls him the first of the messengers to the people of the earth.
   ar: نوح عليه السلام، أُرسل إلى قومه، فكذّبوه تسعمئةٍ وخمسين سنة حتى جاء الطوفان (29:14). ويصفه حديث الشفاعة بأنه أوّل رسولٍ أُرسل إلى أهل الأرض.
 when:
-  from: -4350
-  to: -3000
+  from: -4516
+  to: -3166
   certainty: reckoned
   basis:
-    en: "Noah's death is placed ten qurun, read as a thousand years, before Abraham (hadith of Abu Umama): about 3000 BCE. Counting back: 350 years after the Flood (Ibn Sa'd; also the Torah), the 950 years among his people that the Quran gives, and the age of fifty at which one report says he was sent. Only the 950 years are fixed; the years before his mission and after the Flood are reported variously."
-    ar: "يُوضع موت نوح قبل إبراهيم بعشرة قرون، تُقرأ ألفَ سنة (حديث أبي أمامة): أي نحو 3000 ق.م. وبالعدّ رجوعًا: ثلاثمئةٍ وخمسون سنة بعد الطوفان (ابن سعد؛ والتوراة أيضًا)، ثم تسعمئةٍ وخمسون سنة في قومه كما يذكر القرآن، ثم سنّ الخمسين التي تذكر روايةٌ أنه بُعث فيها. والثابت وحده هو التسعمئة والخمسون سنة؛ أما السنون قبل بعثته وبعد الطوفان فتختلف فيها الروايات."
+    en: "Noah's death is placed ten qurun, read as a thousand years, before Abraham (hadith of Abu Umama): about 3166 BCE. Counting back: 350 years after the Flood (Ibn Sa'd; also the Torah), the 950 years among his people that the Quran gives, and the age of fifty at which one report says he was sent. Only the 950 years are fixed; the years before his mission and after the Flood are reported variously."
+    ar: "يُوضع موت نوح قبل إبراهيم بعشرة قرون، تُقرأ ألفَ سنة (حديث أبي أمامة): أي نحو 3166 ق.م. وبالعدّ رجوعًا: ثلاثمئةٍ وخمسون سنة بعد الطوفان (ابن سعد؛ والتوراة أيضًا)، ثم تسعمئةٍ وخمسون سنة في قومه كما يذكر القرآن، ثم سنّ الخمسين التي تذكر روايةٌ أنه بُعث فيها. والثابت وحده هو التسعمئة والخمسون سنة؛ أما السنون قبل بعثته وبعد الطوفان فتختلف فيها الروايات."
   core:
-    from: -4300
-    to: -3351
+    from: -4466
+    to: -3517
     basis:
       en: The Quran gives the 950 years he stayed among his people before the Flood took them (29:14).
       ar: يذكر القرآن التسعمئة والخمسين سنة التي لبثها في قومه قبل أن يأخذهم الطوفان (29:14).
   alternatives:
-    - from: -4650
-      to: -3000
+    - from: -4816
+      to: -3166
       basis:
         en: Sent at the age of 350, a second view reported by Ibn Kathir.
         ar: بُعث ابنَ ثلاثمئةٍ وخمسين سنة، وهو قولٌ ثانٍ نقله ابن كثير.
       sources:
         - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة نوح عليه السلام»" }
-    - from: -4780
-      to: -3000
+    - from: -4946
+      to: -3166
       basis:
         en: Sent at the age of 480, from Ibn Abbas through Ibn Jarir, reported by Ibn Kathir.
         ar: بُعث ابنَ أربعمئةٍ وثمانين سنة، عن ابن عباس من طريق ابن جرير، فيما نقله ابن كثير.
@@ -166,4 +166,4 @@ related:
   - { id: idris, type: context }
   - { id: hud, type: context }
 tags: [ prophets, noah, chronology ]
-notes: The span counts back from Noah's death at about 3000 BCE (decided with the owner on 2026-11-25 so that the prophets after Noah keep their dates). The age at his mission (50) is the first of the three views Ibn Kathir lists; the owner may choose another. The outline of al-Jazira is a rough sketch. Other identifications of al-Judi (for example the mountains of Ararat in the Bible) can be added as opinions with sources.
+notes: The span counts back from Noah's death at about 3000 BCE (decided with the owner on 2026-11-25 so that the prophets after Noah keep their dates). The age at his mission (50) is the first of the three views Ibn Kathir lists; the owner may choose another. The outline of al-Jazira is a rough sketch. Other identifications of al-Judi (for example the mountains of Ararat in the Bible) can be added as opinions with sources. Moved by -166 years on 2026-11-26 with Abraham's birth, now about 2166 BCE (D24).

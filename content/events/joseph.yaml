@@ -9,8 +9,8 @@ summary:
   en: Yusuf (Joseph), peace be upon him, sold into Egypt by his brothers, who rose to govern its stores and brought his family there. His story fills a whole surah (12).
   ar: يوسف عليه السلام، باعه إخوته فصار إلى مصر، ثم ارتقى حتى تولّى خزائنها وأتى بأهله إليها. وقصته تملأ سورةً كاملة (12).
 when:
-  from: -1750
-  to: -1641
+  from: -1916
+  to: -1807
   certainty: traditional
   basis:
     en: Placed a generation after Jacob, with the 110-year life given by the People of the Book and Ibn Jarir (Genesis 50:26). Al-Hasan al-Basri gives 120 years. Both are reported by Ibn Kathir.
@@ -52,3 +52,4 @@ related:
   - { id: jacob, type: context }
   - { id: moses, type: context }
 tags: [ prophets, joseph, egypt ]
+notes: Moved by -166 years on 2026-11-26 with Abraham's birth, now about 2166 BCE (D24).

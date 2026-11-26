@@ -9,23 +9,23 @@ summary:
   en: Adam, peace be upon him, the first human and, according to hadith, a prophet to whom God spoke. The Quran tells of his creation, the angels' prostration, the slip in the Garden and his descent to earth.
   ar: آدم عليه السلام، أول البشر، وهو بحسب الحديث نبيٌّ كلّمه الله. ويقصّ القرآن خبر خلقه، وسجود الملائكة له، وزلّته في الجنة، وهبوطه إلى الأرض.
 when:
-  from: -5435
-  to: -4476
+  from: -5601
+  to: -4642
   certainty: reckoned
   basis:
-    en: "Counted back from Noah's death, about 3000 BCE (see Noah): Noah was born about 4350 BCE, 126 years after Adam's death (Ibn Jarir), so Adam died about 4476 BCE. The span is Adam's life of 960 years: the thousand years written for him, less the forty he gave to David, in al-Tirmidhi's version of the hadith."
-    ar: "محسوبٌ رجوعًا من موت نوح نحو 3000 ق.م (انظر نوح): وُلد نوح نحو 4350 ق.م، بعد وفاة آدم بمئةٍ وستٍّ وعشرين سنة (ابن جرير)، فتكون وفاة آدم نحو 4476 ق.م. والمدّة هي عمر آدم البالغ تسعمئةٍ وستين سنة: الألفُ التي كُتبت له، ناقصًا الأربعين التي وهبها لداوود، في رواية الترمذي للحديث."
+    en: "Counted back from Noah's death, about 3166 BCE (see Noah): Noah was born about 4516 BCE, 126 years after Adam's death (Ibn Jarir), so Adam died about 4642 BCE. The span is Adam's life of 960 years: the thousand years written for him, less the forty he gave to David, in al-Tirmidhi's version of the hadith."
+    ar: "محسوبٌ رجوعًا من موت نوح نحو 3166 ق.م (انظر نوح): وُلد نوح نحو 4516 ق.م، بعد وفاة آدم بمئةٍ وستٍّ وعشرين سنة (ابن جرير)، فتكون وفاة آدم نحو 4642 ق.م. والمدّة هي عمر آدم البالغ تسعمئةٍ وستين سنة: الألفُ التي كُتبت له، ناقصًا الأربعين التي وهبها لداوود، في رواية الترمذي للحديث."
   alternatives:
-    - from: -5475
-      to: -4476
+    - from: -5641
+      to: -4642
       basis:
         en: A full thousand years, as in Ahmad's version of the hadith, in which God completed Adam's thousand; this is Ibn Kathir's view.
         ar: ألف سنة كاملة، كما في رواية أحمد للحديث، التي أتمّ الله فيها لآدم ألفه؛ وهو قول ابن كثير.
       sources:
         - id: ibn-kathir-bidaya
           locator: vol. 2, «ذكر كمية حياته وكيفية وفاته عليه السلام»
-    - from: -5405
-      to: -4476
+    - from: -5571
+      to: -4642
       basis:
         en: 930 years, the Torah's figure (Genesis 5:5).
         ar: تسعمئةٍ وثلاثون سنة، وهو رقم التوراة (التكوين 5:5).
@@ -233,4 +233,4 @@ tradition:
 related:
   - { id: idris, type: context }
 tags: [ prophets, adam, chronology ]
-notes: "Ages decided with the owner on 2026-11-25: the chronology before Abraham is counted back from Noah's death through the reported ages; Adam's 960 years follow the owner's reading of al-Tirmidhi's version, with 1,000 and 930 as alternatives. The chain hadith in al-Mustadrak (Ibn Abbas via Yusuf ibn Mihran and Ali ibn Zayd) is probably the report of the intervals between the prophets that the owner asked about: confirm with the owner and check its full text in an edition. The gradings of the Abu Umama hadith by al-Hakim and al-Albani were read in secondary sources (islamqa.info 20907, islamweb.net 203734); check them in the books."
+notes: "Ages decided with the owner on 2026-11-25: the chronology before Abraham is counted back from Noah's death through the reported ages; Adam's 960 years follow the owner's reading of al-Tirmidhi's version, with 1,000 and 930 as alternatives. The chain hadith in al-Mustadrak (Ibn Abbas via Yusuf ibn Mihran and Ali ibn Zayd) is probably the report of the intervals between the prophets that the owner asked about: confirm with the owner and check its full text in an edition. The gradings of the Abu Umama hadith by al-Hakim and al-Albani were read in secondary sources (islamqa.info 20907, islamweb.net 203734); check them in the books. Moved by -166 years on 2026-11-26 with Abraham's birth, now about 2166 BCE (D24)."

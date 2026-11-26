@@ -9,8 +9,8 @@ summary:
   en: Abraham, peace be upon him, and his son Ishmael, peace be upon him, raise the foundations of the House in Mecca and pray that it be accepted from them.
   ar: إبراهيم عليه السلام وابنه إسماعيل عليه السلام يرفعان أسس البيت في مكة، ويدعوان الله أن يتقبّله منهما.
 when:
-  from: -1890
-  to: -1826
+  from: -2056
+  to: -1992
   certainty: traditional
   basis:
     en: Within Abraham's traditional lifetime, once Ishmael was grown, since the Quran shows them building together. No date is given.
@@ -43,3 +43,4 @@ related:
   - { id: abraham, type: context }
   - { id: ishmael, type: context }
 tags: [ abraham, ishmael, mecca ]
+notes: Moved by -166 years on 2026-11-26 with Abraham's birth, now about 2166 BCE (D24).

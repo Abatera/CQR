@@ -213,6 +213,7 @@
                 <span class="badge kind-{tr.kind}">{traditionKindText(tr.kind, lang)}</span>
                 <span class="attribution"><Txt m={tr.attribution} /></span>
                 {@render wording(tr.text, tr.original)}
+                {#if tr.kind === 'ahl-al-kitab'}<p class="ahl-note">{t('ahlKitabNote', lang)}</p>{/if}
                 <p class="report-meta">
                   <Cite refs={tr.source ? [tr.source] : undefined} />
                 </p>
@@ -592,6 +593,16 @@
   }
   .small {
     font-size: 12px;
+  }
+  .ahl-note {
+    margin: 2px 0;
+    font-size: 12px;
+    color: #4b3a80;
+    font-style: italic;
+  }
+  .facts:lang(ar) .ahl-note {
+    font-size: 13px;
+    font-style: normal;
   }
   .title-en {
     font-size: 14px;

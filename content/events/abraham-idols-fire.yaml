@@ -1,0 +1,107 @@
+id: abraham-idols-fire
+kind: event
+lane: quran
+review: draft
+title:
+  en: Abraham breaks the idols and is saved from the fire
+  ar: إبراهيم يكسر الأصنام ويُنجّى من النار
+summary:
+  en: Abraham, peace be upon him, argues with his father and his people over their idols, breaks the idols, and is thrown into a fire, which God makes cool and harmless for him (21:51–70; 37:83–98).
+  ar: يجادل إبراهيمُ عليه السلام أباه وقومه في أصنامهم، ويكسر الأصنام، فيُلقى في النار، فيجعلها الله عليه باردةً لا تضرّه (21:51-70؛ 37:83-98).
+when:
+  from: -2150
+  to: -2136
+  certainty: traditional
+  basis:
+    en: His people call him a youth (21:60), so the episode is placed in his youth, taken here as roughly his 16th to 30th years, counted from his birth at about 2166 BCE. The age is the project's estimate. The Book of Jubilees puts the burning of the house of idols in his 60th year (see Tradition).
+    ar: يسمّيه قومه فتًى (21:60)، فوُضعت الواقعة في شبابه، وقُدِّر هنا بين سنته السادسة عشرة والثلاثين تقريبًا، محسوبًا من مولده نحو 2166 ق.م. والسنّ تقديرٌ من المشروع. ويجعل سفر اليوبيلات إحراقَ بيت الأصنام في سنته الستين (انظر المرويّات).
+  alternatives:
+    - from: -2106
+      to: -2106
+      basis:
+        en: His 60th year, when the Book of Jubilees (12:12) has him burn the house of idols by night; a People of the Book report, neither affirmed nor denied.
+        ar: سنته الستون، التي يجعل فيها سفر اليوبيلات (12:12) إحراقَه بيتَ الأصنام ليلًا؛ وهي روايةٌ من أهل الكتاب لا تُصدَّق ولا تُكذَّب.
+      sources:
+        - { id: jubilees-charles, locator: "12:12" }
+place:
+  status: proposed
+  description:
+    en: The Quran names no place. Ibn Kathir places the breaking of the idols in Babylon, whose people worshipped idols; Jubilees places the fire in Ur of the Chaldees. The point is approximate.
+    ar: لا يسمّي القرآن مكانًا. ويضع ابن كثير كسرَ الأصنام في بابل، التي كان أهلها يعبدون الأصنام؛ ويضع سفر اليوبيلات النارَ في أور الكلدانيين. والنقطة تقريبية.
+  opinions:
+    - name:
+        en: Babylon (Ibn Kathir)
+        ar: بابل (ابن كثير)
+      geometry:
+        type: Point
+        coordinates: [ 44.42, 32.54 ]
+      sources:
+        - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة إبراهيم خليل الرحمن»" }
+    - name:
+        en: Ur of the Chaldees (Jubilees 12:14)
+        ar: أور الكلدانيين (اليوبيلات 12:14)
+      sources:
+        - { id: jubilees-charles, locator: "12:14" }
+quran: [ "21:51-70", "26:69-82", "29:16-25", "37:83-98" ]
+tradition:
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+      ar: ابن كثير
+    text:
+      en: The people of Babylon worshipped idols; they are the ones Abraham debated over them, and whose idols he broke. (The people of Harran worshipped the planets; see "Abraham, the star, the moon and the sun".)
+      ar: كان أهل بابل يعبدون الأصنام، وهم الذين جادلهم إبراهيم فيها وكسرها عليهم. (أما أهل حرّان فكانوا يعبدون الكواكب؛ انظر «إبراهيم والكوكب والقمر والشمس».)
+    original: وأما أهل بابل فكانوا يعبدون الأصنام، وهم الذين ناظرهم في عبادتها وكسرها عليهم
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «قصة إبراهيم خليل الرحمن»
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+      ar: ابن كثير
+    text:
+      en: They put Abraham in the cup of a catapult made for them by a Kurdish man called Hazan, and threw him into a great pit of fire. Al-Minhal reported that he stayed in it forty or fifty days.
+      ar: وضعوا إبراهيم في كفّة منجنيقٍ صنعه لهم رجلٌ من الأكراد يقال له هزن، ورموه في حفرةٍ عظيمة من النار. وروى المنهال أنه مكث فيها أربعين يومًا أو خمسين.
+    original: ثم وضعوا إبراهيم عليه السلام في كفة منجنيق صنعه لهم رجل من الأكراد يقال له هزن
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «قصة إبراهيم خليل الرحمن»
+  - kind: ahl-al-kitab
+    attribution:
+      en: The Book of Jubilees (2nd century BCE)
+      ar: سفر اليوبيلات (القرن الثاني قبل الميلاد)
+    text:
+      en: In his 60th year Abram rose by night and burned the house of the idols; his brother Haran rushed in to save the idols and died in the fire, in Ur of the Chaldees, before their father Terah.
+      ar: في سنته الستين قام أبرام ليلًا فأحرق بيت الأصنام؛ فأسرع أخوه هاران لينقذها فمات في النار، في أور الكلدانيين، قبل أبيهما تارح.
+    source:
+      id: jubilees-charles
+      locator: "12:12-14"
+  - kind: ahl-al-kitab
+    attribution:
+      en: Pseudo-Philo, Biblical Antiquities (1st century CE)
+      ar: كتاب «الآثار الكتابية» المنسوب إلى فيلون (القرن الأول الميلادي)
+    text:
+      en: When the people in the land of Babylon make bricks to build a tower, twelve men refuse, Abram first among them, saying they know one Lord. The princes Phenech and Nemroth (Nimrod) and the chief Jectan have Abram put into a furnace with the bricks; an earthquake makes the fire burst out, and Abram comes out unharmed.
+      ar: حين صنع الناس في أرض بابل اللَّبِن ليبنوا برجًا، أبى اثنا عشر رجلًا، أوّلهم أبرام، قائلين إنهم لا يعرفون إلا ربًّا واحدًا. فيأمر الأميران فينيخ ونِمروث (النمرود) والرئيس يقطان بإلقاء أبرام في أتونٍ مع اللَّبِن؛ فتُخرج زلزلةٌ النارَ من الأتون، ويخرج أبرام سالمًا.
+    source:
+      id: pseudo-philo-james
+      locator: "6"
+  - kind: ahl-al-kitab
+    attribution:
+      en: The rabbis (Genesis Rabbah 38), as the Jewish Encyclopedia reports
+      ar: الأحبار (مدراش التكوين الكبير 38)، كما تنقل الموسوعة اليهودية
+    text:
+      en: Terah made and sold idols; Abraham mocked the buyers, and Nimrod ordered Abraham to be cast into a furnace.
+      ar: كان تارح يصنع الأصنام ويبيعها، فسخر إبراهيم من المشترين، فأمر النمرود بإلقاء إبراهيم في أتون.
+    source: je-abraham
+history:
+  - claim:
+      en: "Jewish writings older than Islam tell of Abraham, the idols and a fire, each in its own way: the Book of Jubilees (2nd century BCE), Pseudo-Philo's Biblical Antiquities (1st century CE) and the rabbinic midrash."
+      ar: "تروي كتاباتٌ يهودية أقدم من الإسلام خبرَ إبراهيم والأصنام والنار، كلٌّ على طريقته: سفر اليوبيلات (القرن الثاني قبل الميلاد)، و«الآثار الكتابية» المنسوب إلى فيلون (القرن الأول الميلادي)، والمدراش عند الأحبار."
+    status: established
+    sources: [ je-abraham, pseudo-philo-james ]
+related:
+  - { id: abraham, type: context }
+  - { id: abraham-and-the-king, type: consequence }
+tags: [ prophets, abraham ]
+notes: The age (16–30) is an estimate from "youth" (21:60). Ibn Kathir gives no age or city for the fire itself.

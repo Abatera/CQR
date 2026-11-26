@@ -1,0 +1,41 @@
+id: fall-of-ur
+kind: event
+lane: mesopotamia
+review: draft
+title:
+  en: Ur falls to Elam
+  ar: سقوط أور في يد عيلام
+summary:
+  en: Ur is sacked and its king Ibbi-Suen is carried off to Elam, ending the Third Dynasty of Ur, as the Sumerian "Lament for Sumer and Urim" tells.
+  ar: تُنهب أور ويُحمل ملكها إبّي-سين إلى عيلام، فتنتهي سلالة أور الثالثة، كما تروي «مرثية سومر وأوريم» السومرية.
+when:
+  from: -2000
+  to: -2000
+  certainty: estimated
+  basis:
+    en: At the end of the Ur III period, which the Cuneiform Digital Library Initiative dates to about 2100–2000 BCE.
+    ar: في نهاية حقبة أور الثالثة، التي تؤرّخها مبادرة المكتبة المسمارية الرقمية بنحو 2100–2000 ق.م.
+place:
+  status: known
+  description:
+    en: Ur, in southern Iraq.
+    ar: أور، في جنوب العراق.
+  geometry:
+    type: Point
+    coordinates: [ 46.103, 30.962 ]
+history:
+  - claim:
+      en: The Sumerian "Lament for Sumer and Urim" says that Ibbi-Suen was to be "taken to the land Elam in fetters", and that Urim (Ur) was "to be counted as a ruin-mound".
+      ar: تقول «مرثية سومر وأوريم» السومرية إن إبّي-سين سيُحمل «إلى أرض عيلام مكبّلًا»، وإن أوريم (أور) ستُعدّ «تلًّا من الخرائب» (العبارات مترجمةٌ عن الإنجليزية).
+    status: established
+    sources:
+      - { id: etcsl-lament-sumer-urim, locator: "lines 27-37, 340-349" }
+connection:
+  text:
+    en: "Genesis names Ur of the Chaldees as the city of Abraham's family, and an Elamite king, Chedorlaomer, among the eastern kings of his time (Genesis 14:1). In this project's reckoning Abraham was still alive, in his old age, when Ur fell to Elam. This is a coincidence of dates offered as a reflection: the reckoning itself rests on the People of the Book's numbers, which are neither affirmed nor denied."
+    ar: "تسمّي التوراة أورَ الكلدانيين مدينةً لأسرة إبراهيم، وتذكر ملكًا عيلاميًّا، كدرلعومر، بين ملوك المشرق في زمنه (التكوين 14:1). وفي حساب المشروع كان إبراهيم ما يزال حيًّا، في شيخوخته، حين سقطت أور في يد عيلام. وهذا توافقٌ في التواريخ يُقدَّم تأمّلًا: فالحساب نفسه قائمٌ على أرقام أهل الكتاب، التي لا تُصدَّق ولا تُكذَّب."
+related:
+  - { id: ur-iii, type: context }
+  - { id: abraham, type: parallel }
+tags: [ mesopotamia, ur, elam ]
+notes: The year is CDLI's round end of the period; the conventional date (about 2004 BCE, middle chronology) is a lead not yet sourced.

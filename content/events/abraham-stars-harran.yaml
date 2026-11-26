@@ -1,0 +1,82 @@
+id: abraham-stars-harran
+kind: event
+lane: quran
+review: draft
+title:
+  en: Abraham, the star, the moon and the sun
+  ar: إبراهيم والكوكب والقمر والشمس
+summary:
+  en: Abraham, peace be upon him, sees a star, then the moon, then the sun; as each one sets, he turns from it to the Creator, who does not set, and declares himself free of what his people associate with God (6:74–83).
+  ar: يرى إبراهيم عليه السلام كوكبًا، ثم القمر، ثم الشمس؛ وكلما غاب واحدٌ منها أعرض عنه إلى الخالق الذي لا يغيب، وتبرّأ مما يشرك به قومه (6:74-83).
+when:
+  from: -2110
+  to: -2092
+  certainty: traditional
+  basis:
+    en: Ibn Kathir places this sermon among the people of Harran, where the family lived until Abraham left at 75 (Genesis 12:4), about 2091 BCE. How long they lived there is not given; the span is an estimate.
+    ar: يضع ابن كثير هذه الموعظة في أهل حرّان، حيث أقامت الأسرة حتى خرج إبراهيم ابنَ خمسٍ وسبعين (التكوين 12:4)، نحو 2091 ق.م. ولا تُذكر مدّة إقامتهم هناك؛ فالمدّة المرسومة تقدير.
+  alternatives:
+    - from: -2091
+      to: -2091
+      basis:
+        en: "His 75th year: the Book of Jubilees dates Abram's night of watching the stars in Haran to the year of the world 1951 (12:16), and his birth to 1876 (11:13); a People of the Book report, neither affirmed nor denied."
+        ar: "سنته الخامسة والسبعون: يؤرّخ سفر اليوبيلات ليلةَ رصد أبرام النجومَ في حاران بسنة 1951 للعالم (12:16)، ومولده بسنة 1876 (11:13)؛ وهي روايةٌ من أهل الكتاب لا تُصدَّق ولا تُكذَّب."
+      sources:
+        - { id: jubilees-charles, locator: 11:13; 12:16 }
+place:
+  status: proposed
+  description:
+    en: Harran, where Ibn Kathir places the sermon. The point is approximate.
+    ar: حرّان، حيث يضع ابن كثير الموعظة. والنقطة تقريبية.
+  opinions:
+    - name:
+        en: Harran (Ibn Kathir)
+        ar: حرّان (ابن كثير)
+      geometry:
+        type: Point
+        coordinates: [ 39.03, 36.865 ]
+      sources:
+        - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة إبراهيم خليل الرحمن»" }
+quran: [ "6:74-83" ]
+tafsir:
+  - text:
+      en: "Ibn Kathir on 6:74: Ibn Abbas said Abraham's father was named Tarih, not Azar; Mujahid and al-Suddi said Azar is the name of an idol; Ibn Jarir held that Azar is his name. Ibn Kathir suggests the name stuck to him because he served that idol."
+      ar: "ابن كثير في تفسير 6:74: قال ابن عباس إن أبا إبراهيم كان اسمه تارح لا آزر؛ وقال مجاهد والسدي إن آزر اسم صنم؛ ورأى ابن جرير أن آزر اسمه. ويرى ابن كثير أن الاسم غلب عليه لخدمته ذلك الصنم."
+    original: كأنه غلب عليه آزر لخدمته ذلك الصنم
+    source:
+      id: ibn-kathir-tafsir
+      locator: "6:74"
+  - text:
+      en: "Ibn Kathir on 6:79: Abraham was not searching for God here but debating his people, showing them the falsehood of their worship of temples and idols and of the seven wandering planets."
+      ar: "ابن كثير في تفسير 6:79: لم يكن إبراهيم هنا باحثًا عن ربه، بل كان يجادل قومه، مبيّنًا لهم بطلان عبادتهم للهياكل والأصنام وللكواكب السبعة السيّارة."
+    original: والحق أن إبراهيم عليه الصلاة والسلام ، كان في هذا المقام مناظرا لقومه
+    source:
+      id: ibn-kathir-tafsir
+      locator: "6:79"
+tradition:
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+      ar: ابن كثير
+    text:
+      en: The people of Harran worshipped the planets and idols, and the apparent sense is that this sermon on the stars was addressed to them. He rejects, as Israelite lore, the report that Abraham said these words as a child leaving the cave where he had been hidden.
+      ar: كان أهل حرّان يعبدون الكواكب والأصنام، والظاهر أن هذه الموعظة في الكواكب كانت لهم. ويردّ، بوصفها من الإسرائيليات، الروايةَ التي تجعل إبراهيم يقول ذلك طفلًا خرج من السرب الذي خُبّئ فيه.
+    original: والظاهر أن موعظته هذه في الكواكب لأهل حران، فإنهم كان يعبدونها
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «قصة إبراهيم خليل الرحمن»
+  - kind: ahl-al-kitab
+    attribution:
+      en: The Book of Jubilees (2nd century BCE)
+      ar: سفر اليوبيلات (القرن الثاني قبل الميلاد)
+    text:
+      en: In Haran, on the new moon of the seventh month, Abram sat up through the night to observe the stars, and concluded that all the signs of the stars, the moon and the sun are in the hand of the Lord.
+      ar: في حاران، في غرّة الشهر السابع، سهر أبرام الليلَ كله يرصد النجوم، فخلص إلى أن علامات النجوم والقمر والشمس كلها في يد الرب.
+    source:
+      id: jubilees-charles
+      locator: "12:16-17"
+related:
+  - { id: abraham-emigration, type: consequence }
+  - { id: abraham, type: context }
+tags: [ prophets, abraham, harran ]
+notes: "Lead, not yet sourced: the moon god's temples at Ur and Harran (Ehulhul) and the later Sabians of Harran (Iranica, ORACC and Britannica refused automated access)."

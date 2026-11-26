@@ -9,12 +9,12 @@ summary:
   en: Isma'il (Ishmael), peace be upon him, Abraham's son, whom the Quran calls true to his promise, a messenger and a prophet (19:54). With his father he raised the House in Mecca.
   ar: إسماعيل عليه السلام، ابن إبراهيم، الذي وصفه القرآن بصدق الوعد، وبأنه كان رسولًا ونبيًّا (19:54). ورفع مع أبيه البيتَ في مكة.
 when:
-  from: -1914
-  to: -1777
+  from: -2080
+  to: -1943
   certainty: traditional
   basis:
-    en: Born when Abraham was 86, as the People of the Book say, and died aged 137 (both reported by Ibn Kathir; Genesis 25:17), counted from Abraham at about 2000 BCE.
-    ar: وُلد وإبراهيم ابن ستٍّ وثمانين سنة، كما يقول أهل الكتاب، وتوفّي ابنَ مئةٍ وسبعٍ وثلاثين سنة (وكلاهما عند ابن كثير؛ التكوين 25:17)، محسوبًا من إبراهيم نحو 2000 ق.م.
+    en: Born when Abraham was 86, as the People of the Book say, and died aged 137 (both reported by Ibn Kathir; Genesis 25:17), counted from Abraham's birth at about 2166 BCE.
+    ar: وُلد وإبراهيم ابن ستٍّ وثمانين سنة، كما يقول أهل الكتاب، وتوفّي ابنَ مئةٍ وسبعٍ وثلاثين سنة (وكلاهما عند ابن كثير؛ التكوين 25:17)، محسوبًا من مولد إبراهيم نحو 2166 ق.م.
 place:
   status: known
   description:
@@ -51,3 +51,4 @@ related:
   - { id: abraham, type: context }
   - { id: abraham-house, type: context }
 tags: [ prophets, ishmael, mecca ]
+notes: Moved by -166 years on 2026-11-26 with Abraham's birth, now about 2166 BCE (D24).

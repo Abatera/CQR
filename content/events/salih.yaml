@@ -9,18 +9,18 @@ summary:
   en: Salih, peace be upon him, sent to Thamud, the people of al-Hijr (15:80), who hamstrung the she-camel given to them as a sign and were destroyed.
   ar: صالح عليه السلام، أُرسل إلى ثمود، أصحاب الحِجر (15:80)، الذين عقروا الناقة التي جُعلت لهم آية، فأُهلكوا.
 when:
-  from: -2400
-  to: -2101
+  from: -2566
+  to: -2267
   certainty: reckoned
   basis:
     en: After 'Ad (Quran 7:74), and before Abraham in Ibn Kathir's order. No report gives the years; Salih is placed in the reckoned interval between Noah and Abraham.
     ar: بعد عاد (القرآن 7:74)، وقبل إبراهيم في ترتيب ابن كثير. ولا تذكر أيُّ روايةٍ السنين؛ وقد وُضع صالح في الفترة المحسوبة بين نوح وإبراهيم.
   alternatives:
-    - from: -2150
-      to: -2051
+    - from: -2316
+      to: -2217
       basis:
-        en: "By generation, the project's own reckoning: Salih is the ninth generation after Noah in Ibn Kathir's lineage (son of 'Abd son of Masih son of 'Ubayd son of Hajir son of Thamud son of 'Abir son of Iram son of Sam). If Abraham is the tenth (Genesis 11) and the ten generations fill the ten qurun between Noah's death (about 3000 BCE) and Abraham's birth (about 2000 BCE), one each, Salih falls in the generation of Abraham's father. This keeps five generations between Hud and Salih, in keeping with the many generations the Quran places between them (25:38)."
-        ar: "بالأجيال، وهو حساب المشروع نفسه: صالحٌ هو الجيل التاسع بعد نوح في نسب ابن كثير (ابن عبد بن ماسح بن عبيد بن حاجر بن ثمود بن عابر بن إرم بن سام). فإن كان إبراهيم العاشر (التكوين 11)، وملأت الأجيالُ العشرة القرونَ العشرة بين موت نوح (نحو 3000 ق.م) ومولد إبراهيم (نحو 2000 ق.م)، جيلًا لكل قرن، وقع صالح في جيل أبي إبراهيم. ويُبقي هذا خمسة أجيال بين هود وصالح، بما يوافق القرون الكثيرة التي يضعها القرآن بينهما (25:38)."
+        en: "By generation, the project's own reckoning: Salih is the ninth generation after Noah in Ibn Kathir's lineage (son of 'Abd son of Masih son of 'Ubayd son of Hajir son of Thamud son of 'Abir son of Iram son of Sam). If Abraham is the tenth (Genesis 11) and the ten generations fill the ten qurun between Noah's death (about 3166 BCE) and Abraham's birth (about 2166 BCE), one each, Salih falls in the generation of Abraham's father. This keeps five generations between Hud and Salih, in keeping with the many generations the Quran places between them (25:38)."
+        ar: "بالأجيال، وهو حساب المشروع نفسه: صالحٌ هو الجيل التاسع بعد نوح في نسب ابن كثير (ابن عبد بن ماسح بن عبيد بن حاجر بن ثمود بن عابر بن إرم بن سام). فإن كان إبراهيم العاشر (التكوين 11)، وملأت الأجيالُ العشرة القرونَ العشرة بين موت نوح (نحو 3166 ق.م) ومولد إبراهيم (نحو 2166 ق.م)، جيلًا لكل قرن، وقع صالح في جيل أبي إبراهيم. ويُبقي هذا خمسة أجيال بين هود وصالح، بما يوافق القرون الكثيرة التي يضعها القرآن بينهما (25:38)."
       sources:
         - id: ibn-kathir-bidaya
           locator: vol. 1, «قصة صالح نبي ثمود عليه السلام»
@@ -152,4 +152,4 @@ related:
   - { id: hud, type: context }
   - { id: abraham, type: context }
 tags: [ prophets, salih, arabia, thamud ]
-notes: "The generational alternative is the project's own reckoning (one generation to one qarn), proposed and not yet confirmed by the owner. TODO history layer: the Assyrian annals of Sargon II are said to name the Tamudi among Arab tribes settled in Samaria (8th century BCE), and the Ruwafa inscriptions, dated about 165-169 CE, to name a Thamud unit that built a temple for Marcus Aurelius and Lucius Verus. Both were seen only in secondary summaries: ORACC failed with a certificate error and the Ca' Foscari chapter could not be decoded. The monumental tombs at Hegra are Nabataean; the UNESCO and Britannica pages refused automated access. Verify the coordinates."
+notes: "The generational alternative is the project's own reckoning (one generation to one qarn), proposed and not yet confirmed by the owner. TODO history layer: the Assyrian annals of Sargon II are said to name the Tamudi among Arab tribes settled in Samaria (8th century BCE), and the Ruwafa inscriptions, dated about 165-169 CE, to name a Thamud unit that built a temple for Marcus Aurelius and Lucius Verus. Both were seen only in secondary summaries: ORACC failed with a certificate error and the Ca' Foscari chapter could not be decoded. The monumental tombs at Hegra are Nabataean; the UNESCO and Britannica pages refused automated access. Verify the coordinates. Moved by -166 years on 2026-11-26 with Abraham's birth, now about 2166 BCE (D24)."

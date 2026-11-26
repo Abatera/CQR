@@ -9,8 +9,8 @@ summary:
   en: Ishaq (Isaac), peace be upon him, Abraham's son, announced to Abraham and Sarah as glad tidings (11:71), and the father of Jacob.
   ar: إسحاق عليه السلام، ابن إبراهيم، بُشِّر به إبراهيم وسارة (11:71)، وهو أبو يعقوب.
 when:
-  from: -1900
-  to: -1720
+  from: -2066
+  to: -1886
   certainty: traditional
   basis:
     en: Born fourteen years after Ishmael, and died aged 180, as Ibn Kathir reports following the People of the Book (Genesis 35:28).
@@ -47,3 +47,4 @@ related:
   - { id: abraham, type: context }
   - { id: jacob, type: context }
 tags: [ prophets, isaac ]
+notes: Moved by -166 years on 2026-11-26 with Abraham's birth, now about 2166 BCE (D24).

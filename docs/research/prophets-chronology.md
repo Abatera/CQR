@@ -53,6 +53,8 @@ Only two reports are sound. The Prophet ﷺ gave the *order* and the *proportion
 
 ## How the Prophets lane uses this
 
+> **Revised on 2026-11-26 (D24):** Abraham's birth is now anchored at about 2166 BCE, the Hebrew Bible's numbers counted back from the Exodus, and everything counted from him moved by −166 years. The table below gives the new dates; the paragraphs keep the reasoning of 2026-11-23 and 2026-11-25. See [abraham.md](abraham.md).
+
 1. **From Abraham onward, years are traditional.** Ibn Kathir reasons that "more than a thousand years" separate Abraham, builder of the Sacred House, from Solomon, builder of Bayt al-Maqdis. With Solomon in the 10th century BCE, that puts Abraham at or before about 2000 BCE, which also agrees with biblical tradition. The ages of Abraham, Ishmael, Isaac, Jacob, Joseph and Moses are the People of the Book's figures as Ibn Kathir reports them, with Genesis cited for comparison. Moses uses the biblical reckoning: the Exodus 480 years before Solomon's fourth year (1 Kings 6:1). David's hundred-year life comes from the hadith of Adam's lifespan, and Solomon's 52 years from Ibn Kathir's sources.
 2. **Before Abraham, years are "reckoned" from the ages (revised 2026-11-25, D20).** The anchor is Noah's death, ten *qurun* (read as a thousand years) before Abraham: about 3000 BCE. From there the count goes back through the reported ages: Noah lived 350 years after the Flood (Ibn Sa'd), the 950 years among his people are the Quran's (29:14) and are drawn solid inside his bar, and he was sent at 50 (the first of three views; 350 and 480 are alternatives). He was born 126 years after Adam's death (Ibn Jarir), and Adam lived 960 years (al-Tirmidhi's version of the hadith, as the owner reads it; 1,000 in Ahmad's version and Ibn Kathir; 930 in the Torah). Idris lived through 308 years of Adam's life (Ibn Ishaq), and 365 years in all, the Torah's figure for Enoch. Hud and Salih, for whom no report gives years, keep their windows between Noah and Abraham.
 
@@ -65,17 +67,17 @@ Only two reports are sound. The Prophet ﷺ gave the *order* and the *proportion
 
 | Prophet | Drawn at | Certainty | Main basis | Place (status) |
 |---|---|---|---|---|
-| Adam | 5435–4476 BCE | reckoned | 960 years (al-Tirmidhi's version); died 126 years before Noah's birth | unknown |
-| Idris | 4783–4419 BCE | reckoned | lived through 308 years of Adam's life (Ibn Ishaq); 365 years (Torah) | unknown |
-| Nuh | 4350–3000 BCE, of which 4300–3351 certain in length | reckoned | died 1,000 years before Abraham; 950 years among his people (Quran) | al-Judi in al-Jazira (proposed) |
-| Hud | 2700–2401 BCE | reckoned | Quran 7:69 order; Ibn Kathir | al-Ahqaf (proposed) |
-| Salih | 2400–2101 BCE | reckoned | Quran 7:74 order; Ibn Kathir | al-Hijr (proposed) |
-| Ibrahim | 2000–1826 BCE | traditional | Ibn Kathir: over 1,000 years before Solomon; 175-year life | Babylon and Hebron (proposed) |
-| Lut | 1980–1860 BCE | traditional | Abraham's nephew | Sodom, Ghawr Zughar (proposed) |
-| Isma'il | 1914–1777 BCE | traditional | born when Abraham was 86; lived 137 | Mecca (known) |
-| Ishaq | 1900–1720 BCE | traditional | 14 years after Ishmael; lived 180 | Hebron (proposed) |
-| Ya'qub | 1840–1693 BCE | traditional | a generation after Isaac; 147 years | Hebron (proposed) |
-| Yusuf | 1750–1641 BCE | traditional | 110 or 120 years | Egypt (known) |
+| Adam | 5601–4642 BCE | reckoned | 960 years (al-Tirmidhi's version); died 126 years before Noah's birth | unknown |
+| Idris | 4949–4585 BCE | reckoned | lived through 308 years of Adam's life (Ibn Ishaq); 365 years (Torah) | unknown |
+| Nuh | 4516–3166 BCE, of which 4466–3517 certain in length | reckoned | died 1,000 years before Abraham; 950 years among his people (Quran) | al-Judi in al-Jazira (proposed) |
+| Hud | 2866–2567 BCE | reckoned | Quran 7:69 order; Ibn Kathir | al-Ahqaf (proposed) |
+| Salih | 2566–2267 BCE | reckoned | Quran 7:74 order; Ibn Kathir | al-Hijr (proposed) |
+| Ibrahim | 2166–1991 BCE | traditional | the Hebrew Bible's numbers back from the Exodus (D24); agrees with Ibn Kathir's over 1,000 years before Solomon; 175-year life | Babylon and Hebron (proposed) |
+| Lut | 2146–2026 BCE | traditional | Abraham's nephew | Sodom, Ghawr Zughar (proposed) |
+| Isma'il | 2080–1943 BCE | traditional | born when Abraham was 86; lived 137 | Mecca (known) |
+| Ishaq | 2066–1886 BCE | traditional | 14 years after Ishmael; lived 180 | Hebron (proposed) |
+| Ya'qub | 2006–1859 BCE | traditional | a generation after Isaac; 147 years | Hebron (proposed) |
+| Yusuf | 1916–1807 BCE | traditional | 110 or 120 years | Egypt (known) |
 | Ayyub | 1650–1558 BCE | unknown | Ibn Kathir's order; 93 years | al-Bathaniyya (proposed) |
 | Shu'ayb | 1600–1481 BCE | unknown | after Joseph (Ibn 'Asakir from Ibn Abbas) | Madyan (proposed) |
 | Musa | 1526–1406 BCE | traditional | 1 Kings 6:1; 120 years | unknown |

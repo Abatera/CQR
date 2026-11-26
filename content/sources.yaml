@@ -305,3 +305,89 @@
   publisher: NASA Earth Observatory
   url: https://science.nasa.gov/earth/earth-observatory/searching-for-the-origins-of-space-archaeology/
   notes: Dated 7 August 2017. Only the first half of the article was read verbatim.
+
+- id: jubilees-charles
+  type: book
+  title: The Book of Jubilees
+  edition: Translated by R. H. Charles
+  year: 1913
+  publisher: Clarendon Press
+  place: Oxford
+  url: https://www.pseudepigrapha.com/jubilees/index.htm
+  notes: "Chapters 11 and 12 were read online (https://www.pseudepigrapha.com/jubilees/11.htm and 12.htm). The bracketed years of the world (A.M.) are added by the online edition. A People of the Book work: neither affirmed nor denied (D25)."
+
+- id: pseudo-philo-james
+  type: book
+  title: The Biblical Antiquities of Philo
+  edition: Translated by M. R. James
+  year: 1917
+  publisher: S.P.C.K.
+  place: London
+  url: https://ccat.sas.upenn.edu/rak/publics/pseudepig/LAB.html
+  notes: "A Jewish book of the first century CE, wrongly attributed to Philo; it survives in Latin, translated from Greek, translated from Hebrew (the translator's introduction). Chapter 6 was read. A People of the Book work: neither affirmed nor denied (D25)."
+
+- id: je-abraham
+  type: article
+  authors: [ Charles J. Mendelsohn, Kaufmann Kohler, Richard Gottheil, Crawford Howell Toy ]
+  title: Abraham
+  container: The Jewish Encyclopedia
+  year: 1901-1906
+  publisher: Funk and Wagnalls
+  place: New York
+  url: https://www.jewishencyclopedia.com/articles/360-abraham
+  notes: Only the first part of the article was read verbatim (the rabbinic legends and the section on Abraham as propagator of the knowledge of God). The rabbinic sources it cites (Genesis Rabbah 38, Tanna debe Eliyahu, Bava Batra 91a, Pesiqta Rabbati 33, Eruvin 53a) were read only through it.
+
+- id: je-amraphel
+  type: article
+  authors: [ Robert W. Rogers, Kaufmann Kohler, Marcus Jastrow ]
+  title: Amraphel
+  container: The Jewish Encyclopedia
+  year: 1901-1906
+  publisher: Funk and Wagnalls
+  place: New York
+  url: https://jewishencyclopedia.com/articles/1440-amraphel
+  notes: Its account of the Amraphel-Hammurabi identification reflects scholarship of about 1900; the identification has since been widely abandoned (still to be sourced).
+
+- id: justin-epitome
+  type: book
+  authors: [ Justin ]
+  title: Epitome of the Philippic History of Pompeius Trogus
+  url: https://penelope.uchicago.edu/josephus/justin_36.html
+  notes: Book 36, chapter 2, read in the English text on the Penelope site, which names no translator. Trogus wrote in the 1st century BCE; Justin's epitome is later.
+
+- id: kitchen-shishak
+  type: article
+  authors: [ Kenneth A. Kitchen ]
+  title: Shishak's Military Campaign in Israel Confirmed
+  container: Biblical Archaeology Society Library
+  url: https://library.biblicalarchaeology.org/sidebar/shishaks-military-campaign-in-israel-confirmed
+  notes: A sidebar to Kitchen's article "Does the Bible Exaggerate King Solomon's Golden Wealth?". J. H. Breasted's first proposal of the reading, "The Earliest Occurrences of the Name of Abram" (American Journal of Semitic Languages 21, 1904), has not been read.
+
+- id: aftau-camels-2014
+  type: website
+  title: Finding Israel's first camels
+  year: 2014
+  publisher: American Friends of Tel Aviv University (on EurekAlert!)
+  url: https://www.eurekalert.org/news-releases/773324
+  notes: A news release of 3 February 2014 on L. Sapir-Hen and E. Ben-Yosef's article in the journal Tel Aviv, which has not been read directly.
+
+- id: cdli-periods
+  type: website
+  title: Periods (Ur III; Uruk IV; Uruk III)
+  publisher: Cuneiform Digital Library Initiative
+  url: https://cdli.earth/periods/15
+  notes: "Period pages read: Ur III, ca. 2100-2000 BC (https://cdli.earth/periods/15); Uruk IV, ca. 3350-3200 BC (/periods/3); Uruk III, ca. 3200-3000 BC (/periods/4)."
+
+- id: etcsl-lament-sumer-urim
+  type: inscription
+  title: The lament for Sumer and Urim (ETCSL 2.2.3), translation
+  container: The Electronic Text Corpus of Sumerian Literature
+  place: Oxford
+  url: https://etcsl.orinst.ox.ac.uk/section2/tr223.htm
+
+- id: bible-lxx-brenton
+  type: book
+  title: The Septuagint Version of the Old Testament, English translation
+  edition: Translated by Lancelot C. L. Brenton
+  url: https://ebible.org/eng-Brenton/
+  notes: "Exodus 12 was read at https://ebible.org/eng-Brenton/EXO12.htm. A People of the Book scripture, in its Greek version: neither affirmed nor denied (D25)."

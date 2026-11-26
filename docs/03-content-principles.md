@@ -47,6 +47,7 @@ Every text has an Arabic version, written by the project. These rules keep the p
 - Prefer peer-reviewed scholarship and standard reference works. For tafsir, use the classical works that are actually consulted, and cite them precisely.
 - Every source has a full entry in the sources file (see [04-data-model.md](04-data-model.md)).
 - Popular websites are not sources. At most they point the way to a better source.
+- **Islamic sources lead (D25).** The Quran, tafsir, hadith and the Muslim historians come first. Reports of the People of the Book (the Torah, Jubilees, the rabbis, Josephus) follow them in the Tradition layer, with the kind `ahl-al-kitab`, and the app labels each "neither affirmed nor denied". Greek and Roman writers go in the History layer, as statements of what they wrote.
 
 ## Tone
 

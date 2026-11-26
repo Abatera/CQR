@@ -1,0 +1,96 @@
+id: abraham-and-the-king
+kind: event
+lane: quran
+review: draft
+title:
+  en: Abraham and the king who argued with him
+  ar: إبراهيم والملك الذي جادله
+summary:
+  en: A king who had been given kingship argues with Abraham, peace be upon him, about his Lord. Abraham says God brings the sun from the east and challenges the king to bring it from the west, and the king is left speechless (2:258).
+  ar: يجادل ملكٌ أُعطي المُلك إبراهيمَ عليه السلام في ربه، فيحتجّ إبراهيم بأن الله يُطلع الشمس من الشرق، ويتحدّى الملك أن يُطلعها من الغرب، فيُفحَم الملك (2:258).
+when:
+  from: -2136
+  to: -2120
+  certainty: traditional
+  basis:
+    en: After Abraham came out of the fire, in al-Suddi's report (Ibn Kathir; al-Tabari). No age is given; the episode is placed just after the fire, counted from his birth at about 2166 BCE.
+    ar: بعد خروج إبراهيم من النار، في رواية السُّدّي (ابن كثير؛ الطبري). ولا تُذكر سنّ؛ فوُضعت الواقعة بُعيد النار، محسوبةً من مولده نحو 2166 ق.م.
+place:
+  status: proposed
+  description:
+    en: The Quran names no place. Most reports make the king the ruler of Babylon; one narration in al-Tabari places Nimrod at Mosul. The points are approximate.
+    ar: لا يسمّي القرآن مكانًا. وتجعل أكثر الروايات الملكَ صاحبَ بابل؛ وتضع روايةٌ عند الطبري النمرودَ في الموصل. والنقاط تقريبية.
+  opinions:
+    - name:
+        en: Babylon (Mujahid, in Ibn Kathir and al-Tabari)
+        ar: بابل (مجاهد، عند ابن كثير والطبري)
+      geometry:
+        type: Point
+        coordinates: [ 44.42, 32.54 ]
+      sources:
+        - { id: ibn-kathir-tafsir, locator: "2:258" }
+        - { id: tabari-tafsir, locator: "2:258" }
+    - name:
+        en: Mosul (Ibn Zayd, in al-Tabari)
+        ar: الموصل (ابن زيد، عند الطبري)
+      geometry:
+        type: Point
+        coordinates: [ 43.13, 36.34 ]
+      sources:
+        - { id: tabari-tafsir, locator: "2:258, no. 5876" }
+quran: [ "2:258" ]
+tafsir:
+  - text:
+      en: "Ibn Kathir on 2:258: the king was the king of Babylon, Nimrod son of Kan'an son of Kush son of Sam son of Noah, in the view of Mujahid and others; another lineage makes him Nimrod son of Falikh. It is said he reigned 400 years. Mujahid said four ruled the whole earth, two believers and two disbelievers. Ibn Kathir also reports from Zayd ibn Aslam that God sent a gnat that entered the king's nose and stayed there 400 years."
+      ar: "ابن كثير في تفسير 2:258: الملك هو ملك بابل، نمروذ بن كنعان بن كوش بن سام بن نوح، على قول مجاهد وغيره؛ ويجعله نسبٌ آخر نمرود بن فالخ. ويقال إنه مكث في ملكه أربعمئة سنة. وقال مجاهد إن الذين ملكوا الأرض كلها أربعة: مؤمنان وكافران. ويروي ابن كثير أيضًا عن زيد بن أسلم أن الله بعث بعوضةً دخلت في منخر الملك فمكثت فيه أربعمئة سنة."
+    original: "هذا الذي حاج إبراهيم في ربه وهو ملك بابل : نمروذ بن كنعان بن كوش بن سام بن نوح"
+    source:
+      id: ibn-kathir-tafsir
+      locator: "2:258"
+  - text:
+      en: "Al-Tabari on 2:258: Mujahid names the four who ruled the earth, east and west: the believers Solomon son of David and Dhu al-Qarnayn, the disbelievers Nebuchadnezzar and Nimrod son of Kan'an (no. 5874). Ibn Zayd said Nimrod was at Mosul (no. 5876). Al-Suddi said that when Abraham came out of the fire they brought him to the king, whom he had not met before (no. 5878)."
+      ar: "الطبري في تفسير 2:258: يسمّي مجاهد الأربعة الذين ملكوا الأرض مشرقها ومغربها: المؤمنَين سليمان بن داود وذا القرنين، والكافرَين بختنصر ونمرود بن كنعان (رقم 5874). وقال ابن زيد إن النمرود كان بالموصل (رقم 5876). وقال السُّدّي إن إبراهيم لما خرج من النار أُدخل على الملك، ولم يكن لقيه قبل ذلك (رقم 5878)."
+    original: "فالمؤمنان: سليمان بن داود وذو القرنين، والكافران: بختنصر ونمرود بن كنعان"
+    source:
+      id: tabari-tafsir
+      locator: 2:258, nos. 5874-5878
+tradition:
+  - kind: historian
+    attribution:
+      en: Ibn Kathir, citing Ibn Jarir's history
+      ar: ابن كثير، نقلًا عن تاريخ ابن جرير
+    text:
+      en: Abraham was born in the time of Nimrod son of Kan'an, who, it is said, is al-Dahhak, the famous king said to have ruled a thousand years.
+      ar: وُلد إبراهيم في زمن النمرود بن كنعان، الذي قيل إنه الضحاك، الملك المشهور الذي يقال إنه ملك ألف سنة.
+    original: "ذكر ابن جرير في تاريخه، أن مولده كان في زمن النمرود بن كنعان … وهو فيما قيل الضحاك الملك المشهور، الذي يقال: إنه ملك ألف سنة"
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «وفاة إبراهيم وما قيل في عمره»
+  - kind: ahl-al-kitab
+    attribution:
+      en: The rabbis (Rab and Samuel), as the Jewish Encyclopedia reports
+      ar: الأحبار (راب وصموئيل)، كما تنقل الموسوعة اليهودية
+    text:
+      en: Amraphel, king of Shinar in Genesis 14, is Nimrod; another view makes Amraphel the king who commanded that Abraham be cast into the fire.
+      ar: أمرافل، ملك شنعار في التكوين 14، هو النمرود؛ ويجعل قولٌ آخر أمرافلَ الملكَ الذي أمر بإلقاء إبراهيم في النار.
+    source: je-amraphel
+history:
+  - claim:
+      en: By this reckoning the episode falls shortly before the Ur III period, which the Cuneiform Digital Library Initiative dates to about 2100–2000 BCE.
+      ar: بهذا الحساب تقع الواقعة قُبيل حقبة أور الثالثة، التي تؤرّخها مبادرة المكتبة المسمارية الرقمية بنحو 2100–2000 ق.م.
+    status: established
+    sources: [ cdli-periods ]
+  - claim:
+      en: Modern scholars once identified Amraphel of Genesis 14 with Hammurabi of Babylon; the Jewish Encyclopedia (1901–1906) called this the prevailing view but found the change of name "difficult of explanation".
+      ar: عدّ باحثون محدثون أمرافلَ في التكوين 14 هو حمورابي ملك بابل؛ وقد سمّت الموسوعة اليهودية (1901–1906) هذا الرأيَ الرأيَ السائد، لكنها رأت تحوّل الاسم «عسيرَ التفسير» (العبارة مترجمةٌ عن الإنجليزية).
+    status: debated
+    sources: [ je-amraphel ]
+connection:
+  text:
+    en: "Ibn Kathir uses Babylon for a land as well as a city: \"the land of the Chaldeans, meaning the land of Babylon\". The king of Babylon in the reports may therefore be a ruler of that land, not of the city itself. This is the project's reading."
+    ar: "يستعمل ابن كثير اسم بابل لأرضٍ كما يستعمله لمدينة: «أرض الكلدانيين، يعنون أرض بابل». فقد يكون ملك بابل في الروايات حاكمَ تلك الأرض، لا المدينة نفسها. وهذه قراءة المشروع."
+related:
+  - { id: abraham-idols-fire, type: context }
+  - { id: abraham, type: context }
+tags: [ prophets, abraham, nimrod ]
+notes: "Leads (docs/research/abraham.md), to verify before adding: Babylon's earliest mention (a year-name of Shar-kali-sharri, about 2200 BCE) and its rise as a capital (about 1894 BCE); the proposal that the biblical Nimrod reflects the kings of Akkad (Y. Levin, Vetus Testamentum 52, 2002)."

@@ -1,0 +1,70 @@
+id: abraham-emigration
+kind: event
+lane: quran
+review: draft
+title:
+  en: Abraham emigrates to the blessed land
+  ar: إبراهيم يهاجر إلى الأرض المباركة
+summary:
+  en: Abraham, peace be upon him, with Lot, who believed in him, emigrates to the land God had blessed (21:71; 29:26), leaving Harran for the land of al-Sham.
+  ar: يهاجر إبراهيم عليه السلام، ومعه لوطٌ الذي آمن به، إلى الأرض المباركة (21:71؛ 29:26)، تاركًا حرّان إلى أرض الشام.
+when:
+  from: -2091
+  to: -2091
+  certainty: traditional
+  basis:
+    en: At 75 (Genesis 12:4; Josephus), counted from his birth at about 2166 BCE.
+    ar: ابنَ خمسٍ وسبعين (التكوين 12:4؛ يوسيفوس)، محسوبًا من مولده نحو 2166 ق.م.
+place:
+  status: proposed
+  description:
+    en: From Harran to the land of al-Sham. Ka'b al-Ahbar held that the blessed land was Harran itself; the majority (Ubayy, Abu al-'Aliya, Qatada) say al-Sham, as Ibn Kathir does. The point marks Harran, where the journey began, and is approximate.
+    ar: من حرّان إلى أرض الشام. ورأى كعب الأحبار أن الأرض المباركة هي حرّان نفسها؛ والجمهور (أُبيّ، وأبو العالية، وقتادة) على أنها الشام، وهو قول ابن كثير. والنقطة تعيّن حرّان، منطلق الرحلة، وهي تقريبية.
+  opinions:
+    - name:
+        en: Harran, where the journey began (Genesis 11:31; 12:4)
+        ar: حرّان، منطلق الرحلة (التكوين 11:31؛ 12:4)
+      geometry:
+        type: Point
+        coordinates: [ 39.03, 36.865 ]
+      sources:
+        - { id: bible-web, locator: Genesis 11:31; 12:4 }
+quran: [ "21:71", "29:26", "37:99" ]
+tradition:
+  - kind: historian
+    attribution:
+      en: Ibn Kathir
+      ar: ابن كثير
+    text:
+      en: The family settled in Harran, where Terah died aged 250. The land Abraham set out for was al-Sham; Ka'b al-Ahbar held the blessed land to be Harran, but the majority say al-Sham.
+      ar: نزلت الأسرة حرّان، وفيها مات تارخ ابنَ مئتين وخمسين سنة. والأرض التي قصدها إبراهيم بالهجرة هي الشام؛ ورأى كعب الأحبار أن الأرض المباركة حرّان، والجمهور على أنها الشام.
+    original: والأرض التي قصدها بالهجرة أرض الشام
+    source:
+      id: ibn-kathir-bidaya
+      locator: vol. 1, «قصة إبراهيم خليل الرحمن»; «هجرة الخليل إلى بلاد الشام»
+  - kind: ahl-al-kitab
+    attribution:
+      en: The Torah (Genesis 11–12)
+      ar: التوراة (التكوين 11–12)
+    text:
+      en: Terah took Abram and Lot from Ur of the Chaldees toward Canaan, but they settled in Haran, where Terah died at 205. Abram left Haran at 75, and Lot went with him.
+      ar: أخذ تارحُ أبرامَ ولوطًا من أور الكلدانيين قاصدًا كنعان، فأقاموا في حاران، وفيها مات تارح ابنَ مئتين وخمس سنين. وخرج أبرام من حاران ابنَ خمسٍ وسبعين، ومعه لوط.
+    source:
+      id: bible-web
+      locator: Genesis 11:31-32; 12:4
+  - kind: ahl-al-kitab
+    attribution:
+      en: Josephus (1st century CE)
+      ar: يوسيفوس (القرن الأول الميلادي)
+    text:
+      en: Abram left the land of the Chaldeans at 75, at God's command, after the Chaldeans and other peoples of Mesopotamia rose against him for teaching that there is one God, the Creator.
+      ar: خرج أبرام من أرض الكلدانيين ابنَ خمسٍ وسبعين بأمر الله، بعد أن ثار عليه الكلدانيون وغيرهم من أهل بلاد الرافدين لأنه علّم أن الله واحدٌ خالق.
+    source:
+      id: josephus-antiquities
+      locator: 1.7.1
+related:
+  - { id: lot, type: context }
+  - { id: abraham-stars-harran, type: context }
+  - { id: sarah-king-of-egypt, type: consequence }
+tags: [ prophets, abraham, harran ]
+notes: "Ibn Kathir's text gives Terah's age at death as 250, Genesis 11:32 as 205: check a printed edition of al-Bidaya."

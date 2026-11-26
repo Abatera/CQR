@@ -9,15 +9,15 @@ summary:
   en: After Noah, peace be upon him, had called his people for a thousand years less fifty, the Flood took them (29:14). Water poured from the sky and burst from the earth (54:11-12); Noah, his family and the believers were carried in the Ark, which came to rest on al-Judi (11:44).
   ar: بعد أن دعا نوحٌ عليه السلام قومه تسعمئةٍ وخمسين سنة، أخذهم الطوفان (29:14). فانهمر الماء من السماء وتفجّر من الأرض (54:11-12)، وحُمل نوحٌ وأهله والمؤمنون في السفينة، التي استقرّت على الجودي (11:44).
 when:
-  from: -3350
-  to: -3350
+  from: -3516
+  to: -3516
   certainty: reckoned
   basis:
-    en: 350 years before Noah's death (Ibn Sa'd), which is placed ten qurun, read as a thousand years, before Abraham, about 3000 BCE (see Noah). The year marks that reckoning only; history cannot date the Flood of the Quran.
-    ar: قبل موت نوح بثلاثمئةٍ وخمسين سنة (ابن سعد)، وموته موضوعٌ قبل إبراهيم بعشرة قرون، تُقرأ ألفَ سنة، أي نحو 3000 ق.م (انظر نوح). والسنة المرسومة تعيّن هذا الحساب وحده؛ ولا يستطيع التاريخ تأريخ طوفان القرآن.
+    en: 350 years before Noah's death (Ibn Sa'd), which is placed ten qurun, read as a thousand years, before Abraham, about 3166 BCE (see Noah). The year marks that reckoning only; history cannot date the Flood of the Quran.
+    ar: قبل موت نوح بثلاثمئةٍ وخمسين سنة (ابن سعد)، وموته موضوعٌ قبل إبراهيم بعشرة قرون، تُقرأ ألفَ سنة، أي نحو 3166 ق.م (انظر نوح). والسنة المرسومة تعيّن هذا الحساب وحده؛ ولا يستطيع التاريخ تأريخ طوفان القرآن.
   alternatives:
-    - from: -3340
-      to: -3340
+    - from: -3506
+      to: -3506
       basis:
         en: 340 years before Noah's death, by Ibn Ishaq's figure for his life after the Ark.
         ar: قبل موت نوح بثلاثمئةٍ وأربعين سنة، برقم ابن إسحاق لعمره بعد السفينة.
@@ -178,12 +178,12 @@ history:
       - { id: josephus-antiquities, locator: 1.3.5-6 }
 connection:
   text:
-    en: The reckoning puts the Flood around 3350 BCE, between Woolley's flood layer at Ur (at least 3500 BCE) and the layers at Kish and Shuruppak (about 3000 BCE), in the age before the first dynasties that Mesopotamian scribes placed after a great flood. This is a coincidence between a rough reckoning and rough dates, offered as a reflection, not a proof. The reckoning depends on reading a qarn as a century and on Ibn Sa'd's 350 years, and the Quran names neither a date nor the land of Noah's people.
-    ar: يضع الحسابُ الطوفانَ نحو 3350 ق.م، بين طبقة الفيضان التي وجدها وولي في أور (3500 ق.م على الأقل) وطبقات كيش وشروباك (نحو 3000 ق.م)، في العصر السابق لأولى السلالات التي جعلها كتبة بلاد الرافدين بعد طوفانٍ عظيم. وهذا توافقٌ بين حسابٍ تقريبي وتواريخ تقريبية، يُقدَّم تأمّلًا لا برهانًا. ويعتمد الحساب على قراءة القرن مئة سنة، وعلى الثلاثمئة والخمسين سنة عند ابن سعد، والقرآن لا يذكر تاريخًا ولا أرضَ قوم نوح.
+    en: The reckoning puts the Flood around 3516 BCE, close to the date of Woolley's flood layer at Ur (at least 3500 BCE) and some five centuries before the layers at Kish and Shuruppak (about 3000 BCE), in the age before the first dynasties that Mesopotamian scribes placed after a great flood. This is a coincidence between a rough reckoning and rough dates, offered as a reflection, not a proof. The reckoning depends on reading a qarn as a century, on Ibn Sa'd's 350 years and on Abraham's birth at about 2166 BCE, and the Quran names neither a date nor the land of Noah's people.
+    ar: يضع الحسابُ الطوفانَ نحو 3516 ق.م، قريبًا من تاريخ طبقة الفيضان التي وجدها وولي في أور (3500 ق.م على الأقل)، وقبل طبقات كيش وشروباك (نحو 3000 ق.م) بنحو خمسة قرون، في العصر السابق لأولى السلالات التي جعلها كتبة بلاد الرافدين بعد طوفانٍ عظيم. وهذا توافقٌ بين حسابٍ تقريبي وتواريخ تقريبية، يُقدَّم تأمّلًا لا برهانًا. ويعتمد الحساب على قراءة القرن مئة سنة، وعلى الثلاثمئة والخمسين سنة عند ابن سعد، وعلى مولد إبراهيم نحو 2166 ق.م، والقرآن لا يذكر تاريخًا ولا أرضَ قوم نوح.
 related:
   - { id: noah, type: context }
   - { id: sumerian-flood-texts, type: parallel }
   - { id: mesopotamian-flood-layers, type: parallel }
   - { id: black-sea-flood, type: parallel }
 tags: [ noah, flood, mesopotamia, chronology ]
-notes: "TODO: Yaqut's Mu'jam al-Buldan entry on al-Judi (not reached on Wikisource); the grading of the hadith of Samura on Noah's sons (Sam, Ham, Yafith), cited by Ibn Kathir on 37:77; Ibn Kathir's flood chapter in al-Bidaya, which came back only as a machine summary and was not used. The owner sets the connection's confidence."
+notes: "TODO: Yaqut's Mu'jam al-Buldan entry on al-Judi (not reached on Wikisource); the grading of the hadith of Samura on Noah's sons (Sam, Ham, Yafith), cited by Ibn Kathir on 37:77; Ibn Kathir's flood chapter in al-Bidaya, which came back only as a machine summary and was not used. The owner sets the connection's confidence. Moved by -166 years on 2026-11-26 with Abraham's birth, now about 2166 BCE (D24)."

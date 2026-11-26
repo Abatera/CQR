@@ -7,26 +7,31 @@ title:
   ar: طوفان نوح
 summary:
   en: After Noah, peace be upon him, had called his people for a thousand years less fifty, the Flood took them (29:14). Water poured from the sky and burst from the earth (54:11-12); Noah, his family and the believers were carried in the Ark, which came to rest on al-Judi (11:44).
+  ar: بعد أن دعا نوحٌ عليه السلام قومه تسعمئةٍ وخمسين سنة، أخذهم الطوفان (29:14). فانهمر الماء من السماء وتفجّر من الأرض (54:11-12)، وحُمل نوحٌ وأهله والمؤمنون في السفينة، التي استقرّت على الجودي (11:44).
 when:
   from: -3350
   to: -3350
   certainty: reckoned
   basis:
     en: 350 years before Noah's death (Ibn Sa'd), which is placed ten qurun, read as a thousand years, before Abraham, about 3000 BCE (see Noah). The year marks that reckoning only; history cannot date the Flood of the Quran.
+    ar: قبل موت نوح بثلاثمئةٍ وخمسين سنة (ابن سعد)، وموته موضوعٌ قبل إبراهيم بعشرة قرون، تُقرأ ألفَ سنة، أي نحو 3000 ق.م (انظر نوح). والسنة المرسومة تعيّن هذا الحساب وحده؛ ولا يستطيع التاريخ تأريخ طوفان القرآن.
   alternatives:
     - from: -3340
       to: -3340
       basis:
         en: 340 years before Noah's death, by Ibn Ishaq's figure for his life after the Ark.
+        ar: قبل موت نوح بثلاثمئةٍ وأربعين سنة، برقم ابن إسحاق لعمره بعد السفينة.
       sources:
         - { id: suhari-ansab, locator: p. 21 }
 place:
   status: proposed
   description:
     en: The Quran names al-Judi as where the Ark came to rest (11:44) and does not say where Noah's people lived. The commentators place al-Judi in al-Jazira or near Mosul; the Torah names "Ararat's mountains". Both areas drawn are rough sketches.
+    ar: يسمّي القرآن الجوديَّ موضعًا لاستقرار السفينة (11:44)، ولا يذكر أين كان يسكن قوم نوح. ويضع المفسّرون الجوديَّ في الجزيرة أو قرب الموصل؛ وتسمّي التوراة «جبال أراراط». والمنطقتان المرسومتان تخطيطان تقريبيان.
   opinions:
     - name:
         en: al-Judi, a mountain in al-Jazira (Mujahid) or near Mosul (al-Dahhak, al-Qurtubi)
+        ar: الجودي، جبلٌ بالجزيرة (مجاهد) أو قرب الموصل (الضحّاك، والقرطبي)
       geometry:
         type: Polygon
         coordinates:
@@ -40,6 +45,7 @@ place:
         - { id: qurtubi-jami, locator: "11:44" }
     - name:
         en: Ararat's mountains (Genesis 8:4)
+        ar: جبال أراراط (التكوين 8:4)
       geometry:
         type: Polygon
         coordinates:
@@ -52,51 +58,60 @@ place:
         - { id: bible-web, locator: Genesis 8:4 }
     - name:
         en: A mountain of the Cordyaeans, in Armenia (Berosus, quoted by Josephus)
+        ar: جبلٌ للكردويين في أرمينية (بيروسوس، فيما نقله يوسيفوس)
       sources:
         - { id: josephus-antiquities, locator: 1.3.6 }
 quran: [ "11:36-48", "23:27-29", "29:14-15", "37:75-82", "54:9-15", "69:11-12", "71:25-26" ]
 tafsir:
   - text:
       en: "Ibn Kathir: when the people of the earth had drowned, except those in the Ark, God commanded the earth to swallow its water. Elsewhere he says the Flood covered the whole earth, its length and breadth, and that the drowned perished to the last."
-      ar: يخبر تعالى أنه لما غرق أهل الأرض إلا أصحاب السفينة
+      ar: "ابن كثير: لمّا غرق أهل الأرض إلا أصحاب السفينة، أمر الله الأرضَ أن تبلع ماءها. ويقول في موضعٍ آخر إن الطوفان عمّ الأرض كلها، طولها وعرضها، وإن الغرقى هلكوا عن آخرهم."
+    original: يخبر تعالى أنه لما غرق أهل الأرض إلا أصحاب السفينة
     source:
       id: ibn-kathir-tafsir
       locator: 11:44; 7/22
   - text:
       en: "Al-Tabari on 37:77 (We made his offspring the survivors): all people since the destruction in Noah's time are his descendants. Ibn Abbas said that none remained but Noah's offspring, and Qatada said the same."
-      ar: لم يبق إلا ذرية نوح
+      ar: "الطبري في تفسير 37:77 (بقاء ذرية نوح): الناس كلهم منذ الهلاك في زمن نوح من ذريته. وقال ابن عباس: لم يبق إلا ذرية نوح، وقال قتادة مثل ذلك."
+    original: لم يبق إلا ذرية نوح
     source:
       id: tabari-tafsir
       locator: "37:77"
   - text:
       en: "Ibn 'Ashur: this rests on the view that the Flood covered the whole earth and uprooted all humankind, so that every nation descends from Noah's three sons."
-      ar: وهذا جار على أن الطوفان قد عم الأرض كلها، واستأصل جميع البشر
+      ar: "ابن عاشور: هذا جارٍ على القول بأن الطوفان عمّ الأرض كلها واستأصل جميع البشر، فكل أمةٍ من ذرية أبناء نوح الثلاثة."
+    original: وهذا جار على أن الطوفان قد عم الأرض كلها، واستأصل جميع البشر
     source:
       id: ibn-ashur-tahrir
       locator: 23/47
   - text:
       en: "Ibn Hajar raises a possibility that would reconcile the texts: when Noah was sent, there may have been no one on earth but Noah's people."
-      ar: ويحتمل أنه لم يكن في الأرض عند إرسال نوح إلا قوم نوح
+      ar: "يذكر ابن حجر احتمالًا يوفّق بين النصوص: أنه ربما لم يكن في الأرض عند إرسال نوح إلا قومُ نوح."
+    original: ويحتمل أنه لم يكن في الأرض عند إرسال نوح إلا قوم نوح
     source:
       id: ibn-hajar-fath
       locator: 1/437
   - text:
       en: "Al-Shinqiti: no sound text shows how far humankind had spread at that time."
-      ar: ولا يعلم نص صحيح يبين مدى انتشار البشر يومئذ
+      ar: "الشنقيطي: لا يُعلم نصٌّ صحيح يبيّن مدى انتشار البشر يومئذ."
+    original: ولا يعلم نص صحيح يبين مدى انتشار البشر يومئذ
     source:
       id: shinqiti-adwa
       locator: 3/482
   - text:
       en: "Ibn Baz: the water reached all the people, and the disbelievers were all destroyed except those in the Ark; but that it covered the whole earth is not necessary, and whether it reached every empty place, God knows best."
-      ar: لكن كونه عم الأرض، فما هو بلزوم
+      ar: "ابن باز: بلغ الماءُ الناسَ جميعًا، وهلك الكفار كلهم إلا مَن في السفينة؛ لكن أن يكون قد عمّ الأرض كلها فليس بلازم، وهل بلغ كل موضعٍ خالٍ، فالله أعلم."
+    original: لكن كونه عم الأرض، فما هو بلزوم
     source: ibn-baz-flood
   - text:
       en: "Muhammad 'Abduh (fatwa of 1900): the People of the Book and the scholars of the community hold that the Flood was universal, but no decisive text states it, and most later researchers hold that it was not. He treats it as a disputed question, and says universality may not be denied on the strength of mere stories from the people of China."
-      ar: فلم يرد فيه نص قاطع على عموم الطوفان
+      ar: "محمد عبده (فتوى سنة 1900): يرى أهل الكتاب وعلماء الأمة أن الطوفان كان عامًّا، لكن لم يرد في ذلك نصٌّ قاطع، وأكثر الباحثين المتأخرين على أنه لم يكن عامًّا. ويعدّها مسألةً خلافية، ويقول إنه لا يجوز إنكار العموم استنادًا إلى مجرّد حكاياتٍ عن أهل الصين."
+    original: فلم يرد فيه نص قاطع على عموم الطوفان
     source: abduh-flood-fatwa
   - text:
       en: "Al-Qurtubi: al-Judi is a mountain near Mosul; it has also been said that al-Judi is a name for any mountain."
-      ar: الجودي جبل بقرب الموصل
+      ar: "القرطبي: الجودي جبلٌ بقرب الموصل؛ وقيل إن الجودي اسمٌ لكل جبل."
+    original: الجودي جبل بقرب الموصل
     source:
       id: qurtubi-jami
       locator: "11:44"
@@ -104,54 +119,67 @@ tradition:
   - kind: historian
     attribution:
       en: Ibn Kathir, citing Ibn Abbas, Ka'b al-Ahbar and others
+      ar: ابن كثير، نقلًا عن ابن عباس وكعب الأحبار وغيرهما
     text:
       en: Those on the Ark were eighty people, with their women (Ibn Abbas); seventy-two (Ka'b al-Ahbar); or ten. They were on the Ark 150 days (Ibn Abbas), and stayed on al-Judi a month before they came down (Qatada).
-      ar: كانوا ثمانين نفسا منهم نساؤهم
+      ar: كان مَن في السفينة ثمانين نفسًا مع نسائهم (ابن عباس)، أو اثنين وسبعين (كعب الأحبار)، أو عشرة. ولبثوا في السفينة مئةً وخمسين يومًا (ابن عباس)، وأقاموا على الجودي شهرًا قبل أن ينزلوا (قتادة).
+    original: كانوا ثمانين نفسا منهم نساؤهم
     source:
       id: ibn-kathir-tafsir
       locator: 11:40; 11:44
   - kind: hadith
     attribution:
       en: Ibn Kathir, with a hadith of Abu Hurayra in the Musnad of Ahmad
+      ar: ابن كثير، مع حديثٍ لأبي هريرة في مسند أحمد
     text:
       en: They came out of the Ark on the day of 'Ashura, 10 Muharram; Qatada and Ibn Jurayj report the same (al-Tabari, narrations 18188-18189). On this Ibn Kathir cites a hadith of Abu Hurayra from the Musnad of Ahmad.
-      ar: وكان خروجهم من السفينة في يوم عاشوراء من المحرم
+      ar: خرجوا من السفينة يوم عاشوراء، العاشر من المحرّم؛ ويروي قتادة وابن جريج مثل ذلك (الطبري، الروايتان 18188-18189). ويذكر ابن كثير في ذلك حديثًا لأبي هريرة من مسند أحمد.
+    original: وكان خروجهم من السفينة في يوم عاشوراء من المحرم
     source:
       id: ibn-kathir-tafsir
       locator: "11:44"
     gradings:
       - grade: other
-        by: Ibn Kathir
+        by:
+          en: Ibn Kathir
+          ar: ابن كثير
         source:
           id: ibn-kathir-tafsir
           locator: "11:44"
         note:
           en: Strange (gharib) by this route, though part of it has a supporting report in the Sahih.
+          ar: غريبٌ من هذا الوجه، وإن كان لبعضه شاهدٌ في الصحيح.
   - kind: ahl-al-kitab
     attribution:
       en: The Torah (Genesis)
+      ar: التوراة (سفر التكوين)
     text:
       en: Noah was 600 years old when the Flood came; the waters prevailed 150 days; the Ark rested on Ararat's mountains; Noah lived 350 years after the Flood, 950 in all.
+      ar: كان نوح ابنَ ستمئة سنة حين جاء الطوفان؛ وتعاظمت المياه مئةً وخمسين يومًا؛ واستقرّت السفينة على جبال أراراط؛ وعاش نوح بعد الطوفان ثلاثمئةٍ وخمسين سنة، فعمره كله تسعمئةٌ وخمسون.
     source:
       id: bible-web
       locator: Genesis 7:6, 7:24, 8:4, 9:28-29
 history:
   - claim:
       en: Sumerian texts tell of a flood that "swept over" the land before the kingship "descended from heaven" again at Kish (the Sumerian King List), and of Zi-ud-sura, who survived seven days and nights of flood in a huge boat and was settled in Dilmun (the Flood Story). Kramer dates their composition to about 2100-2000 BCE, with copies from the early 2nd millennium BCE.
+      ar: تحكي النصوص السومرية عن طوفانٍ «اجتاح» البلاد قبل أن «تنزل المُلكية من السماء» من جديد في كيش (قائمة الملوك السومريين)، وعن زيوسودرا، الذي نجا من طوفانٍ دام سبعة أيام وسبع ليال في سفينةٍ عظيمة، ثم أُسكن دلمون (قصة الطوفان). ويؤرّخ كريمر تأليفها بنحو 2100–2000 ق.م، ونُسخها من أوائل الألف الثاني قبل الميلاد. (العبارات المقتبسة مترجمةٌ عن ترجمة كريمر الإنجليزية.)
     status: established
     sources: [ etcsl-king-list, etcsl-flood-story, kramer-1967 ]
   - claim:
       en: Excavators found flood deposits at Kish and Shuruppak directly above remains of the Jemdet Nasr period, about 3000 BCE; Woolley's flood layer at Ur is older. Following Mallowan, Kramer concluded that the flood behind the Mesopotamian tradition was a real catastrophe around 3000 BCE, "but by no means universal". Whether these deposits record the flood of the texts is debated.
+      ar: وجد المنقّبون رواسب فيضانٍ في كيش وشروباك مباشرةً فوق بقايا حقبة جمدة نصر، نحو 3000 ق.م؛ أما طبقة الفيضان التي وجدها وولي في أور فأقدم. وانتهى كريمر، متابعًا مالوان، إلى أن الطوفان الذي يقف وراء تراث بلاد الرافدين كان كارثةً حقيقية نحو 3000 ق.م، «لكنها لم تكن عامّةً بأي حال» (العبارة مترجمةٌ عن الإنجليزية). وهل تسجّل هذه الرواسب طوفانَ النصوص أمرٌ مختلفٌ فيه.
     status: debated
     sources: [ kramer-1967 ]
   - claim:
       en: Josephus writes that the Ark rested on a mountain in Armenia, and quotes Berosus the Chaldean that part of the ship was still to be seen "at the mountain of the Cordyaeans".
+      ar: يكتب يوسيفوس أن السفينة استقرّت على جبلٍ في أرمينية، وينقل عن بيروسوس الكلداني أن جزءًا من السفينة كان ما يزال يُرى «عند جبل الكردويين» (العبارة مترجمةٌ عن الإنجليزية).
     status: established
     sources:
       - { id: josephus-antiquities, locator: 1.3.5-6 }
 connection:
   text:
     en: The reckoning puts the Flood around 3350 BCE, between Woolley's flood layer at Ur (at least 3500 BCE) and the layers at Kish and Shuruppak (about 3000 BCE), in the age before the first dynasties that Mesopotamian scribes placed after a great flood. This is a coincidence between a rough reckoning and rough dates, offered as a reflection, not a proof. The reckoning depends on reading a qarn as a century and on Ibn Sa'd's 350 years, and the Quran names neither a date nor the land of Noah's people.
+    ar: يضع الحسابُ الطوفانَ نحو 3350 ق.م، بين طبقة الفيضان التي وجدها وولي في أور (3500 ق.م على الأقل) وطبقات كيش وشروباك (نحو 3000 ق.م)، في العصر السابق لأولى السلالات التي جعلها كتبة بلاد الرافدين بعد طوفانٍ عظيم. وهذا توافقٌ بين حسابٍ تقريبي وتواريخ تقريبية، يُقدَّم تأمّلًا لا برهانًا. ويعتمد الحساب على قراءة القرن مئة سنة، وعلى الثلاثمئة والخمسين سنة عند ابن سعد، والقرآن لا يذكر تاريخًا ولا أرضَ قوم نوح.
 related:
   - { id: noah, type: context }
   - { id: sumerian-flood-texts, type: parallel }

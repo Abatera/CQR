@@ -7,12 +7,14 @@ title:
   ar: إنتاج النحاس في تمنع وفينان
 summary:
   en: Large-scale copper smelting in the Arabah valley, at Timna and at Faynan (Khirbat en-Nahas), dated to the 10th century BCE.
+  ar: صهرٌ للنحاس على نطاقٍ واسع في وادي عربة، في تمنع وفينان (خربة النحاس)، مؤرَّخٌ بالقرن العاشر قبل الميلاد.
 when:
   from: -1000
   to: -901
   certainty: estimated
   basis:
     en: Radiocarbon dating of slag layers (Levy; Ben-Yosef). To be sourced.
+    ar: التأريخ بالكربون المشع لطبقات الخَبَث (ليفي؛ بن يوسف). يحتاج إلى مصدر.
 place:
   status: known
   names:
@@ -21,6 +23,7 @@ place:
     - { name: Khirbat en-Nahas, type: modern }
   description:
     en: Copper-smelting sites in the Arabah valley, between the Dead Sea and the Gulf of Aqaba. The outline is a rough sketch.
+    ar: مواقع لصهر النحاس في وادي عربة، بين البحر الميت وخليج العقبة. والحدود المرسومة تخطيطٌ تقريبي.
   geometry:
     type: Polygon
     coordinates:
@@ -32,9 +35,11 @@ place:
 history:
   - claim:
       en: Copper production at Timna and Faynan has been radiocarbon-dated to the 10th century BCE, in work by Thomas Levy and Erez Ben-Yosef.
+      ar: أُرِّخ إنتاج النحاس في تمنع وفينان بالكربون المشع بالقرن العاشر قبل الميلاد، في أعمال توماس ليفي وإيريز بن يوسف.
     status: established
   - claim:
       en: Who controlled the mines is debated.
+      ar: مَن كان يسيطر على المناجم أمرٌ مختلفٌ فيه.
     status: debated
 related:
   - { id: solomon-molten-copper, type: context }

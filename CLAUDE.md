@@ -4,11 +4,11 @@ A public, educational, interactive web app. It places events narrated in the Qur
 
 ## Status
 
-**Phases 0–2 are built (2026-11-23); Phase 3 content is in draft.** The app runs: timeline, map, facts panel, Quran reader and search, and a local editor with forms for all content. The 15 pilot events are drafts written from unverified research leads. A Prophets lane with 25 researched draft entries and a Tradition layer (hadith and historians, with gradings) were added the same day; the research is in [docs/research/prophets-chronology.md](docs/research/prophets-chronology.md). On 2026-11-25 the Flood of Noah was researched and added in four draft entries ([docs/research/the-flood.md](docs/research/the-flood.md)). See [docs/07-roadmap.md](docs/07-roadmap.md) for what is done and what is next.
+**Phases 0–2 are built (2026-11-23); Phase 3 content is in draft.** The app runs: timeline, map, facts panel, Quran reader and search, and a local editor with forms for all content. The 15 pilot events are drafts written from unverified research leads. A Prophets lane with 25 researched draft entries and a Tradition layer (hadith and historians, with gradings) were added the same day; the research is in [docs/research/prophets-chronology.md](docs/research/prophets-chronology.md). On 2026-11-25 the Flood of Noah was researched and added in four draft entries ([docs/research/the-flood.md](docs/research/the-flood.md)). On 2026-11-26 all content got Arabic, with an EN / عربي switch (D21–D23); the Arabic is Claude's draft, not yet reviewed by the owner. See [docs/07-roadmap.md](docs/07-roadmap.md) for what is done and what is next.
 
 The planning docs were written on 2026-11-23 on a different PC, at the end of a planning conversation between the project owner and Claude. Development happens on this machine. Decisions made since then are logged in [docs/08-decisions.md](docs/08-decisions.md) (D14 onward).
 
-A git repository exists, with `origin` at `github.com/Abatera/CQR`, and the first commit ("Let's start") was already on the remote when development began. The code built since then is not committed. Whether the GitHub repository is public was not checked.
+A git repository exists, with `origin` at `github.com/Abatera/CQR`. The owner commits and pushes the versions (v0.1 to v0.3 by 2026-11-25). Whether the GitHub repository is public was not checked.
 
 ## Commands
 
@@ -40,9 +40,11 @@ Check the open questions at the end of [docs/08-decisions.md](docs/08-decisions.
 - **Never type Quran text from memory or generate it.** All Arabic Quran text shown in the app must come from the verified dataset (see docs/05). Content files store verse references only, and every reference must be checked against the dataset. The few Arabic phrases quoted in these planning docs are for discussion only.
 - **Every historical claim needs a source and a status** (established or debated). Never present the project's own connections between the Quran and history as established fact. See docs/03.
 - **Hadith and historians go in the Tradition layer**, each with its source and, for hadith, gradings by named scholars. Never write hadith text or gradings from memory: quote only what was read in a cited work, and say so in the source's notes when a work was read through another that quotes it.
-- **Honorifics:** ﷺ after the Prophet Muhammad's name; "peace be upon him" after other prophets at their first mention in each entry (D19).
+- **The source's words and the project's words stay apart (D22).** In Tafsir and Tradition, `original` holds the source's own wording, quoted from the cited work; `text` (English and Arabic) is the project's summary. Write hadith summaries as reports («يذكر الحديث أن…»), never in the hadith's voice.
+- **Arabic text is the project's own.** Never reproduce Quran wording in it: refer to verses by number and paraphrase. Check new Arabic against the Tanzil text for runs of three or more words matching a verse. Quote a scholar's Arabic only where it was read. Mark quotations translated from English as «مترجمةٌ عن الإنجليزية». See docs/03.
+- **Honorifics:** ﷺ after the Prophet Muhammad's name; "peace be upon him" (in Arabic «عليه السلام») after other prophets at their first mention in each entry (D19).
 - **The research leads in these docs are unverified.** They were recalled during the planning conversation, not checked against sources. Verify each against a real source before it goes into content.
 - **Local-first.** Do not commit, push, or enable GitHub Pages without asking the owner. The repository will be public.
 - **Draft until reviewed.** New content is `review: draft`. Only the owner marks an entry `reviewed`, and only after its sources are verified.
 - **Never edit `data/third-party/quran/`.** Tanzil's terms forbid changes. `npm run quran:verify` detects them.
-- **Licensing.** Code is MIT and written content is CC BY-SA 4.0. Third-party material (the Quran text, fonts, map tiles, libraries) keeps its own license and must not be relabeled.
+- **Licensing.** Code is MIT and written content is CC BY-SA 4.0. Third-party material (the Quran text, fonts, map tiles, libraries) keeps its own license and must not be relabeled. Only openly licensed fonts go in the repo: Thmanyah's font was set aside because its license forbids redistribution (D23).

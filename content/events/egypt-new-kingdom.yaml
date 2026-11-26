@@ -7,12 +7,14 @@ title:
   ar: الدولة الحديثة في مصر
 summary:
   en: The New Kingdom, Egypt's imperial age in the Late Bronze Age. It survived the collapse but ended about 1070 BCE.
+  ar: الدولة الحديثة، عصر مصر الإمبراطوري في العصر البرونزي المتأخر. نجت من الانهيار، لكنها انتهت نحو 1070 ق.م.
 when:
   from: -1550
   to: -1070
   certainty: estimated
   basis:
     en: Conventional Egyptian chronology. The end, about 1070 BCE, is from the planning notes; the start is a placeholder.
+    ar: التسلسل الزمني المصري المعتمد. والنهاية، نحو 1070 ق.م، مأخوذةٌ من ملاحظات التخطيط؛ والبداية مؤقّتة.
 place:
   status: known
   names:
@@ -21,6 +23,7 @@ place:
     - { name: Luxor, type: modern }
   description:
     en: Shown at Thebes, a main royal and religious center of the period.
+    ar: معروضةٌ عند طيبة، أحد المراكز الملكية والدينية الرئيسة في تلك الحقبة.
   geometry:
     type: Point
     coordinates: [ 32.64, 25.7 ]

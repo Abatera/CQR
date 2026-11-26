@@ -7,19 +7,23 @@ title:
   ar: اليسع
 summary:
   en: Al-Yasa' (Elisha), peace be upon him, named among those favoured above the worlds (6:86) and among the best (38:48).
+  ar: اليسع عليه السلام، ذُكر فيمن فُضِّلوا على العالمين (6:86) وفي الأخيار (38:48).
 when:
   from: -850
   to: -800
   certainty: traditional
   basis:
     en: After Elijah, according to al-Hasan al-Basri (reported by Ibn Kathir). In the Bible Elisha succeeds Elijah (2 Kings 2:9-15), in the mid-9th century BCE.
+    ar: بعد إلياس، كما قال الحسن البصري (فيما نقله ابن كثير). وفي الكتاب المقدس يخلف أليشعُ إيليا (الملوك الثاني 2:9-15)، في منتصف القرن التاسع قبل الميلاد.
 place:
   status: proposed
   description:
     en: Ibn 'Asakir reports from Wahb ibn Munabbih that Elisha hid with Elijah on Mount Qasiyun at Damascus from the king of Baalbek; another report places him at Banias (both cited by Ibn Kathir). The points are approximate.
+    ar: يروي ابن عساكر عن وهب بن منبّه أن اليسع اختبأ مع إلياس في جبل قاسيون بدمشق من ملك بعلبك، وفي روايةٍ أخرى أنه كان في بانياس (وكلتاهما عند ابن كثير). والنقطتان تقريبيتان.
   opinions:
     - name:
         en: Mount Qasiyun, Damascus (Ibn 'Asakir, from Wahb)
+        ar: جبل قاسيون، دمشق (ابن عساكر، عن وهب)
       geometry:
         type: Point
         coordinates: [ 36.29, 33.535 ]
@@ -27,6 +31,7 @@ place:
         - { id: ibn-kathir-bidaya, locator: "vol. 2, «قصة اليسع عليه السلام»" }
     - name:
         en: Banias (another report, cited by Ibn Kathir)
+        ar: بانياس (روايةٌ أخرى، نقلها ابن كثير)
       geometry:
         type: Point
         coordinates: [ 35.695, 33.248 ]
@@ -37,9 +42,11 @@ tradition:
   - kind: historian
     attribution:
       en: Al-Hasan al-Basri, through Qatada, cited by Ibn Kathir
+      ar: الحسن البصري، من طريق قتادة، نقله ابن كثير
     text:
       en: After Elijah came Elisha.
-      ar: كان بعد إلياس اليسع عليهما السلام
+      ar: جاء اليسع بعد إلياس.
+    original: كان بعد إلياس اليسع عليهما السلام
     source:
       id: ibn-kathir-bidaya
       locator: vol. 2, «قصة اليسع عليه السلام»

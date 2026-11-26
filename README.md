@@ -76,7 +76,7 @@ The full principles are in [docs/03-content-principles.md](docs/03-content-princ
 content/                 the content (CC BY-SA 4.0): events, lanes, eras, sources
 data/third-party/quran/  the Tanzil Quran text, unmodified, with checksums
 docs/                    planning and design documents
-public/fonts/            Amiri and Amiri Quran fonts (OFL)
+public/fonts/            Amiri Quran and Noto Naskh Arabic fonts (OFL)
 scripts/                 validation, content files, Quran dataset, dev-server plugin
 src/                     the app (Svelte + TypeScript)
   lib/                   schema, validation, years, Quran references, Arabic search
@@ -90,4 +90,4 @@ tests/                   unit tests
 
 - **Code:** MIT. See [LICENSE](LICENSE).
 - **Written content** in [content/](content/): Creative Commons Attribution-ShareAlike 4.0. See [content/LICENSE](content/LICENSE).
-- **Third-party material** keeps its own license and is not covered by the above: the Quran text (Tanzil Project), the Amiri fonts (SIL OFL 1.1), map tiles and libraries. See [THIRD_PARTY.md](THIRD_PARTY.md).
+- **Third-party material** keeps its own license and is not covered by the above: the Quran text (Tanzil Project), the Amiri and Noto Naskh Arabic fonts (SIL OFL 1.1), map tiles and libraries. See [THIRD_PARTY.md](THIRD_PARTY.md).

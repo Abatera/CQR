@@ -7,19 +7,23 @@ title:
   ar: إلياس
 summary:
   en: Ilyas (Elijah), peace be upon him, who called his people away from the worship of Ba'l (37:123-132).
+  ar: إلياس عليه السلام، الذي دعا قومه إلى ترك عبادة بعل (37:123-132).
 when:
   from: -875
   to: -850
   certainty: traditional
   basis:
     en: Biblical tradition places Elijah in the reign of Ahab, king of Israel (1 Kings 17:1), who reigned 22 years (1 Kings 16:29). Ahab is usually dated to the mid-9th century BCE; a source for that date is still to be added.
+    ar: يضع تراث الكتاب المقدس إيليا في عهد أخآب ملك إسرائيل (الملوك الأول 17:1)، الذي ملك اثنتين وعشرين سنة (الملوك الأول 16:29). ويُؤرَّخ أخآب عادةً بمنتصف القرن التاسع قبل الميلاد، وما يزال مصدر هذا التاريخ ينتظر الإضافة.
 place:
   status: proposed
   description:
     en: The genealogists say he was sent to the people of Baalbek (cited by Ibn Kathir). The Bible calls him one of the settlers of Gilead (1 Kings 17:1). The points are approximate.
+    ar: يقول علماء النسب إنه أُرسل إلى أهل بعلبك (فيما نقله ابن كثير). ويجعله الكتاب المقدس من مستوطني جلعاد (الملوك الأول 17:1). والنقطتان تقريبيتان.
   opinions:
     - name:
         en: Baalbek (the genealogists, cited by Ibn Kathir)
+        ar: بعلبك (علماء النسب، فيما نقله ابن كثير)
       geometry:
         type: Point
         coordinates: [ 36.204, 34.006 ]
@@ -27,6 +31,7 @@ place:
         - { id: ibn-kathir-bidaya, locator: "vol. 1, «وأما إلياس عليه السلام»" }
     - name:
         en: Gilead, east of the Jordan (1 Kings 17:1)
+        ar: جلعاد، شرقي الأردن (الملوك الأول 17:1)
       geometry:
         type: Point
         coordinates: [ 35.75, 32.3 ]
@@ -37,9 +42,11 @@ tradition:
   - kind: historian
     attribution:
       en: Ibn Kathir, citing the genealogists
+      ar: ابن كثير، نقلًا عن علماء النسب
     text:
       en: He was sent to the people of Baalbek, west of Damascus. Ba'l was their idol; that it was a woman named Ba'l is a weaker view. Ibn Kathir also holds that Ilyas is not the same as Idris.
-      ar: وكان إرساله إلى أهل بعلبك غربي دمشق
+      ar: أُرسل إلى أهل بعلبك، غربي دمشق. وكان بعلٌ صنمَهم، والقول بأنه امرأةٌ اسمها بعل أضعف. ويرى ابن كثير أيضًا أن إلياس غير إدريس.
+    original: وكان إرساله إلى أهل بعلبك غربي دمشق
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «وأما إلياس عليه السلام»

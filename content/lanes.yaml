@@ -8,6 +8,7 @@
   color: "#7a5c2e"
   description:
     en: The prophets named in the Quran, in their traditional order. Before Abraham the years are a reckoning from intervals reported in tradition.
+    ar: الأنبياء الذين سمّاهم القرآن، على ترتيبهم في التراث. وقبل إبراهيم تكون السنون حسابًا من فتراتٍ مرويّة في التراث.
 
 - id: quran
   name:
@@ -18,6 +19,7 @@
   color: "#1f6f5c"
   description:
     en: Events narrated in the Quran.
+    ar: أحداثٌ قصّها القرآن.
 
 - id: levant
   name:
@@ -62,3 +64,4 @@
   color: "#5b7553"
   description:
     en: Cross-regional developments, such as the spread of iron.
+    ar: تطوّراتٌ تتجاوز الأقاليم، مثل انتشار الحديد.

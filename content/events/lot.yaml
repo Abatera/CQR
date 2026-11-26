@@ -7,19 +7,23 @@ title:
   ar: لوط
 summary:
   en: Lut (Lot), peace be upon him, Abraham's nephew, who believed in him (29:26) and was sent to the people of the cities that were overturned.
+  ar: لوطٌ عليه السلام، ابن أخي إبراهيم، الذي آمن به (29:26)، وأُرسل إلى أهل المدن التي قُلبت.
 when:
   from: -1980
   to: -1860
   certainty: traditional
   basis:
     en: Abraham's nephew and contemporary (Ibn Kathir), placed within Abraham's traditional lifetime.
+    ar: ابن أخي إبراهيم ومعاصره (ابن كثير)، فهو موضوعٌ ضمن العمر التقليدي لإبراهيم.
 place:
   status: proposed
   description:
     en: Ibn Kathir says Lut settled in the city of Sodom and went to the Ghawr known as Ghawr Zughar, the low land at the southern end of the Dead Sea. The point is approximate.
+    ar: يذكر ابن كثير أن لوطًا نزل مدينة سدوم، وصار إلى الغَوْر المعروف بغَوْر زُغَر، وهو المنخفض عند الطرف الجنوبي للبحر الميت. والنقطة تقريبية.
   opinions:
     - name:
         en: Sodom, in the Ghawr of Zughar (Ibn Kathir)
+        ar: سدوم، في غَوْر زُغَر (ابن كثير)
       geometry:
         type: Point
         coordinates: [ 35.47, 31.03 ]
@@ -30,9 +34,11 @@ tradition:
   - kind: historian
     attribution:
       en: Ibn Kathir
+      ar: ابن كثير
     text:
       en: Abraham took with him his nephew, Lut son of Haran son of Azar. Lut settled in the city of Sodom.
-      ar: ابن أخيه لوط بن هاران بن آزر
+      ar: أخذ إبراهيم معه ابنَ أخيه لوطَ بن هاران بن آزر، ونزل لوطٌ مدينةَ سدوم.
+    original: ابن أخيه لوط بن هاران بن آزر
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «هجرة الخليل إلى بلاد الشام»

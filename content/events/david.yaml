@@ -7,19 +7,23 @@ title:
   ar: داود
 summary:
   en: Dawud (David), peace be upon him, who killed Jalut and was given kingship and wisdom (2:251), and the Psalms (Zabur); iron was made soft for him (34:10).
+  ar: داوود عليه السلام، الذي قتل جالوت ونال المُلك والحكمة (2:251)، وأُعطي الزبور، وأُلين له الحديد (34:10).
 when:
   from: -1070
   to: -970
   certainty: traditional
   basis:
     en: The traditional biblical dates of his reign are about 1010-970 BCE. A forty-year reign is reported from the People of the Book, which Ibn Kathir accepts as possible, and the hadith gives him a hundred years of life, so the span starts about 1070 BCE. History has no independent date for David's life.
+    ar: التواريخ التقليدية لملكه في الكتاب المقدس نحو 1010–970 ق.م. ويُروى عن أهل الكتاب أنه ملك أربعين سنة، وهو ما يقبله ابن كثير احتمالًا، ويجعل الحديثُ عمره مئة سنة، فتبدأ المدّة نحو 1070 ق.م. وليس للتاريخ تأريخٌ مستقلٌّ لحياة داوود.
 place:
   status: proposed
   description:
     en: His kingdom in the land of Bayt al-Maqdis (Ibn Kathir), with Jerusalem as its capital according to tradition. The point marks Jerusalem.
+    ar: مُلكه في أرض بيت المقدس (ابن كثير)، وعاصمته القدس بحسب التراث. والنقطة تعيّن القدس.
   opinions:
     - name:
         en: Bayt al-Maqdis (Jerusalem) (Ibn Kathir)
+        ar: بيت المقدس (القدس) (ابن كثير)
       geometry:
         type: Point
         coordinates: [ 35.235, 31.778 ]
@@ -31,26 +35,33 @@ tradition:
   - kind: hadith
     attribution:
       en: The Prophet ﷺ, narrated by Abu Hurayra and by Ibn Abbas
+      ar: النبي ﷺ، من رواية أبي هريرة وابن عباس
     text:
       en: Adam's life was written as a thousand years, and David's, with years added from Adam's, as a hundred.
-      ar: ولداود مائة سنة
+      ar: يذكر الحديث أن عمر آدم كُتب ألف سنة، وأن عمر داوود كُتب مئة سنة، بسنين زيدت له من عمر آدم.
+    original: ولداود مائة سنة
     source:
       id: ibn-kathir-bidaya
       locator: vol. 2, «ذكر كمية حياته وكيفية وفاته عليه السلام»
     gradings:
       - grade: sahih
-        by: al-Tirmidhi
+        by:
+          en: al-Tirmidhi
+          ar: الترمذي
         source:
           id: ibn-kathir-bidaya
           locator: vol. 2, «ذكر كمية حياته وكيفية وفاته عليه السلام»
         note:
           en: Authenticated by al-Tirmidhi; also narrated by Ahmad, Ibn Khuzayma and Ibn Hibban, and al-Hakim called it on the condition of Muslim, as Ibn Kathir reports.
+          ar: "صحّحه الترمذي؛ ورواه أيضًا أحمد وابن خزيمة وابن حبان، وقال الحاكم: على شرط مسلم، كما يذكر ابن كثير."
   - kind: ahl-al-kitab
     attribution:
       en: The People of the Book, with Ibn Kathir's judgement
+      ar: أهل الكتاب، مع حكم ابن كثير
     text:
       en: David reigned forty years, which Ibn Kathir says may be accepted, since nothing contradicts it. Their claim that he lived 77 years he calls a mistake to be rejected. Al-Hasan al-Basri said he died aged a hundred.
-      ar: هذا غلط مردود عليهم
+      ar: "ملك داوود أربعين سنة، ويقول ابن كثير إن هذا يُقبل إذ لا يعارضه شيء. أما زعمهم أنه عاش سبعًا وسبعين سنة فيعدّه غلطًا مردودًا. وقال الحسن البصري: مات ابنَ مئة سنة."
+    original: هذا غلط مردود عليهم
     source:
       id: ibn-kathir-bidaya
       locator: vol. 2, «ذكر كمية حياته وكيفية وفاته عليه السلام»

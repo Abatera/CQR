@@ -7,12 +7,14 @@ title:
   ar: الإمبراطورية الحيثية
 summary:
   en: The Hittite state in central Anatolia, one of the great powers of the Late Bronze Age. It fell during the collapse.
+  ar: الدولة الحيثية في وسط الأناضول، إحدى القوى الكبرى في العصر البرونزي المتأخر. سقطت أثناء الانهيار.
 when:
   from: -1650
   to: -1180
   certainty: estimated
   basis:
     en: The end, about 1180 BCE, follows the literature on the Late Bronze Age collapse. The start is a placeholder.
+    ar: النهاية، نحو 1180 ق.م، تتبع الدراساتِ في انهيار العصر البرونزي المتأخر. والبداية مؤقّتة.
 place:
   status: known
   names:
@@ -20,12 +22,14 @@ place:
     - { name: Boğazkale, type: modern, language: Turkish }
   description:
     en: The capital, Hattusa, in central Anatolia.
+    ar: العاصمة حاتوشا، في وسط الأناضول.
   geometry:
     type: Point
     coordinates: [ 34.615, 40.02 ]
 history:
   - claim:
       en: The Hittite Empire fell around 1180 BCE, during the Late Bronze Age collapse.
+      ar: سقطت الإمبراطورية الحيثية نحو 1180 ق.م، أثناء انهيار العصر البرونزي المتأخر.
     status: established
     sources: [ cline-1177 ]
 related:

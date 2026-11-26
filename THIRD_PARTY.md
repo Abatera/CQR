@@ -14,6 +14,14 @@ This project's own code is MIT-licensed ([LICENSE](LICENSE)) and its written con
 - **Files:** [public/fonts/amiri/](public/fonts/amiri/): `AmiriQuran.ttf`, `Amiri-Regular.ttf`
 - **Source:** [github.com/aliftype/amiri](https://github.com/aliftype/amiri), release 1.003
 - **License:** SIL Open Font License 1.1, in [public/fonts/amiri/OFL.txt](public/fonts/amiri/OFL.txt). Copyright 2010-2022 The Amiri Project Authors.
+- **Used for:** Amiri Quran for the Quran text only.
+
+## Font: Noto Naskh Arabic
+
+- **Files:** [public/fonts/noto-naskh-arabic/](public/fonts/noto-naskh-arabic/): `NotoNaskhArabic-wght.ttf`, the variable font with weights 400–700. Its file name was shortened from `NotoNaskhArabic[wght].ttf`; the font itself is unchanged.
+- **Source:** [github.com/google/fonts](https://github.com/google/fonts/tree/main/ofl/notonaskharabic) (`ofl/notonaskharabic`), downloaded on 2026-11-26. SHA-256 `67b5a525a661b607971fbd3f96a81b89d3a768e74534fca84f18ac97e6fab72f`.
+- **License:** SIL Open Font License 1.1, in [public/fonts/noto-naskh-arabic/OFL.txt](public/fonts/noto-naskh-arabic/OFL.txt). Copyright 2022 The Noto Project Authors. No Reserved Font Name is declared.
+- **Used for:** all Arabic text other than the Quran: titles, the content in Arabic, and the quotations from the cited works.
 
 ## Map tiles
 

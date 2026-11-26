@@ -7,37 +7,44 @@ title:
   ar: نوح
 summary:
   en: Nuh (Noah), peace be upon him, sent to his people, who rejected him for a thousand years less fifty until the Flood (29:14). The hadith of intercession calls him the first of the messengers to the people of the earth.
+  ar: نوح عليه السلام، أُرسل إلى قومه، فكذّبوه تسعمئةٍ وخمسين سنة حتى جاء الطوفان (29:14). ويصفه حديث الشفاعة بأنه أوّل رسولٍ أُرسل إلى أهل الأرض.
 when:
   from: -4350
   to: -3000
   certainty: reckoned
   basis:
     en: "Noah's death is placed ten qurun, read as a thousand years, before Abraham (hadith of Abu Umama): about 3000 BCE. Counting back: 350 years after the Flood (Ibn Sa'd; also the Torah), the 950 years among his people that the Quran gives, and the age of fifty at which one report says he was sent. Only the 950 years are fixed; the years before his mission and after the Flood are reported variously."
+    ar: "يُوضع موت نوح قبل إبراهيم بعشرة قرون، تُقرأ ألفَ سنة (حديث أبي أمامة): أي نحو 3000 ق.م. وبالعدّ رجوعًا: ثلاثمئةٍ وخمسون سنة بعد الطوفان (ابن سعد؛ والتوراة أيضًا)، ثم تسعمئةٍ وخمسون سنة في قومه كما يذكر القرآن، ثم سنّ الخمسين التي تذكر روايةٌ أنه بُعث فيها. والثابت وحده هو التسعمئة والخمسون سنة؛ أما السنون قبل بعثته وبعد الطوفان فتختلف فيها الروايات."
   core:
     from: -4300
     to: -3351
     basis:
       en: The Quran gives the 950 years he stayed among his people before the Flood took them (29:14).
+      ar: يذكر القرآن التسعمئة والخمسين سنة التي لبثها في قومه قبل أن يأخذهم الطوفان (29:14).
   alternatives:
     - from: -4650
       to: -3000
       basis:
         en: Sent at the age of 350, a second view reported by Ibn Kathir.
+        ar: بُعث ابنَ ثلاثمئةٍ وخمسين سنة، وهو قولٌ ثانٍ نقله ابن كثير.
       sources:
         - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة نوح عليه السلام»" }
     - from: -4780
       to: -3000
       basis:
         en: Sent at the age of 480, from Ibn Abbas through Ibn Jarir, reported by Ibn Kathir.
+        ar: بُعث ابنَ أربعمئةٍ وثمانين سنة، عن ابن عباس من طريق ابن جرير، فيما نقله ابن كثير.
       sources:
         - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة نوح عليه السلام»" }
 place:
   status: proposed
   description:
     en: The Quran says the Ark came to rest on al-Judi (11:44). Ibn Kathir calls al-Judi a well-known mountain in the land of al-Jazira (Upper Mesopotamia). The area drawn is a rough outline of that region, not an identified peak.
+    ar: يذكر القرآن أن السفينة استقرّت على الجودي (11:44). ويصف ابن كثير الجوديَّ بأنه جبلٌ مشهور بأرض الجزيرة (أعالي بلاد الرافدين). والمنطقة المرسومة تخطيطٌ تقريبي لذلك الإقليم، لا قمّةٌ معيّنة.
   opinions:
     - name:
         en: al-Judi, a mountain in al-Jazira (Ibn Kathir)
+        ar: الجودي، جبلٌ بأرض الجزيرة (ابن كثير)
       geometry:
         type: Polygon
         coordinates:
@@ -55,78 +62,102 @@ tradition:
   - kind: hadith
     attribution:
       en: The Prophet ﷺ, narrated by Abu Umama al-Bahili
+      ar: النبي ﷺ، من رواية أبي أمامة الباهلي
     text:
       en: Between Adam and Noah were ten qurun, and between Noah and Abraham ten qurun. The full report and its gradings are under Adam.
+      ar: يذكر الحديث أن بين آدم ونوح عشرة قرون، وبين نوح وإبراهيم عشرة قرون. والرواية كاملةً بدرجاتها في مدخل آدم.
     source:
       id: hakim-mustadrak
       locator: 2/262 and 2/288
     gradings:
       - grade: sahih
-        by: al-Hakim
+        by:
+          en: al-Hakim
+          ar: الحاكم
         source:
           id: hakim-mustadrak
           locator: 2/262
         note:
           en: Sound on the condition of Muslim; al-Dhahabi agreed.
-      - { grade: sahih, by: al-Albani, source: albani-sahiha }
+          ar: صحيحٌ على شرط مسلم، ووافقه الذهبي.
+      - grade: sahih
+        by:
+          en: al-Albani
+          ar: الألباني
+        source: albani-sahiha
   - kind: hadith
     attribution:
       en: The Prophet ﷺ, in the hadith of intercession
+      ar: النبي ﷺ، في حديث الشفاعة
     text:
       en: On the Day of Resurrection people will come to Noah and say that he was the first of the messengers to the people of the earth.
-      ar: أنت أول الرسل إلى أهل الأرض
+      ar: يذكر الحديث أن الناس يأتون نوحًا يوم القيامة فيقولون إنه أوّل الرسل إلى أهل الأرض.
+    original: أنت أول الرسل إلى أهل الأرض
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة نوح عليه السلام»
     gradings:
       - grade: sahih
-        by: al-Bukhari and Muslim
+        by:
+          en: al-Bukhari and Muslim
+          ar: البخاري ومسلم
         source:
           id: ibn-kathir-bidaya
           locator: vol. 1, «قصة نوح عليه السلام»
         note:
           en: In both Sahihs, as cited by Ibn Kathir.
+          ar: في الصحيحين، كما نقله ابن كثير.
   - kind: historian
     attribution:
       en: Ibn Kathir, citing Ibn Jarir al-Tabari and others
+      ar: ابن كثير، نقلًا عن ابن جرير الطبري وغيره
     text:
       en: Noah was born 126 years after Adam's death. Reports differ on his age when he was sent, 50, 350 or 480 years, the last from Ibn Abbas through Ibn Jarir.
-      ar: بعد وفاة آدم، بمائة سنة وست وعشرين سنة
+      ar: "وُلد نوح بعد وفاة آدم بمئةٍ وستٍّ وعشرين سنة. وتختلف الروايات في سنّه حين بُعث: خمسون، أو ثلاثمئةٍ وخمسون، أو أربعمئةٍ وثمانون، والأخير عن ابن عباس من طريق ابن جرير."
+    original: بعد وفاة آدم، بمائة سنة وست وعشرين سنة
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة نوح عليه السلام»
   - kind: historian
     attribution:
       en: Ibn Sa'd
+      ar: ابن سعد
     text:
       en: After the Ark, Noah stayed 350 years.
-      ar: ثم مكث بعد السفينة ثلاثمائة وخمسين سنة
+      ar: مكث نوح بعد السفينة ثلاثمئةٍ وخمسين سنة.
+    original: ثم مكث بعد السفينة ثلاثمائة وخمسين سنة
     source:
       id: ibn-sad-tabaqat
       locator: 1/35
   - kind: historian
     attribution:
       en: Ibn Ishaq and Wahb ibn Munabbih, as quoted by al-Suhari
+      ar: ابن إسحاق ووهب بن منبّه، فيما نقله الصُّحاري
     text:
       en: Ibn Ishaq said Noah lived 340 years after coming down from the Ark. Wahb said his whole life was a thousand years, because he was sent to his people at fifty.
-      ar: وكان عمره ألف سنة لأنه بعث إلى قومه وهو ابن خمسين سنة
+      ar: قال ابن إسحاق إن نوحًا عاش بعد نزوله من السفينة ثلاثمئةٍ وأربعين سنة. وقال وهب إن عمره كله ألف سنة، لأنه بُعث إلى قومه ابنَ خمسين.
+    original: وكان عمره ألف سنة لأنه بعث إلى قومه وهو ابن خمسين سنة
     source:
       id: suhari-ansab
       locator: pp. 17, 21
   - kind: historian
     attribution:
       en: Ibn al-Jawzi; Ibn Kathir, quoted by his editor
+      ar: ابن الجوزي؛ وابن كثير، فيما نقله محقّق كتابه
     text:
       en: Ibn al-Jawzi gives Noah's whole life as 1,450 years. Ibn Kathir says that the Quran requires the thousand years less fifty to be his stay among his people after his mission and before the Flood, "then God knows how long he lived after that".
-      ar: ثم الله أعلم كم عاش بعد ذلك؟
+      ar: يجعل ابن الجوزي عمرَ نوح كله ألفًا وأربعمئةٍ وخمسين سنة. ويقول ابن كثير إن القرآن يقتضي أن تكون الألف إلا خمسين لبثَه في قومه بعد بعثته وقبل الطوفان، «ثم الله أعلم كم عاش بعد ذلك».
+    original: ثم الله أعلم كم عاش بعد ذلك؟
     source:
       id: ibn-al-jawzi-amar
       locator: p. 128, with the editor's note 4, which quotes Ibn Kathir
   - kind: ahl-al-kitab
     attribution:
       en: The Torah (Genesis)
+      ar: التوراة (سفر التكوين)
     text:
       en: Noah was 600 years old when the Flood came and lived 350 years after it, 950 years in all. The Torah's whole life of 950 years is the same number as the Quran's 950 years among his people.
+      ar: كان نوح ابنَ ستمئة سنة حين جاء الطوفان، وعاش بعده ثلاثمئةٍ وخمسين سنة، فعمره كله تسعمئةٌ وخمسون سنة. وهذا العمر الكلي في التوراة هو العدد نفسه الذي يذكره القرآن لمدّة لبثه في قومه.
     source:
       id: bible-web
       locator: Genesis 7:6, 9:28-29

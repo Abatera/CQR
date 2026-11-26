@@ -7,18 +7,21 @@ title:
   ar: الإمبراطورية الآشورية الحديثة
 summary:
   en: Assyria's rise to empire, conventionally dated from about 911 BCE.
+  ar: صعود آشور إلى إمبراطورية، ويُؤرَّخ اصطلاحًا بنحو سنة 911 ق.م.
 when:
   from: -911
   to: -609
   certainty: estimated
   basis:
     en: The start, about 911 BCE, is from the planning notes. The end is a placeholder.
+    ar: البداية، نحو 911 ق.م، مأخوذةٌ من ملاحظات التخطيط. والنهاية مؤقّتة.
 place:
   status: known
   names:
     - { name: Assur, type: ancient }
   description:
     en: Shown at Assur, the old capital. Later capitals were Kalhu (Nimrud) and Nineveh.
+    ar: معروضةٌ عند آشور، العاصمة القديمة. وكانت عواصمها اللاحقة كالح (نمرود) ونينوى.
   geometry:
     type: Point
     coordinates: [ 43.26, 35.46 ]

@@ -7,17 +7,20 @@ title:
   ar: صالح
 summary:
   en: Salih, peace be upon him, sent to Thamud, the people of al-Hijr (15:80), who hamstrung the she-camel given to them as a sign and were destroyed.
+  ar: صالح عليه السلام، أُرسل إلى ثمود، أصحاب الحِجر (15:80)، الذين عقروا الناقة التي جُعلت لهم آية، فأُهلكوا.
 when:
   from: -2400
   to: -2101
   certainty: reckoned
   basis:
     en: After 'Ad (Quran 7:74), and before Abraham in Ibn Kathir's order. No report gives the years; Salih is placed in the reckoned interval between Noah and Abraham.
+    ar: بعد عاد (القرآن 7:74)، وقبل إبراهيم في ترتيب ابن كثير. ولا تذكر أيُّ روايةٍ السنين؛ وقد وُضع صالح في الفترة المحسوبة بين نوح وإبراهيم.
   alternatives:
     - from: -2150
       to: -2051
       basis:
         en: "By generation, the project's own reckoning: Salih is the ninth generation after Noah in Ibn Kathir's lineage (son of 'Abd son of Masih son of 'Ubayd son of Hajir son of Thamud son of 'Abir son of Iram son of Sam). If Abraham is the tenth (Genesis 11) and the ten generations fill the ten qurun between Noah's death (about 3000 BCE) and Abraham's birth (about 2000 BCE), one each, Salih falls in the generation of Abraham's father. This keeps five generations between Hud and Salih, in keeping with the many generations the Quran places between them (25:38)."
+        ar: "بالأجيال، وهو حساب المشروع نفسه: صالحٌ هو الجيل التاسع بعد نوح في نسب ابن كثير (ابن عبد بن ماسح بن عبيد بن حاجر بن ثمود بن عابر بن إرم بن سام). فإن كان إبراهيم العاشر (التكوين 11)، وملأت الأجيالُ العشرة القرونَ العشرة بين موت نوح (نحو 3000 ق.م) ومولد إبراهيم (نحو 2000 ق.م)، جيلًا لكل قرن، وقع صالح في جيل أبي إبراهيم. ويُبقي هذا خمسة أجيال بين هود وصالح، بما يوافق القرون الكثيرة التي يضعها القرآن بينهما (25:38)."
       sources:
         - id: ibn-kathir-bidaya
           locator: vol. 1, «قصة صالح نبي ثمود عليه السلام»
@@ -26,9 +29,11 @@ place:
   status: proposed
   description:
     en: The Quran names al-Hijr (15:80). Ibn Kathir says Thamud lived at al-Hijr, between the Hijaz and Tabuk; Ibn Ishaq places them in Wadi al-Qura. The point marks the site known by that name today (Hegra, near al-'Ula); its coordinates are approximate.
+    ar: يسمّي القرآن الحِجر (15:80). ويقول ابن كثير إن ثمود سكنوا الحِجر، بين الحجاز وتبوك؛ ويضعهم ابن إسحاق في وادي القرى. والنقطة تعيّن الموضع المعروف بهذا الاسم اليوم (الحِجر، المعروفة أيضًا بمدائن صالح، قرب العُلا)، وإحداثياتها تقريبية.
   opinions:
     - name:
         en: al-Hijr, between the Hijaz and Tabuk (Ibn Kathir)
+        ar: الحِجر، بين الحجاز وتبوك (ابن كثير)
       geometry:
         type: Point
         coordinates: [ 37.95, 26.79 ]
@@ -39,7 +44,8 @@ quran: [ "7:73-79", "11:61-68", "15:80-84", "26:141-159", "89:9" ]
 tafsir:
   - text:
       en: "Ibn Kathir on 89:9 (Thamud, who carved out the rock in the valley): Ibn Ishaq said they were Arabs, and their dwelling was in Wadi al-Qura."
-      ar: "وقال ابن إسحاق : كانوا عربا ، وكان منزلهم بوادي القرى"
+      ar: "ابن كثير في تفسير 89:9 (ثمود الذين نحتوا الصخر في الوادي): قال ابن إسحاق إنهم كانوا عربًا، وكان منزلهم بوادي القرى."
+    original: "وقال ابن إسحاق : كانوا عربا ، وكان منزلهم بوادي القرى"
     source:
       id: ibn-kathir-tafsir
       locator: "89:9"
@@ -47,80 +53,101 @@ tradition:
   - kind: historian
     attribution:
       en: Ibn Kathir
+      ar: ابن كثير
     text:
       en: Thamud came after 'Ad. They were Arabs of al-'Ariba and lived at al-Hijr, between the Hijaz and Tabuk. Ibn Kathir notes that the story of the two peoples was well known in the time of Moses. It is also said that Salih later moved to the Sacred Precinct in Mecca and stayed there until he died.
-      ar: وكانوا عربًا من العارية يسكنون الحجر الذي بين الحجاز وتبوك
+      ar: جاءت ثمود بعد عاد. وكانوا من العرب العاربة، يسكنون الحِجر بين الحجاز وتبوك. ويلاحظ ابن كثير أن قصة القومين كانت مشهورةً في زمن موسى. ويقال أيضًا إن صالحًا انتقل بعدُ إلى الحرم بمكة وأقام به حتى مات.
+    original: وكانوا عربًا من العارية يسكنون الحجر الذي بين الحجاز وتبوك
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة صالح نبي ثمود عليه السلام»
   - kind: historian
     attribution:
       en: Ibn Kathir
+      ar: ابن كثير
     text:
       en: Salih was the son of 'Abd son of Masih son of 'Ubayd son of Hajir son of Thamud son of 'Abir son of Iram son of Sam son of Noah. Thamud was the brother of Jadis; both were sons of 'Abir son of Iram son of Sam.
-      ar: صالح بن عبد بن ماسح بن عبيد بن حاجر بن ثمود بن عابر بن ارم بن سام بن نوح
+      ar: صالح بن عبد بن ماسح بن عبيد بن حاجر بن ثمود بن عابر بن إرم بن سام بن نوح. وكان ثمودُ أخا جَديس، وكلاهما ابنا عابر بن إرم بن سام.
+    original: صالح بن عبد بن ماسح بن عبيد بن حاجر بن ثمود بن عابر بن ارم بن سام بن نوح
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة صالح نبي ثمود عليه السلام»
   - kind: hadith
     attribution:
       en: The Prophet ﷺ, narrated by Ibn Abbas, in the Musnad of Ahmad
+      ar: النبي ﷺ، من رواية ابن عباس، في مسند أحمد
     text:
       en: Hud and Salih passed through the valley of 'Usfan on their way to the pilgrimage.
+      ar: يذكر الحديث أن هودًا وصالحًا مرّا بوادي عُسفان في طريقهما إلى الحج.
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة صالح نبي ثمود عليه السلام»
     gradings:
       - grade: hasan
-        by: Ibn Kathir
+        by:
+          en: Ibn Kathir
+          ar: ابن كثير
         source:
           id: ibn-kathir-bidaya
           locator: vol. 1, «قصة صالح نبي ثمود عليه السلام»
         note:
           en: Its chain is good (hasan).
+          ar: إسناده حسن.
   - kind: hadith
     attribution:
       en: The Prophet ﷺ, narrated by Ibn 'Umar, in the Musnad of Ahmad
+      ar: النبي ﷺ، من رواية ابن عمر، في مسند أحمد
     text:
       en: 'In the year of Tabuk the Prophet ﷺ passed through al-Hijr, in the land of Thamud, and said: "Do not enter upon these punished people unless you are weeping."'
-      ar: لا تدخلوا على هؤلاء المعذبين، إلا أن تكونوا باكين
+      ar: مرّ النبي ﷺ عام تبوك بالحِجر، في أرض ثمود، ونهى أصحابه عن دخول ديار المعذَّبين إلا وهم باكون.
+    original: لا تدخلوا على هؤلاء المعذبين، إلا أن تكونوا باكين
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «مرور النبي بوادي الحجر من أرض ثمود عام تبوك»
     gradings:
       - grade: sahih
-        by: Ibn Kathir
+        by:
+          en: Ibn Kathir
+          ar: ابن كثير
         source:
           id: ibn-kathir-bidaya
           locator: vol. 1, «مرور النبي بوادي الحجر من أرض ثمود عام تبوك»
         note:
           en: Both Sahihs report it by more than one route (أخرجاه في الصحيحين من غير وجه).
+          ar: أخرجاه في الصحيحين من غير وجه.
   - kind: hadith
     attribution:
       en: The Prophet ﷺ, narrated by Jabir, in the Musnad of Ahmad
+      ar: النبي ﷺ، من رواية جابر، في مسند أحمد
     text:
       en: '"Do not ask for signs, for the people of Salih asked for them."'
-      ar: لا تسألوا الآيات، فقد سألها قوم صالح
+      ar: ينهى الحديث عن طلب الآيات، لأن قوم صالح طلبوها.
+    original: لا تسألوا الآيات، فقد سألها قوم صالح
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة صالح نبي ثمود عليه السلام»
     gradings:
       - grade: sahih
-        by: Ibn Kathir
+        by:
+          en: Ibn Kathir
+          ar: ابن كثير
         source:
           id: ibn-kathir-bidaya
           locator: vol. 1, «قصة صالح نبي ثمود عليه السلام»
         note:
           en: On the conditions of Muslim, though it is not in any of the six books (على شرط مسلم، وليس هو في شيء من الكتب الستة).
+          ar: على شرط مسلم، وليس هو في شيء من الكتب الستة.
 history:
   - claim:
       en: 'Diodorus of Sicily, who wrote his Library of History between about 56 and 30 BCE, describes the Arabian coast of the Red Sea (his "Arabian Gulf"): "This coast, then, is inhabited by Arabs who are called Thamudeni".'
+      ar: "يصف ديودور الصقلي، الذي كتب «المكتبة التاريخية» بين نحو 56 و30 ق.م، الساحلَ العربي للبحر الأحمر (وهو عنده «الخليج العربي»): «يسكن هذا الساحلَ إذن عربٌ يُدعَون الثموديين» (العبارة مترجمةٌ عن الإنجليزية)."
     status: established
     sources:
       - { id: diodorus-library, locator: 3.44.6 }
 connection:
   text:
     en: History knows a people called Thamud only from much later than the period the tradition gives Salih, in Diodorus about two thousand years later. The Quran leaves room for both. It speaks of "the first 'Ad" (53:50), which implies a later 'Ad, and it says that Salih and the believers with him were saved (11:66), so a later people could carry the old name. This is the project's own reading, not something the sources state.
+    ar: "لا يعرف التاريخ قومًا يُدعَون ثمود إلا في زمنٍ متأخرٍ كثيرًا عن الحقبة التي يجعلها التراث لصالح، إذ يذكرهم ديودور بعد نحو ألفي سنة. ويتّسع القرآن للأمرين: فهو يصف عادًا بأنها «الأولى» (53:50)، مما يقتضي عادًا لاحقة، ويذكر أن صالحًا ومَن آمن معه نُجّوا (11:66)، فقد يحمل قومٌ لاحقون الاسمَ القديم. وهذه قراءة المشروع نفسه، لا شيءٌ تنصّ عليه المصادر."
 related:
   - { id: hud, type: context }
   - { id: abraham, type: context }

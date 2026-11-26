@@ -92,4 +92,5 @@ The owner wants a readable, searchable Hafs Quran ([05-quran-data.md](05-quran-d
 
 - *Proposed:* each event has its own URL, such as `#/event/david-armor`, so it can be shared.
 - *Proposed:* the left and right arrow keys step through events.
-- Not discussed yet: the layout on mobile and small screens, the UI language (English, Arabic, or both with right-to-left support), and dark mode.
+- **Language (D21):** an EN / عربي switch in the header, remembered in the browser. In Arabic the facts panel reads right to left with Arabic headings, the timeline and map labels are in Arabic, and the time axis still runs left to right. The Quran reader, About and the editor stay in English for now (open question 18).
+- Not discussed yet: the layout on mobile and small screens, and dark mode.

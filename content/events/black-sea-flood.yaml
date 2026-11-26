@@ -7,16 +7,19 @@ title:
   ar: فرضية فيضان البحر الأسود
 summary:
   en: In 1997 the geologists Ryan and Pitman proposed that Mediterranean water surged over the Bosphorus sill into a much lower Black Sea lake, drowning its shores, an event since linked to the story of Noah's flood. Later studies found a smaller or more gradual rise.
+  ar: في عام 1997 اقترح الجيولوجيّان رايان وبيتمان أن مياه البحر المتوسط تدفّقت فوق عتبة البوسفور إلى بحيرةٍ أخفض بكثير كانت مكان البحر الأسود، فأغرقت شواطئها، وهو حدثٌ رُبط منذ ذلك الحين بقصة طوفان نوح. ووجدت دراساتٌ لاحقة ارتفاعًا أصغر أو أكثر تدرّجًا.
 when:
   from: -7500
   to: -5500
   certainty: debated
   basis:
     en: The proposed date varies between accounts, about 9,400 years ago in Oceanus (2009) and about 7,500 years ago in a 2002 Rensselaer release; the span covers both.
+    ar: "يختلف التاريخ المقترح بين الروايات: نحو 9400 سنة مضت في مجلة Oceanus (2009)، ونحو 7500 سنة مضت في بيانٍ صحفي لمعهد رينسيلار عام 2002؛ والمدّة المرسومة تشمل الاثنين."
 place:
   status: known
   description:
     en: The Black Sea and the Bosphorus strait. The outline is a rough sketch of the sea.
+    ar: البحر الأسود ومضيق البوسفور. والحدود المرسومة تخطيطٌ تقريبي للبحر.
   geometry:
     type: Polygon
     coordinates:
@@ -34,10 +37,12 @@ place:
 history:
   - claim:
       en: Ryan and Pitman proposed that Mediterranean water surged over the Bosphorus sill into a lake at least 80 m lower than today's Black Sea, raising it by 50-60 m and drowning about 70,000 square kilometres.
+      ar: اقترح رايان وبيتمان أن مياه البحر المتوسط تدفّقت فوق عتبة البوسفور إلى بحيرةٍ أخفض بثمانين مترًا على الأقل من مستوى البحر الأسود اليوم، فرفعتها خمسين إلى ستين مترًا، وأغرقت نحو سبعين ألف كيلومتر مربع.
     status: debated
     sources: [ lippsett-2009 ]
   - claim:
       en: A 2009 study of a Danube delta core (Giosan and colleagues) found the lake only about 30 m lower and a rise of only 5-10 m; a 2002 study of Marmara Sea sediments (Abrajano and colleagues) described a gradual rise over about 2,000 years.
+      ar: وجدت دراسةٌ عام 2009 لعيّنةٍ من دلتا الدانوب (جيوسان وزملاؤه) أن البحيرة كانت أخفض بنحو ثلاثين مترًا فقط، وأن الارتفاع لم يتجاوز خمسة إلى عشرة أمتار؛ ووصفت دراسةٌ عام 2002 لرواسب بحر مرمرة (أبراخانو وزملاؤه) ارتفاعًا تدريجيًّا على مدى نحو ألفي سنة.
     status: debated
     sources: [ lippsett-2009, rpi-2002 ]
 related:

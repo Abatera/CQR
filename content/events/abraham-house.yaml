@@ -7,12 +7,14 @@ title:
   ar: إبراهيم وإسماعيل يرفعان القواعد من البيت
 summary:
   en: Abraham, peace be upon him, and his son Ishmael, peace be upon him, raise the foundations of the House in Mecca and pray that it be accepted from them.
+  ar: إبراهيم عليه السلام وابنه إسماعيل عليه السلام يرفعان أسس البيت في مكة، ويدعوان الله أن يتقبّله منهما.
 when:
   from: -1890
   to: -1826
   certainty: traditional
   basis:
     en: Within Abraham's traditional lifetime, once Ishmael was grown, since the Quran shows them building together. No date is given.
+    ar: ضمن العمر التقليدي لإبراهيم، بعد أن كبر إسماعيل، إذ يُظهرهما القرآن يبنيان معًا. ولا يُذكر تاريخ.
 place:
   status: known
   names:
@@ -20,6 +22,7 @@ place:
     - { name: Mecca, type: modern }
   description:
     en: The Ka'ba in Mecca. The Quran also calls the place Bakka (3:96).
+    ar: الكعبة في مكة. ويسمّي القرآن الموضع أيضًا «بكّة» (3:96).
   geometry:
     type: Point
     coordinates: [ 39.8262, 21.4225 ]
@@ -28,9 +31,11 @@ tradition:
   - kind: historian
     attribution:
       en: Ibn Kathir
+      ar: ابن كثير
     text:
       en: No sound report from the infallible Prophet says that the House was built before Abraham. The accounts of Adam or the angels building it come from Israelite sources, which are neither believed nor disbelieved.
-      ar: ولم يجئ في خبر صحيح عن معصوم، أن البيت كان مبنيًا قبل الخليل
+      ar: لم يرد في خبرٍ صحيح عن النبي المعصوم أن البيت كان مبنيًّا قبل إبراهيم. وروايات بناء آدم أو الملائكة له مأخوذةٌ من الإسرائيليات، التي لا تُصدَّق ولا تُكذَّب.
+    original: ولم يجئ في خبر صحيح عن معصوم، أن البيت كان مبنيًا قبل الخليل
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «بناء البيت العتيق»

@@ -7,16 +7,19 @@ title:
   ar: إسماعيل
 summary:
   en: Isma'il (Ishmael), peace be upon him, Abraham's son, whom the Quran calls true to his promise, a messenger and a prophet (19:54). With his father he raised the House in Mecca.
+  ar: إسماعيل عليه السلام، ابن إبراهيم، الذي وصفه القرآن بصدق الوعد، وبأنه كان رسولًا ونبيًّا (19:54). ورفع مع أبيه البيتَ في مكة.
 when:
   from: -1914
   to: -1777
   certainty: traditional
   basis:
     en: Born when Abraham was 86, as the People of the Book say, and died aged 137 (both reported by Ibn Kathir; Genesis 25:17), counted from Abraham at about 2000 BCE.
+    ar: وُلد وإبراهيم ابن ستٍّ وثمانين سنة، كما يقول أهل الكتاب، وتوفّي ابنَ مئةٍ وسبعٍ وثلاثين سنة (وكلاهما عند ابن كثير؛ التكوين 25:17)، محسوبًا من إبراهيم نحو 2000 ق.م.
 place:
   status: known
   description:
     en: The Quran has Abraham settle some of his offspring in a valley without crops, by the Sacred House (14:37). Ibn Kathir says Ishmael was buried in the Hijr of the Ka'ba with his mother Hagar.
+    ar: يذكر القرآن أن إبراهيم أسكن بعضَ ذريته في وادٍ لا زرع فيه، عند البيت الحرام (14:37). ويقول ابن كثير إن إسماعيل دُفن في حِجر الكعبة مع أمه هاجر.
   geometry:
     type: Point
     coordinates: [ 39.8262, 21.4225 ]
@@ -25,18 +28,22 @@ tradition:
   - kind: ahl-al-kitab
     attribution:
       en: The People of the Book, as reported by Ibn Kathir
+      ar: أهل الكتاب، فيما نقله ابن كثير
     text:
       en: Ishmael was born when Abraham was 86 years old.
-      ar: ولد لإبراهيم من العمر ست وثمانون سنة
+      ar: وُلد إسماعيل وإبراهيم ابن ستٍّ وثمانين سنة.
+    original: ولد لإبراهيم من العمر ست وثمانون سنة
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «إسماعيل عليه السلام»
   - kind: historian
     attribution:
       en: Ibn Kathir
+      ar: ابن كثير
     text:
       en: Ishmael was a messenger to the people of that region. He died aged 137 and was buried in the Hijr with his mother Hagar.
-      ar: ودفن إسماعيل نبي الله بالحجر مع أمه هاجر
+      ar: كان إسماعيل رسولًا إلى أهل تلك الناحية. وتوفّي ابنَ مئةٍ وسبعٍ وثلاثين سنة، ودُفن في الحِجر مع أمه هاجر.
+    original: ودفن إسماعيل نبي الله بالحجر مع أمه هاجر
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «إسماعيل عليه السلام»

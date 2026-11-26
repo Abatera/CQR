@@ -7,28 +7,33 @@ title:
   ar: رمسيس الثالث وشعوب البحر
 summary:
   en: Egypt under Ramesses III fights off the Sea Peoples, as recorded in the reliefs of his temple at Medinet Habu.
+  ar: مصر في عهد رمسيس الثالث تصدّ شعوب البحر، كما تسجّل نقوش معبده في مدينة هابو.
 when:
   from: -1177
   to: -1177
   certainty: estimated
   basis:
     en: Year 8 of Ramesses III, dated about 1177 BCE in the chronology that Cline uses.
+    ar: السنة الثامنة من حكم رمسيس الثالث، المؤرَّخة بنحو 1177 ق.م في التسلسل الزمني الذي يعتمده كلاين.
 place:
   status: known
   names:
     - { name: Medinet Habu, type: modern }
   description:
     en: The mortuary temple of Ramesses III at Medinet Habu, on the west bank at Thebes, where the reliefs are. The battles themselves were fought elsewhere.
+    ar: المعبد الجنائزي لرمسيس الثالث في مدينة هابو، على البرّ الغربي في طيبة، حيث النقوش. أما المعارك نفسها فقد دارت في أماكن أخرى.
   geometry:
     type: Point
     coordinates: [ 32.6, 25.72 ]
 history:
   - claim:
       en: Reliefs and inscriptions at Medinet Habu record Ramesses III's battles against the Sea Peoples.
+      ar: تسجّل النقوش البارزة والكتابات في مدينة هابو معاركَ رمسيس الثالث مع شعوب البحر.
     status: established
     sources: [ cline-1177 ]
   - claim:
       en: Where the battles took place, and who the Sea Peoples were, are debated.
+      ar: أين دارت المعارك، ومَن كانت شعوب البحر، أمران مختلفٌ فيهما.
     status: debated
     sources: [ cline-1177 ]
 related:

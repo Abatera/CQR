@@ -7,20 +7,24 @@ title:
   ar: سليمان وعين القطر
 summary:
   en: The Quran says God made a spring of molten copper flow for Solomon, peace be upon him.
+  ar: يذكر القرآن أن الله أسال لسليمان عليه السلام عينًا من النحاس المذاب.
 when:
   from: -970
   to: -931
   certainty: traditional
   basis:
     en: Traditional dates of Solomon's reign (biblical chronology). The Quran gives no date.
+    ar: التواريخ التقليدية لملك سليمان (التسلسل الزمني للكتاب المقدس). ولا يذكر القرآن تاريخًا.
 place:
   status: unknown
   description:
     en: The Quran does not say where the spring was.
+    ar: لا يذكر القرآن أين كانت العين.
 quran: [ "34:12" ]
 connection:
   text:
     en: The Quran associates Solomon with molten copper. Copper production in the Arabah, at Timna and Faynan, has been dated to the 10th century BCE, within Solomon's traditional dates. This is a match in time and region, not evidence of who ran the mines.
+    ar: يربط القرآنُ سليمانَ بالنحاس المذاب. وقد أُرِّخ إنتاج النحاس في وادي عربة، في تمنع وفينان، بالقرن العاشر قبل الميلاد، أي ضمن التواريخ التقليدية لسليمان. وهذا توافقٌ في الزمان والإقليم، لا دليلٌ على مَن كان يدير المناجم.
 related:
   - { id: solomon, type: context }
   - { id: timna-faynan-copper, type: context }

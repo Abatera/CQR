@@ -190,6 +190,9 @@ export function validateContent(raw: RawContent, ayahCounts: readonly number[]):
     for (const [path, text] of englishTexts(ev)) {
       if (PROPHET_NAME_RE.test(text)) push('warning', path, 'Write ﷺ after the name of the Prophet Muhammad.');
     }
+    for (const [path, text] of arabicTexts(ev)) {
+      if (PROPHET_NAME_AR_RE.test(text)) push('warning', path, 'اكتب ﷺ بعد اسم النبي محمد (Write ﷺ after the name of the Prophet Muhammad).');
+    }
 
     const relSeen = new Set<string>();
     ev.related?.forEach((r, i) => {
@@ -215,6 +218,36 @@ export function validateContent(raw: RawContent, ayahCounts: readonly number[]):
  * "Muhammad 'Abduh", "Muhammad Nasir al-Din al-Albani".
  */
 const PROPHET_NAME_RE = /\bMuhammad\b(?!\s*ﷺ)(?!\s+(?:ibn\b|bin\b|b\.|al-|[A-Z'’ʿ]))/;
+
+/**
+ * The same check for Arabic: "محمد" (with any case ending) not followed by ﷺ. As in English,
+ * other people named Muhammad are recognized by the name that follows ("محمد بن السائب",
+ * "محمد الطاهر", "محمد عبده", "محمد ناصر الدين الألباني"), or that precedes it when Muhammad
+ * is the father's name ("هشام بن محمد الكلبي"). Quoted wording (`original`) is the source's
+ * own text and is not checked. The name may carry the attached prefixes و ف ب ل ك ("ومحمد").
+ */
+const PROPHET_NAME_AR_RE =
+  /(?<![\p{L}\p{M}])(?<!(?:بن|ابن)\s+)(?:[وفبلك]\p{M}*){0,2}محمد\p{M}*(?![\p{L}])(?!\s*ﷺ)(?!\s+(?:بن|ابن|عبده|ناصر|ال\p{L}+)(?![\p{L}]))/u;
+
+/** Every Arabic text of an event that readers see, with its path. */
+function arabicTexts(ev: CqrEvent): [string, string][] {
+  const out: [string, string][] = [];
+  const add = (path: string, t: { ar?: string } | undefined) => {
+    if (t?.ar) out.push([path, t.ar]);
+  };
+  add('title.ar', ev.title);
+  add('summary.ar', ev.summary);
+  add('when.basis.ar', ev.when.basis);
+  add('place.description.ar', ev.place.description);
+  ev.tafsir?.forEach((t, i) => add(`tafsir[${i}].text.ar`, t.text));
+  ev.tradition?.forEach((t, i) => {
+    add(`tradition[${i}].attribution.ar`, t.attribution);
+    add(`tradition[${i}].text.ar`, t.text);
+  });
+  ev.history?.forEach((h, i) => add(`history[${i}].claim.ar`, h.claim));
+  add('connection.text.ar', ev.connection?.text);
+  return out;
+}
 
 /** Every English text of an event that readers see, with its path. Titles are labels and are included too. */
 function englishTexts(ev: CqrEvent): [string, string][] {

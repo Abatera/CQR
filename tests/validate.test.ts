@@ -117,7 +117,7 @@ describe('content validation', () => {
         attribution: { en: 'The Prophet ﷺ' },
         text: { en: 'A report.' },
         source: 'src-a',
-        gradings: [{ grade: 'sahih', by: 'al-Albani', source: 'missing' }],
+        gradings: [{ grade: 'sahih', by: { en: 'al-Albani' }, source: 'missing' }],
       },
     ];
     const r = validateContent(raw([baseEvent({ tradition })]), counts);

@@ -7,19 +7,23 @@ title:
   ar: يعقوب
 summary:
   en: Ya'qub (Jacob), also called Isra'il, peace be upon him, Isaac's son and the father of Joseph and his brothers, from whom the Children of Israel descend.
+  ar: يعقوب عليه السلام، ويُسمّى إسرائيل، ابن إسحاق وأبو يوسف وإخوته، ومنه ينحدر بنو إسرائيل.
 when:
   from: -1840
   to: -1693
   certainty: traditional
   basis:
     en: Placed a generation after Isaac. The Torah gives him 147 years (Genesis 47:28); Ibn Kathir reports the People of the Book's figures of 130 years on entering Egypt and 17 years there.
+    ar: "موضوعٌ بعد إسحاق بجيل. تجعل التوراة عمره مئةً وسبعًا وأربعين سنة (التكوين 47:28)، ويحكي ابن كثير أرقام أهل الكتاب: مئةً وثلاثين سنة عند دخوله مصر، وسبع عشرة سنة أقامها فيها."
 place:
   status: proposed
   description:
     en: He lived in Canaan and in his last years in Egypt. He was buried at Hebron, in the cave Abraham had bought, according to the People of the Book; al-Suddi says beside Isaac and Abraham.
+    ar: "عاش في كنعان، وفي سنيه الأخيرة في مصر. ودُفن في حبرون، في المغارة التي اشتراها إبراهيم، على قول أهل الكتاب؛ وقال السُّدّي: بجانب إسحاق وإبراهيم."
   opinions:
     - name:
         en: Hebron, his burial place (the People of the Book and al-Suddi, reported by Ibn Kathir)
+        ar: حبرون (الخليل)، موضع دفنه (أهل الكتاب والسُّدّي، فيما نقله ابن كثير)
       geometry:
         type: Point
         coordinates: [ 35.11, 31.525 ]
@@ -31,9 +35,11 @@ tradition:
   - kind: ahl-al-kitab
     attribution:
       en: The People of the Book, as reported by Ibn Kathir (partly through Ibn Ishaq)
+      ar: أهل الكتاب، فيما نقله ابن كثير (بعضه من طريق ابن إسحاق)
     text:
       en: Jacob was 130 years old when he entered Egypt and stayed there with Joseph 17 years. Their text gives his whole life as 140 years, which Ibn Kathir calls an error, either in the copy or by them.
-      ar: هذا نص كتابهم وهو غلط
+      ar: كان يعقوب ابنَ مئةٍ وثلاثين سنة حين دخل مصر، وأقام فيها مع يوسف سبع عشرة سنة. ويجعل نصُّهم عمرَه كله مئةً وأربعين سنة، وهو ما يعدّه ابن كثير غلطًا، إمّا في النسخة وإمّا منهم.
+    original: هذا نص كتابهم وهو غلط
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «ما وقع من الأمور العجيبة في حياة إسرائيل»

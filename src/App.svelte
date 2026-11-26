@@ -5,11 +5,13 @@
   import FactsPanel from './facts/FactsPanel.svelte';
   import MapView from './map/MapView.svelte';
   import QuranView from './quran/QuranView.svelte';
+  import { t, tx } from './lib/i18n';
   import { app, CAN_EDIT } from './state/app.svelte';
   import { href } from './state/route';
   import Timeline from './timeline/Timeline.svelte';
 
   const view = $derived(app.route.view);
+  const lang = $derived(app.lang);
   const errors = $derived((app.content?.issues ?? []).filter((i) => i.level === 'error').length);
   const warnings = $derived((app.content?.issues ?? []).filter((i) => i.level === 'warning').length);
 
@@ -57,22 +59,30 @@
   });
 
   $effect(() => {
-    const t = app.selected?.title.en;
-    document.title = view === 'explore' && t ? `${t} · Chronotope of Quranic Reality` : 'Chronotope of Quranic Reality';
+    const title = app.selected ? tx(app.selected.title, app.lang) : undefined;
+    document.title = view === 'explore' && title ? `${title} · Chronotope of Quranic Reality` : 'Chronotope of Quranic Reality';
   });
 </script>
 
 <div class="app">
   <header class="top">
     <a class="brand" href="#/">Chronotope of Quranic Reality</a>
-    <nav aria-label="Views">
-      <a href={href({ view: 'explore', eventId: app.selectedId })} class:active={view === 'explore'}>Explore</a>
-      <a href={href({ view: 'quran' })} class:active={view === 'quran'}>Quran</a>
+    <nav aria-label="Views" {lang}>
+      <a href={href({ view: 'explore', eventId: app.selectedId })} class:active={view === 'explore'}>{t('explore', lang)}</a>
+      <a href={href({ view: 'quran' })} class:active={view === 'quran'}>{t('quran', lang)}</a>
       {#if CAN_EDIT}
-        <a href={href({ view: 'edit', collection: 'events' })} class:active={view === 'edit'}>Editor</a>
+        <a href={href({ view: 'edit', collection: 'events' })} class:active={view === 'edit'}>{t('editor', lang)}</a>
       {/if}
-      <a href={href({ view: 'about' })} class:active={view === 'about'}>About</a>
+      <a href={href({ view: 'about' })} class:active={view === 'about'}>{t('about', lang)}</a>
     </nav>
+    <button
+      type="button"
+      class="lang-switch"
+      lang={lang === 'ar' ? 'en' : 'ar'}
+      title={t('switchTitle', lang)}
+      aria-label={t('switchTitle', lang)}
+      onclick={() => app.setLang(lang === 'ar' ? 'en' : 'ar')}>{t('switchTo', lang)}</button
+    >
     {#if CAN_EDIT && app.content}
       <a class="status" href={href({ view: 'edit', collection: 'events' })} title="Content validation (local dev server)">
         {#if errors}<span class="err">{errors} error{errors > 1 ? 's' : ''}</span>{/if}
@@ -142,6 +152,17 @@
     color: #123;
     font-weight: 600;
   }
+  nav a:lang(ar) {
+    font-size: 15px;
+  }
+  .lang-switch {
+    font-size: 14px;
+    min-width: 64px;
+  }
+  .lang-switch:lang(ar) {
+    font-size: 16px;
+    line-height: 1.2;
+  }
   .status {
     margin-inline-start: auto;
     display: flex;
@@ -172,9 +193,15 @@
   .page {
     padding: 20px;
   }
+  /*
+   * minmax(0, …) keeps the columns at the screen's width. With plain auto or 1fr tracks the grid
+   * grows to its content, and the timeline, which sizes its SVG to its own width, then widens by
+   * the scrollbar's width on every frame, without end.
+   */
   .explore {
     display: grid;
     grid-template-rows: minmax(220px, 42%) 1fr;
+    grid-template-columns: minmax(0, 1fr);
     height: 100%;
   }
   .tl {
@@ -183,7 +210,7 @@
   }
   .bottom {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     min-height: 0;
   }
   .map-cell {

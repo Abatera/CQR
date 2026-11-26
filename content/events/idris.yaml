@@ -7,203 +7,253 @@ title:
   ar: إدريس
 summary:
   en: Idris, peace be upon him, whom the Quran calls truthful, a prophet raised to a high station (19:56-57). Muslim scholars commonly identify him with Enoch (Akhnukh) of the biblical genealogy.
+  ar: إدريس عليه السلام، الذي وصفه القرآن بأنه كان صدّيقًا ونبيًّا، رفعه الله إلى منزلةٍ عالية (19:56-57). ويجعله علماء المسلمين في الغالب أخنوخَ الذي في نسب الكتاب المقدس.
 when:
   from: -4783
   to: -4419
   certainty: reckoned
   basis:
     en: Ibn Ishaq says he lived through 308 years of Adam's life, so his span starts 308 years before Adam's death (about 4476 BCE, see Adam). No Islamic report gives his age; the span uses the 365 years the Torah gives Enoch, with whom Ibn Kathir identifies Idris. In that count he is taken 69 years before Noah's birth, so the three do not collide. Al-Qurtubi rejects the view that Idris was Noah's ancestor (see the Tradition layer), which would undo this placement.
+    ar: يقول ابن إسحاق إنه عاش ثلاثمئةٍ وثماني سنين من حياة آدم، فتبدأ مدّته قبل وفاة آدم (نحو 4476 ق.م، انظر آدم) بثلاثمئةٍ وثماني سنين. ولا تذكر روايةٌ إسلامية عمره؛ فالمدّة تأخذ بالثلاثمئة والخمس والستين سنة التي تجعلها التوراة لأخنوخ، الذي يجعله ابن كثير إدريسَ. وفي هذا الحساب يُرفع قبل مولد نوح بتسعٍ وستين سنة، فلا يتداخل الثلاثة. ويردّ القرطبي القولَ بأن إدريس جدُّ نوح (انظر طبقة المرويّات)، وهو قولٌ لو صحّ لنقض هذا الوضع.
 place:
   status: unknown
   description:
     en: The Quran names no place. A later claim, reported by Ibn Battuta with "they claim", makes Idris the first Hermes, who lived in Upper Egypt (see the Tradition layer).
+    ar: لا يسمّي القرآن مكانًا. ويجعل قولٌ متأخّر، يحكيه ابن بطوطة عن غيره زعمًا، إدريسَ هرمسَ الأول الذي سكن صعيد مصر (انظر طبقة المرويّات).
 quran: [ "19:56-57", "21:85" ]
 tradition:
   - kind: historian
     attribution:
       en: Ibn Kathir, citing Ibn Ishaq
+      ar: ابن كثير، نقلًا عن ابن إسحاق
     text:
       en: He was the first of Adam's descendants to be given prophethood, after Adam and Seth, and he lived through 308 years of Adam's life. Ibn Kathir identifies him with Enoch (Khanukh) in Noah's genealogy, and says that he is in the line of descent of the Prophet ﷺ, according to more than one genealogist.
-      ar: وكان أول بني آدم أعطي النبوة، بعد آدم وشيث
+      ar: كان أول بني آدم أُعطي النبوة، بعد آدم وشيث، وعاش ثلاثمئةٍ وثماني سنين من حياة آدم. ويجعله ابن كثير أخنوخ (خنوخ) في نسب نوح، ويذكر أنه في عمود نسب النبي ﷺ، على قول غير واحدٍ من النسّابين.
+    original: وكان أول بني آدم أعطي النبوة، بعد آدم وشيث
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «إدريس عليه السلام»
   - kind: hadith
     attribution:
       en: The Prophet ﷺ, in the hadith of the Night Journey
+      ar: النبي ﷺ، في حديث الإسراء
     text:
       en: 'On the Night Journey the Prophet ﷺ passed Idris in the fourth heaven: "I came to Idris in the fourth heaven." Al-Qurtubi cites this from Muslim, and says that a version in al-Bukhari, through Sharik from Anas, which puts Idris in the second heaven, is an error (wahm).'
-      ar: أتيت على إدريس في السماء الرابعة
+      ar: في حديث الإسراء مرّ النبي ﷺ بإدريس في السماء الرابعة (واللفظ منقولٌ أعلاه). ويذكره القرطبي من رواية مسلم، ويقول إن روايةً في البخاري، من طريق شريك عن أنس، تجعل إدريس في السماء الثانية وَهَمٌ.
+    original: أتيت على إدريس في السماء الرابعة
     source:
       id: qurtubi-jami
       locator: "19:57"
     gradings:
       - grade: sahih
-        by: Ibn Kathir
+        by:
+          en: Ibn Kathir
+          ar: ابن كثير
         source:
           id: ibn-kathir-bidaya
           locator: vol. 1, «إدريس عليه السلام»
         note:
           en: Established in the two Sahihs (كما ثبت في الصحيحين).
+          ar: كما ثبت في الصحيحين.
       - grade: sahih
-        by: al-Qurtubi
+        by:
+          en: al-Qurtubi
+          ar: القرطبي
         source:
           id: qurtubi-jami
           locator: "19:57"
         note:
           en: The sound version is the fourth heaven; the second-heaven version is an error (وهو وهم، والصحيح أنه في السماء الرابعة).
+          ar: وهو وهم، والصحيح أنه في السماء الرابعة.
   - kind: historian
     attribution:
       en: Ibn Kathir, citing Ibn Abbas, al-Dahhak, al-Hasan al-Basri and Mujahid
+      ar: ابن كثير، نقلًا عن ابن عباس والضحّاك والحسن البصري ومجاهد
     text:
       en: "Other views on \"We raised him to a high place\" (19:57): he was raised to the sixth heaven and died there (Ibn Abbas, through al-'Awfi; al-Dahhak said the same); he was raised to Paradise (al-Hasan); he was raised and did not die (Mujahid); he was raised in the lifetime of his father, Yard son of Mahla'il (unnamed others). Ibn Kathir answers that the agreed hadith placing him in the fourth heaven is sounder, and that if Mujahid meant he has not died to this day, that is doubtful."
-      ar: والحديث المتفق عليه، من أنه في السماء الرابعة أصح
+      ar: "أقوالٌ أخرى في رفعه المذكور في الآية (19:57): رُفع إلى السماء السادسة ومات فيها (ابن عباس، من طريق العوفي؛ وقال الضحّاك مثله)؛ رُفع إلى الجنة (الحسن)؛ رُفع ولم يمت (مجاهد)؛ رُفع في حياة أبيه يَرْد بن مهلائيل (آخرون لم يُسمَّوا). ويجيب ابن كثير بأن الحديث المتفق عليه، أنه في السماء الرابعة، أصحّ، وأن مجاهدًا إن أراد أنه لم يمت إلى اليوم ففي ذلك نظر."
+    original: والحديث المتفق عليه، من أنه في السماء الرابعة أصح
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «إدريس عليه السلام»
   - kind: ahl-al-kitab
     attribution:
       en: Ka'b al-Ahbar, asked by Ibn Abbas
+      ar: كعب الأحبار، وقد سأله ابن عباس
     text:
       en: Ibn Abbas asked Ka'b al-Ahbar about Idris. In Ka'b's account, Idris was carried up to the heavens and the angel of death took his soul there; in the version al-Qurtubi gives, in the fourth heaven. Al-Qurtubi also gives an account from Wahb ibn Munabbih in which his soul is raised to Paradise.
-      ar: فقبض روحه هناك
+      ar: "سأل ابنُ عباس كعبَ الأحبار عن إدريس. وفي رواية كعب أن إدريس حُمل إلى السماوات، وقبض ملكُ الموت روحه هناك؛ وفي الرواية التي يذكرها القرطبي: في السماء الرابعة. ويذكر القرطبي أيضًا روايةً عن وهب بن منبّه تُرفع فيها روحه إلى الجنة."
+    original: فقبض روحه هناك
     source:
       id: tabari-tafsir
       locator: "19:56"
     gradings:
       - grade: other
-        by: Ibn Kathir
+        by:
+          en: Ibn Kathir
+          ar: ابن كثير
         source:
           id: ibn-kathir-tafsir
           locator: "19:57"
         note:
           en: From the Isra'iliyyat of Ka'b al-Ahbar, and some of it is objectionable (هذا من أخبار كعب الأحبار الإسرائيليات، وفي بعضه نكارة).
+          ar: هذا من أخبار كعب الأحبار الإسرائيليات، وفي بعضه نكارة.
   - kind: historian
     attribution:
       en: Ibn Kathir, citing Ibn Ishaq
+      ar: ابن كثير، نقلًا عن ابن إسحاق
     text:
       en: Ibn Ishaq says he was the first to write with the pen.
-      ar: وذكر ابن إسحاق أنه أول من خط بالقلم
+      ar: يذكر ابن إسحاق أنه أول من خطّ بالقلم.
+    original: وذكر ابن إسحاق أنه أول من خط بالقلم
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «إدريس عليه السلام»
   - kind: hadith
     attribution:
       en: The hadith of Abu Dharr (in Ibn Hibban's Sahih; cited by al-Tabari and al-Qurtubi)
+      ar: حديث أبي ذر (في صحيح ابن حبان؛ نقله الطبري والقرطبي)
     text:
       en: Akhnukh, who is Idris, was the first to write with the pen. In the version in Ibn Hibban's Sahih, four of the prophets were Syriac, among them Adam, Seth and Akhnukh. Al-Qurtubi cites the same hadith for the thirty scrolls that God revealed to Idris.
-      ar: وهو أول من خط بالقلم
+      ar: يذكر الحديث أن أخنوخ، وهو إدريس، أول من خطّ بالقلم. وفي رواية صحيح ابن حبان أن أربعةً من الأنبياء كانوا سريانيين، منهم آدم وشيث وأخنوخ. ويذكر القرطبي الحديثَ نفسه في الصحف الثلاثين التي أنزلها الله على إدريس.
+    original: وهو أول من خط بالقلم
     source:
       id: tabari-tarikh
       locator: vol. 1, «ذكر الأحداث التي كانت في أيام بني آدم من لدن ملك شيث بن آدم إلى أيام يرد»
   - kind: historian
     attribution:
       en: al-Qurtubi
+      ar: القرطبي
     text:
       en: Idris was the first to write with the pen, the first to sew clothes and wear sewn garments, and the first to look into the science of the stars and arithmetic and their courses. God revealed thirty scrolls to him, as in the hadith of Abu Dharr. Ibn Kathir's tafsir also reports from Ibn Abbas, through Ibn Abi Hatim, that Idris was a tailor.
-      ar: أول من خاط الثياب ولبس المخيط
+      ar: إدريس أول من خطّ بالقلم، وأول من خاط الثياب ولبس المخيط، وأول من نظر في علم النجوم والحساب وسيرها. وأنزل الله عليه ثلاثين صحيفة، كما في حديث أبي ذر. ويروي تفسير ابن كثير أيضًا عن ابن عباس، من طريق ابن أبي حاتم، أن إدريس كان خيّاطًا.
+    original: أول من خاط الثياب ولبس المخيط
     source:
       id: qurtubi-jami
       locator: "19:56"
   - kind: ahl-al-kitab
     attribution:
       en: Al-Tabari, citing "others among the People of the Torah"
+      ar: الطبري، نقلًا عن آخرين من أهل التوراة
     text:
       en: Others among the People of the Torah say that Akhnukh, who is Idris, was born to Yard. He was the first after Adam to write and to fight in the way of God; he cut and sewed clothes; and he was the first to take captives from the descendants of Cain and enslave them. Al-Tabari gives this after Ibn Ishaq's account, without a verdict.
-      ar: وأول من سبى من ولد قابيل، فاسترق منهم
+      ar: يقول آخرون من أهل التوراة إن أخنوخ، وهو إدريس، وُلد ليَرْد. وكان أول مَن كتب بعد آدم وجاهد في سبيل الله، وقطع الثياب وخاطها، وأول من سبى من ولد قابيل فاسترقّهم. ويورد الطبري ذلك بعد رواية ابن إسحاق دون حكم.
+    original: وأول من سبى من ولد قابيل، فاسترق منهم
     source:
       id: tabari-tarikh
       locator: vol. 1, «ذكر الأحداث التي كانت في أيام بني آدم من لدن ملك شيث بن آدم إلى أيام يرد»
   - kind: historian
     attribution:
       en: Ibn al-Athir
+      ar: ابن الأثير
     text:
       en: It is said that thirty scrolls were revealed to Idris; that he was the first to fight in the way of God, to cut and sew clothes, and to take captives from the descendants of Cain son of Adam and enslave them; and the first to look into the sciences of the stars and arithmetic. The Greek sages call him Hermes the Wise.
-      ar: وهو أول من جاهد في سبيل الله وقطع الثياب وخاطها
+      ar: قيل إن الله أنزل على إدريس ثلاثين صحيفة، وإنه أول من جاهد في سبيل الله، وقطع الثياب وخاطها، وسبى من ولد قابيل بن آدم واسترقّهم؛ وأول من نظر في علوم النجوم والحساب. ويسمّيه حكماء اليونان هرمس الحكيم.
+    original: وهو أول من جاهد في سبيل الله وقطع الثياب وخاطها
     source:
       id: ibn-athir-kamil
       locator: vol. 1, «ذكر يرد»
   - kind: ahl-al-kitab
     attribution:
       en: Al-Mawardi, reporting a view among the People of the Book
+      ar: الماوردي، حاكيًا قولًا عند أهل الكتاب
     text:
       en: The People of the Book differ on whether Idris was the first of the prophets or the second. Those who say Seth was not a prophet hold that Idris was the first of the prophets, the first to lay down laws, and the first to take up weapons and fight in the way of God, and that he took captives from the sons of Cain and killed them.
-      ar: وأول من اتخذ السلاح وجاهد في سبيل الله تعالى وسبى وقتل بني قابيل
+      ar: "يختلف أهل الكتاب في إدريس: أهو أول الأنبياء أم ثانيهم. فمن قال إن شيثًا لم يكن نبيًّا جعل إدريس أول الأنبياء، وأول من وضع الشرائع، وأول من اتخذ السلاح وجاهد في سبيل الله، وأنه سبى بني قابيل وقتلهم."
+    original: وأول من اتخذ السلاح وجاهد في سبيل الله تعالى وسبى وقتل بني قابيل
     source:
       id: mawardi-alam
       locator: «في مدة العالم وعدة الرسل»، «أولاد آدم»
   - kind: historian
     attribution:
       en: Ibn Kathir
+      ar: ابن كثير
     text:
       en: "Some people say Idris is the prophet meant in the hadith of Mu'awiya ibn al-Hakam al-Sulami: \"There was a prophet who drew lines; whoever's lines agree with his, that is so.\" Many scholars of tafsir and of al-ahkam claim that he was the first to speak of this, and call him \"Hermes of the Hermeses\"; Ibn Kathir adds that they attribute many falsehoods to him."
-      ar: ويسمونه هرمس الهرامسة، ويكذبون عليه أشياء كثيرة
+      ar: يقول بعض الناس إن إدريس هو النبي المقصود في حديث معاوية بن الحكم السُّلمي عن نبيٍّ كان يخطّ، وأن مَن وافق خطُّه خطَّه أصاب. ويزعم كثيرٌ من أهل التفسير والأحكام أنه أول من تكلّم في ذلك، ويسمّونه «هرمس الهرامسة»؛ ويضيف ابن كثير أنهم يكذبون عليه أشياء كثيرة.
+    original: ويسمونه هرمس الهرامسة، ويكذبون عليه أشياء كثيرة
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «إدريس عليه السلام»
   - kind: historian
     attribution:
       en: Ibn Battuta
+      ar: ابن بطوطة
     text:
       en: They claim that the first Hermes, who lived in Upper Egypt and whom they call Akhnukh, is Idris.
-      ar: هرمس الأول الساكن بصعيد مصر الأعلى ويسمون اخنوخ وهو ادريس عليه السلام
+      ar: يزعم قومٌ أن هرمس الأول، الذي سكن صعيد مصر ويسمّونه أخنوخ، هو إدريس.
+    original: هرمس الأول الساكن بصعيد مصر الأعلى ويسمون اخنوخ وهو ادريس عليه السلام
     source: ibn-battuta-tuhfa
   - kind: historian
     attribution:
       en: al-Qurtubi, quoting al-Zamakhshari
+      ar: القرطبي، نقلًا عن الزمخشري
     text:
       en: "He was called Idris because of his much study (dars) of the Book of God. Al-Zamakhshari calls this derivation \"not correct\": a word formed from dars would have only one of the causes that block declension, so the name's indeclinability shows that it is foreign. Its meaning in that language may be close to this, and so the narrator took it to be derived from dars. His name was Akhnukh."
-      ar: وسمي إدريس لكثرة درسه لكتاب الله تعالى
+      ar: "سُمّي إدريس لكثرة درسه كتابَ الله. ويرى الزمخشري أن هذا الاشتقاق غير صحيح: فالاسم المشتق من الدرس لا يكون فيه إلا علّةٌ واحدة من علل منع الصرف، فدلّ منعه من الصرف على أنه أعجمي. ولعلّ معناه في تلك اللغة قريبٌ من هذا، فظنّه الراوي مشتقًّا من الدرس. وكان اسمه أخنوخ."
+    original: وسمي إدريس لكثرة درسه لكتاب الله تعالى
     source:
       id: qurtubi-jami
       locator: "19:56"
   - kind: historian
     attribution:
       en: al-Qurtubi
+      ar: القرطبي
     text:
       en: Al-Tha'labi, al-Ghaznawi and others say that Idris was an ancestor of Noah. Al-Qurtubi calls this an error, referring to his explanation in the commentary on al-A'raf. He reports the genealogy of the Sira, in which Noah descends from Akhnukh, who is Idris, with "as they claim".
-      ar: "قال الثعلبي والغزنوي وغيرهما : وهو جد نوح وهو خطأ"
+      ar: يقول الثعلبي والغزنوي وغيرهما إن إدريس جدُّ نوح، ويعدّ القرطبي ذلك خطأً، محيلًا إلى بيانه في تفسير سورة الأعراف. ويذكر نسبَ السيرة، الذي ينحدر فيه نوح من أخنوخ، وهو إدريس، مع التنبيه على أنه زعمٌ منهم.
+    original: "قال الثعلبي والغزنوي وغيرهما : وهو جد نوح وهو خطأ"
     source:
       id: qurtubi-jami
       locator: "19:56"
   - kind: historian
     attribution:
       en: Ibn Kathir, citing al-Bukhari
+      ar: ابن كثير، نقلًا عن البخاري
     text:
       en: Al-Bukhari mentions, from Ibn Mas'ud and Ibn Abbas, that Ilyas (Elijah) is Idris.
-      ar: ويذكر عن ابن مسعود، وابن عباس، أن إلياس هو إدريس
+      ar: يذكر البخاري، عن ابن مسعود وابن عباس، أن إلياس هو إدريس.
+    original: ويذكر عن ابن مسعود، وابن عباس، أن إلياس هو إدريس
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «إدريس عليه السلام»
   - kind: ahl-al-kitab
     attribution:
       en: The Torah (Genesis 5)
+      ar: التوراة (التكوين 5)
     text:
       en: All Enoch's days were 365 years. Enoch walked with God, and he was not found, for God took him.
+      ar: كانت كل أيام أخنوخ ثلاثمئةً وخمسًا وستين سنة. وسار أخنوخ مع الله، ولم يوجد لأن الله أخذه. (بترجمة المشروع عن الإنجليزية.)
     source:
       id: bible-web
       locator: Genesis 5:23-24
   - kind: ahl-al-kitab
     attribution:
       en: The New Testament (Hebrews)
+      ar: العهد الجديد (الرسالة إلى العبرانيين)
     text:
       en: By faith Enoch was taken away, so that he wouldn't see death, and he was not found, because God translated him.
+      ar: بالإيمان نُقل أخنوخ لكي لا يرى الموت، ولم يوجد لأن الله نقله. (بترجمة المشروع عن الإنجليزية.)
     source:
       id: bible-web
       locator: Hebrews 11:5
   - kind: ahl-al-kitab
     attribution:
       en: The New Testament (Jude)
+      ar: العهد الجديد (رسالة يهوذا)
     text:
       en: Enoch, the seventh from Adam, prophesied, saying, "Behold, the Lord came with ten thousands of his holy ones, to execute judgment on all, and to convict all the ungodly of all their works of ungodliness which they have done in an ungodly way."
+      ar: "تنبّأ أخنوخ، السابع من آدم، قائلًا: «هوذا قد جاء الرب في ربوات قدّيسيه، ليُجري الدينونة على الجميع، ويدين جميع الفجّار على جميع أعمال فجورهم التي فجروا بها». (بترجمة المشروع عن الإنجليزية.)"
     source:
       id: bible-web
       locator: Jude 1:14-15
   - kind: ahl-al-kitab
     attribution:
       en: The Book of Enoch (1 Enoch)
+      ar: سفر أخنوخ (أخنوخ الأول)
     text:
       en: "A book in Enoch's name, wholly extant only in Ethiopic. In R. H. Charles's translation its parts are: chapters 1-36, with Enoch's journeys through the earth and Sheol and his intercession for the fallen angels, the Watchers; the Parables (37-71); the Book of the Courses of the Heavenly Luminaries (72-82); the Dream-Vision (83-90); and a concluding section (91-105). The Watchers call him \"Enoch the scribe\" and \"scribe of righteousness\" (chapter 12). Its first chapter has the words Jude quotes: \"He cometh with ten thousands of His holy ones to execute judgement upon all\" (1:9). Two other books bear his name: 2 Enoch, which survives only in Old Slavonic, and 3 Enoch, in Hebrew."
+      ar: "كتابٌ باسم أخنوخ، لم يبق كاملًا إلا بالحبشية. وأقسامه في ترجمة ر. ه. تشارلز: الفصول 1–36، وفيها رحلات أخنوخ في الأرض والهاوية (شيول) وشفاعته للملائكة الساقطين، «الحرّاس»؛ والأمثال (37–71)؛ وكتاب مسارات أنوار السماء (72–82)؛ ورؤيا الأحلام (83–90)؛ وقسمٌ ختامي (91–105). ويسمّيه الحرّاس «أخنوخ الكاتب» و«كاتب البرّ» (الفصل 12). وفي فصله الأول الكلمات التي يقتبسها يهوذا: «إنه يأتي في ربوات قدّيسيه ليُجري الدينونة على الجميع» (1:9). (الاقتباسات بترجمة المشروع عن الإنجليزية.) وكتابان آخران يحملان اسمه: أخنوخ الثاني، الباقي بالسلافونية القديمة وحدها، وأخنوخ الثالث، بالعبرية."
     source:
       id: charles-enoch
       locator: index; chapters 1 and 12

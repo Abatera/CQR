@@ -7,19 +7,23 @@ title:
   ar: عيسى
 summary:
   en: "'Isa (Jesus), son of Mary, peace be upon him, born of a virgin, a messenger to the Children of Israel who foretold a messenger after him (61:6). The Quran says he was neither killed nor crucified, but raised by God to Himself (4:157-158)."
+  ar: عيسى ابن مريم عليه السلام، وُلد من أمٍّ عذراء، رسولٌ إلى بني إسرائيل بشّر برسولٍ بعده (61:6). ويذكر القرآن أنه لم يُقتل ولم يُصلب، بل إن الله رفعه إليه (4:157-158).
 when:
   from: -5
   to: 29
   certainty: estimated
   basis:
     en: Historians place his birth a few years before the Common Era (a source is still to be added), and the Roman historian Tacitus places the end of his public life in the reign of Tiberius, under Pontius Pilatus. Tradition gives his age when he was raised as 33 (Sa'id ibn al-Musayyib) or 34 (al-Hasan al-Basri), both reported by Ibn Kathir, or 32 and a half (Ibn Sa'd).
+    ar: يضع المؤرّخون مولده قبل بداية التقويم الميلادي بسنواتٍ قليلة (وما يزال المصدر ينتظر الإضافة)، ويضع المؤرّخ الروماني تاسيتوس نهاية حياته العلنية في عهد تيبيريوس، في ولاية بونتيوس بيلاطس. ويجعل التراث عمرَه حين رُفع ثلاثًا وثلاثين سنة (سعيد بن المسيّب) أو أربعًا وثلاثين (الحسن البصري)، وكلاهما عند ابن كثير، أو اثنتين وثلاثين ونصفًا (ابن سعد).
 place:
   status: proposed
   description:
     en: The Quran says Mary withdrew with him to a far place (19:22) and names no town. Ibn Kathir says he was born at Bethlehem, near Bayt al-Maqdis, and reports that he was besieged in a house in Bayt al-Maqdis before he was raised. The points are approximate.
+    ar: يذكر القرآن أن مريم اعتزلت به في مكانٍ بعيد (19:22)، ولا يسمّي بلدة. ويقول ابن كثير إنه وُلد في بيت لحم، قرب بيت المقدس، ويروي أنه حوصر في بيتٍ ببيت المقدس قبل أن يُرفع. والنقطتان تقريبيتان.
   opinions:
     - name:
         en: Bethlehem, his birthplace (Ibn Kathir)
+        ar: بيت لحم، مولده (ابن كثير)
       geometry:
         type: Point
         coordinates: [ 35.2025, 31.7054 ]
@@ -28,6 +32,7 @@ place:
           locator: vol. 2, «ذكر منشأ عيسى بن مريم عليهما السلام»
     - name:
         en: Bayt al-Maqdis, where he was raised (al-Hasan and Ibn Ishaq, cited by Ibn Kathir)
+        ar: بيت المقدس، حيث رُفع (الحسن وابن إسحاق، فيما نقله ابن كثير)
       geometry:
         type: Point
         coordinates: [ 35.2296, 31.7767 ]
@@ -39,55 +44,70 @@ tradition:
   - kind: historian
     attribution:
       en: Ibn Kathir
+      ar: ابن كثير
     text:
       en: He was born at Bethlehem, near Bayt al-Maqdis. Wahb ibn Munabbih's report that he was born in Egypt is not sound.
-      ar: قد تقدم أنه ولد ببيت لحم، قريبا من بيت المقدس
+      ar: وُلد في بيت لحم، قرب بيت المقدس. ورواية وهب بن منبّه أنه وُلد في مصر لا تصحّ.
+    original: قد تقدم أنه ولد ببيت لحم، قريبا من بيت المقدس
     source:
       id: ibn-kathir-bidaya
       locator: vol. 2, «ذكر منشأ عيسى بن مريم عليهما السلام»
   - kind: historian
     attribution:
       en: Ibn Kathir, citing Sa'id ibn al-Musayyib and al-Hasan al-Basri
+      ar: ابن كثير، نقلًا عن سعيد بن المسيّب والحسن البصري
     text:
       en: He was raised at the age of 33 (Sa'id ibn al-Musayyib) or 34 (al-Hasan). A hadith from Aisha that he lived 120 years Ibn Kathir calls strange (gharib).
-      ar: رفع عيسى وهو ابن ثلاث وثلاثين سنة
+      ar: رُفع ابنَ ثلاثٍ وثلاثين سنة (سعيد بن المسيّب) أو أربعٍ وثلاثين (الحسن). وحديثٌ عن عائشة أنه عاش مئةً وعشرين سنة يعدّه ابن كثير غريبًا.
+    original: رفع عيسى وهو ابن ثلاث وثلاثين سنة
     source:
       id: ibn-kathir-bidaya
       locator: vol. 2, «ذكر رفع عيسى عليه السلام إلى السماء»
   - kind: athar
     attribution:
       en: Ibn Abbas, through Hisham ibn Muhammad al-Kalbi, his father, and Abu Salih (in Ibn Sa'd)
+      ar: ابن عباس، من طريق هشام بن محمد الكلبي، عن أبيه، عن أبي صالح (عند ابن سعد)
     text:
       en: 569 years passed from the birth of Jesus to the Prophet ﷺ, 434 of them without a messenger. Jesus was raised at 32 and a half, after a prophethood of thirty months.
-      ar: وكان بين ميلاد عيسى والنبي (صلى الله عليه وسلم) خمسمائة سنة وتسع وستون سنة
+      ar: مضت من مولد عيسى إلى النبي ﷺ خمسمئةٍ وتسعٌ وستون سنة، منها أربعمئةٍ وأربعٌ وثلاثون بلا رسول. ورُفع عيسى ابنَ اثنتين وثلاثين سنة ونصف، بعد نبوّةٍ دامت ثلاثين شهرًا.
+    original: وكان بين ميلاد عيسى والنبي (صلى الله عليه وسلم) خمسمائة سنة وتسع وستون سنة
     source:
       id: ibn-asakir-dimashq
       locator: 1/32, quoting Ibn Sa'd, al-Tabaqat 1/53
     gradings:
       - grade: very-weak
-        by: Ibn Hajar, on the narrator Muhammad ibn al-Sa'ib al-Kalbi
+        by:
+          en: Ibn Hajar, on the narrator Muhammad ibn al-Sa'ib al-Kalbi
+          ar: ابن حجر، في الراوي محمد بن السائب الكلبي
         source: ibn-hajar-taqrib
         note:
           en: Al-Kalbi is 'accused of lying' (muttaham bi-l-kadhib). A chain through him is not relied on.
+          ar: الكلبي «متّهمٌ بالكذب»، ولا يُعتمد على إسنادٍ يمرّ به.
   - kind: athar
     attribution:
       en: Salman al-Farisi (Companion)
+      ar: سلمان الفارسي (صحابي)
     text:
       en: The interval (fatra) between Jesus and Muhammad ﷺ was six hundred years.
+      ar: يذكر سلمان الفارسي أن الفترة بين عيسى ومحمد ﷺ كانت ستمئة سنة.
     source:
       id: bukhari-sahih
       locator: no. 3948
     gradings:
       - grade: sahih
-        by: al-Bukhari
+        by:
+          en: al-Bukhari
+          ar: البخاري
         source:
           id: bukhari-sahih
           locator: no. 3948
         note:
           en: Included in his Sahih.
+          ar: أخرجه في صحيحه.
 history:
   - claim:
       en: The Roman historian Tacitus (early 2nd century CE) writes that Christus "had undergone the death penalty in the reign of Tiberius, by sentence of the procurator Pontius Pilatus". This is the Roman account; the Quran states that he was neither killed nor crucified (4:157-158).
+      ar: يكتب المؤرّخ الروماني تاسيتوس (أوائل القرن الثاني الميلادي) أن المسيح «نُفّذ فيه حكم الإعدام في عهد تيبيريوس، بحكمٍ من الوالي بونتيوس بيلاطس» (العبارة مترجمةٌ عن الإنجليزية). هذه هي الرواية الرومانية؛ أما القرآن فيقرّر أنه لم يُقتل ولم يُصلب (4:157-158).
     status: established
     sources:
       - { id: tacitus-annals, locator: "15.44" }

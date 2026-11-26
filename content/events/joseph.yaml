@@ -7,18 +7,21 @@ title:
   ar: يوسف
 summary:
   en: Yusuf (Joseph), peace be upon him, sold into Egypt by his brothers, who rose to govern its stores and brought his family there. His story fills a whole surah (12).
+  ar: يوسف عليه السلام، باعه إخوته فصار إلى مصر، ثم ارتقى حتى تولّى خزائنها وأتى بأهله إليها. وقصته تملأ سورةً كاملة (12).
 when:
   from: -1750
   to: -1641
   certainty: traditional
   basis:
     en: Placed a generation after Jacob, with the 110-year life given by the People of the Book and Ibn Jarir (Genesis 50:26). Al-Hasan al-Basri gives 120 years. Both are reported by Ibn Kathir.
+    ar: موضوعٌ بعد يعقوب بجيل، بعمرٍ قدره مئةٌ وعشر سنين كما عند أهل الكتاب وابن جرير (التكوين 50:26). ويجعله الحسن البصري مئةً وعشرين سنة. وكلا القولين عند ابن كثير.
 place:
   status: known
   names:
     - { name: Misr, type: ancient, language: Arabic }
   description:
     en: The Quran names Egypt (Misr) as the setting of Joseph's later life (12:21, 12:99). The outline is a rough sketch of the Nile valley and delta.
+    ar: يسمّي القرآن مصرَ موضعًا لحياة يوسف اللاحقة (12:21، 12:99). والحدود المرسومة تخطيطٌ تقريبي لوادي النيل ودلتاه.
   geometry:
     type: Polygon
     coordinates:
@@ -37,9 +40,11 @@ tradition:
   - kind: ahl-al-kitab
     attribution:
       en: The People of the Book and Ibn Jarir; al-Hasan al-Basri. Reported by Ibn Kathir
+      ar: أهل الكتاب وابن جرير؛ والحسن البصري. نقله ابن كثير
     text:
       en: Joseph died aged 110, according to the People of the Book and Ibn Jarir; al-Hasan al-Basri said 120. He was embalmed and kept in Egypt until Moses took him out to be buried with his forefathers.
-      ar: فمات وهو ابن مائة سنة وعشر سنين
+      ar: "توفّي يوسف ابنَ مئةٍ وعشر سنين، على قول أهل الكتاب وابن جرير، وقال الحسن البصري: مئةٍ وعشرين. وحُنِّط وبقي في مصر حتى أخرجه موسى ليُدفن مع آبائه."
+    original: فمات وهو ابن مائة سنة وعشر سنين
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «ما وقع من الأمور العجيبة في حياة إسرائيل»

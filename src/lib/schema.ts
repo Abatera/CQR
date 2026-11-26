@@ -173,15 +173,27 @@ export const Place = z
     }
   });
 
+/**
+ * The wording of a cited work, quoted verbatim as it was read there (usually Arabic). It is kept apart
+ * from `text`, which is the project's own summary or translation, in English and Arabic.
+ */
+export const OriginalWording = z.string().trim().min(1);
+
 export const TafsirItem = z.strictObject({
+  /** What the commentator says, in the project's words. */
   text: LangText,
+  /** The commentator's own words, quoted from the cited work. */
+  original: OriginalWording.optional(),
   source: SourceRef.optional(),
 });
 
 export const Grading = z.strictObject({
   grade: z.enum(GRADES),
   /** The scholar who gave the grading, e.g. "al-Hakim", "al-Dhahabi", "al-Albani", "Ibn Kathir". */
-  by: z.string().trim().min(1, 'Name the scholar who gave the grading.'),
+  by: z.strictObject({
+    en: z.string().trim().min(1, 'Name the scholar who gave the grading.'),
+    ar: z.string().trim().min(1).optional(),
+  }),
   source: SourceRef.optional(),
   /** The grading in the scholar's words, or a short explanation, e.g. "on the condition of Muslim". */
   note: LangText.optional(),
@@ -192,8 +204,10 @@ export const TraditionItem = z.strictObject({
   kind: z.enum(TRADITION_KINDS),
   /** Who it is attributed to, e.g. "The Prophet ﷺ, narrated by Abu Umama al-Bahili". */
   attribution: LangText,
-  /** What the report says. Arabic, if given, is quoted from the cited source. */
+  /** What the report says, in the project's words (a summary or translation, not the source's wording). */
   text: LangText,
+  /** The report's own words, quoted from the cited work. Never written from memory. */
+  original: OriginalWording.optional(),
   source: SourceRef.optional(),
   gradings: z.array(Grading).optional(),
 });

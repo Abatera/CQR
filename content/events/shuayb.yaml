@@ -7,19 +7,23 @@ title:
   ar: شعيب
 summary:
   en: Shu'ayb, peace be upon him, sent to Madyan, a people who gave short measure and weight, and to the people of the Thicket (al-Ayka), whom Ibn Kathir holds to be the same people.
+  ar: شعيب عليه السلام، أُرسل إلى مدين، وهم قومٌ كانوا يبخسون الناس في الكيل والوزن، وإلى أصحاب الأيكة، الذين يرى ابن كثير أنهم القوم أنفسهم.
 when:
   from: -1600
   to: -1481
   certainty: unknown
   basis:
     en: Ibn 'Asakir reports from Ibn Abbas that Shu'ayb came after Joseph, and in one view of the scholars Madyan was destroyed before Moses (both reported by Ibn Kathir). Whether he was the old man of Madyan whose daughter Moses married is disputed. The span only marks his place between Joseph and Moses.
+    ar: يروي ابن عساكر عن ابن عباس أن شعيبًا جاء بعد يوسف، وفي قولٍ لبعض العلماء أن مدين أُهلكت قبل موسى (وكلاهما عند ابن كثير). واختُلف في أنه شيخ مدين الذي تزوّج موسى ابنته. ولا تدلّ المدّة المرسومة إلا على موضعه بين يوسف وموسى.
 place:
   status: proposed
   description:
     en: Ibn Kathir places Madyan in the land of Ma'an, near the lake of the people of Lot (the Dead Sea). The point marks Ma'an and is approximate.
+    ar: يضع ابن كثير مدين في أرض مَعان، قرب بحيرة قوم لوط (البحر الميت). والنقطة تعيّن مَعان، وهي تقريبية.
   opinions:
     - name:
         en: Madyan, in the land of Ma'an (Ibn Kathir)
+        ar: مدين، في أرض مَعان (ابن كثير)
       geometry:
         type: Point
         coordinates: [ 35.73, 30.19 ]
@@ -31,18 +35,22 @@ tradition:
   - kind: historian
     attribution:
       en: Ibn Kathir, citing Ibn 'Asakir from Ibn Abbas
+      ar: ابن كثير، نقلًا عن ابن عساكر عن ابن عباس
     text:
       en: Shu'ayb came after Joseph. Madyan lay in the land of Ma'an, near the lake of Lot's people.
-      ar: أن شعيبًا عليه السلام كان بعد يوسف
+      ar: جاء شعيب بعد يوسف. وكانت مدين في أرض مَعان، قرب بحيرة قوم لوط.
+    original: أن شعيبًا عليه السلام كان بعد يوسف
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة مدين قوم شعيب عليه السلام»
   - kind: historian
     attribution:
       en: Ibn Kathir
+      ar: ابن كثير
     text:
       en: Many hold that the old man of Madyan whose daughter Moses married (28:23-28) was Shu'ayb, and a hadith says so, but its chain is questioned. Al-Hasan al-Basri said he was the master of the water, not the prophet of Madyan. Ibn Kathir lists other names and gives no ruling.
-      ar: فقيل هو شعيب عليه السلام، وهذا هو المشهور عند كثيرين
+      ar: يرى كثيرون أن شيخ مدين الذي تزوّج موسى ابنته (28:23-28) هو شعيب، وفي ذلك حديث، لكن إسناده متكلَّمٌ فيه. وقال الحسن البصري إنه كان صاحبَ الماء، لا نبيَّ مدين. ويذكر ابن كثير أسماءً أخرى ولا يرجّح.
+    original: فقيل هو شعيب عليه السلام، وهذا هو المشهور عند كثيرين
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة موسى الكليم»

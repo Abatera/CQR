@@ -225,18 +225,24 @@
     {#each m.tafsir as t, i (i)}
       <div class="card">
         <div class="card-head">Commentary {i + 1} <RowTools bind:list={m.tafsir} index={i} label="commentary" /></div>
-        <LangField label="What it says" bind:value={t.text} path="tafsir[{i}].text" multiline required />
+        <LangField label="What it says (the project's words)" bind:value={t.text} path="tafsir[{i}].text" multiline required />
+        <label class="field">
+          <span class="label">In the commentator's own words (optional)</span>
+          <textarea rows="2" bind:value={t.original} dir="rtl" lang="ar" placeholder="نص المصدر بلفظه"></textarea>
+          <span class="hint">Copied exactly from the cited work, as it was read there. Never from memory.</span>
+        </label>
         <SourceRefs bind:value={t.source} path="tafsir[{i}].source" label="Commentator and work" max={1} />
       </div>
     {/each}
-    <button type="button" class="small" onclick={() => m.tafsir.push({ text: { en: '', ar: '' }, source: [] })}>+ Add a commentary</button>
+    <button type="button" class="small" onclick={() => m.tafsir.push({ text: { en: '', ar: '' }, original: '', source: [] })}>+ Add a commentary</button>
   </fieldset>
 
   <fieldset>
     <legend>Tradition</legend>
     <p class="hint">
       Hadith, reports from the Companions and Successors, and the classical historians. Give who it is attributed to, the work it is
-      found in, and for a hadith or report its grading with the scholar who gave it. Arabic, if given, must be quoted from the cited work.
+      found in, and for a hadith or report its grading with the scholar who gave it. "What it says" is the project's own summary or
+      translation, in English and Arabic; the report's own wording goes in its own field, quoted from the cited work.
     </p>
     {#each m.tradition as t, i (i)}
       <div class="card">
@@ -248,7 +254,12 @@
           <RowTools bind:list={m.tradition} index={i} label="report" />
         </div>
         <LangField label="Attributed to" bind:value={t.attribution} path="tradition[{i}].attribution" required hint="e.g. The Prophet ﷺ, narrated by Abu Umama al-Bahili; or Ibn Kathir" />
-        <LangField label="What it says" bind:value={t.text} path="tradition[{i}].text" multiline required />
+        <LangField label="What it says (the project's words)" bind:value={t.text} path="tradition[{i}].text" multiline required />
+        <label class="field">
+          <span class="label">In the report's own words (optional)</span>
+          <textarea rows="2" bind:value={t.original} dir="rtl" lang="ar" placeholder="نص الرواية بلفظها"></textarea>
+          <span class="hint">Copied exactly from the cited work, as it was read there. Never from memory: hadith wording is never written by hand.</span>
+        </label>
         <SourceRefs bind:value={t.source} path="tradition[{i}].source" label="Found in (work and place in it)" max={1} />
         <div class="subhead">Gradings</div>
         {#each t.gradings as g, j (j)}
@@ -256,21 +267,21 @@
             <select bind:value={g.grade} aria-label="Grade">
               {#each GRADES as gr (gr)}<option value={gr}>{GRADE_LABEL[gr]}</option>{/each}
             </select>
-            <input type="text" bind:value={g.by} placeholder="Graded by, e.g. al-Albani" aria-label="Graded by" />
             <RowTools bind:list={t.gradings} index={j} label="grading" />
           </div>
+          <LangField label="Graded by" bind:value={g.by} path="tradition[{i}].gradings[{j}].by" required hint="e.g. al-Albani / الألباني" />
           <LangField label="The grading in the scholar's words, or a note" bind:value={g.note} path="tradition[{i}].gradings[{j}].note" />
           <SourceRefs bind:value={g.source} path="tradition[{i}].gradings[{j}].source" label="Where the grading is given" max={1} />
           <FieldError path="tradition[{i}].gradings[{j}]" />
         {/each}
         <FieldError path="tradition[{i}].gradings" exact />
-        <button type="button" class="small" onclick={() => t.gradings.push({ grade: 'sahih', by: '', source: [], note: { en: '', ar: '' } })}>+ Add a grading</button>
+        <button type="button" class="small" onclick={() => t.gradings.push({ grade: 'sahih', by: { en: '', ar: '' }, source: [], note: { en: '', ar: '' } })}>+ Add a grading</button>
       </div>
     {/each}
     <button
       type="button"
       class="small"
-      onclick={() => m.tradition.push({ kind: 'hadith', attribution: { en: '', ar: '' }, text: { en: '', ar: '' }, source: [], gradings: [] })}
+      onclick={() => m.tradition.push({ kind: 'hadith', attribution: { en: '', ar: '' }, text: { en: '', ar: '' }, original: '', source: [], gradings: [] })}
       >+ Add a report</button
     >
   </fieldset>
@@ -395,8 +406,5 @@
     gap: 6px;
     align-items: center;
     margin-top: 6px;
-  }
-  .grading input {
-    flex: 1;
   }
 </style>

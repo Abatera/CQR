@@ -54,6 +54,7 @@
 │   └── events/*.yaml
 ├── data/third-party/quran/   # Tanzil text, unmodified, with SOURCE.json checksums and a README
 ├── public/fonts/amiri/       # Amiri and Amiri Quran, with OFL.txt
+├── public/fonts/noto-naskh-arabic/  # Noto Naskh Arabic (variable), with OFL.txt
 ├── scripts/                  # validation, content read/write, Quran download and checks, Vite plugin
 ├── src/
 │   ├── main.ts, App.svelte, About.svelte, app.css, config.ts

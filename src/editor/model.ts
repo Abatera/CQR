@@ -59,13 +59,14 @@ export interface EventForm {
     opinions: { name: LangForm; geometry: Geometry | undefined; sources: RefForm[] }[];
   };
   quran: string[];
-  tafsir: { text: LangForm; source: RefForm[] }[];
+  tafsir: { text: LangForm; original: string; source: RefForm[] }[];
   tradition: {
     kind: TraditionItem['kind'];
     attribution: LangForm;
     text: LangForm;
+    original: string;
     source: RefForm[];
-    gradings: { grade: Grading['grade']; by: string; source: RefForm[]; note: LangForm }[];
+    gradings: { grade: Grading['grade']; by: LangForm; source: RefForm[]; note: LangForm }[];
   }[];
   history: { claim: LangForm; status: 'established' | 'debated'; sources: RefForm[] }[];
   connection: { text: LangForm; confidence: '' | 'low' | 'medium' | 'high' };
@@ -103,13 +104,14 @@ export function eventToForm(e?: CqrEvent): EventForm {
       })),
     },
     quran: [...(e?.quran ?? [])],
-    tafsir: (e?.tafsir ?? []).map((t) => ({ text: lang(t.text), source: t.source ? refs([t.source]) : [] })),
+    tafsir: (e?.tafsir ?? []).map((t) => ({ text: lang(t.text), original: t.original ?? '', source: t.source ? refs([t.source]) : [] })),
     tradition: (e?.tradition ?? []).map((t) => ({
       kind: t.kind,
       attribution: lang(t.attribution),
       text: lang(t.text),
+      original: t.original ?? '',
       source: t.source ? refs([t.source]) : [],
-      gradings: (t.gradings ?? []).map((g) => ({ grade: g.grade, by: g.by, source: g.source ? refs([g.source]) : [], note: lang(g.note) })),
+      gradings: (t.gradings ?? []).map((g) => ({ grade: g.grade, by: lang(g.by), source: g.source ? refs([g.source]) : [], note: lang(g.note) })),
     })),
     history: (e?.history ?? []).map((h) => ({ claim: lang(h.claim), status: h.status, sources: refs(h.sources) })),
     connection: { text: lang(e?.connection?.text), confidence: e?.connection?.confidence ?? '' },
@@ -148,11 +150,12 @@ export function eventFromForm(f: EventForm): unknown {
           : undefined,
     },
     quran: f.quran.map((q) => q.trim()),
-    tafsir: f.tafsir.map((t) => ({ text: t.text, source: outRefs(t.source)[0] })),
+    tafsir: f.tafsir.map((t) => ({ text: t.text, original: t.original, source: outRefs(t.source)[0] })),
     tradition: f.tradition.map((t) => ({
       kind: t.kind,
       attribution: t.attribution,
       text: t.text,
+      original: t.original,
       source: outRefs(t.source)[0],
       gradings: t.gradings.map((g) => ({ grade: g.grade, by: g.by, source: outRefs(g.source)[0], note: g.note })),
     })),

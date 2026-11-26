@@ -7,86 +7,108 @@ title:
   ar: موسى
 summary:
   en: Musa (Moses), peace be upon him, the prophet most often named in the Quran, sent with Aaron to Pharaoh, who led the Children of Israel out of Egypt and received the Torah.
+  ar: موسى عليه السلام، أكثر الأنبياء ذكرًا في القرآن، أُرسل مع هارون إلى فرعون، وأخرج بني إسرائيل من مصر، وأُوتي التوراة.
 when:
   from: -1526
   to: -1406
   certainty: traditional
   basis:
     en: The span takes the 120-year life reported by Ibn Kathir and sets the Exodus at about 1446 BCE, 480 years before the fourth year of Solomon (1 Kings 6:1). It is a traditional reckoning; history has no independent date for Moses.
+    ar: تأخذ المدّةُ بعمرٍ قدره مئةٌ وعشرون سنة كما نقله ابن كثير، وتجعل الخروج نحو 1446 ق.م، أي قبل السنة الرابعة من ملك سليمان بأربعمئةٍ وثمانين سنة (الملوك الأول 6:1). وهو حسابٌ تقليدي؛ وليس للتاريخ تأريخٌ مستقلٌّ لموسى.
   alternatives:
     - from: -1960
       to: -1841
       basis:
         en: 1,900 years before Jesus, in the report of Ibn Sa'd through al-Kalbi. The chain is very weak (see Tradition).
+        ar: قبل عيسى بألفٍ وتسعمئة سنة، في رواية ابن سعد من طريق الكلبي. والإسناد ضعيفٌ جدًّا (انظر المرويّات).
       sources:
         - { id: ibn-asakir-dimashq, locator: 1/32 }
     - from: -1760
       to: -1641
       basis:
         en: 1,700 years before Jesus, as al-Qurtubi quotes the same report from Ibn Sa'd.
+        ar: قبل عيسى بألفٍ وسبعمئة سنة، كما ينقل القرطبي الروايةَ نفسها عن ابن سعد.
       sources:
         - { id: qurtubi-jami, locator: 6/121 }
 place:
   status: unknown
   description:
     en: The Quran names Egypt, Madyan and the Mount (al-Tur), but no site that can be identified with certainty.
+    ar: يسمّي القرآن مصرَ ومدين والطور، ولا يسمّي موضعًا يمكن تعيينه بيقين.
 quran: [ "20:9-36", "26:10-68", "28:7-29" ]
 tradition:
   - kind: ahl-al-kitab
     attribution:
       en: The People of the Book and others, as reported by Ibn Kathir
+      ar: أهل الكتاب وغيرهم، فيما نقله ابن كثير
     text:
       en: Moses died aged 120.
-      ar: وذكر أهل الكتاب وغيرهم أنه مات وعمره مائة وعشرون سنة
+      ar: مات موسى ابنَ مئةٍ وعشرين سنة.
+    original: وذكر أهل الكتاب وغيرهم أنه مات وعمره مائة وعشرون سنة
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «ذكر وفاته عليه السلام»
   - kind: hadith
     attribution:
       en: The Prophet ﷺ, narrated by Abu Hurayra
+      ar: النبي ﷺ، من رواية أبي هريرة
     text:
       en: If I were there, I would show you his grave, by the red sandhill.
+      ar: يذكر الحديث أن قبر موسى عند كثيبٍ أحمر، وأن النبي ﷺ لو كان هناك لأراهم إياه.
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «ذكر وفاته عليه السلام»
     gradings:
       - grade: sahih
-        by: al-Bukhari and Muslim
+        by:
+          en: al-Bukhari and Muslim
+          ar: البخاري ومسلم
         source:
           id: ibn-kathir-bidaya
           locator: vol. 1, «ذكر وفاته عليه السلام»
         note:
           en: In both Sahihs, as cited by Ibn Kathir.
+          ar: في الصحيحين، كما نقله ابن كثير.
   - kind: historian
     attribution:
       en: Ibn Sa'd, from al-Waqidi, from "more than one scholar"
+      ar: ابن سعد، عن الواقدي، عن غير واحدٍ من أهل العلم
     text:
       en: Between Abraham and Moses were ten qurun, a qarn being a hundred years. The same report gives ten qurun between Adam and Noah and between Noah and Abraham.
-      ar: وبين إبراهيم وموسى بن عمران عشرة قرون القرن مائة سنة
+      ar: بين إبراهيم وموسى عشرة قرون، والقرن مئة سنة. وتجعل الروايةُ نفسها بين آدم ونوح عشرة قرون، وبين نوح وإبراهيم عشرة قرون.
+    original: وبين إبراهيم وموسى بن عمران عشرة قرون القرن مائة سنة
     source:
       id: ibn-asakir-dimashq
       locator: 1/32, quoting Ibn Sa'd, al-Tabaqat 1/53
     gradings:
       - grade: very-weak
-        by: Ibn Hajar, on the narrator al-Waqidi
+        by:
+          en: Ibn Hajar, on the narrator al-Waqidi
+          ar: ابن حجر، في الراوي الواقدي
         source: ibn-hajar-taqrib
         note:
           en: Al-Waqidi is 'abandoned, despite his breadth of knowledge' (matruk ma'a si'at 'ilmih), and the report names no chain to a Companion.
+          ar: الواقدي «متروكٌ مع سعة علمه»، والرواية لا تسمّي إسنادًا إلى صحابي.
   - kind: athar
     attribution:
       en: Ibn Abbas, through Hisham ibn Muhammad al-Kalbi, his father, and Abu Salih (in Ibn Sa'd)
+      ar: ابن عباس، من طريق هشام بن محمد الكلبي، عن أبيه، عن أبي صالح (عند ابن سعد)
     text:
       en: Between Moses son of 'Imran and Jesus son of Mary were 1,900 years, with no interval without prophets between them. Al-Qurtubi quotes the same report from Ibn Sa'd as 1,700 years.
-      ar: كان بين موسى بن عمران وعيسى بن مريم ألف سنة وتسعمائة سنة ولم يكن بينهما فترة
+      ar: بين موسى بن عمران وعيسى ابن مريم ألفٌ وتسعمئة سنة، لم تخلُ من الأنبياء. وينقل القرطبي الروايةَ نفسها عن ابن سعد بألفٍ وسبعمئة سنة.
+    original: كان بين موسى بن عمران وعيسى بن مريم ألف سنة وتسعمائة سنة ولم يكن بينهما فترة
     source:
       id: ibn-asakir-dimashq
       locator: 1/32, quoting Ibn Sa'd, al-Tabaqat 1/53
     gradings:
       - grade: very-weak
-        by: Ibn Hajar, on the narrator Muhammad ibn al-Sa'ib al-Kalbi
+        by:
+          en: Ibn Hajar, on the narrator Muhammad ibn al-Sa'ib al-Kalbi
+          ar: ابن حجر، في الراوي محمد بن السائب الكلبي
         source: ibn-hajar-taqrib
         note:
           en: Al-Kalbi is 'accused of lying' (muttaham bi-l-kadhib). A chain through him is not relied on.
+          ar: الكلبي «متّهمٌ بالكذب»، ولا يُعتمد على إسنادٍ يمرّ به.
 related:
   - { id: aaron, type: parallel }
   - { id: shuayb, type: context }

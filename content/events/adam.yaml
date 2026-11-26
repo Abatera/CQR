@@ -7,17 +7,20 @@ title:
   ar: آدم
 summary:
   en: Adam, peace be upon him, the first human and, according to hadith, a prophet to whom God spoke. The Quran tells of his creation, the angels' prostration, the slip in the Garden and his descent to earth.
+  ar: آدم عليه السلام، أول البشر، وهو بحسب الحديث نبيٌّ كلّمه الله. ويقصّ القرآن خبر خلقه، وسجود الملائكة له، وزلّته في الجنة، وهبوطه إلى الأرض.
 when:
   from: -5435
   to: -4476
   certainty: reckoned
   basis:
     en: "Counted back from Noah's death, about 3000 BCE (see Noah): Noah was born about 4350 BCE, 126 years after Adam's death (Ibn Jarir), so Adam died about 4476 BCE. The span is Adam's life of 960 years: the thousand years written for him, less the forty he gave to David, in al-Tirmidhi's version of the hadith."
+    ar: "محسوبٌ رجوعًا من موت نوح نحو 3000 ق.م (انظر نوح): وُلد نوح نحو 4350 ق.م، بعد وفاة آدم بمئةٍ وستٍّ وعشرين سنة (ابن جرير)، فتكون وفاة آدم نحو 4476 ق.م. والمدّة هي عمر آدم البالغ تسعمئةٍ وستين سنة: الألفُ التي كُتبت له، ناقصًا الأربعين التي وهبها لداوود، في رواية الترمذي للحديث."
   alternatives:
     - from: -5475
       to: -4476
       basis:
         en: A full thousand years, as in Ahmad's version of the hadith, in which God completed Adam's thousand; this is Ibn Kathir's view.
+        ar: ألف سنة كاملة، كما في رواية أحمد للحديث، التي أتمّ الله فيها لآدم ألفه؛ وهو قول ابن كثير.
       sources:
         - id: ibn-kathir-bidaya
           locator: vol. 2, «ذكر كمية حياته وكيفية وفاته عليه السلام»
@@ -25,157 +28,205 @@ when:
       to: -4476
       basis:
         en: 930 years, the Torah's figure (Genesis 5:5).
+        ar: تسعمئةٍ وثلاثون سنة، وهو رقم التوراة (التكوين 5:5).
       sources:
         - { id: bible-web, locator: Genesis 5:5 }
     - from: -5150
       to: -4651
       basis:
         en: "Ibn Sa'd's full chain of intervals, counted back from the Prophet's birth (about 570 CE): 569 years to Jesus' birth, 1,900 to Moses, then ten centuries each to Abraham, Noah and Adam. These intervals rest on weak chains (see Tradition)."
+        ar: "سلسلة الفترات الكاملة عند ابن سعد، محسوبةً رجوعًا من مولد النبي ﷺ (نحو 570 م): خمسمئةٍ وتسعٌ وستون سنة إلى مولد عيسى، وألفٌ وتسعمئة إلى موسى، ثم عشرة قرون لكلٍّ من إبراهيم ونوح وآدم. وهذه الفترات قائمةٌ على أسانيد ضعيفة (انظر المرويّات)."
       sources:
         - { id: ibn-asakir-dimashq, locator: 1/32 }
 place:
   status: unknown
   description:
     en: The Quran says Adam was sent down to earth but names no earthly place. Later reports differ on where he lived and was buried (see Tradition).
+    ar: يذكر القرآن أن آدم أُهبط إلى الأرض، ولا يسمّي موضعًا منها. وتختلف الروايات اللاحقة في موضع سكناه ودفنه (انظر المرويّات).
 quran: [ "2:30-37", "7:19-25", "20:115-122" ]
 tradition:
   - kind: hadith
     attribution:
       en: The Prophet ﷺ, narrated by Abu Umama al-Bahili
+      ar: النبي ﷺ، من رواية أبي أمامة الباهلي
     text:
       en: A man asked whether Adam was a prophet. He answered yes, one to whom God spoke. Asked how long was between Adam and Noah, he said ten qurun; asked about Noah and Abraham, he said ten qurun; asked how many the messengers were, he said 315. Also narrated by Ibn Hibban (al-Sahih 14/69) and al-Tabarani (al-Mu'jam al-Kabir 8/118). Scholars differ on whether a qarn is a hundred years or a generation.
+      ar: "يذكر الحديث أن رجلًا سأل عن آدم أكان نبيًّا، فأُجيب بأنه كان نبيًّا كلّمه الله. ثم سأل عمّا بين آدم ونوح، فكان الجواب عشرة قرون، وعمّا بين نوح وإبراهيم، فكان الجواب عشرة قرون، وعن عدد الرسل، فكان الجواب ثلاثمئةٍ وخمسة عشر. ورواه أيضًا ابن حبان (الصحيح 14/69) والطبراني (المعجم الكبير 8/118). ويختلف العلماء في القرن: أهو مئة سنة أم جيل."
     source:
       id: hakim-mustadrak
       locator: 2/262 and 2/288
     gradings:
       - grade: sahih
-        by: al-Hakim
+        by:
+          en: al-Hakim
+          ar: الحاكم
         source:
           id: hakim-mustadrak
           locator: 2/262
         note:
           en: Sound on the condition of Muslim, though Muslim did not include it; al-Dhahabi agreed.
+          ar: صحيحٌ على شرط مسلم ولم يخرّجه؛ ووافقه الذهبي.
       - grade: sahih
-        by: Ibn Kathir
+        by:
+          en: Ibn Kathir
+          ar: ابن كثير
         source:
           id: ibn-kathir-bidaya
           locator: vol. 1, «قصة نوح عليه السلام»
         note:
           en: On the condition of Muslim.
+          ar: على شرط مسلم.
       - grade: sahih
-        by: al-Albani
+        by:
+          en: al-Albani
+          ar: الألباني
         source: albani-sahiha
         note:
           en: Authenticated with its supporting narrations; some of its narrators were criticized.
+          ar: صحّحه بشواهده؛ وقد تُكلِّم في بعض رواته.
   - kind: athar
     attribution:
       en: Ibn Abbas (Companion), narrated by Ikrima
+      ar: ابن عباس (صحابي)، من رواية عكرمة
     text:
       en: Between Adam and Noah were ten qurun, all of them following a law of truth.
-      ar: كان بين آدم ونوح عشرة قرون كلهم على شريعة من الحق
+      ar: يذكر ابن عباس أن القرون العشرة بين آدم ونوح كانت كلها على شريعةٍ من الحق.
+    original: كان بين آدم ونوح عشرة قرون كلهم على شريعة من الحق
     source:
       id: hakim-mustadrak
       locator: vol. 2, as quoted by al-Albani in al-Radd al-Amin, p. 45
     gradings:
       - grade: sahih
-        by: al-Hakim
+        by:
+          en: al-Hakim
+          ar: الحاكم
         source:
           id: murad-radd-amin
           locator: p. 45
         note:
           en: Authenticated by al-Hakim, and al-Dhahabi agreed, as quoted by al-Albani.
+          ar: صحّحه الحاكم ووافقه الذهبي، كما نقله الألباني.
   - kind: hadith
     attribution:
       en: The Prophet ﷺ, narrated by Abu Hurayra (al-Tirmidhi's version)
+      ar: النبي ﷺ، من رواية أبي هريرة (رواية الترمذي)
     text:
       en: David's life was set at sixty years, and Adam asked God to add forty from his own. When Adam's life was over, the angel of death came; Adam said forty years were left, and was told he had given them to his son David. "Adam denied, so his offspring deny; Adam forgot, so his offspring forget." Nothing is said of the years being restored, so Adam died forty years short of his written life, which is 960 years if that life was a thousand.
-      ar: فجحد آدم فجحدت ذريته ، ونسي آدم فنسيت ذريته
+      ar: يذكر الحديث أن عمر داوود كُتب ستين سنة، فسأل آدمُ اللهَ أن يزيده أربعين من عمره. فلما انقضى عمر آدم جاءه ملك الموت، فقال آدم إنه بقيت له أربعون سنة، فقيل له إنه وهبها لابنه داوود. ثم يذكر الحديث أن ذرية آدم ورثت جحوده ونسيانه (واللفظ منقولٌ أعلاه). ولا يذكر الحديث أن السنين رُدّت إليه، فيكون آدم قد مات قبل تمام عمره المكتوب بأربعين سنة، أي عن تسعمئةٍ وستين إن كان ذلك العمر ألفًا.
+    original: فجحد آدم فجحدت ذريته ، ونسي آدم فنسيت ذريته
     source:
       id: ibn-kathir-tafsir
       locator: "7:172"
     gradings:
       - grade: sahih
-        by: al-Tirmidhi
+        by:
+          en: al-Tirmidhi
+          ar: الترمذي
         source:
           id: ibn-kathir-tafsir
           locator: "7:172"
         note:
           en: Hasan sahih; it has also been narrated by other routes from Abu Hurayra.
+          ar: حسنٌ صحيح؛ وقد رُوي من غير وجهٍ عن أبي هريرة.
       - grade: sahih
-        by: al-Hakim
+        by:
+          en: al-Hakim
+          ar: الحاكم
         source:
           id: ibn-kathir-tafsir
           locator: "7:172"
         note:
           en: Sound on the condition of Muslim, though neither al-Bukhari nor Muslim included it.
+          ar: صحيحٌ على شرط مسلم، ولم يخرّجه البخاري ولا مسلم.
   - kind: hadith
     attribution:
       en: The Prophet ﷺ, narrated by Ibn Abbas (Ahmad's version)
+      ar: النبي ﷺ، من رواية ابن عباس (رواية أحمد)
     text:
       en: Adam's life was a thousand years, and he added forty of them to David, whose life had been set at sixty. Adam forgot what he had given his son, and God completed for Adam a thousand years, and for David a hundred.
-      ar: فأتمها الله لآدم ألف سنة، ولداود مائة سنة
+      ar: يذكر الحديث أن عمر آدم كان ألف سنة، وأنه زاد داوودَ أربعين منها بعد أن كُتب عمره ستين. ثم نسي آدم ما أعطى ابنه، فأتمّ الله لآدم ألف سنة، ولداوود مئة.
+    original: فأتمها الله لآدم ألف سنة، ولداود مائة سنة
     source:
       id: ibn-kathir-bidaya
       locator: vol. 2, «ذكر كمية حياته وكيفية وفاته عليه السلام»
     gradings:
       - grade: other
-        by: Ibn Kathir
+        by:
+          en: Ibn Kathir
+          ar: ابن كثير
         source:
           id: ibn-kathir-bidaya
           locator: vol. 2, «ذكر كمية حياته وكيفية وفاته عليه السلام»
         note:
           en: Cited together with al-Tirmidhi's authenticated version and those of Ibn Khuzayma and Ibn Hibban, with al-Hakim's "on the condition of Muslim"; no separate grading of this wording.
+          ar: ذكره مع رواية الترمذي المصحَّحة وروايتي ابن خزيمة وابن حبان، ومع قول الحاكم «على شرط مسلم»؛ ولا حكم مستقلًّا على هذا اللفظ.
   - kind: historian
     attribution:
       en: Ibn Kathir
+      ar: ابن كثير
     text:
       en: "Adam's life was written in the Preserved Tablet as a thousand years. The Torah's 930 years do not contradict this: if they are sound, they count his time on earth after the descent, which is 957 lunar years; add the 43 years he spent in the Garden before the descent, and the whole is a thousand."
-      ar: فيكون الجميع ألف سنة
+      ar: "كُتب عمر آدم في اللوح المحفوظ ألف سنة. ولا تعارض ذلك التسعمئةُ والثلاثون سنةً التي في التوراة: فإن صحّت فهي مدّة مكثه في الأرض بعد الهبوط، وهي تسعمئةٌ وسبعٌ وخمسون سنةً قمرية؛ فإذا أُضيفت إليها الثلاث والأربعون سنةً التي قضاها في الجنة قبل الهبوط، كان الجميع ألف سنة."
+    original: فيكون الجميع ألف سنة
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «وفاة آدم ووصيته إلى ابنه شيث»
   - kind: ahl-al-kitab
     attribution:
       en: The Torah (Genesis 5)
+      ar: التوراة (التكوين 5)
     text:
       en: "Adam lived 930 years. Adding the fathers' ages at each son's birth in Genesis 5 puts the birth of Enoch (Idris) 308 years before Adam's death and the birth of Noah 126 years after it: these are the figures that Ibn Ishaq and Ibn Jarir report."
+      ar: "عاش آدم تسعمئةٍ وثلاثين سنة. وبجمع أعمار الآباء عند ولادة كل ابنٍ في التكوين 5، يقع مولد أخنوخ (إدريس) قبل وفاة آدم بثلاثمئةٍ وثماني سنين، ومولد نوح بعدها بمئةٍ وستٍّ وعشرين سنة: وهذان هما الرقمان اللذان يرويهما ابن إسحاق وابن جرير."
     source:
       id: bible-web
       locator: Genesis 5:3-32
   - kind: hadith
     attribution:
       en: "Ibn Abbas, raised to the Prophet ﷺ in one chain: Hammad ibn Salama, from Ali ibn Zayd ibn Jud'an, from Yusuf ibn Mihran, from Ibn Abbas"
+      ar: "ابن عباس، مرفوعًا إلى النبي ﷺ بإسنادٍ واحد: حماد بن سلمة، عن علي بن زيد بن جدعان، عن يوسف بن مهران، عن ابن عباس"
     text:
       en: Gives Adam's age as a thousand years and then the years between the prophets after him, ending with six hundred years between Jesus and Muhammad ﷺ. Its full wording has not yet been checked in an edition of al-Mustadrak.
+      ar: يذكر عمرَ آدم ألف سنة، ثم السنين بين الأنبياء بعده، وينتهي بستمئة سنة بين عيسى ومحمد ﷺ. ولم يُراجَع لفظه الكامل بعدُ في طبعةٍ من «المستدرك».
     source:
       id: hakim-mustadrak
       locator: «كتاب تواريخ المتقدمين من الأنبياء والمرسلين»
     gradings:
       - grade: daif
-        by: Sharif Murad
+        by:
+          en: Sharif Murad
+          ar: شريف مراد
         source:
           id: murad-radd-amin
           locator: p. 45
         note:
           en: "Weak in this chain: Ali ibn Zayd ibn Jud'an is weak, and of Yusuf ibn Mihran, Ahmad said 'not known' and Ibn Hajar 'soft in hadith' (layyin)."
+          ar: "ضعيفٌ بهذا الإسناد: علي بن زيد بن جدعان ضعيف، ويوسف بن مهران قال أحمد إنه غير معروف، وقال فيه ابن حجر: «ليّن»."
       - grade: daif
-        by: Ibn Hajar, on the narrator Ali ibn Zayd ibn Jud'an
+        by:
+          en: Ibn Hajar, on the narrator Ali ibn Zayd ibn Jud'an
+          ar: ابن حجر، في الراوي علي بن زيد بن جدعان
         source:
           id: ibn-hajar-taqrib
           locator: no. 4734
       - grade: other
-        by: al-Albani
+        by:
+          en: al-Albani
+          ar: الألباني
         source:
           id: murad-radd-amin
           locator: p. 45
         note:
           en: Accepts only its first part, which al-Hakim also narrates by a sound chain, as quoted in al-Radd al-Amin.
+          ar: لا يقبل منه إلا أوّله، الذي يرويه الحاكم أيضًا بإسنادٍ صحيح، كما نُقل في «الرد الأمين».
   - kind: historian
     attribution:
       en: Ibn Kathir
+      ar: ابن كثير
     text:
       en: The well-known view is that Adam was buried by the mountain in India onto which he was sent down; it is also said at Mount Abu Qubays in Mecca, and Ibn Jarir reports that Noah carried his body to Bayt al-Maqdis.
-      ar: المشهور أنه دفن عند الجبل، الذي أهبط منه في الهند
+      ar: "المشهور أن آدم دُفن عند الجبل الذي أُهبط عليه في الهند؛ وقيل: عند جبل أبي قبيس بمكة، ويروي ابن جرير أن نوحًا حمل جسده إلى بيت المقدس."
+    original: المشهور أنه دفن عند الجبل، الذي أهبط منه في الهند
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «وفاة آدم ووصيته إلى ابنه شيث»

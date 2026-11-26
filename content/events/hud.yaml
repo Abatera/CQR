@@ -7,17 +7,20 @@ title:
   ar: هود
 summary:
   en: Hud, peace be upon him, sent to the people of 'Ad, who lived at al-Ahqaf (46:21) and were destroyed by a wind.
+  ar: هود عليه السلام، أُرسل إلى قوم عاد، الذين سكنوا الأحقاف (46:21) وأُهلكوا بريح.
 when:
   from: -2700
   to: -2401
   certainty: reckoned
   basis:
     en: The Quran makes 'Ad successors after the people of Noah (7:69), and Thamud successors after 'Ad (7:74). No report gives their years. They are placed in the reckoned interval between Noah and Abraham, in the order of Ibn Kathir's al-Bidaya.
+    ar: يجعل القرآن عادًا تخلف قومَ نوح (7:69)، وثمودَ تخلف عادًا (7:74). ولا تذكر أيُّ روايةٍ سنينهم. وقد وُضعوا في الفترة المحسوبة بين نوح وإبراهيم، على ترتيب «البداية والنهاية» لابن كثير.
   alternatives:
     - from: -2650
       to: -2551
       basis:
         en: "By generation, the project's own reckoning: Hud is the fourth generation after Noah in the lineage Ibn Kathir gives first (son of Shalikh son of Arfakhshad son of Sam), and Abraham is the tenth in Genesis 11. If the ten generations fill the ten qurun between Noah's death (about 3000 BCE) and Abraham's birth (about 2000 BCE), one each, the fourth falls about 2650-2551 BCE."
+        ar: "بالأجيال، وهو حساب المشروع نفسه: هودٌ هو الجيل الرابع بعد نوح في النسب الذي يقدّمه ابن كثير أولًا (ابن شالخ بن أرفخشذ بن سام)، وإبراهيم هو العاشر في التكوين 11. فإن ملأت الأجيالُ العشرة القرونَ العشرة بين موت نوح (نحو 3000 ق.م) ومولد إبراهيم (نحو 2000 ق.م)، جيلًا لكل قرن، وقع الرابع نحو 2650–2551 ق.م."
       sources:
         - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة هود عليه السلام»" }
         - { id: bible-web, locator: Genesis 11:10-26 }
@@ -25,15 +28,18 @@ when:
       to: -2151
       basis:
         en: By the same reckoning with the lineage Ibn Kathir quotes from Ibn Jarir (Hud son of 'Abd Allah son of Rabah son of al-Jarud son of 'Ad son of 'Aws son of Iram son of Sam), in which Hud is the eighth generation after Noah.
+        ar: بالحساب نفسه مع النسب الذي ينقله ابن كثير عن ابن جرير (هود بن عبد الله بن رباح بن الجارود بن عاد بن عوص بن إرم بن سام)، وفيه هودٌ هو الجيل الثامن بعد نوح.
       sources:
         - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة هود عليه السلام»" }
 place:
   status: proposed
   description:
     en: The Quran says Hud warned his people at al-Ahqaf (46:21). Ibn Kathir describes al-Ahqaf as mountains of sand in Yemen, between Oman and Hadramawt. The outline drawn is a rough sketch of that region.
+    ar: يذكر القرآن أن هودًا حذّر قومه وهم في الأحقاف (46:21). ويصف ابن كثير الأحقاف بأنها جبال رملٍ باليمن، بين عُمان وحضرموت. والحدود المرسومة تخطيطٌ تقريبي لذلك الإقليم.
   opinions:
     - name:
         en: al-Ahqaf, between Oman and Hadramawt (Ibn Kathir)
+        ar: الأحقاف، بين عُمان وحضرموت (ابن كثير)
       geometry:
         type: Polygon
         coordinates:
@@ -50,19 +56,22 @@ quran: [ "7:65-72", "11:50-60", "46:21-26", "53:50", "89:6-8" ]
 tafsir:
   - text:
       en: "Al-Tabari on 53:50 (He destroyed the first 'Ad): 'Ad descend from 'Ad son of Iram son of 'Aws son of Sam son of Noah. They are called the first 'Ad because they were destroyed before the later 'Ad, whom he identifies with Banu Luqaym. Ibn Zayd said they were called the first because they were the first of the nations to be destroyed."
-      ar: لأنها أُهلكت قبل عاد الآخرة
+      ar: "الطبري في تفسير 53:50 (إهلاك عاد الأولى): عادٌ من ولد عاد بن إرم بن عوص بن سام بن نوح. وسُمّوا عادًا الأولى لأنهم أُهلكوا قبل عاد الآخرة، الذين يجعلهم بني لُقَيم. وقال ابن زيد: سُمّوا الأولى لأنهم أول الأمم إهلاكًا."
+    original: لأنها أُهلكت قبل عاد الآخرة
     source:
       id: tabari-tafsir
       locator: "53:50"
   - text:
       en: "Ibn Kathir on 89:7 (Iram of the pillars): Mujahid and Qatada said Iram is an ancient nation. Al-Suddi and Qatada said Iram is the royal house of 'Ad, which Ibn Kathir calls a good, strong view."
-      ar: إن إرم بيت مملكة عاد . وهذا قول حسن جيد قوي
+      ar: "ابن كثير في تفسير 89:7 (إرم): قال مجاهد وقتادة إن إرم أمّةٌ قديمة. وقال السُّدّي وقتادة إن إرم بيتُ مملكة عاد، وهو ما يصفه ابن كثير بأنه قولٌ حسنٌ جيّدٌ قوي."
+    original: إن إرم بيت مملكة عاد . وهذا قول حسن جيد قوي
     source:
       id: ibn-kathir-tafsir
       locator: "89:7"
   - text:
       en: "Al-Qurtubi on 89:7: the first 'Ad is Iram, and those after them are the last 'Ad. Iram has been said to be Sam son of Noah (Ibn Ishaq), or a city: Damascus (Khalid al-Rabi'i, through Ibn Wahb and Ashhab from Malik) or Alexandria (Muhammad ibn Ka'b al-Qurazi). He states no preference."
-      ar: فالأولى هي إرم
+      ar: "القرطبي في تفسير 89:7: عادٌ الأولى هي إرم، ومَن بعدهم عادٌ الأخيرة. وقيل إن إرم هو سام بن نوح (ابن إسحاق)، أو مدينة: دمشق (خالد الربعي، من طريق ابن وهب وأشهب عن مالك) أو الإسكندرية (محمد بن كعب القرظي). ولا يرجّح."
+    original: فالأولى هي إرم
     source:
       id: qurtubi-jami
       locator: "89:7"
@@ -70,67 +79,82 @@ tradition:
   - kind: historian
     attribution:
       en: Ibn Kathir
+      ar: ابن كثير
     text:
       en: "'Ad were Arabs who lived at al-Ahqaf, mountains of sand in Yemen between Oman and Hadramawt. They were the first nation to worship idols after the Flood, and the generation after Noah in the Quran (23:31) is Hud's people, on the correct view."
-      ar: وكانوا عربًا يسكنون الأحقاف، وهي جبال الرمل، وكانت باليمن من عمان وحضرموت
+      ar: كانت عادٌ عربًا يسكنون الأحقاف، وهي جبال الرمل باليمن بين عُمان وحضرموت. وكانوا أول أمةٍ عبدت الأصنام بعد الطوفان، والقرنُ الذي بعد نوح في القرآن (23:31) هم قوم هود، على القول الصحيح.
+    original: وكانوا عربًا يسكنون الأحقاف، وهي جبال الرمل، وكانت باليمن من عمان وحضرموت
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة هود عليه السلام»
   - kind: historian
     attribution:
       en: Ibn Kathir, citing Ibn Jarir for the third lineage
+      ar: ابن كثير، نقلًا عن ابن جرير في النسب الثالث
     text:
       en: "Hud was the son of Shalikh son of Arfakhshad son of Sam son of Noah. It is also said that Hud is 'Abir (Eber) son of Shalikh. Ibn Jarir gives a third lineage, through 'Ad himself: Hud son of 'Abd Allah son of Rabah son of al-Jarud son of 'Ad son of 'Aws son of Iram son of Sam son of Noah."
-      ar: وهو هود بن شالخ بن أرفحشذ بن سام بن نوح عليه السلام
+      ar: "هود بن شالخ بن أرفخشذ بن سام بن نوح. ويقال أيضًا إن هودًا هو عابر بن شالخ. ويذكر ابن جرير نسبًا ثالثًا يمرّ بعادٍ نفسه: هود بن عبد الله بن رباح بن الجارود بن عاد بن عوص بن إرم بن سام بن نوح."
+    original: وهو هود بن شالخ بن أرفحشذ بن سام بن نوح عليه السلام
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة هود عليه السلام»
   - kind: historian
     attribution:
       en: Ibn Kathir
+      ar: ابن كثير
     text:
       en: "'Ad of Iram are the first 'Ad (53:50), and the second 'Ad came later. The first 'Ad came before al-Khalil (Abraham), and there is no disagreement that 'Ad came before Thamud. The Arabs before Ishmael are called al-'Arab al-'Ariba, many tribes, among them 'Ad and Thamud."
-      ar: وعاد الأولى قبل الخليل
+      ar: عادُ إرم هم عاد الأولى (53:50)، وجاءت عادٌ الثانية بعدهم. وكانت عاد الأولى قبل الخليل (إبراهيم)، ولا خلاف في أن عادًا كانت قبل ثمود. ويُسمّى العرب الذين كانوا قبل إسماعيل العربَ العاربة، وهم قبائل كثيرة، منها عاد وثمود.
+    original: وعاد الأولى قبل الخليل
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة هود عليه السلام»
   - kind: historian
     attribution:
       en: Ibn Kathir
+      ar: ابن كثير
     text:
       en: '"Iram of the pillars, the like of which was never created in the lands" (89:7-8) means the like of the tribe, on the correct view; it has also been said, the like of the pillars. Whoever claims that Iram is a city that moves about the earth has gone far astray.'
-      ar: فعاد إرم، هم عاد الأولى
+      ar: "معنى الآيتين (89:7-8) أنه لم تكن قبيلةٌ تماثل تلك القبيلة، على القول الصحيح؛ وقيل: لم يكن عمادٌ يماثل عمادها. ومَن زعم أن إرم مدينةٌ تنتقل في الأرض فقد أبعد كثيرًا."
+    original: فعاد إرم، هم عاد الأولى
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة هود عليه السلام»
   - kind: historian
     attribution:
       en: Ibn Kathir
+      ar: ابن كثير
     text:
       en: A description of Hud's grave in Yemen is reported from Ali ibn Abi Talib. Others say a place in the southern wall of the mosque of Damascus, which some people claim is Hud's grave; Ibn Kathir adds "God knows best".
+      ar: يُروى عن علي بن أبي طالب وصفٌ لقبر هود باليمن. وقال آخرون إنه موضعٌ في الحائط القبلي لجامع دمشق، يزعم بعض الناس أنه قبر هود؛ ويكِل ابن كثير العلم في ذلك إلى الله.
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة هود عليه السلام»
   - kind: ahl-al-kitab
     attribution:
       en: The Torah (Genesis 10)
+      ar: التوراة (التكوين 10)
     text:
       en: The sons of Shem were Elam, Asshur, Arpachshad, Lud and Aram; the sons of Aram were Uz, Hul, Gether and Mash. Arpachshad was the father of Shelah, and Shelah of Eber. Eber's sons were Peleg and Joktan, and the sons of Joktan included Hazarmaveth, Sheba, Ophir and Havilah. Their dwelling extended from Mesha toward Sephar, the mountain of the east.
+      ar: "كان بنو سام: عيلام وأشور وأرفكشاد ولود وأرام؛ وبنو أرام: عوص وحول وجاثر وماش. وأرفكشاد أبو شالح، وشالح أبو عابر. وابنا عابر فالج ويقطان، ومن بني يقطان حَصَرماوِت وشبا وأوفير وحويلة. وكان مسكنهم من ميشا حتى سفار، جبل المشرق."
     source:
       id: bible-web
       locator: Genesis 10:22-30
 history:
   - claim:
       en: In 1992 a team including Nicholas Clapp, George Hedges, Juris Zarins, Ranulph Fiennes and Ronald Blom of NASA's Jet Propulsion Laboratory announced that they had found the lost city of Ubar at Shisr, a well on the edge of the Empty Quarter in Oman. Radar images taken from the space shuttle helped them find it, and the excavation uncovered an octagonal castle with high walls and towers.
+      ar: في عام 1992 أعلن فريقٌ ضمّ نيكولاس كلاب وجورج هيدجز ويوريس زارينز ورانولف فاينز ورونالد بلوم من مختبر الدفع النفاث التابع لناسا أنهم وجدوا مدينة أوبار المفقودة في الشِّصر، وهي بئرٌ على حافة الربع الخالي في عُمان. وقد ساعدتهم صور الرادار الملتقطة من المكوك الفضائي في العثور عليها، وكشف التنقيب عن قلعةٍ مثمّنة ذات أسوارٍ وأبراجٍ عالية.
     status: established
     sources: [ jpl-ubar-1992, time-ubar-1992 ]
   - claim:
       en: 'Whether the site is Ubar, and whether it has anything to do with Iram, is debated. Time reported that "unless inscriptions surface, it may be impossible to identify the site as Ubar with absolute certainty", and called the octagonal castle only "perhaps" the pillars of the Quran. The reports also disagree on its date: 3000 BCE and before 2000 BCE (JPL, 1992), pottery from at least 2000 BCE (Time, 1992), and a city that rose roughly 2,000 years ago and fell between 300 and 500 CE (NASA, 2017).'
+      ar: "يُختلف في كون الموقع أوبار، وفي صلته بإرم أصلًا. فقد نقلت مجلة Time أنه «ما لم تظهر نقوش، فقد يتعذّر الجزم بأن الموقع هو أوبار»، ولم تجعل القلعةَ المثمّنة إلا «ربما» العمادَ المذكور في القرآن (العبارات مترجمةٌ عن الإنجليزية). وتختلف التقارير كذلك في تاريخه: 3000 ق.م وما قبل 2000 ق.م (مختبر الدفع النفاث، 1992)، وفخّارٌ من 2000 ق.م على الأقل (Time، 1992)، ومدينةٌ نشأت قبل نحو ألفي سنة وسقطت بين 300 و500 م (ناسا، 2017)."
     status: debated
     sources: [ time-ubar-1992, jpl-ubar-1992, nasa-ubar-2017 ]
 connection:
   text:
     en: "The genealogists' Iram son of Sam, with 'Aws in the line of 'Ad, matches Aram son of Shem and Uz son of Aram in Genesis 10:22-23. Hazarmaveth, a son of Joktan (Genesis 10:26), resembles Hadramawt, 'Ad's land in Ibn Kathir. And 'Abir son of Shalikh, whom some identify with Hud, is Eber son of Shelah. These are the project's own observations: none of the sources cited here draws them."
+    ar: "إرم بن سام عند النسّابين، مع عوص في نسب عاد، يقابلان أرام بن سام وعوص بن أرام في التكوين 10:22-23. ويشبه حَصَرماوِت، أحدُ أبناء يقطان (التكوين 10:26)، اسمَ حضرموت، أرضِ عاد عند ابن كثير. وعابر بن شالخ، الذي يجعله بعضهم هودًا، هو عابر بن شالح. وهذه ملاحظات المشروع نفسه: لا يقول بها أيٌّ من المصادر المذكورة هنا."
 related:
   - { id: noah, type: context }
   - { id: salih, type: context }

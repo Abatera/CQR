@@ -17,7 +17,7 @@ This is the schema as implemented on 2026-11-23. It follows the proposal from pl
 - **Geometry** is GeoJSON, with coordinates in `[longitude, latitude]` order: a `Point` or a `Polygon` (one closed ring). The editor picks them on a map and rounds to 4 decimals.
 - **Quran references** are `"surah:ayah"` for one verse or `"surah:ayah-ayah"` for a range within one surah, for example `"34:10-11"` and `"21:80"`. They are always quoted in YAML, because YAML 1.1 parsers read `21:80` as a number.
 - **IDs** are unique kebab-case strings. An event's ID is also its file name and its URL slug (`#/event/david-armor`). IDs cannot be changed in the editor; to rename an item, create a new one and delete the old one.
-- **Text shown to readers** is a language map, `{ en: ..., ar: ... }`. English is required; Arabic is optional (D14).
+- **Text shown to readers** is a language map, `{ en: ..., ar: ... }`. English is required; Arabic is optional in the schema (D14), and since 2026-11-26 every text has it (D21). Readers choose the language with the EN / عربي switch; a text without Arabic falls back to English.
 - **Source citations** are a source ID, or `{ id, locator }` with the place in the work, such as `{ id: cline-1177, locator: "pp. 102-110" }`.
 
 ## Files
@@ -79,8 +79,8 @@ content/
 | `when` | yes | `from`, `to`, `certainty` (`established`, `estimated`, `traditional`, `reckoned`, `debated` or `unknown`; `reckoned` is for years computed from intervals reported in tradition, see [03](03-content-principles.md)), `basis` (a language map: what the date rests on), an optional `core` `{ from, to, basis }` for the part of the span that a source fixes (drawn solid inside the bar; it must lie inside the span), and an optional `alternatives` list of `{ from, to, basis, sources }`. |
 | `place` | yes | `status` (`known`, `proposed` or `unknown`), `names` (a list of `{ name, type: ancient or modern, language }`), `description`, `geometry`, and `opinions` (a list of `{ name, geometry, sources }`). |
 | `quran` | no | A list of references. Mostly used in the Quran lane, but any event may cite verses. |
-| `tafsir` | no | A list of `{ text, source }`. |
-| `tradition` | no | A list of reports: `{ kind, attribution, text, source, gradings }`. `kind` is `hadith`, `athar` (a Companion or Successor), `historian` or `ahl-al-kitab` (the People of the Book, as transmitted by Muslim scholars or cited from their scriptures). `attribution` and `text` are language maps; Arabic, if given, is quoted from the cited work. `gradings` is a list of `{ grade, by, source, note }`, with grade `sahih`, `hasan`, `daif`, `very-weak`, `fabricated` or `other`, and `by` the scholar who gave it. |
+| `tafsir` | no | A list of `{ text, original, source }`. `text` is a language map: what the commentator says, in the project's words. `original` (optional) is the commentator's own words, quoted from the cited work (D22). |
+| `tradition` | no | A list of reports: `{ kind, attribution, text, original, source, gradings }`. `kind` is `hadith`, `athar` (a Companion or Successor), `historian` or `ahl-al-kitab` (the People of the Book, as transmitted by Muslim scholars or cited from their scriptures). `attribution` and `text` are language maps; `text` is the project's own summary or translation, in English and Arabic, never the source's wording. `original` (optional) is the report's own words, quoted from the cited work as they were read there, never from memory (D22). `gradings` is a list of `{ grade, by, source, note }`, with grade `sahih`, `hasan`, `daif`, `very-weak`, `fabricated` or `other`, and `by` (a language map) the scholar who gave it. |
 | `history` | no | A list of `{ claim, status, sources }`, with status `established` or `debated`. |
 | `connection` | no | `{ text, confidence }`, with confidence `low`, `medium` or `high`, set by the owner. |
 | `related` | no | A list of `{ id, type }`, with type `context`, `consequence` or `parallel`. |

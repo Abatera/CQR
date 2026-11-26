@@ -7,16 +7,19 @@ title:
   ar: موت سليمان
 summary:
   en: Solomon, peace be upon him, dies, and only a creature of the earth eating his staff reveals his death to the jinn.
+  ar: يموت سليمان عليه السلام، ولا يعلم الجنُّ بموته حتى تأكل دويبةٌ العصا التي كان يتّكئ عليها.
 when:
   from: -931
   to: -931
   certainty: traditional
   basis:
     en: The end of Solomon's reign in traditional biblical chronology. The Quran gives no date.
+    ar: نهاية ملك سليمان في التسلسل الزمني التقليدي للكتاب المقدس. ولا يذكر القرآن تاريخًا.
 place:
   status: unknown
   description:
     en: The Quran names no place.
+    ar: لا يسمّي القرآن مكانًا.
 quran: [ "34:14" ]
 related:
   - { id: solomon, type: context }

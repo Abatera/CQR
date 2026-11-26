@@ -7,19 +7,23 @@ title:
   ar: سليمان
 summary:
   en: Sulayman (Solomon), peace be upon him, David's heir, given a kingdom with the wind and the jinn under his command, who built in Bayt al-Maqdis.
+  ar: سليمان عليه السلام، وارث داوود، أُعطي مُلكًا سُخّرت له فيه الريح والجن، وبنى في بيت المقدس.
 when:
   from: -983
   to: -931
   certainty: traditional
   basis:
     en: A reign of forty years ending about 931 BCE in the traditional biblical chronology, and a life of 52 years, as Ishaq ibn Bishr reports from Ibn Ishaq and al-Zuhri (cited by Ibn Kathir). Ikrima, from Ibn Abbas, gives a reign of twenty years.
+    ar: مُلكٌ دام أربعين سنة وانتهى نحو 931 ق.م في التسلسل الزمني التقليدي للكتاب المقدس، وعمرٌ قدره اثنتان وخمسون سنة، كما يروي إسحاق بن بشر عن ابن إسحاق والزهري (فيما نقله ابن كثير). ويجعل عكرمةُ، عن ابن عباس، مُلكَه عشرين سنة.
 place:
   status: proposed
   description:
     en: Ibn Kathir reports that Solomon began building Bayt al-Maqdis in the fourth year of his reign, and, in al-Suddi's account, that he died there, leaning on his staff in the sanctuary. The point marks Jerusalem.
+    ar: يذكر ابن كثير أن سليمان بدأ بناء بيت المقدس في السنة الرابعة من ملكه، وفي رواية السُّدّي أنه مات هناك متّكئًا على عصاه في المحراب. والنقطة تعيّن القدس.
   opinions:
     - name:
         en: Bayt al-Maqdis (Jerusalem) (Ibn Kathir)
+        ar: بيت المقدس (القدس) (ابن كثير)
       geometry:
         type: Point
         coordinates: [ 35.235, 31.778 ]
@@ -31,18 +35,22 @@ tradition:
   - kind: historian
     attribution:
       en: Ishaq ibn Bishr, from Ibn Ishaq and al-Zuhri, cited by Ibn Kathir
+      ar: إسحاق بن بشر، عن ابن إسحاق والزهري، نقله ابن كثير
     text:
       en: Solomon lived 52 years, and his reign lasted 40. Ikrima reports from Ibn Abbas that his reign was 20 years; Ibn Jarir puts his whole life at some fifty years.
-      ar: أن سليمان عليه السلام عاش ثنتين وخمسين سنة، وكان ملكه أربعين سنة
+      ar: عاش سليمان اثنتين وخمسين سنة، ودام ملكه أربعين. ويروي عكرمة عن ابن عباس أن ملكه كان عشرين سنة، ويجعل ابن جرير عمرَه كله نحو خمسين سنة.
+    original: أن سليمان عليه السلام عاش ثنتين وخمسين سنة، وكان ملكه أربعين سنة
     source:
       id: ibn-kathir-bidaya
       locator: vol. 2, «ذكر وفاته وكم كانت مدة ملكه وحياته»
   - kind: historian
     attribution:
       en: Ibn Kathir, citing Ibn Jarir
+      ar: ابن كثير، نقلًا عن ابن جرير
     text:
       en: In the fourth year of his reign Solomon began building Bayt al-Maqdis, as it is reported. After him his son Rehoboam reigned 17 years.
-      ar: وفي سنة أربع من ملكه ابتدأ ببناء بيت المقدس فيما ذكر
+      ar: في السنة الرابعة من ملكه بدأ سليمان بناء بيت المقدس، فيما يُروى. وملك بعده ابنه رحبعام سبع عشرة سنة.
+    original: وفي سنة أربع من ملكه ابتدأ ببناء بيت المقدس فيما ذكر
     source:
       id: ibn-kathir-bidaya
       locator: vol. 2, «ذكر وفاته وكم كانت مدة ملكه وحياته»

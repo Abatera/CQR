@@ -12,9 +12,20 @@ Every event keeps these layers apart:
 |---|---|---|
 | **Quran** | Verse references. The text is loaded from the dataset. | Each reference is checked against the dataset. A paraphrase is never presented as the text. |
 | **Tafsir** | What classical commentators said. | Name the commentator, the work, and where in it the passage is (volume and page, or the verse it comments on). |
-| **Tradition** | Hadith, reports from the Companions and Successors, the classical historians, and reports from the People of the Book, whether transmitted by Muslim scholars or cited from their scriptures. | Name who the report is attributed to and the work it is found in. Give every hadith or Companion's report a grading, with the scholar who gave it and where. Present reports as reports, never as fact, and show weak ones as weak. Arabic, if quoted, comes from the cited work, never from memory. |
+| **Tradition** | Hadith, reports from the Companions and Successors, the classical historians, and reports from the People of the Book, whether transmitted by Muslim scholars or cited from their scriptures. | Name who the report is attributed to and the work it is found in. Give every hadith or Companion's report a grading, with the scholar who gave it and where. Present reports as reports, never as fact, and show weak ones as weak. The source's own words go in `original`, quoted from the cited work, never from memory; the English and Arabic in `text` are the project's summary (D22). |
 | **History and archaeology** | What is known from outside the Quran. | Each claim has at least one source and a status: `established` or `debated`. |
 | **Connection** | The project's own reflection that links the layers above. | Labeled as interpretation, with a confidence of `low`, `medium` or `high`. Never stated as fact. |
+
+## Arabic text (D21, D22)
+
+Every text has an Arabic version, written by the project. These rules keep the project's Arabic from being taken for a source's words:
+
+- **The project's Arabic is a translation or summary**, never a source's wording. The source's words, where they were read, go in `original` and are shown apart, labeled «بلفظ المصدر».
+- **Never reproduce the Quran in the project's text.** Refer to verses by number and paraphrase them; readers open the verse itself from the dataset. Check new Arabic against the Tanzil text for runs of three or more words that match a verse.
+- **Never write hadith wording.** Report a hadith indirectly («يذكر الحديث أن…»), and quote it only in `original`, from the cited work.
+- **Quote a scholar's Arabic only where it was read.** Otherwise report it indirectly, without quotation marks.
+- **Quotations that reached the project in another language** (a translated inscription, Josephus, the Bible in English) are translated by the project and marked «مترجمةٌ عن الإنجليزية».
+- **Honorifics:** ﷺ after the Prophet's name; «عليه السلام» where the English has "peace be upon him".
 
 ## Dating
 

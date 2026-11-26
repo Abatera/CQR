@@ -3,6 +3,7 @@
   import 'leaflet/dist/leaflet.css';
   import { onMount } from 'svelte';
   import { BASEMAPS, DEFAULT_MAP, PROPOSED_POINT_RADIUS_M } from '../config';
+  import { t, tx } from '../lib/i18n';
   import type { CqrEvent, Geometry } from '../lib/schema';
   import { rangesOverlap } from '../lib/years';
   import { app } from '../state/app.svelte';
@@ -98,9 +99,9 @@
     const color = app.lanesById.get(sel.lane)?.color ?? '#1f6f5c';
     const p = sel.place;
     if (p.status === 'unknown') return;
-    if (p.geometry) selectedLayer.addLayer(draw(p.geometry, p.status === 'proposed', color, sel.title.en));
+    if (p.geometry) selectedLayer.addLayer(draw(p.geometry, p.status === 'proposed', color, tx(sel.title, app.lang)));
     p.opinions?.forEach((op, i) => {
-      if (op.geometry) selectedLayer.addLayer(draw(op.geometry, true, OPINION_COLORS[i % OPINION_COLORS.length], op.name.en));
+      if (op.geometry) selectedLayer.addLayer(draw(op.geometry, true, OPINION_COLORS[i % OPINION_COLORS.length], tx(op.name, app.lang)));
     });
     const b = selectedLayer.getBounds();
     if (!b.isValid()) return;
@@ -129,7 +130,7 @@
         fillColor: color,
         fillOpacity: 0.35,
       })
-        .bindTooltip(e.title.en)
+        .bindTooltip(tx(e.title, app.lang))
         .on('click', () => app.select(e.id))
         .addTo(contextLayer);
     }
@@ -139,10 +140,10 @@
 <section class="map" aria-label="Map">
   <div class="leaflet-host" bind:this={el}></div>
   {#if app.selected?.place.status === 'unknown'}
-    <div class="notice">The location of this event is not known. It is described in the facts panel.</div>
+    <div class="notice" lang={app.lang} dir={app.lang === 'ar' ? 'rtl' : 'ltr'}>{t('mapUnknown', app.lang)}</div>
   {/if}
-  <div class="caption">
-    {app.selected ? 'Faint markers: other events from the same period' : 'Faint markers: events with a known or proposed location'}
+  <div class="caption" lang={app.lang} dir={app.lang === 'ar' ? 'rtl' : 'ltr'}>
+    {t(app.selected ? 'mapFaintSelected' : 'mapFaintAll', app.lang)}
   </div>
 </section>
 

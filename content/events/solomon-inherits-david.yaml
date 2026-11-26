@@ -7,16 +7,19 @@ title:
   ar: وورث سليمان داوود
 summary:
   en: Solomon, peace be upon him, succeeds David, peace be upon him, and says that they have been taught the speech of birds and given of all things.
+  ar: يخلف سليمانُ عليه السلام داوودَ عليه السلام، ويذكر أنهما عُلِّما لغةَ الطير وأُعطيا من كل شيء.
 when:
   from: -970
   to: -970
   certainty: traditional
   basis:
     en: The start of Solomon's reign in traditional biblical chronology. The Quran gives no date.
+    ar: بداية ملك سليمان في التسلسل الزمني التقليدي للكتاب المقدس. ولا يذكر القرآن تاريخًا.
 place:
   status: unknown
   description:
     en: The Quran names no place.
+    ar: لا يسمّي القرآن مكانًا.
 quran: [ "27:16" ]
 related:
   - { id: solomon, type: context }

@@ -8,6 +8,7 @@
   to: -1200
   region:
     en: Eastern Mediterranean and Near East
+    ar: شرق البحر المتوسط والشرق الأدنى
   review: draft
   sources: [ cline-1177 ]
   notes: "TODO: verify the boundaries and add a page locator."
@@ -20,6 +21,7 @@
   to: -1150
   region:
     en: Eastern Mediterranean and Near East
+    ar: شرق البحر المتوسط والشرق الأدنى
   color: "#9b5d5d"
   review: draft
   sources: [ cline-1177 ]
@@ -33,6 +35,7 @@
   to: -1000
   region:
     en: Southern Levant
+    ar: جنوب بلاد الشام
   review: draft
   notes: "TODO: find a source. The boundaries differ between the conventional and the low chronology."
 
@@ -44,5 +47,6 @@
   to: -586
   region:
     en: Southern Levant
+    ar: جنوب بلاد الشام
   review: draft
   notes: "TODO: find a source. The end date (586 BCE) is a placeholder from memory, not from the planning docs."

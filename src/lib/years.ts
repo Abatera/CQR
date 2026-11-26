@@ -38,16 +38,19 @@ export function isValidYear(year: unknown): year is Year {
   return typeof year === 'number' && Number.isInteger(year) && year !== 0;
 }
 
-export function formatYear(year: Year): string {
-  return year < 0 ? `${-year} BCE` : `${year} CE`;
+/** Era suffixes: BCE/CE in English, ق.م/م (before/after the birth of Christ) in Arabic. */
+const ERA = { en: { bce: 'BCE', ce: 'CE' }, ar: { bce: 'ق.م', ce: 'م' } } as const;
+
+export function formatYear(year: Year, lang: 'en' | 'ar' = 'en'): string {
+  return year < 0 ? `${-year} ${ERA[lang].bce}` : `${year} ${ERA[lang].ce}`;
 }
 
-/** "1010–970 BCE", "30 BCE – 14 CE", "1177 BCE". */
-export function formatRange(from: Year, to: Year): string {
-  if (from === to) return formatYear(from);
-  if (from < 0 && to < 0) return `${-from}–${-to} BCE`;
-  if (from > 0 && to > 0) return `${from}–${to} CE`;
-  return `${formatYear(from)} – ${formatYear(to)}`;
+/** "1010–970 BCE", "30 BCE – 14 CE", "1177 BCE"; in Arabic "1010–970 ق.م". */
+export function formatRange(from: Year, to: Year, lang: 'en' | 'ar' = 'en'): string {
+  if (from === to) return formatYear(from, lang);
+  if (from < 0 && to < 0) return `${-from}–${-to} ${ERA[lang].bce}`;
+  if (from > 0 && to > 0) return `${from}–${to} ${ERA[lang].ce}`;
+  return `${formatYear(from, lang)} – ${formatYear(to, lang)}`;
 }
 
 /** Whether two inclusive year ranges overlap. */

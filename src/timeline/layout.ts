@@ -53,7 +53,13 @@ export function stack(items: { start: number; end: number }[]): number[] {
   return rows;
 }
 
-export function layoutLanes(lanes: Lane[], events: CqrEvent[], x: (pos: number) => number) {
+/** `label` gives the text drawn beside each item (its title in the reader's language), for measuring. */
+export function layoutLanes(
+  lanes: Lane[],
+  events: CqrEvent[],
+  x: (pos: number) => number,
+  label: (e: CqrEvent) => string = (e) => e.title.en,
+) {
   const byLane = new Map<string, CqrEvent[]>();
   for (const e of events) byLane.set(e.lane, [...(byLane.get(e.lane) ?? []), e]);
 
@@ -67,7 +73,7 @@ export function layoutLanes(lanes: Lane[], events: CqrEvent[], x: (pos: number) 
       const w = x1 - x0;
       const dot = event.kind === 'event' && w < DOT_MIN_PX;
       const cx = (x0 + x1) / 2;
-      const lw = labelWidth(event.title.en);
+      const lw = labelWidth(label(event));
       const labelInside = !dot && event.kind === 'period' && w - 10 >= lw;
       const start = dot ? cx - 6 : x0;
       const markEnd = dot ? cx + 6 : x1;

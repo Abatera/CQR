@@ -1,9 +1,9 @@
 <script lang="ts">
   import { untrack } from 'svelte';
   import { DEFAULT_VIEW, MAX_SPAN, MIN_SPAN } from '../config';
-  import { certaintyLabel } from '../lib/format';
+  import { certaintyText, pick, relationText, t as ui, tx } from '../lib/i18n';
   import type { CqrEvent } from '../lib/schema';
-  import { axisTicks, formatRange, yearEnd, yearStart } from '../lib/years';
+  import { axisTicks, formatRange, formatYear, yearEnd, yearStart } from '../lib/years';
   import { app } from '../state/app.svelte';
   import { DOT_MIN_PX, layoutLanes, rowCenter, type LaidItem, type LaidLane } from './layout';
 
@@ -14,6 +14,9 @@
   let width = $state(900);
   let view = $state({ start: yearStart(DEFAULT_VIEW.from), end: yearEnd(DEFAULT_VIEW.to) });
   let lanesMenuOpen = $state(false);
+  const lang = $derived(app.lang);
+  /** An event's label in the reader's language; English where the Arabic is missing. */
+  const label = $derived((e: CqrEvent) => pick(e.title, lang));
 
   const plotW = $derived(Math.max(120, width - GUTTER - 6));
   const span = $derived(view.end - view.start);
@@ -21,7 +24,7 @@
   const posAt = (px: number) => view.start + ((px - GUTTER) / plotW) * span;
 
   const ticks = $derived(axisTicks(view.start, view.end, plotW));
-  const layout = $derived(layoutLanes(app.visibleLanes, app.content?.events ?? [], x));
+  const layout = $derived(layoutLanes(app.visibleLanes, app.content?.events ?? [], x, (e) => label(e).text));
   const eras = $derived(app.content?.eras ?? []);
 
   const itemsById = $derived.by(() => {
@@ -182,12 +185,12 @@
 
 <section class="timeline" aria-label="Timeline">
   <div class="toolbar">
-    <button type="button" onclick={() => zoom(1 / 1.6)} title="Zoom in">+</button>
-    <button type="button" onclick={() => zoom(1.6)} title="Zoom out">−</button>
-    <button type="button" onclick={fitAll} title="Show all events in the visible lanes">Fit all</button>
-    <button type="button" onclick={reset} title="Back to the default window">Reset</button>
+    <button type="button" onclick={() => zoom(1 / 1.6)} title={ui('zoomIn', lang)}>+</button>
+    <button type="button" onclick={() => zoom(1.6)} title={ui('zoomOut', lang)}>−</button>
+    <button type="button" onclick={fitAll} title={ui('fitAllTitle', lang)} {lang}>{ui('fitAll', lang)}</button>
+    <button type="button" onclick={reset} title={ui('resetTitle', lang)} {lang}>{ui('reset', lang)}</button>
     <div class="lanes-menu">
-      <button type="button" aria-expanded={lanesMenuOpen} onclick={() => (lanesMenuOpen = !lanesMenuOpen)}>Lanes ▾</button>
+      <button type="button" aria-expanded={lanesMenuOpen} onclick={() => (lanesMenuOpen = !lanesMenuOpen)} {lang}>{ui('lanes', lang)} ▾</button>
       {#if lanesMenuOpen}
         <div class="menu" role="menu">
           {#each app.lanes as lane (lane.id)}
@@ -199,16 +202,16 @@
                 onchange={() => app.toggleLane(lane.id)}
               />
               <span class="swatch" style:background={lane.color ?? '#666'}></span>
-              {lane.name.en}{lane.pinned ? ' (pinned)' : ''}
+              <span lang={pick(lane.name, lang).lang}>{tx(lane.name, lang)}{lane.pinned ? ui('pinned', lang) : ''}</span>
             </label>
           {/each}
         </div>
       {/if}
     </div>
-    <span class="legend" aria-label="Legend">
-      <svg width="26" height="10"><rect x="1" y="1" width="24" height="8" rx="2" class="lg solid" /></svg> established / estimated
-      <svg width="26" height="10"><rect x="1" y="1" width="24" height="8" rx="2" class="lg" stroke-dasharray="5 3" /></svg> traditional
-      <svg width="26" height="10"><rect x="1" y="1" width="24" height="8" rx="2" class="lg" stroke-dasharray="2 2" /></svg> debated
+    <span class="legend" aria-label="Legend" {lang}>
+      <svg width="26" height="10"><rect x="1" y="1" width="24" height="8" rx="2" class="lg solid" /></svg> {ui('legendSolid', lang)}
+      <svg width="26" height="10"><rect x="1" y="1" width="24" height="8" rx="2" class="lg" stroke-dasharray="5 3" /></svg> {ui('legendTraditional', lang)}
+      <svg width="26" height="10"><rect x="1" y="1" width="24" height="8" rx="2" class="lg" stroke-dasharray="2 2" /></svg> {ui('legendDebated', lang)}
       <svg width="26" height="10">
         <defs>
           <pattern id="lg-hatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
@@ -218,9 +221,9 @@
         <rect x="1" y="1" width="24" height="8" rx="2" class="lg" stroke-dasharray="1 2" />
         <rect x="1" y="1" width="24" height="8" rx="2" fill="url(#lg-hatch)" />
       </svg>
-      <span title="Years computed from intervals reported in tradition; history cannot date these">reckoned</span>
+      <span title={ui('legendReckonedTitle', lang)}>{ui('legendReckoned', lang)}</span>
     </span>
-    <span class="hint">Scroll to zoom · drag to pan · ← → to step</span>
+    <span class="hint" {lang}>{ui('timelineHint', lang)}</span>
   </div>
 
   <div class="body" bind:clientWidth={width} use:wheel>
@@ -231,8 +234,8 @@
         {#if x1 > x0}
           <rect x={x0} y={AXIS_H} width={x1 - x0} height={ERA_H} fill={era.color ? era.color + '33' : ERA_FILLS[i % 2]} />
           <svg x={x0} y={AXIS_H} width={x1 - x0} height={ERA_H}>
-            <text x="4" y="13" class="era-label"
-              >{era.name.en}<title>{era.name.en}: {formatRange(era.from, era.to)}{era.region ? ` (${era.region.en})` : ''}</title></text
+            <text x="4" y="13" class="era-label" lang={pick(era.name, lang).lang}
+              >{tx(era.name, lang)}<title>{tx(era.name, lang)}: {formatRange(era.from, era.to, lang)}{era.region ? ` (${tx(era.region, lang)})` : ''}</title></text
             >
           </svg>
         {/if}
@@ -240,7 +243,7 @@
       {#each ticks as t (t.year)}
         {#if x(t.pos) >= GUTTER}
           <line x1={x(t.pos)} x2={x(t.pos)} y1={AXIS_H - 6} y2={AXIS_H} class="tick" />
-          <text x={x(t.pos) + 3} y={AXIS_H - 9} class="tick-label">{t.label}</text>
+          <text x={x(t.pos) + 3} y={AXIS_H - 9} class="tick-label">{formatYear(t.year, lang)}</text>
         {/if}
       {/each}
       <line x1={GUTTER} x2={width} y1={AXIS_H} y2={AXIS_H} class="axis-line" />
@@ -297,19 +300,19 @@
                 class:selected={sel}
                 role="button"
                 tabindex="0"
-                aria-label="{ev.title.en}, {formatRange(ev.when.from, ev.when.to)}"
+                aria-label="{label(ev).text}, {formatRange(ev.when.from, ev.when.to, lang)}"
                 aria-pressed={sel}
                 onclick={() => choose(ev)}
                 onkeydown={(e) => keyChoose(e, ev)}
               >
-                <title>{ev.title.en} · {formatRange(ev.when.from, ev.when.to)} ({certaintyLabel(ev.when.certainty)})</title>
+                <title>{label(ev).text} · {formatRange(ev.when.from, ev.when.to, lang)} ({certaintyText(ev.when.certainty, lang)})</title>
                 {#if it.dot}
                   {#if it.x1 - it.x0 > 2}
                     <line x1={it.x0} x2={it.x1} y1={cy} y2={cy} stroke={c} stroke-width="2" opacity="0.5" />
                   {/if}
                   <circle cx={it.cx} cy={cy} r={sel ? 7 : 5.5} fill={c} stroke={sel ? '#111' : '#fff'} stroke-width={sel ? 2 : 1.5}
                     stroke-dasharray={sel ? undefined : DASH[ev.when.certainty]} />
-                  <text x={it.cx + 10} y={cy + 4} class="label">{ev.title.en}</text>
+                  <text x={it.cx + 10} y={cy + 4} class="label" lang={label(ev).lang}>{label(ev).text}</text>
                 {:else}
                   {@const h = ev.kind === 'period' ? 16 : 10}
                   <rect
@@ -348,13 +351,13 @@
                       fill-opacity="0.75"
                       pointer-events="none"
                     >
-                      <title>{ev.when.core.basis.en}</title>
+                      <title>{tx(ev.when.core.basis, lang)}</title>
                     </rect>
                   {/if}
                   {#if it.labelInside}
-                    <text x={vis0 + 5} y={cy + 4} class="label inside">{ev.title.en}</text>
+                    <text x={vis0 + 5} y={cy + 4} class="label inside" lang={label(ev).lang}>{label(ev).text}</text>
                   {:else}
-                    <text x={Math.max(it.x1, GUTTER) + 5} y={cy + 4} class="label">{ev.title.en}</text>
+                    <text x={Math.max(it.x1, GUTTER) + 5} y={cy + 4} class="label" lang={label(ev).lang}>{label(ev).text}</text>
                   {/if}
                 {/if}
               </g>
@@ -363,7 +366,7 @@
 
           {#each links as lk (lk.key)}
             <path d={lk.d} class="link {lk.type}" />
-            <text x={lk.mx} y={lk.my} class="link-label">{lk.type}</text>
+            <text x={lk.mx} y={lk.my} class="link-label" {lang}>{lang === 'ar' ? relationText(lk.type, lang) : lk.type}</text>
           {/each}
         </g>
 
@@ -371,9 +374,14 @@
           <g class="lane-label">
             <rect x="0" y={l.y} width={GUTTER - 4} height={l.height} />
             <rect x="0" y={l.y} width="4" height={l.height} fill={l.lane.color ?? '#666'} />
-            <text x="12" y={l.y + 20}>{l.lane.name.en}</text>
-            {#if l.lane.name.ar}
-              <text x={GUTTER - 10} y={l.y + 38} class="ar" text-anchor="end" lang="ar">{l.lane.name.ar}</text>
+            {#if lang === 'ar' && l.lane.name.ar}
+              <text x={GUTTER - 10} y={l.y + 21} class="ar-main" text-anchor="end" lang="ar">{l.lane.name.ar}</text>
+              <text x={GUTTER - 10} y={l.y + 38} class="en-sub" text-anchor="end">{l.lane.name.en}</text>
+            {:else}
+              <text x="12" y={l.y + 20}>{l.lane.name.en}</text>
+              {#if l.lane.name.ar}
+                <text x={GUTTER - 10} y={l.y + 38} class="ar" text-anchor="end" lang="ar">{l.lane.name.ar}</text>
+              {/if}
             {/if}
           </g>
         {/each}
@@ -503,6 +511,20 @@
     font-weight: 400;
     font-size: 13px;
     fill: #777;
+  }
+  .lane-label text.ar-main {
+    font-family: var(--font-ar);
+    font-size: 15px;
+  }
+  .lane-label text.en-sub {
+    font-weight: 400;
+    font-size: 11px;
+    fill: #777;
+  }
+  .label:lang(ar),
+  .era-label:lang(ar) {
+    font-family: var(--font-ar);
+    font-size: 13px;
   }
   .item {
     cursor: pointer;

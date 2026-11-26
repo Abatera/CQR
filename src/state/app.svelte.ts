@@ -1,5 +1,6 @@
 import type { Bundle, Issue } from '../lib/validate';
 import type { CqrEvent, Lane, Source } from '../lib/schema';
+import type { Lang } from '../lib/i18n';
 import { loadQuranData, type QuranData } from '../quran/quran-data';
 import { href, parseHash, type Route } from './route';
 
@@ -8,6 +9,15 @@ export interface ContentData extends Bundle {
 }
 
 const HIDDEN_LANES_KEY = 'cqr.hiddenLanes';
+const LANG_KEY = 'cqr.lang';
+
+function loadLang(): Lang {
+  try {
+    return localStorage.getItem(LANG_KEY) === 'ar' ? 'ar' : 'en';
+  } catch {
+    return 'en';
+  }
+}
 
 function loadHiddenLanes(): string[] {
   try {
@@ -28,6 +38,8 @@ class AppState {
   quranError = $state<string | null>(null);
   route = $state<Route>(parseHash(location.hash));
   hiddenLanes = $state<string[]>(loadHiddenLanes());
+  /** The language the content is read in (D21). The rest of the interface stays in English for now. */
+  lang = $state<Lang>(loadLang());
   /** Set by the editor forms while they have unsaved changes. */
   editorDirty = $state(false);
 
@@ -93,6 +105,15 @@ class AppState {
     const i = this.selectedId ? list.findIndex((e) => e.id === this.selectedId) : -1;
     const next = i < 0 ? (dir > 0 ? 0 : list.length - 1) : Math.min(list.length - 1, Math.max(0, i + dir));
     this.select(list[next].id);
+  }
+
+  setLang(lang: Lang) {
+    this.lang = lang;
+    try {
+      localStorage.setItem(LANG_KEY, lang);
+    } catch {
+      // Private browsing: the choice lasts for this visit only.
+    }
   }
 
   toggleLane(id: string) {

@@ -48,8 +48,9 @@
       scripts, copied verbatim. It keeps its own terms, reproduced below, and is not covered by the licenses above.
     </li>
     <li>
-      Fonts: <a href="https://github.com/aliftype/amiri" target="_blank" rel="noopener">Amiri and Amiri Quran</a> by the Amiri Project
-      Authors, SIL Open Font License 1.1.
+      Fonts: <a href="https://github.com/aliftype/amiri" target="_blank" rel="noopener">Amiri Quran</a> by the Amiri Project Authors,
+      for the Quran text, and <a href="https://github.com/notofonts/arabic" target="_blank" rel="noopener">Noto Naskh Arabic</a> by the
+      Noto Project Authors, for all other Arabic text. Both are under the SIL Open Font License 1.1.
     </li>
     <li>Maps: <a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet</a>; map data &copy; OpenStreetMap contributors; terrain style &copy; OpenTopoMap (CC-BY-SA).</li>
   </ul>

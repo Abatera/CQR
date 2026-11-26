@@ -10,10 +10,18 @@
   font-display: swap;
 }
 
+/* The Arabic font for content (everything but the Quran text): a variable font, weights 400-700. */
+@font-face {
+  font-family: 'Noto Naskh Arabic';
+  src: url('/fonts/noto-naskh-arabic/NotoNaskhArabic-wght.ttf') format('truetype');
+  font-weight: 400 700;
+  font-display: swap;
+}
+
 :root {
   --font-ui: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --font-quran: 'Amiri Quran', serif;
-  --font-ar: 'Amiri', 'Segoe UI', 'Geeza Pro', serif;
+  --font-ar: 'Noto Naskh Arabic', 'Amiri', 'Segoe UI', 'Geeza Pro', serif;
   --bg: #fbfbf9;
   --panel: #fff;
   --line: #e3e3de;
@@ -35,6 +43,22 @@ body {
   font-family: var(--font-ui);
   font-size: 14px;
   line-height: 1.5;
+}
+
+/* Arabic text other than the Quran uses the content font. The Quran text sets its own font (.quran-text). */
+:where(:lang(ar)) {
+  font-family: var(--font-ar);
+}
+
+/* English inside Arabic text (where a translation is missing) keeps the interface font. */
+:where(:lang(ar) :lang(en)) {
+  font-family: var(--font-ui);
+}
+
+input:lang(ar),
+textarea:lang(ar) {
+  font-family: var(--font-ar);
+  font-size: 16px;
 }
 
 a {

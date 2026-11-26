@@ -7,23 +7,28 @@ title:
   ar: ذو الكفل
 summary:
   en: Dhu al-Kifl, peace be upon him, named among the patient and the best (21:85-86; 38:48). Who he was and when he lived are not known.
+  ar: ذو الكفل عليه السلام، ذُكر في الصابرين وفي الأخيار (21:85-86؛ 38:48). ولا يُعرف مَن كان ولا متى عاش.
 when:
   from: -1558
   to: -1450
   certainty: unknown
   basis:
     en: Unknown. He is placed after Job only because many identify him with Job's son Bishr, a claim Ibn Kathir reports without endorsing it ("God knows best"). The span means nothing more.
+    ar: غير معروف. وُضع بعد أيوب فقط لأن كثيرين يرونه بِشْرًا ابنَ أيوب، وهو قولٌ يحكيه ابن كثير دون أن يعتمده، ويكِل العلم فيه إلى الله. ولا تدلّ المدّة المرسومة على أكثر من ذلك.
 place:
   status: unknown
   description:
     en: Not known.
+    ar: غير معروف.
 quran: [ "21:85-86", "38:48" ]
 tradition:
   - kind: historian
     attribution:
       en: Ibn Kathir, citing Mujahid, Abu Musa al-Ash'ari and Ibn Jarir
+      ar: ابن كثير، نقلًا عن مجاهد وأبي موسى الأشعري وابن جرير
     text:
       en: The apparent sense of the Quran is that he was a prophet, and this is the well-known view. Mujahid said he was a righteous man who took on the judging of his people; Abu Musa al-Ash'ari said he was not a prophet but a righteous man; Ibn Jarir suspended judgement.
+      ar: "ظاهر القرآن أنه كان نبيًّا، وهو المشهور. وقال مجاهد: كان رجلًا صالحًا تكفّل بالقضاء بين قومه، وقال أبو موسى الأشعري: لم يكن نبيًّا بل رجلًا صالحًا، وتوقّف ابن جرير."
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة ذي الكفل الذي زعم قوم أنه ابن أيوب»

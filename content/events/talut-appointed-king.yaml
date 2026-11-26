@@ -7,16 +7,19 @@ title:
   ar: بعث طالوت ملكا
 summary:
   en: The Children of Israel ask a prophet of theirs for a king to fight under. Talut (Saul) is appointed, and his troops are tested at a river.
+  ar: يطلب بنو إسرائيل من نبيٍّ لهم ملكًا يقاتلون تحت رايته، فيُعيَّن طالوت (شاؤول)، ويُبتلى جنوده بنهر.
 when:
   from: -1050
   to: -1010
   certainty: traditional
   basis:
     en: Placed just before David's traditional dates. The Quran gives no date.
+    ar: موضوعٌ قُبيل التواريخ التقليدية لداوود. ولا يذكر القرآن تاريخًا.
 place:
   status: unknown
   description:
     en: The Quran names no place. It says that Talut set out with his troops and that they were tested with a river.
+    ar: لا يسمّي القرآن مكانًا. ويذكر أن طالوت خرج بجنوده وأنهم ابتُلوا بنهر.
 quran: [ "2:246-249" ]
 related:
   - { id: david-kills-jalut, type: consequence }

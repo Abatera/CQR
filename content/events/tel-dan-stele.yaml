@@ -7,24 +7,28 @@ title:
   ar: نقش تل دان
 summary:
   en: An Aramaic inscription from the 9th century BCE that mentions the "House of David".
+  ar: نقشٌ آرامي من القرن التاسع قبل الميلاد يذكر «بيت داوود».
 when:
   from: -900
   to: -801
   certainty: estimated
   basis:
     en: The 9th century BCE, from the inscription's content and context. To be sourced.
+    ar: القرن التاسع قبل الميلاد، استنادًا إلى مضمون النقش وسياقه. يحتاج إلى مصدر.
 place:
   status: known
   names:
     - { name: Tel Dan, type: modern }
   description:
     en: Tel Dan, in the north of the Jordan valley, where the fragments were found.
+    ar: تل دان، في شمال وادي الأردن، حيث وُجدت قطعه.
   geometry:
     type: Point
     coordinates: [ 35.652, 33.249 ]
 history:
   - claim:
       en: The stele mentions the "House of David". It is the earliest known reference to David outside the Bible.
+      ar: يذكر النقشُ «بيت داوود»، وهو أقدم ذكرٍ معروف لداوود خارج الكتاب المقدس.
     status: established
 related:
   - { id: david, type: context }

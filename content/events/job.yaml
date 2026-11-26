@@ -7,19 +7,23 @@ title:
   ar: أيوب
 summary:
   en: Ayyub (Job), peace be upon him, praised in the Quran for his patience through long affliction, which God then removed (21:83-84; 38:41-44).
+  ar: أيوب عليه السلام، أثنى عليه القرآن بصبره على بلاءٍ طويل، ثم كشفه الله عنه (21:83-84؛ 38:41-44).
 when:
   from: -1650
   to: -1558
   certainty: unknown
   basis:
     en: No report dates Job. Ibn Kathir places him in Abraham's line, and in his book after Joseph and before Shu'ayb and Moses; he notes that a list from al-Kalbi puts Job after Jonah, but doubts that order. He died aged 93, according to Ibn Jarir and the historians. The span only marks his place in the order.
+    ar: لا تؤرّخ أيَّ روايةٍ أيوبَ. ويجعله ابن كثير من ذرية إبراهيم، ويضعه في كتابه بعد يوسف وقبل شعيب وموسى؛ ويذكر أن قائمةً عن الكلبي تجعل أيوب بعد يونس، لكنه يشكّ في هذا الترتيب. وتوفّي ابنَ ثلاثٍ وتسعين سنة، على قول ابن جرير والمؤرّخين. ولا تدلّ المدّة المرسومة إلا على موضعه في الترتيب.
 place:
   status: proposed
   description:
     en: Ibn Kathir says his wide lands were in al-Bathaniyya, in the Hawran south of Damascus. The point is approximate.
+    ar: يقول ابن كثير إن أراضيه الواسعة كانت في البثينة، من أرض حوران جنوبي دمشق. والنقطة تقريبية.
   opinions:
     - name:
         en: al-Bathaniyya in the Hawran (Ibn Kathir)
+        ar: البثينة في حوران (ابن كثير)
       geometry:
         type: Point
         coordinates: [ 36.05, 32.75 ]
@@ -30,9 +34,11 @@ tradition:
   - kind: historian
     attribution:
       en: Ibn Kathir, citing Ibn Ishaq and Ibn Jarir
+      ar: ابن كثير، نقلًا عن ابن إسحاق وابن جرير
     text:
       en: Ibn Ishaq said Job was a man of the Rum; Ibn Kathir holds the well-known view that he was of Abraham's line. His lands were in al-Bathaniyya in the Hawran. He died aged 93, according to Ibn Jarir and the historians, and it is said he lived longer.
-      ar: الأراضي المتسعة بأرض البثينة من أرض حوران
+      ar: قال ابن إسحاق إن أيوب كان رجلًا من الروم، ويأخذ ابن كثير بالقول المشهور أنه من ذرية إبراهيم. وكانت أراضيه في البثينة من حوران. وتوفّي ابنَ ثلاثٍ وتسعين سنة، على قول ابن جرير والمؤرّخين، ويقال إنه عاش أكثر من ذلك.
+    original: الأراضي المتسعة بأرض البثينة من أرض حوران
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة نبي الله أيوب»

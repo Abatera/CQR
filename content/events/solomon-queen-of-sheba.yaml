@@ -7,16 +7,19 @@ title:
   ar: سليمان وملكة سبأ
 summary:
   en: The hoopoe brings Solomon, peace be upon him, news of Saba' and of a woman who rules it. The queen comes to Solomon and submits with him to God.
+  ar: يأتي الهدهدُ سليمانَ عليه السلام بخبر سبأ وبخبر امرأةٍ تحكمها. ثم تقدم الملكة على سليمان وتُسلم معه لله.
 when:
   from: -970
   to: -931
   certainty: traditional
   basis:
     en: Within Solomon's traditional dates. The Quran gives no date.
+    ar: ضمن التواريخ التقليدية لسليمان. ولا يذكر القرآن تاريخًا.
 place:
   status: unknown
   description:
     en: The Quran names Saba' as the queen's land but names no place for Solomon's court.
+    ar: يسمّي القرآن سبأ أرضًا للملكة، ولا يسمّي مكانًا لبلاط سليمان.
 quran: [ "27:20-44" ]
 related:
   - { id: solomon, type: context }

@@ -2,6 +2,7 @@
   import { tick } from 'svelte';
   import { containsArabic, verseEndMark } from '../lib/arabic';
   import { parseRef, refIncludes } from '../lib/quran-ref';
+  import { pick, t } from '../lib/i18n';
   import type { CqrEvent } from '../lib/schema';
   import { app } from '../state/app.svelte';
   import { href } from '../state/route';
@@ -121,7 +122,7 @@
                 >
               </p>
               {#each citing(h.verse.surah, h.verse.ayah) as e (e.id)}
-                <a class="chip" href={href({ view: 'explore', eventId: e.id })}>On the timeline: {e.title.en}</a>
+                <a class="chip" href={href({ view: 'explore', eventId: e.id })}>{t('onTheTimeline', 'en')} <span lang={pick(e.title, app.lang).lang}>{pick(e.title, app.lang).text}</span></a>
               {/each}
             </li>
           {/each}
@@ -149,7 +150,7 @@
           <p class="quran-text verse" id="v-{v.surah}-{v.ayah}" class:target={route.ayah === v.ayah}>
             {v.text}&nbsp;<span class="end">{verseEndMark(v.ayah)}</span>
             {#each evs as e (e.id)}
-              <a class="chip" dir="ltr" lang="en" href={href({ view: 'explore', eventId: e.id })}>{e.title.en}</a>
+              <a class="chip" dir={pick(e.title, app.lang).dir} lang={pick(e.title, app.lang).lang} href={href({ view: 'explore', eventId: e.id })}>{pick(e.title, app.lang).text}</a>
             {/each}
           </p>
         {/each}

@@ -7,16 +7,19 @@ title:
   ar: طبقات الفيضان في كيش وشروباك
 summary:
   en: Excavations in southern Iraq found thick, water-laid flood deposits at Ur, Kish and Shuruppak. Those at Kish and Shuruppak date to about 3000 BCE; the deposit at Ur is older.
+  ar: وجدت التنقيبات في جنوب العراق رواسبَ فيضانٍ سميكة أرستها المياه في أور وكيش وشروباك. وتعود رواسب كيش وشروباك إلى نحو 3000 ق.م، أما رواسب أور فأقدم.
 when:
   from: -3100
   to: -2900
   certainty: estimated
   basis:
     en: The flood layers at Kish and Shuruppak lie directly above remains of the Jemdet Nasr period, which Kramer dates to about 3200-3000 BCE; captions in his article date the Shuruppak deposits to about 3000 BCE.
+    ar: تقع طبقات الفيضان في كيش وشروباك مباشرةً فوق بقايا حقبة جمدة نصر، التي يؤرّخها كريمر بنحو 3200–3000 ق.م؛ وتؤرّخ تعليقات الصور في مقاله رواسبَ شروباك بنحو 3000 ق.م.
 place:
   status: known
   description:
     en: Kish, Shuruppak (Fara) and Ur, in southern Mesopotamia. The outline joins the three sites and is a rough sketch.
+    ar: كيش وشروباك (فارة) وأور، في جنوب بلاد الرافدين. والحدود المرسومة تصل بين المواقع الثلاثة، وهي تخطيطٌ تقريبي.
   geometry:
     type: Polygon
     coordinates:
@@ -29,14 +32,17 @@ place:
 history:
   - claim:
       en: At Ur, from 1929, Woolley found clean, water-laid mud above Ubaid-period remains, in one pit about eleven feet thick, and took it as evidence of the Flood. Kramer notes that the Ur deposits go back to at least 3500 BCE, too early for the flood of the Sumerian texts.
+      ar: وجد وولي في أور، منذ عام 1929، طينًا نقيًّا أرسته المياه فوق بقايا حقبة العُبيد، بلغ سمكه في إحدى الحفر نحو أحد عشر قدمًا، فعدّه دليلًا على الطوفان. ويلاحظ كريمر أن رواسب أور تعود إلى 3500 ق.م على الأقل، أي إنها أقدم من أن تكون طوفانَ النصوص السومرية.
     status: established
     sources: [ kramer-1967 ]
   - claim:
       en: Flood layers at Kish (Langdon and Watelin) and Shuruppak (Schmidt, 1931) lie directly above Jemdet Nasr remains, about 3000 BCE. The deposits at different sites are not all of the same date.
+      ar: تقع طبقات الفيضان في كيش (لانغدون وواتلان) وشروباك (شميت، 1931) مباشرةً فوق بقايا جمدة نصر، نحو 3000 ق.م. ورواسب المواقع المختلفة ليست كلها من تاريخٍ واحد.
     status: established
     sources: [ kramer-1967 ]
   - claim:
       en: Following Mallowan (1964), Kramer concluded that the flood behind the Mesopotamian tradition was "an actual catastrophic but by no means universal disaster" around 3000 BCE. Linking any of these deposits to the flood of the texts remains an interpretation.
+      ar: انتهى كريمر، متابعًا مالوان (1964)، إلى أن الطوفان الذي يقف وراء تراث بلاد الرافدين كان «كارثةً حقيقيةً مدمّرة، لكنها لم تكن عامّةً بأي حال» نحو 3000 ق.م (العبارة مترجمةٌ عن الإنجليزية). ويبقى ربطُ أيٍّ من هذه الرواسب بطوفان النصوص تفسيرًا.
     status: debated
     sources: [ kramer-1967 ]
 related:

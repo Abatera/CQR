@@ -7,32 +7,38 @@ title:
   ar: روايات الطوفان السومرية
 summary:
   en: The Sumerian King List divides its kings into those before the flood and those after it, and the Sumerian Flood Story tells of Zi-ud-sura, who survived the flood in a boat.
+  ar: تقسم قائمةُ الملوك السومريين ملوكَها إلى مَن كانوا قبل الطوفان ومَن جاؤوا بعده، وتحكي قصةُ الطوفان السومرية خبرَ زيوسودرا، الذي نجا من الطوفان في سفينة.
 when:
   from: -2100
   to: -1700
   certainty: estimated
   basis:
     en: Kramer dates the composition of the King List, in part, to about 2100 BCE and the Flood Story to about 2000 BCE or earlier; the surviving tablets date to the early 2nd millennium BCE.
+    ar: يؤرّخ كريمر تأليفَ قائمة الملوك، في بعضها، بنحو 2100 ق.م، وقصةَ الطوفان بنحو 2000 ق.م أو قبل ذلك؛ أما الألواح الباقية فتعود إلى أوائل الألف الثاني قبل الميلاد.
 place:
   status: known
   names:
     - { name: Nippur, type: ancient, language: Sumerian }
   description:
     en: The main tablet of the Flood Story comes from Nippur; manuscripts of the King List come from several cities, including Isin and Larsa. The point marks Nippur and is approximate.
+    ar: اللوح الرئيس لقصة الطوفان من نيبور، ونُسخ قائمة الملوك من عدة مدن، منها إيسين ولارسا. والنقطة تعيّن نيبور وهي تقريبية.
   geometry:
     type: Point
     coordinates: [ 45.23, 32.13 ]
 history:
   - claim:
       en: 'The King List counts eight kings in five cities before the flood ("Then the flood swept over"), then: "After the flood had swept over, and the kingship had descended from heaven, the kingship was in Kish."'
+      ar: "تعدّ قائمة الملوك ثمانية ملوك في خمس مدن قبل الطوفان («ثم اجتاح الطوفان»)، ثم تقول: «بعد أن اجتاح الطوفان، ونزلت المُلكية من السماء، كانت المُلكية في كيش». (العبارات المقتبسة هنا وفيما يلي مترجمةٌ عن ترجمة كريمر الإنجليزية.)"
     status: established
     sources: [ etcsl-king-list ]
   - claim:
       en: In the Flood Story, "waves and windstorms had rocked the huge boat for seven days and seven nights"; afterwards the gods settled Zi-ud-sura the king in Dilmun, "where the sun rises".
+      ar: في قصة الطوفان «ظلّت الأمواج والعواصف تهزّ السفينة العظيمة سبعة أيام وسبع ليال»؛ ثم أسكنت الآلهةُ الملكَ زيوسودرا في دلمون، «حيث تشرق الشمس».
     status: established
     sources: [ etcsl-flood-story ]
   - claim:
       en: The King List was probably composed in part about 2100 BCE and the Flood Story about 2000 BCE or earlier; the later Akkadian flood account of Utanapishtim survives in tablets from Ashurbanipal's library at Nineveh.
+      ar: أُلّفت قائمة الملوك على الأرجح، في بعضها، نحو 2100 ق.م، وقصة الطوفان نحو 2000 ق.م أو قبل ذلك؛ أما رواية الطوفان الأكدية اللاحقة عن أوتنابشتيم فقد بقيت في ألواحٍ من مكتبة آشوربانيبال في نينوى.
     status: established
     sources: [ kramer-1967 ]
 related:

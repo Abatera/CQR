@@ -7,19 +7,23 @@ title:
   ar: يحيى
 summary:
   en: Yahya (John), peace be upon him, son of Zechariah, given wisdom as a child (19:12), who came confirming a word from God (3:39). He was killed by a ruler of his time.
+  ar: يحيى عليه السلام، ابن زكريا، أُعطي الحكمة وهو صغير (19:12)، وجاء مصدّقًا لكلمةٍ من عند الله (3:39). وقتله حاكمٌ من حكّام زمانه.
 when:
   from: -6
   to: 28
   certainty: estimated
   basis:
     en: A contemporary of Jesus. The Jewish historian Josephus reports that Herod put him to death at the fortress of Machaerus; the exact years are not known.
+    ar: معاصرٌ لعيسى. ويذكر المؤرّخ اليهودي يوسيفوس أن هيرودس قتله في قلعة مكاور (ماخيروس)؛ ولا تُعرف السنوات بدقة.
 place:
   status: proposed
   description:
     en: Reports differ on where he was killed. The points are approximate.
+    ar: تختلف الروايات في موضع قتله. والنقاط تقريبية.
   opinions:
     - name:
         en: Bayt al-Maqdis, on the Rock (al-Thawri, from al-A'mash, cited by Ibn Kathir)
+        ar: بيت المقدس، على الصخرة (الثوري، عن الأعمش، فيما نقله ابن كثير)
       geometry:
         type: Point
         coordinates: [ 35.235, 31.778 ]
@@ -28,6 +32,7 @@ place:
           locator: vol. 2, «بيان سبب قتل يحيى عليه السلام»
     - name:
         en: Damascus (Sa'id ibn al-Musayyib; a sound chain to him, says Ibn Kathir)
+        ar: دمشق (سعيد بن المسيّب؛ بإسنادٍ صحيح إليه كما يقول ابن كثير)
       geometry:
         type: Point
         coordinates: [ 36.306, 33.511 ]
@@ -36,6 +41,7 @@ place:
           locator: vol. 2, «بيان سبب قتل يحيى عليه السلام»
     - name:
         en: Machaerus, east of the Dead Sea (Josephus)
+        ar: مكاور (ماخيروس)، شرقي البحر الميت (يوسيفوس)
       geometry:
         type: Point
         coordinates: [ 35.64, 31.56 ]
@@ -46,15 +52,18 @@ tradition:
   - kind: historian
     attribution:
       en: Ibn Kathir, citing al-Thawri and Sa'id ibn al-Musayyib
+      ar: ابن كثير، نقلًا عن الثوري وسعيد بن المسيّب
     text:
       en: Seventy prophets were killed on the Rock in Bayt al-Maqdis, John among them (al-Thawri, from al-A'mash). A report from Sa'id ibn al-Musayyib, with a sound chain to him, implies he was killed in Damascus.
-      ar: وهذا إسناد صحيح إلى سعيد بن المسيب، وهو يقتضي أنه قتل بدمشق
+      ar: قُتل سبعون نبيًّا على الصخرة في بيت المقدس، ومنهم يحيى (الثوري، عن الأعمش). وروايةٌ عن سعيد بن المسيّب، بإسنادٍ صحيح إليه، تقتضي أنه قُتل بدمشق.
+    original: وهذا إسناد صحيح إلى سعيد بن المسيب، وهو يقتضي أنه قتل بدمشق
     source:
       id: ibn-kathir-bidaya
       locator: vol. 2, «بيان سبب قتل يحيى عليه السلام»
 history:
   - claim:
       en: Josephus writes that Herod, fearing the great influence John "that was called the Baptist" had over the people, sent him as a prisoner to Machaerus, where he was put to death.
+      ar: يكتب يوسيفوس أن هيرودس، خوفًا من تأثير يوحنا «الذي كان يُلقَّب بالمعمدان» الكبير في الناس، أرسله سجينًا إلى مكاور، وهناك قُتل. (العبارة المقتبسة مترجمةٌ عن الترجمة الإنجليزية.)
     status: established
     sources:
       - { id: josephus-antiquities, locator: 18.5.2 }

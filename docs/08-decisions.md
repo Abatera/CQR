@@ -32,6 +32,14 @@ All entries are from the planning conversation on 2026-11-23.
 | D19 | **Honorifics:** ﷺ after the name of the Prophet Muhammad, and "peace be upon him" after other prophets at their first mention in each entry. This closes former open question 11. The validator warns when "Muhammad" (the Prophet) is written without ﷺ. |
 | D20 | (2026-11-25) The ages of the earliest prophets drive their dates. To keep the prophets after Noah where they are, the reckoning is **anchored on Noah's death** (about 3000 BCE, ten *qurun* read as a thousand years before Abraham) and **counted back to Adam** through the reported ages: Noah lived 350 years after the Flood (Ibn Sa'd), spent 950 years among his people (Quran 29:14) and was sent at 50 (one report); he was born 126 years after Adam's death (Ibn Jarir); Adam lived **960 years** (the owner's reading of al-Tirmidhi's version of the hadith, the thousand written for him less the forty he gave David), with 1,000 (Ahmad's version, Ibn Kathir) and 930 (the Torah) as alternatives; Idris lived through 308 years of Adam's life (Ibn Ishaq) and 365 years in all (the Torah's Enoch). Bars before Abraham are now lifespans, not 500-year windows. |
 
+## Decided on 2026-11-26
+
+| # | Decision |
+|---|---|
+| D21 | The owner asked for "the arabic translations of the content, all of it". Every reader-facing text in `content/` now has Arabic. Readers choose with an **EN / عربي switch** in the header: in Arabic the facts panel reads right to left and its headings are in Arabic, the timeline and map labels are in Arabic, and any text without Arabic falls back to English. The rest of the interface (the Quran reader, About, the editor) stays in English for now. This extends D14. |
+| D22 | In Tafsir and Tradition, the **source's own wording is kept apart from the project's summary**: a new field, `original`, holds the words as quoted from the cited work, and `text` (English and Arabic) is the project's own summary or translation. In Arabic the original comes first, labeled «بلفظ المصدر», and the summary is labeled «بصياغة المشروع». Hadith wording is never written by Claude: reports with no `original` show only the summary until their wording is read in the source. |
+| D23 | **Font for Arabic content: Noto Naskh Arabic** (SIL OFL 1.1). The owner first asked to try Thmanyah's font; its custom license reportedly forbids redistributing the files, so it cannot go into a public repository, and the owner chose an open Arabic content font instead. Amiri Quran stays for the Quran text. |
+
 ## Implemented as proposed, not yet confirmed by the owner
 
 These were built as proposed, because the app needed them, but the owner has not explicitly confirmed them. Each is easy to change.
@@ -83,6 +91,21 @@ The owner asked for "a further search" on the great flood. The research is in [r
 - **A certain part inside a span** (`when.core`): for Noah, the Quran's 950 years are drawn solid inside his reckoned life, whose years before his mission and after the Flood are only reported (D20). The Flood is now reckoned at about 3350 BCE, and its draft connection was reworded accordingly.
 - **The ﷺ check** now recognizes other people named Muhammad by the name that follows (for example "Muhammad 'Abduh").
 
+### For the Arabic translation (2026-11-26, D21–D23)
+
+- **The Arabic was written by Claude** from the English, for all 450 texts that lacked it (about 10,100 English words). It is a draft like the rest of the content, and needs the owner's review. Where the source's Arabic wording was available (`original`), it guided the terms used.
+- **Quran wording is never reproduced.** Verses are referred to by number and paraphrased. Every Arabic text was checked by script against the Tanzil text for runs of three or more words matching a verse; the matches left are names and everyday phrases (for example «في سبيل الله», «عيسى ابن مريم»).
+- **Quotations that reached the project in English** (Kramer's Sumerian texts, Josephus, Tacitus, Diodorus, Time magazine, the Bible in the World English Bible, 1 Enoch) are translated by the project and marked «مترجمةٌ عن الإنجليزية» or «بترجمة المشروع عن الإنجليزية», so they are not taken for published Arabic translations.
+- **Arabic wording of scholars is quoted only where it was read** (in `original`, or given in Arabic or in transliteration in the English). Elsewhere their words are reported indirectly, without quotation marks.
+- **Hadith summaries are written as reports** («يذكر الحديث أن…»), not in the hadith's own voice, so they cannot be mistaken for its wording.
+- **Honorifics in Arabic:** ﷺ after the Prophet's name and «عليه السلام» where the English has "peace be upon him". The validator now also checks Arabic text for «محمد» without ﷺ.
+- **Names** use the forms of the Arabic sources where they exist (داوود as in the existing titles, أرفخشذ, عوص), and the forms of the Arabic Bible for biblical names (أخآب، يربعام، أرفكشاد). Modern names are transliterated (كريمر، وولي). Hazarmaveth is written حَصَرماوِت, not حضرموت, so that the Hud entry's connection stays an observation of resemblance.
+- **Numbers and dates:** Western digits, as in verse references; ق.م and م for BCE and CE, with Arabic number agreement (آيتان، 3 آيات، 11 آية). The timeline axis keeps time running left to right.
+- **Citations and the bibliography** stay in the form of the cited edition (mostly English), isolated so they read correctly inside Arabic text.
+- **The grading scholar (`by`)** became a language map, so it can be shown in Arabic.
+- **The project's name** is shown in English in both languages; it has no Arabic name yet (open question 17).
+- **A layout bug** was fixed on the way: when the lanes needed a vertical scrollbar, the timeline widened by the scrollbar's width on every frame and pushed the facts panel off the screen.
+
 ## Open questions (ask the owner)
 
 3. **The layers.** Confirm the model (now five layers, with Tradition), and decide who assigns the confidence level for connections. The editor currently says "set by the owner".
@@ -96,5 +119,7 @@ The owner asked for "a further search" on the great flood. The research is in [r
 15. **Audience.** Who is the main audience? This affects tone and depth.
 
 16. **The hadith on the periods between the prophets.** Is the weak report in al-Hakim's *al-Mustadrak* (Ibn Abbas, through Ali ibn Zayd ibn Jud'an and Yusuf ibn Mihran) the one the owner had in mind? See [research/prophets-chronology.md](research/prophets-chronology.md).
+17. **The project's name in Arabic.** Should "Chronotope of Quranic Reality" have an Arabic name for the Arabic view, and if so, which?
+18. **A full Arabic interface.** Should the Quran reader, the About page and the header also switch to Arabic, beyond what D21 covers?
 
 Questions 2, 5, 7 and 8 were answered by D14, question 1 by D17, and question 11 by D19.

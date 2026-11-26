@@ -7,16 +7,19 @@ title:
   ar: انتشار الحديد في بلاد الشام
 summary:
   en: Iron tools and weapons become common in the Levant during the 11th and 10th centuries BCE.
+  ar: تصبح الأدوات والأسلحة الحديدية شائعةً في بلاد الشام خلال القرنين الحادي عشر والعاشر قبل الميلاد.
 when:
   from: -1100
   to: -901
   certainty: estimated
   basis:
     en: The 11th–10th centuries BCE, from archaeological finds. To be sourced.
+    ar: القرنان الحادي عشر والعاشر قبل الميلاد، استنادًا إلى المكتشفات الأثرية. يحتاج إلى مصدر.
 place:
   status: known
   description:
     en: The southern Levant. The outline is a rough sketch of the region.
+    ar: جنوب بلاد الشام. والحدود المرسومة تخطيطٌ تقريبي للإقليم.
   geometry:
     type: Polygon
     coordinates:
@@ -30,9 +33,11 @@ place:
 history:
   - claim:
       en: Iron became common for tools and weapons in the Levant during the 11th–10th centuries BCE.
+      ar: أصبح الحديد شائعًا في الأدوات والأسلحة في بلاد الشام خلال القرنين الحادي عشر والعاشر قبل الميلاد.
     status: established
   - claim:
       en: Smelted iron was known before 1200 BCE, in Anatolia and elsewhere, but it was rare and valuable.
+      ar: كان الحديد المستخلَص بالصهر معروفًا قبل 1200 ق.م، في الأناضول وغيرها، لكنه كان نادرًا ونفيسًا.
     status: established
 related:
   - { id: david-armor, type: context }

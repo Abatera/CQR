@@ -7,19 +7,23 @@ title:
   ar: يونس
 summary:
   en: Yunus (Jonah), Dhu al-Nun, peace be upon him, who left his people in anger, was swallowed by the fish and repented; his people believed and were spared (10:98).
+  ar: يونس عليه السلام، ذو النون، الذي فارق قومه غاضبًا، فابتلعه الحوت فتاب؛ وآمن قومه فنجوا (10:98).
 when:
   from: -790
   to: -750
   certainty: traditional
   basis:
     en: Biblical tradition places Jonah son of Amittai in the reign of Jeroboam son of Joash, who reigned 41 years (2 Kings 14:23-25), usually dated to the first half of the 8th century BCE; a source for that date is still to be added.
+    ar: يضع تراث الكتاب المقدس يونان بن أمتاي في عهد يربعام بن يوآش، الذي ملك إحدى وأربعين سنة (الملوك الثاني 14:23-25)، ويُؤرَّخ عادةً بالنصف الأول من القرن الثامن قبل الميلاد؛ وما يزال مصدر هذا التاريخ ينتظر الإضافة.
 place:
   status: proposed
   description:
     en: The people of tafsir say he was sent to the people of Nineveh, in the land of Mosul (cited by Ibn Kathir). The point marks Nineveh.
+    ar: يقول أهل التفسير إنه أُرسل إلى أهل نينوى من أرض الموصل (فيما نقله ابن كثير). والنقطة تعيّن نينوى.
   opinions:
     - name:
         en: Nineveh, in the land of Mosul (the people of tafsir, cited by Ibn Kathir)
+        ar: نينوى، من أرض الموصل (أهل التفسير، فيما نقله ابن كثير)
       geometry:
         type: Point
         coordinates: [ 43.153, 36.359 ]
@@ -30,9 +34,11 @@ tradition:
   - kind: historian
     attribution:
       en: Ibn Kathir, citing the people of tafsir
+      ar: ابن كثير، نقلًا عن أهل التفسير
     text:
       en: God sent Jonah to the people of Nineveh, in the land of Mosul. How long he stayed in the fish is reported as three days (Qatada), seven (Ja'far al-Sadiq) or forty (others); Ibn Kathir says God knows best.
-      ar: بعث الله يونس عليه السلام إلى أهل نينوى من أرض الموصل
+      ar: "بعث الله يونس إلى أهل نينوى من أرض الموصل. وفي مدّة مكثه في بطن الحوت روايات: ثلاثة أيام (قتادة)، أو سبعة (جعفر الصادق)، أو أربعون (غيرهما)؛ ويكِل ابن كثير العلم في ذلك إلى الله."
+    original: بعث الله يونس عليه السلام إلى أهل نينوى من أرض الموصل
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة يونس»

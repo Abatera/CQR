@@ -7,12 +7,14 @@ title:
   ar: نشأة مملكة سبأ
 summary:
   en: The kingdom of Saba' in south Arabia, centered on Ma'rib. When it began is debated.
+  ar: مملكة سبأ في جنوب جزيرة العرب، ومركزها مأرب. ومتى نشأت أمرٌ مختلفٌ فيه.
 when:
   from: -1200
   to: -800
   certainty: debated
   basis:
     en: A placeholder range. Scholars disagree on when the kingdom began; the main views still need to be researched and added as alternatives.
+    ar: مدًى مؤقّت. يختلف العلماء في وقت نشأة المملكة، وما تزال الآراء الرئيسة تحتاج إلى بحثٍ وإضافةٍ بوصفها تأريخاتٍ بديلة.
 place:
   status: known
   names:
@@ -20,6 +22,7 @@ place:
     - { name: Ma'rib, type: modern }
   description:
     en: Ma'rib, in present-day Yemen.
+    ar: مأرب، في اليمن اليوم.
   geometry:
     type: Point
     coordinates: [ 45.33, 15.43 ]

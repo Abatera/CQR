@@ -7,26 +7,31 @@ title:
   ar: إبراهيم
 summary:
   en: Ibrahim (Abraham), peace be upon him, the Friend of God, who rejected his people's idols, was saved from the fire, and with Ishmael raised the foundations of the House in Mecca.
+  ar: إبراهيم عليه السلام، خليل الله، الذي أنكر أصنام قومه، ونُجّي من النار، ورفع مع إسماعيل أسس البيت في مكة.
 when:
   from: -2000
   to: -1826
   certainty: traditional
   basis:
     en: Ibn Kathir reasons that more than a thousand years separate Abraham, who built the Sacred House, from Solomon, who built Bayt al-Maqdis. With Solomon in the 10th century BCE, that puts Abraham at or before about 2000 BCE. The 175-year life is the People of the Book's figure, reported by Ibn Kathir (Genesis 25:7). History cannot date Abraham.
+    ar: يستدلّ ابن كثير بأن بين إبراهيم، باني البيت الحرام، وسليمان، باني بيت المقدس، أكثرَ من ألف سنة. ومع وضع سليمان في القرن العاشر قبل الميلاد، يقع إبراهيم نحو 2000 ق.م أو قبل ذلك. والعمر البالغ مئةً وخمسًا وسبعين سنة هو رقم أهل الكتاب، نقله ابن كثير (التكوين 25:7). ولا يستطيع التاريخ تأريخ إبراهيم.
   alternatives:
     - from: -2900
       to: -2726
       basis:
         en: Ibn Sa'd's chain of intervals, counted back from the Prophet's birth (about 570 CE). These intervals rest on weak chains (see Moses and Jesus).
+        ar: سلسلة الفترات عند ابن سعد، محسوبةً رجوعًا من مولد النبي ﷺ (نحو 570 م). وهذه الفترات قائمةٌ على أسانيد ضعيفة (انظر موسى وعيسى).
       sources:
         - { id: ibn-asakir-dimashq, locator: 1/32 }
 place:
   status: proposed
   description:
     en: The Quran names no birthplace. Ibn Kathir reports Babylon as his birthplace, his later life in the land of Iliya (Jerusalem), and his burial at Hebron by continuous tradition, though no sound report fixes the exact spot.
+    ar: لا يسمّي القرآن مولده. ويذكر ابن كثير أنه وُلد ببابل، وأنه عاش بعدُ في أرض إيلياء (القدس)، ودُفن في حبرون، وهذا ثابتٌ بالتواتر، وإن لم تُعيِّن روايةٌ صحيحة الموضعَ بعينه.
   opinions:
     - name:
         en: Babylon, his birthplace, "the correct view" (Ibn 'Asakir, cited by Ibn Kathir)
+        ar: بابل، مولده، وهو «الصحيح» (ابن عساكر، فيما نقله ابن كثير)
       geometry:
         type: Point
         coordinates: [ 44.42, 32.54 ]
@@ -34,6 +39,7 @@ place:
         - { id: ibn-kathir-bidaya, locator: "vol. 1, «قصة إبراهيم خليل الرحمن»" }
     - name:
         en: Hebron, his burial place, by continuous tradition (Ibn Kathir)
+        ar: حبرون (الخليل)، موضع دفنه، بالتواتر (ابن كثير)
       geometry:
         type: Point
         coordinates: [ 35.11, 31.525 ]
@@ -45,47 +51,61 @@ tradition:
   - kind: hadith
     attribution:
       en: The Prophet ﷺ, narrated by Abu Umama al-Bahili
+      ar: النبي ﷺ، من رواية أبي أمامة الباهلي
     text:
       en: Between Noah and Abraham were ten qurun. The full report and its gradings are under Adam.
+      ar: يذكر الحديث أن بين نوح وإبراهيم عشرة قرون. والرواية كاملةً بدرجاتها في مدخل آدم.
     source:
       id: hakim-mustadrak
       locator: 2/288
     gradings:
       - grade: sahih
-        by: al-Hakim
+        by:
+          en: al-Hakim
+          ar: الحاكم
         source:
           id: hakim-mustadrak
           locator: 2/288
         note:
           en: Sound on the condition of Muslim, though some of its narrators were criticized.
+          ar: صحيحٌ على شرط مسلم، وإن تُكلِّم في بعض رواته.
       - grade: sahih
-        by: al-Albani
+        by:
+          en: al-Albani
+          ar: الألباني
         source: albani-sahiha
         note:
           en: Authenticated with its supporting narrations.
+          ar: صحّحه بشواهده.
   - kind: historian
     attribution:
       en: Ibn Kathir
+      ar: ابن كثير
     text:
       en: More than a thousand years separate Abraham, who built the Sacred House, from Solomon, who built Bayt al-Maqdis. The same chapter cites the hadith of Abu Dharr, which puts forty years between the founding of the two mosques.
+      ar: بين إبراهيم، باني البيت الحرام، وسليمان، باني بيت المقدس، أكثرُ من ألف سنة. ويذكر الفصلُ نفسه حديثَ أبي ذر الذي يجعل بين تأسيس المسجدين أربعين سنة.
     source:
       id: ibn-kathir-bidaya
       locator: vol. 2, «قصة سليمان بن داود عليهما السلام»
   - kind: ahl-al-kitab
     attribution:
       en: The People of the Book, as reported by Ibn Kathir
+      ar: أهل الكتاب، فيما نقله ابن كثير
     text:
       en: Abraham died aged 175, or it is said 195. Ibn al-Kalbi gave 200 years.
-      ar: "مات عن مائة وخمس وسبعين، وقيل: وتسعين سنة"
+      ar: "مات إبراهيم ابنَ مئةٍ وخمسٍ وسبعين سنة، وقيل: مئةٍ وخمسٍ وتسعين. وجعله ابن الكلبي مئتي سنة."
+    original: "مات عن مائة وخمس وسبعين، وقيل: وتسعين سنة"
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «وفاة إبراهيم وما قيل في عمره»
   - kind: historian
     attribution:
       en: Ibn Kathir, citing Ibn 'Asakir
+      ar: ابن كثير، نقلًا عن ابن عساكر
     text:
       en: The correct view is that Abraham was born in Babylon. He was buried at Hebron; this is known by continuous tradition, but no sound report from the infallible Prophet fixes the exact spot.
-      ar: والصحيح أنه ولد ببابل
+      ar: الصحيح أن إبراهيم وُلد ببابل. ودُفن في حبرون، وهذا معروفٌ بالتواتر، لكن لم تُعيِّن روايةٌ صحيحة عن النبي المعصوم الموضعَ بعينه.
+    original: والصحيح أنه ولد ببابل
     source:
       id: ibn-kathir-bidaya
       locator: vol. 1, «قصة إبراهيم خليل الرحمن»; «وفاة إبراهيم وما قيل في عمره»

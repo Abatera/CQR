@@ -10,7 +10,8 @@
   import { href } from './state/route';
   import Timeline from './timeline/Timeline.svelte';
 
-  const view = $derived(app.route.view);
+  // The editor exists only on the local dev server; on the public site its route opens the explorer.
+  const view = $derived(app.route.view === 'edit' && !CAN_EDIT ? 'explore' : app.route.view);
   const lang = $derived(app.lang);
   const errors = $derived((app.content?.issues ?? []).filter((i) => i.level === 'error').length);
   const warnings = $derived((app.content?.issues ?? []).filter((i) => i.level === 'warning').length);
@@ -107,7 +108,7 @@
       </div>
     {:else if view === 'quran'}
       <QuranView />
-    {:else if view === 'edit'}
+    {:else if CAN_EDIT && view === 'edit'}
       <EditorView />
     {:else}
       <About />

@@ -70,8 +70,8 @@
 
 ## GitHub
 
-- The repository will be **public**. On the development machine, `origin` points to `github.com/Abatera/CQR`, and the first commit (the planning docs) was already pushed. Whether the GitHub repository is public was not checked.
-- The owner chose "local only for now". Ask before committing, pushing, or enabling Pages.
-- Deployment to Pages would use GitHub Actions. No workflow has been added yet.
+- The repository is **public**, at `github.com/Abatera/CQR`. The owner commits and pushes the versions; ask before committing or pushing.
+- **Deployment (D26):** [.github/workflows/deploy.yml](../.github/workflows/deploy.yml) runs on every push to `main`. It installs with `npm ci`, runs `quran:verify`, the tests, `check` and `build` (which validates the content first), and publishes `dist/` to GitHub Pages at `https://abatera.github.io/CQR/`. Any failing step stops the deployment, and the previous version stays online. One-time setup: in the repository's Settings > Pages, "Source" must be "GitHub Actions".
+- The editor exists only on the dev server: the public build drops it, and its `#/edit` route opens the explorer.
 - The GitHub CLI (`gh`) is not installed on either machine.
 - The owner uses Windows.

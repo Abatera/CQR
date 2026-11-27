@@ -65,7 +65,7 @@ The pilot is 8–10 events, fully researched and cited. It tests the whole desig
 ## Phase 4: Review and publish
 
 - The owner reviews all the content.
-- With the owner's OK: create the public GitHub repo and deploy to GitHub Pages with Actions.
+- ~~Create the public GitHub repo and deploy to GitHub Pages with Actions.~~ Workflow added on 2026-11-27 (D26). The content is still all drafts, each shown with its draft banner.
 - Write `CONTRIBUTING.md` (how to add an event, and the sourcing rules from [03-content-principles.md](03-content-principles.md)) and a code of conduct.
 
 ## Later

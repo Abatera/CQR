@@ -8,7 +8,7 @@ A public, educational, interactive web app. It places events narrated in the Qur
 
 The planning docs were written on 2026-11-23 on a different PC, at the end of a planning conversation between the project owner and Claude. Development happens on this machine. Decisions made since then are logged in [docs/08-decisions.md](docs/08-decisions.md) (D14 onward).
 
-A git repository exists, with `origin` at `github.com/Abatera/CQR`. The owner commits and pushes the versions (v0.1 to v0.3 by 2026-11-25). Whether the GitHub repository is public was not checked.
+A git repository exists, with `origin` at `github.com/Abatera/CQR`. The owner commits and pushes the versions (v0.1 to v0.4.1 by 2026-11-27). The repository is public, and the site is deployed to GitHub Pages by a GitHub Actions workflow on every push to `main` (D26), so **a push publishes**.
 
 ## Commands
 
@@ -45,7 +45,7 @@ Check the open questions at the end of [docs/08-decisions.md](docs/08-decisions.
 - **Arabic text is the project's own.** Never reproduce Quran wording in it: refer to verses by number and paraphrase. Check new Arabic against the Tanzil text for runs of three or more words matching a verse. Quote a scholar's Arabic only where it was read. Mark quotations translated from English as «مترجمةٌ عن الإنجليزية». See docs/03.
 - **Honorifics:** ﷺ after the Prophet Muhammad's name; "peace be upon him" (in Arabic «عليه السلام») after other prophets at their first mention in each entry (D19).
 - **The research leads in these docs are unverified.** They were recalled during the planning conversation, not checked against sources. Verify each against a real source before it goes into content.
-- **Local-first.** Do not commit, push, or enable GitHub Pages without asking the owner. The repository will be public.
+- **Ask before committing or pushing.** The repository is public, and every push to `main` redeploys the public site (D26).
 - **Versions mark functionality, not content** (the owner, 2026-11-26). Commits are named like "v0.4, added: …" only when the app's functionality changes. A commit that only adds or edits content keeps the current version and just describes the content.
 - **Draft until reviewed.** New content is `review: draft`. Only the owner marks an entry `reviewed`, and only after its sources are verified.
 - **Never edit `data/third-party/quran/`.** Tanzil's terms forbid changes. `npm run quran:verify` detects them.

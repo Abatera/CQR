@@ -1,0 +1,3 @@
+# Third-party data is stored byte for byte: no line-ending conversion.
+# Tanzil's terms forbid changes to the Quran text, and `npm run quran:verify` checks the exact bytes.
+data/third-party/** -text

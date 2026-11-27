@@ -1,5 +1,6 @@
 import { mount } from 'svelte';
 import App from './App.svelte';
+import './fonts.css';
 import './app.css';
 import { app } from './state/app.svelte';
 

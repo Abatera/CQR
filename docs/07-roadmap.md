@@ -62,6 +62,11 @@ The pilot is 8–10 events, fully researched and cited. It tests the whole desig
 - The rise of the Neo-Assyrian Empire, c. 911 BCE.
 - The Tel Dan stele, 9th century BCE, as evidence.
 
+## Design (2026-11-27, D27–D30)
+
+- Done: the redesign "Strata": a home page, search, the "all of time" strip, folded empty lanes, one drawing per date certainty, the entry panel in five colored layers with the reckoning chain and "around this time", a map with ancient region names and lettered opinions, a phone layout, and guided journeys with their editor form.
+- Next: register the site with Stadia Maps (question 19); review the journeys' wording (question 20); add reckoning chains to the other reckoned entries; polish the Quran reader in the same style.
+
 ## Phase 4: Review and publish
 
 - The owner reviews all the content.

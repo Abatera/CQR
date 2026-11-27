@@ -1,5 +1,7 @@
 import type { Bundle, Issue } from '../lib/validate';
-import type { CqrEvent, Lane, Source } from '../lib/schema';
+import { DEFAULT_VIEW, NARROW_QUERY } from '../config';
+import type { CqrEvent, Journey, Lane, Source } from '../lib/schema';
+import { yearEnd, yearStart } from '../lib/years';
 import type { Lang } from '../lib/i18n';
 import { loadQuranData, type QuranData } from '../quran/quran-data';
 import { href, parseHash, type Route } from './route';
@@ -42,10 +44,24 @@ class AppState {
   lang = $state<Lang>(loadLang());
   /** Set by the editor forms while they have unsaved changes. */
   editorDirty = $state(false);
+  /** The timeline's visible window, on the continuous year axis (see lib/years.ts). Shared with the overview strip. */
+  timeView = $state({ start: yearStart(DEFAULT_VIEW.from), end: yearEnd(DEFAULT_VIEW.to) });
+  /** True on small screens, where the layout becomes a phone layout. */
+  narrow = $state(typeof matchMedia === 'function' ? matchMedia(NARROW_QUERY).matches : false);
+  /** On a phone: whether the selected entry is open full screen (true) or only peeking (false). */
+  entryOpen = $state(false);
+  /**
+   * Where the last selection came from. Selections from outside the timeline (a link, search, the map,
+   * a journey) zoom the timeline to the event; clicks in the timeline and arrow-key steps keep the zoom.
+   * Not reactive on purpose: it is read once when the selection changes.
+   */
+  selectSource: 'timeline' | 'step' | 'other' = 'other';
 
   eventsById = $derived(new Map<string, CqrEvent>((this.content?.events ?? []).map((e) => [e.id, e])));
   lanesById = $derived(new Map<string, Lane>((this.content?.lanes ?? []).map((l) => [l.id, l])));
   sourcesById = $derived(new Map<string, Source>((this.content?.sources ?? []).map((s) => [s.id, s])));
+  journeys = $derived<Journey[]>(this.content?.journeys ?? []);
+  journeysById = $derived(new Map<string, Journey>(this.journeys.map((j) => [j.id, j])));
 
   selectedId = $derived(this.route.view === 'explore' ? this.route.eventId : undefined);
   selected = $derived(this.selectedId ? this.eventsById.get(this.selectedId) : undefined);
@@ -95,7 +111,14 @@ class AppState {
   }
 
   select(id: string | undefined) {
+    if (id !== this.selectedId) this.entryOpen = false;
     this.navigate({ view: 'explore', eventId: id });
+  }
+
+  /** Opens an event's entry: on a phone, full screen. */
+  openEntry(id: string) {
+    this.navigate({ view: 'explore', eventId: id });
+    this.entryOpen = true;
   }
 
   /** Selects the next (+1) or previous (-1) visible event in time order. */
@@ -104,6 +127,7 @@ class AppState {
     if (!list.length) return;
     const i = this.selectedId ? list.findIndex((e) => e.id === this.selectedId) : -1;
     const next = i < 0 ? (dir > 0 ? 0 : list.length - 1) : Math.min(list.length - 1, Math.max(0, i + dir));
+    this.selectSource = 'step';
     this.select(list[next].id);
   }
 
@@ -127,3 +151,7 @@ export const app = new AppState();
 window.addEventListener('hashchange', () => {
   app.route = parseHash(location.hash);
 });
+
+if (typeof matchMedia === 'function') {
+  matchMedia(NARROW_QUERY).addEventListener('change', (e) => (app.narrow = e.matches));
+}

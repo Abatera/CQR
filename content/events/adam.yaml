@@ -15,6 +15,25 @@ when:
   basis:
     en: "Counted back from Noah's death, about 3166 BCE (see Noah): Noah was born about 4516 BCE, 126 years after Adam's death (Ibn Jarir), so Adam died about 4642 BCE. The span is Adam's life of 960 years: the thousand years written for him, less the forty he gave to David, in al-Tirmidhi's version of the hadith."
     ar: "محسوبٌ رجوعًا من موت نوح نحو 3166 ق.م (انظر نوح): وُلد نوح نحو 4516 ق.م، بعد وفاة آدم بمئةٍ وستٍّ وعشرين سنة (ابن جرير)، فتكون وفاة آدم نحو 4642 ق.م. والمدّة هي عمر آدم البالغ تسعمئةٍ وستين سنة: الألفُ التي كُتبت له، ناقصًا الأربعين التي وهبها لداوود، في رواية الترمذي للحديث."
+  chain:
+    - label:
+        en: Noah born (see Noah)
+        ar: مولد نوح (انظر نوح)
+      year: -4516
+    - label:
+        en: Adam dies
+        ar: وفاة آدم
+      year: -4642
+      gap:
+        en: 126 years earlier (Ibn Jarir)
+        ar: قبله بمئةٍ وستٍّ وعشرين سنة (ابن جرير)
+    - label:
+        en: Adam's life begins
+        ar: بداية حياة آدم
+      year: -5601
+      gap:
+        en: "960 years earlier: his life, in al-Tirmidhi's version of the hadith"
+        ar: "قبلها بتسعمئةٍ وستين سنة: عمره في رواية الترمذي للحديث"
   alternatives:
     - from: -5641
       to: -4642

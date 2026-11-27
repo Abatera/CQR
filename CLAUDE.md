@@ -4,7 +4,7 @@ A public, educational, interactive web app. It places events narrated in the Qur
 
 ## Status
 
-**Phases 0–2 are built (2026-11-23); Phase 3 content is in draft.** The app runs: timeline, map, facts panel, Quran reader and search, and a local editor with forms for all content. The 15 pilot events are drafts written from unverified research leads. A Prophets lane with 25 researched draft entries and a Tradition layer (hadith and historians, with gradings) were added the same day; the research is in [docs/research/prophets-chronology.md](docs/research/prophets-chronology.md). On 2026-11-25 the Flood of Noah was researched and added in four draft entries ([docs/research/the-flood.md](docs/research/the-flood.md)). On 2026-11-26 all content got Arabic, with an EN / عربي switch (D21–D23); the Arabic is Claude's draft, not yet reviewed by the owner. The same day Abraham was anchored at about 2166 BCE and told in eight episodes, which moved every date counted from him (D24; [docs/research/abraham.md](docs/research/abraham.md)). See [docs/07-roadmap.md](docs/07-roadmap.md) for what is done and what is next.
+**Phases 0–2 are built (2026-11-23); Phase 3 content is in draft.** The app runs: timeline, map, facts panel, Quran reader and search, and a local editor with forms for all content. The 15 pilot events are drafts written from unverified research leads. A Prophets lane with 25 researched draft entries and a Tradition layer (hadith and historians, with gradings) were added the same day; the research is in [docs/research/prophets-chronology.md](docs/research/prophets-chronology.md). On 2026-11-25 the Flood of Noah was researched and added in four draft entries ([docs/research/the-flood.md](docs/research/the-flood.md)). On 2026-11-26 all content got Arabic, with an EN / عربي switch (D21–D23); the Arabic is Claude's draft, not yet reviewed by the owner. The same day Abraham was anchored at about 2166 BCE and told in eight episodes, which moved every date counted from him (D24; [docs/research/abraham.md](docs/research/abraham.md)). On 2026-11-27 the site went live on GitHub Pages (D26), and the redesign "Strata" was approved and built: a home page, search, guided journeys (a new content type), the five layers in fixed colors, and a phone layout (D27–D30). See [docs/07-roadmap.md](docs/07-roadmap.md) for what is done and what is next.
 
 The planning docs were written on 2026-11-23 on a different PC, at the end of a planning conversation between the project owner and Claude. Development happens on this machine. Decisions made since then are logged in [docs/08-decisions.md](docs/08-decisions.md) (D14 onward).
 
@@ -21,7 +21,7 @@ A git repository exists, with `origin` at `github.com/Abatera/CQR`. The owner co
 ## Read these first, in order
 
 1. [docs/01-vision.md](docs/01-vision.md): what the project is for and where the idea came from
-2. [docs/02-ui-design.md](docs/02-ui-design.md): the three-panel layout and the timeline lanes
+2. [docs/02-ui-design.md](docs/02-ui-design.md): the design ("Strata"), the views, the timeline and the map
 3. [docs/03-content-principles.md](docs/03-content-principles.md): how claims are layered, dated, located and sourced
 4. [docs/04-data-model.md](docs/04-data-model.md): the proposed content schema and file layout
 5. [docs/05-quran-data.md](docs/05-quran-data.md): the Quran text database (Hafs), search, fonts and licensing

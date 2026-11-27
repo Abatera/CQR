@@ -21,6 +21,39 @@ when:
     basis:
       en: The Quran gives the 950 years he stayed among his people before the Flood took them (29:14).
       ar: يذكر القرآن التسعمئة والخمسين سنة التي لبثها في قومه قبل أن يأخذهم الطوفان (29:14).
+  chain:
+    - label:
+        en: Abraham born
+        ar: مولد إبراهيم
+      year: -2166
+    - label:
+        en: Noah dies
+        ar: موت نوح
+      year: -3166
+      gap:
+        en: ten qurun earlier, read as 1,000 years (hadith of Abu Umama)
+        ar: قبله بعشرة قرون، تُقرأ ألفَ سنة (حديث أبي أمامة)
+    - label:
+        en: The Flood
+        ar: الطوفان
+      year: -3516
+      gap:
+        en: 350 years earlier (Ibn Sa'd; also the Torah)
+        ar: قبله بثلاثمئةٍ وخمسين سنة (ابن سعد؛ والتوراة أيضًا)
+    - label:
+        en: His mission begins
+        ar: بدء دعوته
+      year: -4466
+      gap:
+        en: "950 years earlier: his time among his people (29:14)"
+        ar: "قبله بتسعمئةٍ وخمسين سنة: لبثه في قومه (29:14)"
+    - label:
+        en: Noah born
+        ar: مولد نوح
+      year: -4516
+      gap:
+        en: "50 years earlier: sent at fifty, in one report"
+        ar: "قبله بخمسين سنة: بُعث ابنَ خمسين في روايةٍ"
   alternatives:
     - from: -4816
       to: -3166

@@ -1,11 +1,12 @@
 <script lang="ts">
   import { fullCite, shortCite } from '../lib/format';
-  import type { Collection } from '../lib/schema';
+  import { COLLECTIONS, type Collection } from '../lib/schema';
   import { formatRange } from '../lib/years';
   import { app, CAN_EDIT } from '../state/app.svelte';
   import { href } from '../state/route';
   import EraForm from './EraForm.svelte';
   import EventForm from './EventForm.svelte';
+  import JourneyForm from './JourneyForm.svelte';
   import LaneForm from './LaneForm.svelte';
   import { COLLECTION_LABEL } from './model';
   import SourceForm from './SourceForm.svelte';
@@ -32,6 +33,8 @@
           sub: `${formatRange(e.when.from, e.when.to)} · ${app.lanesById.get(e.lane)?.name.en ?? e.lane}`,
           draft: e.review === 'draft',
         }));
+      case 'journeys':
+        return c.journeys.map((j) => ({ id: j.id, title: j.title.en, sub: `${j.steps.length} steps · order ${j.order}`, draft: j.review === 'draft' }));
       case 'lanes':
         return app.lanes.map((l) => ({ id: l.id, title: l.name.en, sub: `order ${l.order}${l.pinned ? ' · pinned' : ''}` }));
       case 'eras':
@@ -58,6 +61,8 @@
     switch (collection) {
       case 'events':
         return c.events.find((x) => x.id === id);
+      case 'journeys':
+        return c.journeys.find((x) => x.id === id);
       case 'lanes':
         return c.lanes.find((x) => x.id === id);
       case 'eras':
@@ -77,7 +82,7 @@
     app.navigate({ view: 'edit', collection });
   }
 
-  const TABS: Collection[] = ['events', 'lanes', 'eras', 'sources'];
+  const TABS: Collection[] = COLLECTIONS;
   const collectionIssues = $derived(issues.filter((i) => i.collection === collection));
 </script>
 
@@ -130,6 +135,7 @@
       {:else if route.isNew}
         {#key `${collection}-new`}
           {#if collection === 'events'}<EventForm onsaved={saved} />
+          {:else if collection === 'journeys'}<JourneyForm onsaved={saved} />
           {:else if collection === 'lanes'}<LaneForm onsaved={saved} />
           {:else if collection === 'eras'}<EraForm onsaved={saved} />
           {:else}<SourceForm onsaved={saved} />{/if}
@@ -139,6 +145,7 @@
       {:else if current}
         {#key `${collection}-${route.id}`}
           {#if collection === 'events'}<EventForm initial={current as never} onsaved={saved} ondeleted={deleted} />
+          {:else if collection === 'journeys'}<JourneyForm initial={current as never} onsaved={saved} ondeleted={deleted} />
           {:else if collection === 'lanes'}<LaneForm initial={current as never} onsaved={saved} ondeleted={deleted} />
           {:else if collection === 'eras'}<EraForm initial={current as never} onsaved={saved} ondeleted={deleted} />
           {:else}<SourceForm initial={current as never} onsaved={saved} ondeleted={deleted} />{/if}
@@ -198,7 +205,7 @@
   }
   .tabs {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     border-bottom: 1px solid var(--line);
   }
   .tabs a {

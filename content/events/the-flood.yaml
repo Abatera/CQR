@@ -15,6 +15,25 @@ when:
   basis:
     en: 350 years before Noah's death (Ibn Sa'd), which is placed ten qurun, read as a thousand years, before Abraham, about 3166 BCE (see Noah). The year marks that reckoning only; history cannot date the Flood of the Quran.
     ar: قبل موت نوح بثلاثمئةٍ وخمسين سنة (ابن سعد)، وموته موضوعٌ قبل إبراهيم بعشرة قرون، تُقرأ ألفَ سنة، أي نحو 3166 ق.م (انظر نوح). والسنة المرسومة تعيّن هذا الحساب وحده؛ ولا يستطيع التاريخ تأريخ طوفان القرآن.
+  chain:
+    - label:
+        en: Abraham born
+        ar: مولد إبراهيم
+      year: -2166
+    - label:
+        en: Noah dies
+        ar: موت نوح
+      year: -3166
+      gap:
+        en: ten qurun earlier, read as 1,000 years (hadith of Abu Umama)
+        ar: قبله بعشرة قرون، تُقرأ ألفَ سنة (حديث أبي أمامة)
+    - label:
+        en: The Flood
+        ar: الطوفان
+      year: -3516
+      gap:
+        en: 350 years earlier (Ibn Sa'd)
+        ar: قبله بثلاثمئةٍ وخمسين سنة (ابن سعد)
   alternatives:
     - from: -3506
       to: -3506

@@ -15,6 +15,25 @@ when:
   basis:
     en: Ibn Ishaq says he lived through 308 years of Adam's life, so his span starts 308 years before Adam's death (about 4642 BCE, see Adam). No Islamic report gives his age; the span uses the 365 years the Torah gives Enoch, with whom Ibn Kathir identifies Idris. In that count he is taken 69 years before Noah's birth, so the three do not collide. Al-Qurtubi rejects the view that Idris was Noah's ancestor (see the Tradition layer), which would undo this placement.
     ar: يقول ابن إسحاق إنه عاش ثلاثمئةٍ وثماني سنين من حياة آدم، فتبدأ مدّته قبل وفاة آدم (نحو 4642 ق.م، انظر آدم) بثلاثمئةٍ وثماني سنين. ولا تذكر روايةٌ إسلامية عمره؛ فالمدّة تأخذ بالثلاثمئة والخمس والستين سنة التي تجعلها التوراة لأخنوخ، الذي يجعله ابن كثير إدريسَ. وفي هذا الحساب يُرفع قبل مولد نوح بتسعٍ وستين سنة، فلا يتداخل الثلاثة. ويردّ القرطبي القولَ بأن إدريس جدُّ نوح (انظر طبقة المرويّات)، وهو قولٌ لو صحّ لنقض هذا الوضع.
+  chain:
+    - label:
+        en: Adam dies (see Adam)
+        ar: وفاة آدم (انظر آدم)
+      year: -4642
+    - label:
+        en: Idris's life begins
+        ar: بداية حياة إدريس
+      year: -4949
+      gap:
+        en: "308 years earlier: he lived through 308 years of Adam's life (Ibn Ishaq)"
+        ar: "قبلها بثلاثمئةٍ وثماني سنين: عاش ثلاثمئةٍ وثماني سنين من حياة آدم (ابن إسحاق)"
+    - label:
+        en: Idris is taken
+        ar: رفع إدريس
+      year: -4585
+      gap:
+        en: "365 years later: the Torah's figure for Enoch"
+        ar: "بعدها بثلاثمئةٍ وخمسٍ وستين سنة: رقم التوراة لأخنوخ"
 place:
   status: unknown
   description:

@@ -28,6 +28,7 @@ content/
 ├── lanes.yaml        # timeline lanes
 ├── eras.yaml         # background era bands
 ├── sources.yaml      # bibliography
+├── journeys.yaml     # guided journeys (D28)
 └── events/
     └── <event-id>.yaml
 ```
@@ -76,7 +77,7 @@ content/
 | `lane` | yes | A lane ID. |
 | `review` | yes | `draft` or `reviewed`. Drafts are labeled in the app. |
 | `title`, `summary` | yes | Language maps. |
-| `when` | yes | `from`, `to`, `certainty` (`established`, `estimated`, `traditional`, `reckoned`, `debated` or `unknown`; `reckoned` is for years computed from intervals reported in tradition, see [03](03-content-principles.md)), `basis` (a language map: what the date rests on), an optional `core` `{ from, to, basis }` for the part of the span that a source fixes (drawn solid inside the bar; it must lie inside the span), and an optional `alternatives` list of `{ from, to, basis, sources }`. |
+| `when` | yes | `from`, `to`, `certainty` (`established`, `estimated`, `traditional`, `reckoned`, `debated` or `unknown`; `reckoned` is for years computed from intervals reported in tradition, see [03](03-content-principles.md)), `basis` (a language map: what the date rests on), an optional `core` `{ from, to, basis }` for the part of the span that a source fixes (drawn solid inside the bar; it must lie inside the span), an optional `chain` (D29): a list of `{ label, year, gap }` steps from an anchor to the entry's own years, where `gap` (from the second step on) says how the step is counted from the one before and on what source, and an optional `alternatives` list of `{ from, to, basis, sources }`. |
 | `place` | yes | `status` (`known`, `proposed` or `unknown`), `names` (a list of `{ name, type: ancient or modern, language }`), `description`, `geometry`, and `opinions` (a list of `{ name, geometry, sources }`). |
 | `quran` | no | A list of references. Mostly used in the Quran lane, but any event may cite verses. |
 | `tafsir` | no | A list of `{ text, original, source }`. `text` is a language map: what the commentator says, in the project's words. `original` (optional) is the commentator's own words, quoted from the cited work (D22). |
@@ -86,6 +87,21 @@ content/
 | `related` | no | A list of `{ id, type }`, with type `context`, `consequence` or `parallel`. |
 | `tags` | no | Free-form tags. |
 | `notes` | no | Editorial notes: open questions, things to verify. Never shown to readers. |
+
+## Journeys
+
+A guided journey (D28), in `content/journeys.yaml`:
+
+| Field | Required | Notes |
+|---|---|---|
+| `id` | yes | Kebab-case; the URL is `#/journey/<id>`. |
+| `title`, `summary` | yes | Language maps. The summary is shown on the journey's card. |
+| `review` | yes | `draft` or `reviewed`. |
+| `order` | yes | Lower numbers are listed first. |
+| `steps` | yes | At least two `{ event, note }`: an event ID, and an optional language map that links the step to the one before, e.g. "Archaeology: flood deposits found in Mesopotamian cities." |
+| `notes` | no | Editorial notes, never shown to readers. |
+
+Every step must name an existing event; deleting an event that a journey uses is refused.
 
 ### Location rules
 

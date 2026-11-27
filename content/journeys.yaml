@@ -1,0 +1,98 @@
+# Guided journeys: ordered steps through events, walked one at a time in the app. See docs/04-data-model.md.
+- id: the-prophets
+  title:
+    en: The prophets in order
+    ar: الأنبياء على ترتيبهم
+  summary:
+    en: The 25 prophets named in the Quran, from Adam to Muhammad ﷺ, in the order of their traditional dates. Before Abraham the years are a reckoning from intervals reported in tradition.
+    ar: الأنبياء الخمسة والعشرون الذين سمّاهم القرآن، من آدم إلى محمد ﷺ، على ترتيب تواريخهم في التراث. وقبل إبراهيم تكون السنون حسابًا من فتراتٍ مرويّة في التراث.
+  review: draft
+  order: 1
+  steps:
+    - { event: adam }
+    - { event: idris }
+    - { event: noah }
+    - { event: hud }
+    - { event: salih }
+    - { event: abraham }
+    - { event: lot }
+    - { event: ishmael }
+    - { event: isaac }
+    - { event: jacob }
+    - { event: joseph }
+    - { event: job }
+    - { event: shuayb }
+    - { event: dhul-kifl }
+    - { event: aaron }
+    - { event: moses }
+    - { event: david }
+    - { event: solomon }
+    - { event: elijah }
+    - { event: elisha }
+    - { event: jonah }
+    - { event: zechariah }
+    - { event: john }
+    - { event: jesus }
+    - { event: muhammad }
+
+- id: life-of-abraham
+  title:
+    en: The life of Abraham
+    ar: حياة إبراهيم
+  summary:
+    en: Abraham's life in the episodes the Quran tells, from the idols and the fire to the foundations of the House, beside what history knows of the same years.
+    ar: حياة إبراهيم في الوقائع التي يقصّها القرآن، من الأصنام والنار إلى القواعد من البيت، إلى جانب ما يعرفه التاريخ عن السنين نفسها.
+  review: draft
+  order: 2
+  steps:
+    - { event: abraham-idols-fire }
+    - { event: abraham-and-the-king }
+    - { event: abraham-stars-harran }
+    - { event: abraham-emigration }
+    - { event: hagar-ishmael-mecca }
+    - { event: abraham-sacrifice }
+    - { event: abraham-guests }
+    - { event: abraham-house }
+
+- id: the-flood
+  title:
+    en: The Flood of Noah
+    ar: طوفان نوح
+  summary:
+    en: What the Quran says about the Flood and what the commentators said, then what history and archaeology found about floods in the same region.
+    ar: ما يقوله القرآن عن الطوفان وما قاله المفسّرون، ثم ما وجده التاريخ وعلم الآثار من فيضاناتٍ في المنطقة نفسها.
+  review: draft
+  order: 3
+  steps:
+    - { event: noah }
+    - { event: the-flood }
+    - event: mesopotamian-flood-layers
+      note:
+        en: "Archaeology: flood deposits found in Mesopotamian cities."
+        ar: "علم الآثار: رواسب فيضانٍ وُجدت في مدن بلاد الرافدين."
+    - event: sumerian-flood-texts
+      note:
+        en: "Writing: the Sumerian accounts of a great flood."
+        ar: "الكتابة: روايات السومريين عن طوفانٍ عظيم."
+    - event: black-sea-flood
+      note:
+        en: "A hypothesis: a flood of the Black Sea, thousands of years earlier, and why it is debated."
+        ar: "فرضيّة: فيضانٌ للبحر الأسود قبل ذلك بآلاف السنين، ولماذا هي موضع خلاف."
+
+- id: david-and-solomon
+  title:
+    en: David and Solomon
+    ar: داود وسليمان
+  summary:
+    en: Talut and Jalut, David's armor, Solomon's kingdom and the Queen of Saba', beside the spread of iron and the copper mines of the Arabah.
+    ar: طالوت وجالوت، ودروع داود، وملك سليمان وملكة سبأ، إلى جانب انتشار الحديد ومناجم النحاس في وادي عربة.
+  review: draft
+  order: 4
+  steps:
+    - { event: talut-appointed-king }
+    - { event: david-kills-jalut }
+    - { event: david-armor }
+    - { event: solomon-inherits-david }
+    - { event: solomon-molten-copper }
+    - { event: solomon-queen-of-sheba }
+    - { event: solomon-death }

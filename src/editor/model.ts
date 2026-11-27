@@ -13,6 +13,7 @@ import {
   type Era,
   type Geometry,
   type Grading,
+  type Journey,
   type LangText,
   type TraditionItem,
   type Lane,
@@ -49,6 +50,8 @@ export interface EventForm {
     /** The part a source fixes, drawn solid inside the bar. Off unless hasCore is set. */
     hasCore: boolean;
     core: { from: number | undefined; to: number | undefined; basis: LangForm };
+    /** The reckoning chain: from an anchor to this entry's years. */
+    chain: { label: LangForm; year: number | undefined; gap: LangForm }[];
     alternatives: { from: number | undefined; to: number | undefined; basis: LangForm; sources: RefForm[] }[];
   };
   place: {
@@ -90,6 +93,7 @@ export function eventToForm(e?: CqrEvent): EventForm {
       basis: lang(e?.when.basis),
       hasCore: !!e?.when.core,
       core: { from: e?.when.core?.from, to: e?.when.core?.to, basis: lang(e?.when.core?.basis) },
+      chain: (e?.when.chain ?? []).map((c) => ({ label: lang(c.label), year: c.year, gap: lang(c.gap) })),
       alternatives: (e?.when.alternatives ?? []).map((a) => ({ from: a.from, to: a.to, basis: lang(a.basis), sources: refs(a.sources) })),
     },
     place: {
@@ -136,6 +140,7 @@ export function eventFromForm(f: EventForm): unknown {
       certainty: f.when.certainty,
       basis: f.when.basis,
       core: f.when.hasCore ? { from: f.when.core.from, to: f.when.core.to, basis: f.when.core.basis } : undefined,
+      chain: f.when.chain.map((c, i) => ({ label: c.label, year: c.year, gap: i > 0 ? c.gap : undefined })),
       alternatives: f.when.alternatives.map((a) => ({ from: a.from, to: a.to, basis: a.basis, sources: outRefs(a.sources) })),
     },
     place: {
@@ -278,8 +283,40 @@ export function sourceFromForm(f: SourceForm): unknown {
   });
 }
 
+export interface JourneyForm {
+  id: string;
+  title: LangForm;
+  summary: LangForm;
+  review: 'draft' | 'reviewed';
+  order: number | undefined;
+  steps: { event: string; note: LangForm }[];
+  notes: string;
+}
+
+export function journeyToForm(j?: Journey, nextOrder = 1): JourneyForm {
+  return {
+    id: j?.id ?? '',
+    title: lang(j?.title),
+    summary: lang(j?.summary),
+    review: j?.review ?? 'draft',
+    order: j?.order ?? nextOrder,
+    steps: (j?.steps ?? [{ event: '' }, { event: '' }]).map((s) => ({ event: s.event, note: lang(s.note) })),
+    notes: j?.notes ?? '',
+  };
+}
+
+export function journeyFromForm(f: JourneyForm): unknown {
+  return clean({
+    ...f,
+    order: f.order ?? 0,
+    // Keep empty step rows out, but keep the list (so the schema can say "at least two steps").
+    steps: f.steps.filter((s) => s.event).map((s) => ({ event: s.event, note: s.note })),
+  });
+}
+
 export const COLLECTION_LABEL: Record<Collection, { one: string; many: string }> = {
   events: { one: 'event', many: 'Events' },
+  journeys: { one: 'journey', many: 'Journeys' },
   lanes: { one: 'lane', many: 'Lanes' },
   eras: { one: 'era', many: 'Eras' },
   sources: { one: 'source', many: 'Sources' },

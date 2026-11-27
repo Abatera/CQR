@@ -94,3 +94,13 @@ export function slugify(text: string): string {
     .slice(0, 60)
     .replace(/-+$/g, '');
 }
+
+/**
+ * A short name for tight spaces such as the overview strip: the English name in brackets when
+ * there is one ("Nuh (Noah)" gives "Noah"), otherwise the title; in Arabic, the Arabic title.
+ */
+export function shortName(title: { en: string; ar?: string }, lang: 'en' | 'ar'): string {
+  if (lang === 'ar' && title.ar) return title.ar;
+  const m = /\(([^()]+)\)\s*$/.exec(title.en);
+  return m ? m[1] : title.en;
+}

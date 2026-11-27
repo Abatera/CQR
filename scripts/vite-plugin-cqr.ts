@@ -16,7 +16,7 @@ import { readFileSync } from 'node:fs';
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import { join } from 'node:path';
 import type { Plugin } from 'vite';
-import { SCHEMAS, clean, type Collection } from '../src/lib/schema.ts';
+import { COLLECTIONS, SCHEMAS, clean, type Collection } from '../src/lib/schema.ts';
 import { newErrors, validateContent, zodIssues, type Issue, type RawContent } from '../src/lib/validate.ts';
 import {
   deleteEvent,
@@ -30,7 +30,6 @@ import {
 import { CONTENT_DIR, QURAN_DIR, QURAN_FILES } from './paths.ts';
 import { loadQuran } from './quran-node.ts';
 
-const COLLECTIONS: Collection[] = ['events', 'lanes', 'eras', 'sources'];
 const QURAN_NAMES = new Set<string>([...QURAN_FILES.map((f) => f.name), 'SOURCE.json']);
 
 async function compile() {
@@ -58,7 +57,7 @@ function fileFor(collection: Collection, id: string) {
 
 /** The content as it would be after the change, for checking that the change adds no errors. */
 function applyChange(raw: RawContent, collection: Collection, id: string, data: unknown | null): RawContent {
-  const items = raw[collection].filter((r) => (r.data as { id?: unknown } | null)?.id !== id);
+  const items = (raw[collection] ?? []).filter((r) => (r.data as { id?: unknown } | null)?.id !== id);
   if (data !== null) items.push({ file: fileFor(collection, id), data });
   return { ...raw, [collection]: items };
 }

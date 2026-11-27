@@ -18,6 +18,7 @@ const LIST_HEADERS: Record<ListCollection, string> = {
   lanes: ' Timeline lanes. Edit here or in the app editor (npm run dev, then Editor). See docs/04-data-model.md.',
   eras: ' Background era bands for the timeline. Every date range needs a source. See docs/04-data-model.md.',
   sources: ' Bibliography. Every citation in the content refers to an ID in this file. See docs/03-content-principles.md.',
+  journeys: ' Guided journeys: ordered steps through events, walked one at a time in the app. See docs/04-data-model.md.',
 };
 
 export function relPath(abs: string): string {
@@ -56,10 +57,11 @@ async function readList(collection: ListCollection, fileIssues: Issue[]): Promis
 
 export async function readContent(): Promise<RawContent> {
   const fileIssues: Issue[] = [];
-  const [lanes, eras, sources] = await Promise.all([
+  const [lanes, eras, sources, journeys] = await Promise.all([
     readList('lanes', fileIssues),
     readList('eras', fileIssues),
     readList('sources', fileIssues),
+    readList('journeys', fileIssues),
   ]);
   const events: RawItem[] = [];
   if (existsSync(EVENTS_DIR)) {
@@ -75,7 +77,7 @@ export async function readContent(): Promise<RawContent> {
       events.push({ file, data: doc.toJS() });
     }
   }
-  return { lanes, eras, sources, events, fileIssues };
+  return { lanes, eras, sources, events, journeys, fileIssues };
 }
 
 const QURAN_REF_RE = /^\d{1,3}:\d{1,3}(?:-\d{1,3})?$/;
@@ -177,7 +179,7 @@ export async function deleteListItem(collection: ListCollection, id: string): Pr
 }
 
 export function exists(collection: Collection, raw: RawContent, id: string): boolean {
-  return raw[collection].some((r) => (r.data as { id?: unknown } | null)?.id === id);
+  return (raw[collection] ?? []).some((r) => (r.data as { id?: unknown } | null)?.id === id);
 }
 
 /**
@@ -189,7 +191,7 @@ export function exists(collection: Collection, raw: RawContent, id: string): boo
 export async function formatContent(): Promise<{ changed: string[]; skipped: string[] }> {
   const changed: string[] = [];
   const skipped: string[] = [];
-  for (const collection of ['lanes', 'eras', 'sources'] as const) {
+  for (const collection of ['lanes', 'eras', 'sources', 'journeys'] as const) {
     const abs = listFile(collection);
     if (!existsSync(abs)) continue;
     const before = await readFile(abs, 'utf8');

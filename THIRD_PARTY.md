@@ -23,11 +23,19 @@ This project's own code is MIT-licensed ([LICENSE](LICENSE)) and its written con
 - **License:** SIL Open Font License 1.1, in [public/fonts/noto-naskh-arabic/OFL.txt](public/fonts/noto-naskh-arabic/OFL.txt). Copyright 2022 The Noto Project Authors. No Reserved Font Name is declared.
 - **Used for:** all Arabic text other than the Quran: titles, the content in Arabic, and the quotations from the cited works.
 
+## Fonts: Newsreader and Inter
+
+- **Files:** [public/fonts/newsreader/](public/fonts/newsreader/) and [public/fonts/inter/](public/fonts/inter/): the Latin and Latin Extended subsets of the variable fonts, as WOFF2, as served by Google Fonts (downloaded on 2026-11-27). Newsreader has its italic too.
+- **Sources:** [github.com/productiontype/Newsreader](https://github.com/productiontype/Newsreader) and [github.com/rsms/inter](https://github.com/rsms/inter); the files from [fonts.google.com](https://fonts.google.com).
+- **License:** SIL Open Font License 1.1, in [public/fonts/newsreader/OFL.txt](public/fonts/newsreader/OFL.txt) (Copyright 2020 The Newsreader Project Authors) and [public/fonts/inter/OFL.txt](public/fonts/inter/OFL.txt) (Copyright 2020 The Inter Project Authors).
+- **Used for:** Newsreader for titles and reading text; Inter for the interface.
+
 ## Map tiles
 
 Loaded at runtime from the providers' servers, not stored in this repository. See [src/config.ts](src/config.ts).
 
-- **OpenTopoMap:** map data © OpenStreetMap contributors, SRTM; map style © OpenTopoMap (CC-BY-SA). See the [OpenTopoMap usage notes](https://opentopomap.org/about).
+- **Stadia Maps, "Stamen Terrain Background"** (the default, D30): © Stadia Maps, © Stamen Design, © OpenMapTiles, map data © OpenStreetMap contributors. Free for non-commercial use under Stadia's terms; the site's domain must be registered in a Stadia account. See [stadiamaps.com/pricing](https://stadiamaps.com/pricing).
+- **OpenTopoMap** (the fallback): map data © OpenStreetMap contributors, SRTM; map style © OpenTopoMap (CC-BY-SA). See the [OpenTopoMap usage notes](https://opentopomap.org/about).
 - **OpenStreetMap standard tiles:** © OpenStreetMap contributors, data under the ODbL. The standard tile server allows only light use; see the [tile usage policy](https://operations.osmfoundation.org/policies/tiles/).
 
 Attribution is shown on the map.

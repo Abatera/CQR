@@ -10,12 +10,14 @@ import {
   eraToForm,
   eventFromForm,
   eventToForm,
+  journeyFromForm,
+  journeyToForm,
   laneFromForm,
   laneToForm,
   sourceFromForm,
   sourceToForm,
 } from '../src/editor/model';
-import { EraSchema, EventSchema, LaneSchema, SourceSchema } from '../src/lib/schema';
+import { EraSchema, EventSchema, JourneySchema, LaneSchema, SourceSchema } from '../src/lib/schema';
 import { validateContent } from '../src/lib/validate';
 
 const { bundle } = validateContent(await readContent(), loadQuran().counts);
@@ -27,6 +29,10 @@ describe('editor forms round-trip the content unchanged', () => {
 
   it.each(bundle.events.map((e) => [e.id, e] as const))('event %s', (_id, e) => {
     expect(EventSchema.parse(eventFromForm(eventToForm(e)))).toEqual(e);
+  });
+
+  it.each(bundle.journeys.map((j) => [j.id, j] as const))('journey %s', (_id, j) => {
+    expect(JourneySchema.parse(journeyFromForm(journeyToForm(j)))).toEqual(j);
   });
 
   it.each(bundle.lanes.map((l) => [l.id, l] as const))('lane %s', (_id, l) => {

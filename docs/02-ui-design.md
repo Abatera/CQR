@@ -1,96 +1,87 @@
 # UI design
 
-## Layout (decided)
+The design is called **Strata** (D27, 2026-11-27). The five layers of knowledge that every entry keeps apart become the design itself: each layer has one color, icon, order and name, used the same way in every view. The concept, with desktop and phone screens, is on a design canvas: https://claude.ai/artifact/XJKT6aN4WSPxNZBpZgJ78g (private to the owner).
 
-The app has three panels on one screen:
+## Principles
+
+1. **Keep the layers apart.** Quran (emerald), Tafsir (indigo), Tradition (ochre), History (terracotta), Our reflection (plum, always dashed). Never blended, always in that order.
+2. **Show how sure.** Every date and place carries its certainty in the drawing, not only in a label.
+3. **Place before detail.** Start from where and when; the sources open up from there.
+4. **Calm, never sensational.** Quiet colors and plain words. The Quran's text gets the most room.
+
+The mark is a circle of time crossed by a meridian, with one moment on it: one moment, one place.
+
+## Views
+
+| URL | View |
+|---|---|
+| `#/` | **Home**: what the site is, a live map of a featured journey, the journeys, and "How to read an entry". |
+| `#/explore`, `#/event/<id>` | **Explore**: the "all of time" strip, the timeline, the map and the entry panel. |
+| `#/journeys`, `#/journey/<id>/<step>` | **Journeys** (D28): the list, and one journey walked step by step. |
+| `#/quran` | The Quran reader and search. |
+| `#/about` | About, licenses and credits. |
+| `#/edit/…` | The editor, on the local dev server only. |
+
+The header has the mark, a search box (events by title, place or tag in either language; a verse reference opens the verse; Arabic text can be searched in the Quran; Ctrl+K or "/"), the views, and the EN / عربي switch.
+
+## Explore
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│  TIMELINE                         (top, full width)      │
-├────────────────────────────┬─────────────────────────────┤
-│  MAP                       │  FACTS                      │
-│  (lower left)              │  (lower right)              │
-└────────────────────────────┴─────────────────────────────┘
+│  ALL OF TIME  [▒▒▒▒▒[  window  ]▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒]   │
+├──────────────────────────────────────────────────────────┤
+│  TIMELINE: lanes on one shared time axis                 │
+├────────────────────────────────┬─────────────────────────┤
+│  MAP                           │  ENTRY                  │
+└────────────────────────────────┴─────────────────────────┘
 ```
 
-Selecting an event on the timeline does three things:
+Selecting an event highlights it on the timeline with a band across all lanes, moves the map to its place, and opens its entry. Opened from outside the timeline (a link, search, the map, a journey), the timeline zooms to a window around it; clicks in the timeline and the arrow keys keep the zoom.
 
-1. highlights the event on the timeline;
-2. moves the map to the event's location, if the location is known;
-3. shows the event's facts in the right panel.
+### The timeline
 
-## Timeline
+**How this design was reached.** The owner's first picture was a horizontal git-style graph, where each point is like a commit. They later dropped branches. The decided design is **several independent, parallel lanes on one shared time axis**, because many events happened independently at the same time in different places.
 
-### How this design was reached
+- **The "all of time" strip** above the timeline shows the whole sequence of prophets, with every prophet as a tick and the main ones named, the reckoned years before Abraham hatched, and the timeline's current window framed. Clicking or dragging on it moves the window.
+- **Lanes:** one per region or civilization, with the Prophets lane pinned at the top, then the Quran lane. Lanes with nothing in the current window fold into one line ("Levant, Egypt…: nothing recorded between … yet"), with a button to show them.
+- **How sure is the date** is drawn, one style per certainty: documented (solid), estimated (fading at the ends), traditional (dashed), reckoned from tradition (hatched), debated or unknown (dotted). A part of a span fixed by a source (such as Noah's 950 years) is drawn solid inside the bar.
+- Zoomed far out, and on a phone, prophets are labeled by their short English name ("Noah" for "Nuh (Noah)") so the lane stacks less.
+- Era bands are a thin strip under the axis and a faint wash behind the lanes. Links to related events are drawn only while an event is selected.
 
-The owner's first picture was a horizontal git-style graph, where each point is like a commit. They later dropped branches. The decided design is **several independent, parallel lanes on one shared time axis**, because many events happened independently at the same time in different places.
+### The entry
 
-### Mockup
+In this order:
 
-The positions are illustrative and the facts are unverified:
+1. A top line (lane, kind, a draft pill, previous / next / copy link), the title in both languages.
+2. Chips: the date with its certainty, the place with its status and number of opinions, the number of Quran passages.
+3. The summary, in the reading font.
+4. **How the date is known.** For a reckoned date, the chain of the reckoning step by step (D29), with the full basis behind a disclosure; otherwise the basis. The certain part and other datings follow.
+5. **Where**: the description, names, and the opinions lettered A, B, C as on the map.
+6. **The layer navigator**: five segments with their counts, jumping to each layer.
+7. **The layers.** Quran (one passage at a time, from the dataset, with its references as chips), Tafsir, Tradition (kind badges and grading badges by named scholars; People of the Book "neither affirmed nor denied"), History (established or debated, with sources), Our reflection (dashed, with its confidence).
+8. **Around this time**: other events overlapping it, then the nearest ones ("about 400 years later"). Then related events and the sources.
 
-```
-              1300 BCE      1200          1100          1000          900
-Eras          ░ Late Bronze ░│▓ collapse ▓│░░░ Iron I ░░░│░░ Iron II ░░░
-Quran                        │             │       ●Talut ●David ●Solomon
-Levant                       ●Sea Peoples  │             │  ●copper mines
-Egypt         ══ New Kingdom ══●Ramesses III══╡ Third Intermediate ══
-Anatolia      ══ Hittite Empire ═╡ (falls c. 1180)
-```
+### The map
 
-### Elements
-
-- **Time axis.** Years BCE/CE, horizontal, with zoom and pan. The span covers thousands of years, so zoom is required.
-- **Events are periods (decided).** Each event has a range and a stated certainty, researched "as precise as we can", in the owner's words. Short or precisely dated events are drawn as dots, long ones as bars.
-- **Periods and polities** are drawn as long bars inside a lane, such as the Egyptian New Kingdom or the Hittite Empire. A bar that stops at the collapse tells the story without any text.
-- **Lanes (decided in principle; the exact list is open).**
-  - *Proposed:* one lane per region or civilization, such as Egypt, the Levant, Anatolia, Mesopotamia, Arabia and the Aegean.
-  - *Proposed:* the Quran lane is always pinned at the top.
-  - *Proposed:* an optional theme lane, "technology and climate", for things like the spread of iron.
-- **Era bands (proposed).** Shaded background bands for archaeological periods: Late Bronze Age, the collapse, Iron Age I, Iron Age II. These period names are specific to regions (they fit the Near East and the Eastern Mediterranean), so the bands are context, not hard boundaries.
-- **Stacking.** Overlapping items in the same lane stack automatically into sub-rows.
-- **Lane toggles (proposed).** Readers can switch lanes on and off, and possibly reorder them, so the panel doesn't get crowded.
-
-### Links between lanes (proposed)
-
-Events can be related to events in other lanes with the types `context`, `consequence` and `parallel`. The links are drawn as faint connectors **only while an event is selected**, so the default view stays clean.
-
-## Map
-
-- Leaflet, earthly places only (decided).
-- The selected event: the map flies to its location and highlights it.
-- *Proposed:* other events from the same time window appear as faint markers, so the reader sees what else was happening in the world at that moment.
+- **Basemap (D30):** terrain without modern borders or names (Stadia Maps, "Stamen Terrain Background"), with the broad ancient region names the sources use (Mesopotamia, al-Jazira, al-Sham, Hijaz…). It falls back to OpenTopoMap by itself if Stadia's tiles fail.
 - How each location status is shown:
 
-  | Status | On the map | In the facts panel |
+  | Status | On the map | In the entry |
   |---|---|---|
-  | `known` | a marker | the place's names |
-  | `proposed` (disputed) | a shaded area, or several candidate areas | each opinion, with its source |
-  | `unknown` | nothing (decided by the owner) | what the text says about the place |
+  | `known` | a point with a ring, or an outlined area | the place's names |
+  | `proposed` | a dashed area per opinion, lettered A (filled), B, C… (hollow), with a legend | each opinion, lettered, with its source |
+  | `unknown` | nothing (decided by the owner), with a note | what the text says about the place |
 
-  For an unknown location, the map may zoom to the wider region, but only if the region itself is not disputed.
-- **Basemap (open).** Modern borders and place names are anachronistic and can be politically sensitive. A terrain or physical basemap with minimal labels is probably a better fit. Ancient and modern names can be given in the facts panel instead.
+- Other events from the same time are diamonds in their lane's color; with nothing selected, every event with a place is a faint dot.
 
-## Facts panel
+## Journeys (D28)
 
-For the selected event, in this order:
+A journey walks through a story one step at a time. The map flies to each step's place and draws the route, the part already walked solid; steps at the same place share a marker ("1 · 2"). A story card gives the step's title, date, summary, first verse, place, and "Meanwhile, in history"; a strip at the bottom shows the steps on their own time scale with what history records for the same years. Arrow keys move between steps.
 
-1. The title, the period with its certainty, and the place with its status.
-2. **Quran.** Verse references. Clicking a reference shows the verse in Uthmani script, from the verified dataset.
-3. **Tafsir.** What classical commentators said, with citations.
-4. **History and archaeology.** Claims, each with a status (established or debated) and sources.
-5. **Connection.** The project's own reflection linking the layers above. It has a confidence level and is clearly labeled as interpretation.
-6. Related events (clickable) and the list of sources.
+## Phone layout
 
-These layers are *proposed*. The rules behind them are in [03-content-principles.md](03-content-principles.md).
+Below 760 px wide: a compact header (mark, search, language), a tab bar (Explore, Journeys, Quran, About), the strip and a shorter timeline with lane names inside the lanes, the map, and a bottom sheet that previews the selected entry (title, date, a five-color bar of its layers, "Read the entry"). The entry opens as its own page, with previous / next and "On the map and timeline". A journey's story sits under its map.
 
-## Quran reader and search
+## Language (D21)
 
-The owner wants a readable, searchable Hafs Quran ([05-quran-data.md](05-quran-data.md)). Where it lives in the UI is **open**. It could be a separate view or tab, or an overlay opened from the facts panel. An idea for later: searching a word could also list the timeline events that cite matching verses.
-
-## Other UI points
-
-- *Proposed:* each event has its own URL, such as `#/event/david-armor`, so it can be shared.
-- *Proposed:* the left and right arrow keys step through events.
-- **Language (D21):** an EN / عربي switch in the header, remembered in the browser. In Arabic the facts panel reads right to left with Arabic headings, the timeline and map labels are in Arabic, and the time axis still runs left to right. The Quran reader, About and the editor stay in English for now (open question 18).
-- Not discussed yet: the layout on mobile and small screens, and dark mode.
+The EN / عربي switch is in the header and remembered. In Arabic the header, the entry, the journeys and the home page read right to left with Arabic labels; the time axis still runs left to right. The Quran reader, About and the editor stay in English for now (open question 18).

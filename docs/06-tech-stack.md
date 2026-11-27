@@ -25,11 +25,12 @@
 | Content pipeline | [scripts/vite-plugin-cqr.ts](../scripts/vite-plugin-cqr.ts) serves `content.json` and the Quran files on the dev server and emits them at build time. On the dev server it also provides the editor's write API. |
 | Editor | Forms in `src/editor/`, on the dev server only. The built site has no write API. |
 | Tests | Vitest (`npm test`) for the logic and the real dataset; svelte-check (`npm run check`) for types |
-| Paths | `base: './'`, so the built site works from a GitHub Pages project path. Routes use the URL hash (`#/event/<id>`), which needs no server configuration. |
+| Paths | `base: './'`, so the built site works from a GitHub Pages project path. Routes use the URL hash (`#/`, `#/explore`, `#/event/<id>`, `#/journey/<id>/<step>`, `#/quran`), which needs no server configuration. |
+| Design (D27) | Tokens and shared styles in [src/app.css](../src/app.css); fonts in [src/fonts.css](../src/fonts.css), self-hosted under `public/fonts/`; icons in [src/ui/Icon.svelte](../src/ui/Icon.svelte). Below 760 px wide the app switches to its phone layout (`NARROW_QUERY` in [src/config.ts](../src/config.ts)). |
 
 ## Open
 
-- **Basemap style and provider.** The default is OpenTopoMap (terrain), with OpenStreetMap as the alternative, both set in [src/config.ts](../src/config.ts). Both still show modern borders and place names, so a better fit is still wanted (see [02-ui-design.md](02-ui-design.md)). Check each provider's usage policy before deploying: the standard tile.openstreetmap.org server allows only light use with attribution.
+- **Stadia Maps account (D30).** The default basemap, Stadia's "Stamen Terrain Background", needs the site's domain registered in a free, non-commercial Stadia account. Until then the map falls back to OpenTopoMap by itself. Basemaps and the ancient region names are in [src/config.ts](../src/config.ts).
 
 ## Licensing (decided)
 

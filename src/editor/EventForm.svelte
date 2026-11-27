@@ -149,6 +149,26 @@
       </div>
     {/if}
 
+    <div class="subhead">Reckoning chain (optional)</div>
+    <p class="hint">
+      For a reckoned date: the steps from an anchor (e.g. Abraham's birth) to this entry's own years, each with how it is counted and its
+      source, e.g. "350 years earlier (Ibn Sa'd)". Shown as a chain in the facts panel; the basis above stays the full explanation.
+    </p>
+    {#each m.when.chain as step, i (i)}
+      <div class="card">
+        <div class="card-head">Step {i + 1} <RowTools bind:list={m.when.chain} index={i} label="step" /></div>
+        {#if i > 0}
+          <LangField label="How it is counted from the step before" bind:value={step.gap} path="when.chain[{i}].gap" hint="e.g. 350 years earlier (Ibn Sa'd)" />
+        {/if}
+        <div class="grid4">
+          <div class="span2"><LangField label="What happens" bind:value={step.label} path="when.chain[{i}].label" required hint="e.g. Noah dies" /></div>
+          <YearField label="Year *" bind:value={step.year} path="when.chain[{i}].year" />
+        </div>
+      </div>
+    {/each}
+    <FieldError path="when.chain" exact />
+    <button type="button" class="small" onclick={() => m.when.chain.push({ label: { en: '', ar: '' }, year: undefined, gap: { en: '', ar: '' } })}>+ Add a step</button>
+
     <div class="subhead">Other datings (when scholars disagree)</div>
     {#each m.when.alternatives as alt, i (i)}
       <div class="card">

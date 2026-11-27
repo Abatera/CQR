@@ -88,6 +88,16 @@ export const CoreSpan = z
   })
   .refine(fromBeforeTo, FROM_TO_MSG);
 
+/**
+ * One step of a reckoning chain: a year reached by counting from the step before it.
+ * `gap` says how: the interval and its source, e.g. "350 years earlier (Ibn Sa'd)".
+ */
+export const ChainStep = z.strictObject({
+  label: LangText,
+  year: YearSchema,
+  gap: LangText.optional(),
+});
+
 export const When = z
   .strictObject({
     from: YearSchema,
@@ -96,6 +106,11 @@ export const When = z
     /** What the date rests on, e.g. "traditional biblical chronology". */
     basis: LangText,
     core: CoreSpan.optional(),
+    /**
+     * How a reckoned date is reached, step by step, from an anchor to this entry's own years.
+     * Shown as a chain in the facts panel; `basis` stays the full explanation.
+     */
+    chain: z.array(ChainStep).min(2, 'A chain needs at least two steps.').optional(),
     alternatives: z.array(DateAlternative).optional(),
   })
   .refine(fromBeforeTo, FROM_TO_MSG)
@@ -276,6 +291,27 @@ export const EraSchema = z
   })
   .refine(fromBeforeTo, FROM_TO_MSG);
 
+/** One stop on a journey: an event, with an optional note that links it to the stop before. */
+export const JourneyStep = z.strictObject({
+  event: Id,
+  note: LangText.optional(),
+});
+
+/**
+ * A guided journey: an ordered list of events that the app walks through one step at a time,
+ * moving the timeline and the map together.
+ */
+export const JourneySchema = z.strictObject({
+  id: Id,
+  title: LangText,
+  summary: LangText,
+  review: z.enum(REVIEW_STATES),
+  /** Lower numbers are listed first. */
+  order: z.number().int('The order must be a whole number.'),
+  steps: z.array(JourneyStep).min(2, 'A journey needs at least two steps.'),
+  notes: z.string().trim().min(1).optional(),
+});
+
 export const SourceSchema = z.strictObject({
   id: Id,
   type: z.enum(SOURCE_TYPES),
@@ -315,14 +351,19 @@ export type CqrEvent = z.infer<typeof EventSchema>;
 export type Lane = z.infer<typeof LaneSchema>;
 export type Era = z.infer<typeof EraSchema>;
 export type Source = z.infer<typeof SourceSchema>;
+export type ChainStep = z.infer<typeof ChainStep>;
+export type JourneyStep = z.infer<typeof JourneyStep>;
+export type Journey = z.infer<typeof JourneySchema>;
 
-export type Collection = 'events' | 'lanes' | 'eras' | 'sources';
+export type Collection = 'events' | 'lanes' | 'eras' | 'sources' | 'journeys';
+export const COLLECTIONS: Collection[] = ['events', 'journeys', 'lanes', 'eras', 'sources'];
 
 export const SCHEMAS = {
   events: EventSchema,
   lanes: LaneSchema,
   eras: EraSchema,
   sources: SourceSchema,
+  journeys: JourneySchema,
 } as const;
 
 export function refId(ref: SourceRef): string {

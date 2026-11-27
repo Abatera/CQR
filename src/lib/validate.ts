@@ -13,6 +13,7 @@ import {
   type Collection,
   type CqrEvent,
   type Era,
+  type Journey,
   type Lane,
   type Source,
   type SourceRef,
@@ -40,6 +41,8 @@ export interface RawContent {
   eras: RawItem[];
   sources: RawItem[];
   events: RawItem[];
+  /** Optional so that callers written before journeys existed still type-check. */
+  journeys?: RawItem[];
   /** Problems reading or parsing the files themselves. */
   fileIssues: Issue[];
 }
@@ -49,6 +52,7 @@ export interface Bundle {
   eras: Era[];
   sources: Source[];
   events: CqrEvent[];
+  journeys: Journey[];
 }
 
 export interface ValidationResult {
@@ -94,7 +98,7 @@ export function validateContent(raw: RawContent, ayahCounts: readonly number[]):
     const schema = SCHEMAS[collection];
     const out: { file: string; value: z.infer<(typeof SCHEMAS)[C]> }[] = [];
     const seen = new Map<string, string>();
-    for (const item of raw[collection]) {
+    for (const item of raw[collection] ?? []) {
       const id = itemId(item.data);
       const res = schema.safeParse(item.data);
       if (!res.success) {
@@ -117,6 +121,7 @@ export function validateContent(raw: RawContent, ayahCounts: readonly number[]):
   const eras = parseAll('eras');
   const sources = parseAll('sources');
   const events = parseAll('events');
+  const journeys = parseAll('journeys');
 
   const laneIds = new Set(lanes.map((l) => l.value.id));
   const sourceIds = new Set(sources.map((s) => s.value.id));
@@ -182,6 +187,14 @@ export function validateContent(raw: RawContent, ayahCounts: readonly number[]):
       if (!h.sources?.length) push(sourcing, `history[${i}].sources`, 'Every historical claim needs at least one source.');
     });
 
+    if (ev.when.chain) {
+      const inside = ev.when.chain.some((s) => s.year >= ev.when.from && s.year <= ev.when.to);
+      if (!inside) push('warning', 'when.chain', "No step of the chain falls inside this entry's own years.");
+      ev.when.chain.forEach((s, i) => {
+        if (i > 0 && !s.gap) push('warning', `when.chain[${i}].gap`, 'Say how this step is counted from the one before, with its source.');
+      });
+    }
+
     if (ev.connection && !ev.connection.confidence) {
       push(sourcing, 'connection.confidence', 'The connection needs a confidence level (set by the owner).');
     }
@@ -203,11 +216,20 @@ export function validateContent(raw: RawContent, ayahCounts: readonly number[]):
     });
   }
 
+  for (const { file, value: j } of journeys) {
+    j.steps.forEach((s, i) => {
+      if (!eventIds.has(s.event)) {
+        issues.push({ level: 'error', collection: 'journeys', id: j.id, file, path: `steps[${i}].event`, message: `The event "${s.event}" does not exist.` });
+      }
+    });
+  }
+
   const bundle: Bundle = {
     lanes: lanes.map((l) => l.value).sort((a, b) => a.order - b.order),
     eras: eras.map((e) => e.value).sort((a, b) => a.from - b.from),
     sources: sources.map((s) => s.value),
     events: events.map((e) => e.value).sort((a, b) => a.when.from - b.when.from || a.when.to - b.when.to),
+    journeys: journeys.map((j) => j.value).sort((a, b) => a.order - b.order || a.title.en.localeCompare(b.title.en)),
   };
   return { bundle, issues };
 }

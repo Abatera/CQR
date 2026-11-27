@@ -1,32 +1,56 @@
-@font-face {
-  font-family: 'Amiri Quran';
-  src: url('/fonts/amiri/AmiriQuran.ttf') format('truetype');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Amiri';
-  src: url('/fonts/amiri/Amiri-Regular.ttf') format('truetype');
-  font-display: swap;
-}
-
-/* The Arabic font for content (everything but the Quran text): a variable font, weights 400-700. */
-@font-face {
-  font-family: 'Noto Naskh Arabic';
-  src: url('/fonts/noto-naskh-arabic/NotoNaskhArabic-wght.ttf') format('truetype');
-  font-weight: 400 700;
-  font-display: swap;
-}
-
+/*
+ * The design language ("Strata", D27): a calm ground, ink text, and one color per layer of
+ * knowledge, used the same way in every view. Fonts are declared in fonts.css.
+ */
 :root {
-  --font-ui: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-ui: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-read: 'Newsreader', Georgia, 'Times New Roman', serif;
   --font-quran: 'Amiri Quran', serif;
   --font-ar: 'Noto Naskh Arabic', 'Amiri', 'Segoe UI', 'Geeza Pro', serif;
-  --bg: #fbfbf9;
-  --panel: #fff;
-  --line: #e3e3de;
-  --muted: #6b6b66;
+
+  /* Ground and ink */
+  --ground: #efebe3;
+  --paper: #fcfbf8;
+  --card: #ffffff;
+  --line: #e3ded4;
+  --line-soft: #eeeae2;
+  --control: #ddd7cb;
+  --ink: #1c2321;
+  --ink-2: #3a4440;
+  --muted: #5e6662;
+  --hover: #ece7dd;
+
+  /* Accent: the Quran's emerald, and the ochre point of the mark */
   --accent: #1f6f5c;
+  --accent-dark: #16503f;
+  --accent-tint: #e5f0eb;
+  --mark: #b8862f;
+
+  /* The five layers: a color for marks and borders, a darker one for text, and a tint */
+  --l-quran: #1f6f5c;
+  --l-quran-text: #1f6f5c;
+  --l-quran-tint: #f2f7f4;
+  --l-tafsir: #3f4f98;
+  --l-tafsir-text: #3f4f98;
+  --l-tafsir-tint: #eef0f8;
+  --l-tradition: #8a5b14;
+  --l-tradition-text: #7a4f0f;
+  --l-tradition-tint: #f7f0e1;
+  --l-history: #a1432b;
+  --l-history-text: #973d26;
+  --l-history-tint: #f7ebe6;
+  --l-reflection: #7b4579;
+  --l-reflection-text: #7b4579;
+  --l-reflection-tint: #fbf7fa;
+
+  --draft-bg: #f4ecda;
+  --draft-ink: #6b4a0e;
+  --radius: 10px;
+
+  /* Older names, still used by the editor and the Quran reader */
+  --bg: var(--ground);
+  --panel: var(--paper);
+
   color-scheme: light;
 }
 
@@ -38,11 +62,12 @@ html,
 body {
   margin: 0;
   height: 100%;
-  background: var(--bg);
-  color: #1d1d1b;
+  background: var(--ground);
+  color: var(--ink);
   font-family: var(--font-ui);
   font-size: 14px;
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Arabic text other than the Quran uses the content font. The Quran text sets its own font (.quran-text). */
@@ -62,18 +87,22 @@ textarea:lang(ar) {
 }
 
 a {
-  color: #1a5c8a;
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-dark);
 }
 
 button,
 .button {
   font: inherit;
   font-size: 13px;
-  padding: 4px 10px;
-  border: 1px solid #c9c9c2;
-  border-radius: 6px;
-  background: #fff;
-  color: #222;
+  padding: 5px 11px;
+  border: 1px solid var(--control);
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--ink);
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
@@ -81,7 +110,7 @@ button,
 
 button:hover:not(:disabled),
 .button:hover {
-  background: #f2f2ee;
+  background: var(--hover);
 }
 
 button:disabled {
@@ -98,7 +127,8 @@ button.primary,
 
 button.primary:hover:not(:disabled),
 .button.primary:hover {
-  background: #185a4b;
+  background: var(--accent-dark);
+  color: #fff;
 }
 
 button.danger {
@@ -117,15 +147,27 @@ button.icon {
   line-height: 20px;
 }
 
+/* A square button holding one icon. Needs an aria-label. */
+.icon-btn {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 9px;
+  flex: none;
+}
+
 input,
 select,
 textarea {
   font: inherit;
   font-size: 14px;
-  padding: 4px 6px;
-  border: 1px solid #c9c9c2;
-  border-radius: 5px;
-  background: #fff;
+  padding: 5px 8px;
+  border: 1px solid var(--control);
+  border-radius: 7px;
+  background: var(--card);
+  color: var(--ink);
 }
 
 textarea {
@@ -135,14 +177,16 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus,
-button:focus-visible {
-  outline: 2px solid #7fb5a6;
+button:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #5fa48f;
   outline-offset: 1px;
 }
 
 code {
   font-size: 12px;
-  background: #f0f0ec;
+  background: #f0ede6;
   border-radius: 3px;
   padding: 0 4px;
 }
@@ -155,6 +199,58 @@ code {
   color: #b3261e;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* A rounded label with an icon, a value and a note, e.g. "c. 3516 BCE · reckoned". */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 30px;
+  padding: 3px 12px;
+  border: 1px solid var(--control);
+  border-radius: 20px;
+  background: var(--card);
+  font-size: 13px;
+  color: var(--ink);
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+a.chip:hover,
+button.chip:hover {
+  border-color: #b9b1a2;
+  background: var(--card);
+}
+
+.chip strong {
+  font-weight: 600;
+}
+
+.chip .note {
+  color: #4a5551;
+}
+
+.draft-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 9px;
+  border-radius: 20px;
+  background: var(--draft-bg);
+  color: var(--draft-ink);
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
 /* Quran text: always from the Tanzil dataset, in the Uthmani script. */
 .quran-text {
   font-family: var(--font-quran);
@@ -163,11 +259,12 @@ code {
   direction: rtl;
   text-align: right;
   margin: 4px 0;
+  color: #10261f;
 }
 
 .quran-text .end {
   font-family: var(--font-quran);
-  color: #1f6f5c;
+  color: var(--accent);
 }
 
 /* Editor forms */
@@ -178,21 +275,24 @@ code {
 
 .form h2 {
   margin: 14px 0 6px;
+  font-family: var(--font-read);
+  font-size: 26px;
+  font-weight: 600;
 }
 
 fieldset {
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 8px 14px 12px;
   margin: 14px 0 0;
-  background: #fff;
+  background: var(--card);
 }
 
 legend {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: #445;
   padding: 0 6px;
 }
@@ -247,7 +347,7 @@ label.check {
 
 .card {
   border: 1px solid #ecece6;
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 4px 10px 6px;
   margin: 8px 0;
   background: #fcfcfa;
@@ -275,4 +375,14 @@ label.check {
   border-radius: 6px;
   padding: 6px 10px;
   font-size: 13px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

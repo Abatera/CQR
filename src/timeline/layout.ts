@@ -5,9 +5,9 @@
 import type { CqrEvent, Lane } from '../lib/schema';
 import { yearEnd, yearStart } from '../lib/years';
 
-export const ROW_H = 24;
-export const LANE_PAD = 5;
-export const MIN_LANE_H = 34;
+export const ROW_H = 28;
+export const LANE_PAD = 6;
+export const MIN_LANE_H = 48;
 /** Events narrower than this many pixels are drawn as dots. */
 export const DOT_MIN_PX = 10;
 const CHAR_W = 6.4;
@@ -30,6 +30,8 @@ export interface LaidLane {
   y: number;
   height: number;
   rows: number;
+  /** Extra space at the top of the lane, for a name drawn inside it (on a phone). */
+  head: number;
   items: LaidItem[];
 }
 
@@ -53,12 +55,16 @@ export function stack(items: { start: number; end: number }[]): number[] {
   return rows;
 }
 
-/** `label` gives the text drawn beside each item (its title in the reader's language), for measuring. */
+/**
+ * `label` gives the text drawn beside each item (its title in the reader's language), for measuring.
+ * `head` is extra space at the top of each lane, for its name when it is drawn inside the lane.
+ */
 export function layoutLanes(
   lanes: Lane[],
   events: CqrEvent[],
   x: (pos: number) => number,
   label: (e: CqrEvent) => string = (e) => e.title.en,
+  head = 0,
 ) {
   const byLane = new Map<string, CqrEvent[]>();
   for (const e of events) byLane.set(e.lane, [...(byLane.get(e.lane) ?? []), e]);
@@ -91,8 +97,8 @@ export function layoutLanes(
       row: rows[i],
     }));
     const nRows = Math.max(1, ...rows.map((r) => r + 1));
-    const height = Math.max(MIN_LANE_H, nRows * ROW_H + LANE_PAD * 2);
-    out.push({ lane, y, height, rows: nRows, items });
+    const height = Math.max(head ? 0 : MIN_LANE_H, nRows * ROW_H + LANE_PAD * 2 + head);
+    out.push({ lane, y, height, rows: nRows, items, head });
     y += height;
   }
   return { lanes: out, height: y };
@@ -100,5 +106,5 @@ export function layoutLanes(
 
 /** Vertical center of an item's row. */
 export function rowCenter(lane: LaidLane, row: number): number {
-  return lane.y + LANE_PAD + row * ROW_H + ROW_H / 2;
+  return lane.y + lane.head + LANE_PAD + row * ROW_H + ROW_H / 2;
 }
